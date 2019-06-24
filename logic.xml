@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+Copyright 2015 Robert A. Beezer
+
+This file is part of MathBook XML.
+
+MathBook XML is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 or version 3 of the
+License (at your option).
+
+MathBook XML is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
+*********************************************************************-->
+<!-- This file was originally part of the book     -->
+<!-- (as copied on 2015/07/12)                     -->
+<!--                                               -->
+<!--   Abstract Algebra: Theory and Applications   -->
+<!--                                               -->
+<!-- Copyright (C) 1997-2014  Thomas W. Judson     -->
+
+<chapter xml:id="logic" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- % TWJ, 2010/03/31 -->
+<!-- % Chapters now begin with Chapter 1 -->
+
+<title>Logic</title>
+
+    <introduction>
+        <p>As noted in the preface, one useful definition of mathematics is the body of knowledge obtained by applying logic (deductive and inductive) to a system of axioms. Our first thought is to deal with things which conform to a bivalent system of logic; that is, things which are either true or false.</p>
+    </introduction>
+
+    <section xml:id="logic-section-definitions">
+    	<title>Definitions</title>
+    	<p>dfjkldfjdfk</p>
+    </section>
+
+    <section xml:id="logic-section-statements">
+    	<title>Statements</title>
+    	<p>dfjkldfjdfk</p>
+    </section>
+
+    <section xml:id="logic-section-tautologies">
+    	<title> Tautologies, Contradictions, &amp; Quantifiers</title>
+    	<p>dfjkldfjdfk</p>
+    </section>
+
+</chapter>
