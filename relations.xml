@@ -119,6 +119,40 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     	</example>
 
+    	<p>In many cases, listing all the ordered pairs in a relation is tedious or simply impossible. Under those circumstances the relation may be described in many different ways; associated ordered pairs are indicated by specifying a defining rule.</p>
+
+    	<example xml:id="relations-example-relation-picture">
+    		<p>The equation <m>x + y = 4</m> describes a relation, <m>R</m>, consisting of an infinite set of ordered pairs whose components will satisfy the equation. Hence, the ordered pairs <m>(2, 2)</m>, <m>( 3/2, 5/2 )</m>, <m>(-7, 11)</m>, and <m>(0, 4)</m> are a few of the elements in the relation. Precisely stated,
+    			<me>R(x,y) = \{ (x, y) \in \mathbb R \times \mathbb R \mid x + y = 4 \}</me>
+    		That is, the relation described by the equation is actually the infinite set of ordered pairs of real numbers whose sum is equal to <m>4</m>. In the following figure, we have indicated all the ordered pairs which satisfy the linear equation; this is sometimes called the graphical representation of the equation.</p>
+
+            <figure xml:id="figure-relations-graph">
+                <image width="50%" source="images/relations-graph.png">
+                    <description>pictorial representation R from A to B</description>
+                </image>
+                <caption>Graphical representation of <m>x + y = 4</m></caption>
+            </figure>
+
+    	</example>
+
+        <example xml:id="relations-example-relation-set-builder">
+            <p>Let <m>A = \{ 1, 2, 3, 4\}</m> and define a relation <m>R</m> on <m>A</m> by
+                <me>R(x,y) = \{ (x, y) \in A \times A \mid x \leq y \}.</me>
+            That is, <m>R</m> is the set of all ordered pairs whose components both come from the set <m>A</m> and in which the first component is less than or equal to the second. In this case we could enumerate <m>R</m> as follows:
+                <me>R = \{ (1, 1), (1, 2), (1, 3), (1, 4), (2, 2), (2, 3), (2, 4), (3, 3), (3, 4), (4, 4) \}</me></p>
+        </example>
+
+        <p>Notice in <xref ref="relations-example-relation-set-builder" /> that it is merely inconvenient to have to list all the ordered pairs implied by the rule given.  However, if the set A were the set of all integers instead of the finite set <m>\{1, 2, 3, 4\}</m>, the same rule applied to A would yield an infinite set of ordered pairs that would be impossible to list. In such cases, it is convenient to use notation that refers to the relation by the criteria used for comparison. We say the relation <m>R</m> is <q>less than or equal to</q> or <q><m>\leq</m></q> rather than the actual set of ordered pairs, and instead of saying <m>(1, 3) \in R</m>, we say <m>1 \leq 3</m>.</p>
+
+        <remark>
+            <p>In general, we often substitute the notation <m>aRb</m> for <m>(a, b) \in R</m>.</p>
+        </remark>
+
+        <p>Then to determine whether two elements in the set are related, we simply substitute our familiar relation for <m>R</m> in the expression <m>aRb</m>. For example, instead of asking if the ordered pair <m>(3, 2)</m> is an element of the relation <q>is greater than,</q> we ask if <m>3</m> <q>is greater than</q> <m>2</m>; that is, we usually write <m>3 > 2</m> instead of writing <m>(3,2) \in</m> <q><m>></m></q>.</p>
+
+
+        <p>In considering each of the examples given in this section, it is clear that a relation between sets <m>A</m> and <m>B</m> need not <q>use up</q> all of both sets. This idea leads us to consider those subsets of <m>A</m> and <m>B</m> whose elements are paired by the relation, namely the domain and range. Informally, we designate the domain of a relation <m>R</m> as the set of all elements of the set <m>A</m> that are actually paired with (or mapped to) at least one element in <m>B</m>. The range of a relation R may be described as the set of all elements in the set <m>B</m> to which at least one element of <m>A</m> is mapped. These concepts are defined formally in the definition below.</p>
+
 
     </section>
 
