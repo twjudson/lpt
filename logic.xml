@@ -38,12 +38,200 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     <section xml:id="logic-section-definitions">
     	<title>Definitions</title>
-    	<p>dfjkldfjdfk</p>
+    	
+        <definition xml:id="logic-definition-statement">
+            <p>A <terminology>statement</terminology> is a sentence which is either true or false. We will notationally speak of a statement <m>p</m> or a statement <m>q</m>.</p>
+        </definition>
+
+        <example xml:id="logic-example-statements">
+            <p>Each of the following sentences are statements.
+                <ol>
+                    <li>George Washington was the first President of the United States.</li>
+
+                    <li><m>2 + 3 = 5</m>.</li>
+
+                    <li>There are <m>12</m> inches in a foot.</li>
+
+                    <li>Harry S. Truman was the second President of the United States.</li>
+
+                    <li><m>4 \cdot 8 = 12</m>.</li>
+
+                    <li>There are <m>30</m> inches in a yard.</li>
+
+                </ol></p>
+        </example>
+
+        <p>Certainly we each recognize some underlying knowledge is required in interpreting the sentences in <xref ref="logic-example-statements" />. For instance, in the sentence <q><m>2 + 3 = 5</m>,</q> we assume recognition of the concepts of <m>2</m>, <m>3</m>, <m>5</m>, and addition base <m>10</m>. Nevertheless, we must make some general knowledge assumptions, and certainly the six sentences of <xref ref="logic-example-statements" />. are statements. (The first three sentences are true while the last three are false.)</p>
+
+        <example xml:id="logic-example-not-statements">
+            <p>Each of the following sentences are not statements.
+                <ol>
+
+                    <li><m>2 + 3</m></li>
+
+                    <li>Three is a nice number.</li>
+
+                    <li>It is going to rain today.</li>
+
+                    <li>Paul Newman is a handsome man.</li>
+
+                </ol></p>
+        </example>
+
+        <p>Clearly, the problem in each of these sentences is that their truth or falsity cannot be uniquely determined. You may dislike numbers and thus, in your mind, no number is nice, while someone else might think three is a very nice number. Depending on the date and location when it is read, the truth of sentence (2) could vary. Some foolish people might not agree that Paul Newman is handsome!</p>
+
+        <example xml:id="logic-example-paradox">
+            <p>Consider the following sentence. <q>This sentence is false.</q> This is not a statement. Why? The sentence in question is an example of what is known in mathematics as a paradox. If it is true, then it is false, while on the other hand, if it is false, then it is true. Such paradoxes are not statements.</p>
+        </example>
+
+        <p>What, then, is an axiom? Surely it must be a statement, but also something more. As we study a body of mathematical knowledge, we encounter new statements, some of which can be proven from the existing system.  These statements are called lemmas, theorems, facts, etc. Other statements cannot be proven. If we can in fact prove that the truth value of the statement is independent of the existing system, we have a potential axiom. We can either assume the statement is true, adding it to our system as an axiom, or we could assume the statement is false, adding its negative (or some form of its negative) to our system as an axiom. Surely, quite different bodies of knowledge would evolve depending on what axiom we added. The best examples of this concept are Euclidean geometry and the various non-Euclidean geometries.</p>
+
+        <p>Logicians as well as some other mathematicians are deeply concerned with such questions of creating minimal systems of axioms and developing mathematics very systematically from them. Such important but esoteric questions are beyond the scope and intent of this course. However, the remainder of this chapter will attempt to create a firm, logical base which will be used throughout this text and many subsequent courses the student will encounter.</p>
+
+        <p>For our purposes the student needs a basic feel for the flow of mathematics and a concrete understanding of the concept of bivalent logic applied to statements.</p>
+
+        <exercises>
+            <p>Determine whether or not the following sentences represent statements. If so, state the truth value.</p>
+
+            <exercise>
+                <statement>
+                    <p><m>7 \cdot 9 = 63</m>.</p>
+                </statement>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>There are more males than females registered in this class.</p>
+                </statement>
+            </exercise>  
+
+            <exercise>
+                <statement>
+                    <p><em>Gone with the Wind</em> is a good book.</p>
+                </statement>
+            </exercise>            
+          
+
+            <exercise>
+                <statement>
+                    <p>Eggs are a good source of calcium.</p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p><m>64 \div 2 = 37</m>.</p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p>The metric system of measurement is difficult to learn.</p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p>Summer is the best season of the year.</p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p>There are <m>30</m> people registered for this class.</p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p><m>\sqrt{64} = 9</m>.</p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p>Today is a beautiful day.</p>
+                </statement>
+            </exercise>            
+          
+        </exercises>
+
     </section>
 
     <section xml:id="logic-section-statements">
-    	<title>Statements</title>
-    	<p>dfjkldfjdfk</p>
+    	<title>Compound Statements</title>
+    	
+        <p>In <xref ref="logic-section-definitions" /> we defined a statement to be a sentence which is either true or false. Many statements we are interested in studying are actually combinations of several simpler ones. Then the problem of determining the truth value (truth or falsity) of such statements becomes one of discovering the truth value of the statements being combined as well as understanding the methods of combination. We will at this time consider the negation, conjunction, and disjunction of statements.</p>
+
+        <definition xml:id="logic-definition-negation">
+            <p>Let <m>p</m> be a statement. The <terminology>negation</terminology> of <m>p</m>, denoted <m>\sim\negmedspace p</m>, is a statement forming the denial of <m>p</m>. The statement <m>\sim\negmedspace p</m>, read <q>not p,</q> has the opposite truth value of <m>p</m>.</p>
+        </definition>
+
+        <example xml:id="logic-example-negation">
+            <p><ol>
+                <li>Consider the statement, <q>Austin is the capital of Texas.</q> The negation of that statement would be the statement, <q>Austin is not the capital of Texas.</q></li>
+
+                <li>The statement <q><m>2 + 3 = 5</m></q> has as its negation the statement <q><m>2 + 3 \neq 5</m>.</q></li>
+
+            </ol></p>
+        </example>
+
+        <p>Since one of our stated concerns in this section is the determination of the truth value of a given statement based upon the truth values of its component statements, we consider the concept of a truth table. Very simply, a truth table is exactly a table which indicates the relationships between the truth values of the statements forming the table. Thus, the truth table below (<xref ref="table-logic-negation" />) indicates the relationship between the statements <m>p</m> and <m>\sim\negmedspace p</m>, giving us the basic table for a negation.</p>
+
+        <table xml:id="table-logic-negation">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell><m>p</m></cell><cell><m>\sim\negmedspace p</m></cell>
+                </row>
+                            
+                <row>
+                    <cell>T</cell><cell>F</cell>
+                </row>                
+                <row bottom="medium">
+                    <cell>F</cell><cell>T</cell>
+                </row>
+           </tabular>
+            <caption>Truth table for negation</caption>
+        </table>
+
+        <p>Notice that the table shows that if <m>p</m> is true, then <m>\sim\negmedspace p</m> is false and if <m>p</m> is false, then <m>\sim\negmedspace p</m> is true. Truth tables become very useful when we deal with more complicated statements.</p>
+
+        <p>The first type of compound statement we consider is the conjunction. When combining statements in logic, the most important aspect of the definition is the truth value of the resulting statement in terms of the component statements.</p>
+
+        <definition xml:id="logic-definition-conjunction">
+            <p>Let <m>p</m> and <m>q</m> be statements. The <terminology>conjunction</terminology> of <m>p</m> and <m>q</m>, denoted <m>p \wedge q</m>, is the compound statement obtained by connecting and with the English connective <q>and.</q> The conjunction is true only when both <m>p</m> and <m>q</m> are true.</p>
+        </definition>
+
+        <example xml:id="logic-example-conjunction">
+            <p>The compound statement <q>Austin is the capital of Texas, and five is greater than two</q> is obtained by using <q>and</q> to connect the two statements <q>Austin is the capital of Texas</q> and <q>five is greater than two.</q></p>
+        </example>
+
+        <p>The key to understanding the conjunction is the truth table below (<xref ref="table-logic-conjunction" />), which systematically exhibits the four possible combinations of the truth values for <m>p</m> and <m>q</m>. Thus, we see that the conjunction of two statements is true only in the case when both statements are true.</p>
+
+        <table xml:id="table-logic-conjunction">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p \wedge q</m></cell>
+                </row>
+                <row>
+                    <cell>T</cell><cell>T</cell><cell>T</cell>
+                </row>                            <row>
+                    <cell>T</cell><cell>F</cell><cell>F</cell>
+                </row>                                        
+                <row>
+                    <cell>F</cell><cell>T</cell><cell>F</cell>
+                </row>                
+                <row bottom="medium">
+                    <cell>F</cell><cell>F</cell><cell>F</cell>
+                </row>
+           </tabular>
+            <caption>Truth table for conjunction</caption>
+        </table>
+
+        <definition xml:id="logic-definition-disjunction">
+            <p>Let <m>p</m> and <m>q</m> be statements. The <terminology>disjunction</terminology> of <m>p</m> and <m>q</m>, denoted <m>p \vee q</m>, is the compound statement obtained by connecting and with the English connective <q>or.</q> The conjunction is true when at least one of the statements is true.</p>
+        </definition>
+
     </section>
 
     <section xml:id="logic-section-tautologies">

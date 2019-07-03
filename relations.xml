@@ -121,7 +121,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     	<p>In many cases, listing all the ordered pairs in a relation is tedious or simply impossible. Under those circumstances the relation may be described in many different ways; associated ordered pairs are indicated by specifying a defining rule.</p>
 
-    	<example xml:id="relations-example-relation-picture">
+    	<example xml:id="relations-example-relation-ordered-pairs">
     		<p>The equation <m>x + y = 4</m> describes a relation, <m>R</m>, consisting of an infinite set of ordered pairs whose components will satisfy the equation. Hence, the ordered pairs <m>(2, 2)</m>, <m>( 3/2, 5/2 )</m>, <m>(-7, 11)</m>, and <m>(0, 4)</m> are a few of the elements in the relation. Precisely stated,
     			<me>R(x,y) = \{ (x, y) \in \mathbb R \times \mathbb R \mid x + y = 4 \}</me>
     		That is, the relation described by the equation is actually the infinite set of ordered pairs of real numbers whose sum is equal to <m>4</m>. In the following figure, we have indicated all the ordered pairs which satisfy the linear equation; this is sometimes called the graphical representation of the equation.</p>
@@ -152,6 +152,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 
         <p>In considering each of the examples given in this section, it is clear that a relation between sets <m>A</m> and <m>B</m> need not <q>use up</q> all of both sets. This idea leads us to consider those subsets of <m>A</m> and <m>B</m> whose elements are paired by the relation, namely the domain and range. Informally, we designate the domain of a relation <m>R</m> as the set of all elements of the set <m>A</m> that are actually paired with (or mapped to) at least one element in <m>B</m>. The range of a relation R may be described as the set of all elements in the set <m>B</m> to which at least one element of <m>A</m> is mapped. These concepts are defined formally in the definition below.</p>
+
+
 
 
     </section>
