@@ -232,6 +232,87 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <p>Let <m>p</m> and <m>q</m> be statements. The <terminology>disjunction</terminology> of <m>p</m> and <m>q</m>, denoted <m>p \vee q</m>, is the compound statement obtained by connecting and with the English connective <q>or.</q> The conjunction is true when at least one of the statements is true.</p>
         </definition>
 
+        <p>A brief comment about <q>or</q> must be noted. As used in a mathematical/logical sense, <q>or</q> is interpreted in the inclusive sense. That is, <a>or</a> is interpreted as and/or, meaning one and/or the other is true. Consider carefully the truth table for the disjunction (<xref ref="table-logic-disjunction" />). So we see the disjunction is false only when both <m>p</m> and <m>q</m> are false. (The exclusive use of <q>or</q> would yield truth only if exactly one of the two statements were true.)</p>
+
+        <table xml:id="table-logic-disjunction">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p \wedge q</m></cell>
+                </row>
+                <row>
+                    <cell>T</cell><cell>T</cell><cell>T</cell>
+                </row>                            <row>
+                    <cell>T</cell><cell>F</cell><cell>T</cell>
+                </row>                                        
+                <row>
+                    <cell>F</cell><cell>T</cell><cell>T</cell>
+                </row>                
+                <row bottom="medium">
+                    <cell>F</cell><cell>F</cell><cell>T</cell>
+                </row>
+           </tabular>
+            <caption>Truth table for disjunction</caption>
+        </table>
+
+
+        <example xml:id="logic-example-disjunction">
+            <p>Consider the four disjunctions.
+                <ol>
+                    <li>Austin is the capital of Texas or five is greater than two.</li>
+
+                    <li>Austin is the capital of Texas or five is less than two.</li>
+
+                    <li>Austin is not the capital of Texas or two is less than five.</li>
+
+                    <li>Austin is not the capital of Texas or five is less than two.</li>
+
+                </ol>
+            Here we see the first three compound sentences are disjunctions which are true, while the disjunction in (4) is false.</p>
+        </example>
+
+        <p>Another way of logically combining statements is the conditional statement, which is the heart of mathematical logic.</p>
+
+        <definition xml:id="logic-definition-conditional">
+            <p>Let <m>p</m> and <m>q</m> be statements. The <terminaology>conditional statement</terminaology> is the compound statement obtained by considering this statement: <q>if <m>p</m>, then <m>q</m></q> or <q><m>p</m> implies <m>q</m>,</q> and is denoted <m>p \rightarrow q</m>. The conditional is true unless <m>p</m> is true and <m>q</m> is false.</p>
+        </definition>
+
+        <p>In mathematics/logic the truth table for a conditional statement is given in <xref ref="table-logic-conditional" />.</p>
+
+        <table xml:id="table-logic-conditional">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p \rightarrow q</m></cell>
+                </row>
+                <row>
+                    <cell>T</cell><cell>T</cell><cell>T</cell>
+                </row>                            <row>
+                    <cell>T</cell><cell>F</cell><cell>F</cell>
+                </row>                                        
+                <row>
+                    <cell>F</cell><cell>T</cell><cell>T</cell>
+                </row>                
+                <row bottom="medium">
+                    <cell>F</cell><cell>F</cell><cell>T</cell>
+                </row>
+           </tabular>
+            <caption>Truth table for a conditional statement</caption>
+        </table>
+
+        <example xml:id="logic-example-conditional">
+            <p>Consider the four conditional statements.
+                <ol>
+                    <li>If Austin is the capital of Texas, then five is greater than two.</li>
+
+                    <li>If Austin is the capital of Texas, then five is less than two.</li>
+
+                    <li>If Austin is not the capital of Texas, then two is less than five.</li>
+
+                    <li>If Austin is not the capital of Texas, then five is less than two.</li>
+
+                </ol>
+            Here we see the first three compound sentences are disjunctions which are true, while the disjunction in (4) is false.</p>
+        </example>
+
     </section>
 
     <section xml:id="logic-section-tautologies">
