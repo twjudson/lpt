@@ -310,7 +310,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     <li>If Austin is not the capital of Texas, then five is less than two.</li>
 
                 </ol>
-            Here we see the first three compound sentences are disjunctions which are true, while the disjunction in (4) is false.</p>
+            Here we see the first three compound sentences are disjunctions which are true, while the disjunction in (4) is false. Here we see by the truth table defining the truth value of a conditional statement that (1), (3),and (4) are true conditional statements while (2) is a false conditional statement. Notice that we can determine the truth value of these statements even though the component statements appear to be totally unrelated in terms of cause and effect!</p>
         </example>
 
     </section>
