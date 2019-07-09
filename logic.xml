@@ -40,7 +40,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     	<title>Definitions</title>
     	
         <definition xml:id="logic-definition-statement">
-            <p>A <terminology>statement</terminology> is a sentence which is either true or false. We will notationally speak of a statement <m>p</m> or a statement <m>q</m>.</p>
+            <p>A <em><term>statement</term></em> is a sentence which is either true or false. We will notationally speak of a statement <m>p</m> or a statement <m>q</m>.</p>
         </definition>
 
         <example xml:id="logic-example-statements">
@@ -164,7 +164,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <p>In <xref ref="logic-section-definitions" /> we defined a statement to be a sentence which is either true or false. Many statements we are interested in studying are actually combinations of several simpler ones. Then the problem of determining the truth value (truth or falsity) of such statements becomes one of discovering the truth value of the statements being combined as well as understanding the methods of combination. We will at this time consider the negation, conjunction, and disjunction of statements.</p>
 
         <definition xml:id="logic-definition-negation">
-            <p>Let <m>p</m> be a statement. The <terminology>negation</terminology> of <m>p</m>, denoted <m>\sim\negmedspace p</m>, is a statement forming the denial of <m>p</m>. The statement <m>\sim\negmedspace p</m>, read <q>not p,</q> has the opposite truth value of <m>p</m>.</p>
+            <p>Let <m>p</m> be a statement. The <em><term>negation</term></em> of <m>p</m>, denoted <m>\sim\negmedspace p</m>, is a statement forming the denial of <m>p</m>. The statement <m>\sim\negmedspace p</m>, read <q>not p,</q> has the opposite truth value of <m>p</m>.</p>
         </definition>
 
         <example xml:id="logic-example-negation">
@@ -199,7 +199,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <p>The first type of compound statement we consider is the conjunction. When combining statements in logic, the most important aspect of the definition is the truth value of the resulting statement in terms of the component statements.</p>
 
         <definition xml:id="logic-definition-conjunction">
-            <p>Let <m>p</m> and <m>q</m> be statements. The <terminology>conjunction</terminology> of <m>p</m> and <m>q</m>, denoted <m>p \wedge q</m>, is the compound statement obtained by connecting and with the English connective <q>and.</q> The conjunction is true only when both <m>p</m> and <m>q</m> are true.</p>
+            <p>Let <m>p</m> and <m>q</m> be statements. The <em><term>conjunction</term></em> of <m>p</m> and <m>q</m>, denoted <m>p \wedge q</m>, is the compound statement obtained by connecting and with the English connective <q>and.</q> The conjunction is true only when both <m>p</m> and <m>q</m> are true.</p>
         </definition>
 
         <example xml:id="logic-example-conjunction">
@@ -229,7 +229,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </table>
 
         <definition xml:id="logic-definition-disjunction">
-            <p>Let <m>p</m> and <m>q</m> be statements. The <terminology>disjunction</terminology> of <m>p</m> and <m>q</m>, denoted <m>p \vee q</m>, is the compound statement obtained by connecting and with the English connective <q>or.</q> The conjunction is true when at least one of the statements is true.</p>
+            <p>Let <m>p</m> and <m>q</m> be statements. The <em><term>disjunction</term></em> of <m>p</m> and <m>q</m>, denoted <m>p \vee q</m>, is the compound statement obtained by connecting and with the English connective <q>or.</q> The conjunction is true when at least one of the statements is true.</p>
         </definition>
 
         <p>A brief comment about <q>or</q> must be noted. As used in a mathematical/logical sense, <q>or</q> is interpreted in the inclusive sense. That is, <a>or</a> is interpreted as and/or, meaning one and/or the other is true. Consider carefully the truth table for the disjunction (<xref ref="table-logic-disjunction" />). So we see the disjunction is false only when both <m>p</m> and <m>q</m> are false. (The exclusive use of <q>or</q> would yield truth only if exactly one of the two statements were true.)</p>
@@ -273,7 +273,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <p>Another way of logically combining statements is the conditional statement, which is the heart of mathematical logic.</p>
 
         <definition xml:id="logic-definition-conditional">
-            <p>Let <m>p</m> and <m>q</m> be statements. The <terminaology>conditional statement</terminaology> is the compound statement obtained by considering this statement: <q>if <m>p</m>, then <m>q</m></q> or <q><m>p</m> implies <m>q</m>,</q> and is denoted <m>p \rightarrow q</m>. The conditional is true unless <m>p</m> is true and <m>q</m> is false.</p>
+            <p>Let <m>p</m> and <m>q</m> be statements. The <em><term>conditional statement</term></em> is the compound statement obtained by considering this statement: <q>if <m>p</m>, then <m>q</m></q> or <q><m>p</m> implies <m>q</m>,</q> and is denoted <m>p \rightarrow q</m>. The conditional is true unless <m>p</m> is true and <m>q</m> is false.</p>
         </definition>
 
         <p>In mathematics/logic the truth table for a conditional statement is given in <xref ref="table-logic-conditional" />.</p>
@@ -312,6 +312,122 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </ol>
             Here we see the first three compound sentences are disjunctions which are true, while the disjunction in (4) is false. Here we see by the truth table defining the truth value of a conditional statement that (1), (3),and (4) are true conditional statements while (2) is a false conditional statement. Notice that we can determine the truth value of these statements even though the component statements appear to be totally unrelated in terms of cause and effect!</p>
         </example>
+
+        <p>We emphasize that the student must understand that conditional statements have truth values precisely as assigned by the definition. That is, to determine truth value, we do not need to be able to <q>prove</q> or <q>disprove</q> the consequence from the hypothesis. Certainly <q>proving</q> things will be the ultimate focus of this course, but at this time we are simply discovering the ways of combining statements logically and the resulting truth values of such combinations.</p>
+
+        <p>The last compound statement we will introduce is the biconditional statement.</p>
+
+        <definition xml:id="logic-definition-biconditional">
+            <p>Consider two statements <m>p</m> and <m>q</m>. <em><term>The biconditional statement</term></em> is the compound statement <q><m>p</m> if and only if <m>q</m></q> or <q><m>p</m> is equivalent to <m>q</m>,</q> denoted <m>p \leftrightarrow q</m>. Frequently we write <q><m>p</m> iff <m>q</m></q> as a shorthand notation for <q><m>p</m> if and only if <m>q</m>.</q></p>
+        </definition>
+
+        <p>Two statements, no matter how complicated, are equivalent when they have precisely the same truth value. You can find the truth table for the biconditional statement in <xref ref="table-logic-biconditional" />.</p>
+
+        <table xml:id="table-logic-biconditional">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p \leftrightarrow q</m></cell>
+                </row>
+                <row>
+                    <cell>T</cell><cell>T</cell><cell>T</cell>
+                </row>                            <row>
+                    <cell>T</cell><cell>F</cell><cell>F</cell>
+                </row>                                        
+                <row>
+                    <cell>F</cell><cell>T</cell><cell>F</cell>
+                </row>                
+                <row bottom="medium">
+                    <cell>F</cell><cell>F</cell><cell>T</cell>
+                </row>
+           </tabular>
+            <caption>Truth table for a biconditional statement</caption>
+        </table>
+
+        <example xml:id="logic-example-biconditional">
+            <p>Consider the four biconditional statements.
+                <ol>
+                    <li>If Austin is the capital of Texas if and only if five is greater than two.</li>
+
+                    <li>If Austin is the capital of Texas if and only if five is less than two.</li>
+
+                    <li>If Austin is not the capital of Texas if and only if two is less than five.</li>
+
+                    <li>If Austin is not the capital of Texas if and only if five is less than two.</li>
+
+                </ol>
+            Here we see that (1) and (4) are true biconditional statements while (2) and (3) are false.</p>
+        </example>
+
+        <p>Mathematicians  often use other expressions to describe conditional type statements. A few of the most common such expressions are given below.
+            <ul>
+
+                <li><m>p \leftrightarrow q</m>: <q><m>p</m> is a necessary and sufficient condition for <m>q</m>.</q></li>
+
+                <li><m>p \rightarrow q</m>: <q><m>p</m> is a sufficient condition for <m>q</m>.</q></li>
+
+                <li><m>q \rightarrow p</m>: <q><m>p</m> is a necessary condition for <m>q</m>.</q></li>
+
+            </ul>
+        Since it is easy to confuse these expressions, you must always carefully identify the hypothesis and conclusion before working with any conditional type statement.</p>
+
+        <p>Again we stress that we are not attempting to <q>prove</q> anything yet, but rather only define a compound statement and its truth value in terms of the truth values of the statements used to obtain it.</p>
+            
+        <p>In order to determine the truth values of more complicated statements, it is critical that you thoroughly understand and remember these five basic truth tables. That is, sufficient time must be spent digesting these tables and examples in order that you need not constantly refer back to the basic tables when working on more difficult ones.</p>
+
+        <p>Before going on to the last definition and fact of this section, we give an example of a more involved statement along with a step-by-step approach to constructing the associated table. We note that there are several methods available for constructing truth tables. We will exhibit one in the example below and employ an alternate approach in the proof of <xref ref="logic-fact-equivalency-of-contrapositive" /> at the end of this section. You should adopt the one most comfortable and appropriate for dealing with the statement at hand.</p>
+
+        <example xml:id="logic-example-truth-table">
+            <p>Let us construct the truth table (<xref ref="table-logic-truth-table-example" />) for the statement
+                <me>(q \wedge p) \vee [q \wedge (\sim\negmedspace p)].</me>
+                After listing the component statements and all possible combinations of truth values associated with them in the table, the remaining compound statements should be given in the order in which they will be considered. This is done much like ordering of operations in an arithmetic problem or an algebraic expression.</p>
+
+            <table xml:id="table-logic-truth-table-example">
+                <tabular halign="center" top="medium">
+                    <row bottom="medium">
+                        <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>\sim\negmedspace p</m></cell><cell><m>q \wedge p</m></cell><cell><m>q \wedge (\sim\negmedspace p)</m></cell><cell><m>(q \wedge p) \vee [q \wedge (\sim\negmedspace p)]</m></cell>
+                    </row>
+                    <row>
+                        <cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell>
+                    </row>                            <row>
+                        <cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell>
+                    </row>                                        
+                    <row>
+                        <cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell>
+                    </row>                
+                    <row bottom="medium">
+                        <cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell>
+                    </row>
+               </tabular>
+                <caption>Truth table for <m>(q \wedge p) \vee [q \wedge (\sim\negmedspace p)]</m></caption>
+            </table>
+        </example>
+
+        <p>We now give a final definition that relates conditional statements and negation.</p>
+
+        <definition xml:id="logic-definition-converse-inverse-contrapositive">
+            <p>Consider two statements <m>p</m> and <m>q</m>. The statement <m>q \rightarrow p</m> is the <em><term>converse</term></em> of <m>p \rightarrow q</m>. The statement <m>\sim\negmedspace q \rightarrow \sim\negmedspace p</m> is the <em><term>contrapositive</term></em> of <m>p \rightarrow q</m>. The statement <m>\sim\negmedspace p \rightarrow \sim\negmedspace q</m> is the <em><term>inverse</term></em> of <m>p \rightarrow q</m>.</p>
+        </definition>
+
+        <p>It is worth noting that the converse of the inverse is the contrapositive. You should also note that the terms <q>inverse</q> and <q>negation</q> are not interchangeable.</p>
+
+        <p>You should be aware that there are conventions governing the use or lack of use of parentheses in logical statements which are similar to those used to interpret algebraic expressions. Although we sometimes use grouping symbols for emphasis, such grouping symbols are often unnecessary for clarity of meaning.  For example, in the expression , the meaning of
+the statement is unambiguous but could have been written
+important for the student to realize that the negation symbol preceding the statement
+unless indicated otherwise. The grouping symbols in the expressions
+and produce statements with entirely different meanings.
+. It is especially applies only to</p>
+
+        <fact xml:id="logic-fact-equivalency-of-contrapositive">
+            <p>Consider two statements <m>p</m> and <m>q</m>.
+                <ol>
+
+                    <li><m>(p \rightarrow q) \leftrightarrow [(\sim\negmedspace q) \rightarrow (\sim\negmedspace p)]</m>; that is, the conditional is equivalent to its contrapositive.</li>
+
+                    <li><m>[(\sim\negmedspace p) \rightarrow (\sim\negmedspace q)] \leftrightarrow (q \rightarrow p) </m>; that is, the inverse is equivalent to the converse.</li>
+
+                </ol></p>
+            </fact>
+
 
     </section>
 
