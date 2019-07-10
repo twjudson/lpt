@@ -410,12 +410,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <p>It is worth noting that the converse of the inverse is the contrapositive. You should also note that the terms <q>inverse</q> and <q>negation</q> are not interchangeable.</p>
 
-        <p>You should be aware that there are conventions governing the use or lack of use of parentheses in logical statements which are similar to those used to interpret algebraic expressions. Although we sometimes use grouping symbols for emphasis, such grouping symbols are often unnecessary for clarity of meaning.  For example, in the expression , the meaning of
-the statement is unambiguous but could have been written
-important for the student to realize that the negation symbol preceding the statement
-unless indicated otherwise. The grouping symbols in the expressions
-and produce statements with entirely different meanings.
-. It is especially applies only to</p>
+        <p>You should be aware that there are conventions governing the use or lack of use of parentheses in logical statements that are similar to those used to interpret algebraic expressions. Although we sometimes use grouping symbols for emphasis, such grouping symbols are often unnecessary for clarity of meaning.  For example, the expression <m>[ (\sim\negmedspace p) \wedge q] \rightarrow [(\sim\negmedspace r) \vee (\sim\negmedspace s)]</m> could have been written  <m>\sim\negmedspace p \wedge q \rightarrow \sim\negmedspace r \vee \sim\negmedspace s</m>. It is important for you to realize that the negation symbol preceding the <m>p</m> statement applies only to <m>p</m> unless indicated otherwise. However, the grouping symbols in the expressions <m>[ \sim\negmedspace (p \wedge q)] \rightarrow [(\sim\negmedspace r) \rightarrow (\sim\negmedspace s)]</m> and <m>\sim\negmedspace \{(p \wedge q) \rightarrow [(\sim\negmedspace r) \rightarrow (\sim\negmedspace s)]\}</m> produce statements with entirely different meanings.</p>
 
         <fact xml:id="logic-fact-equivalency-of-contrapositive">
             <p>Consider two statements <m>p</m> and <m>q</m>.
@@ -426,8 +421,99 @@ and produce statements with entirely different meanings.
                     <li><m>[(\sim\negmedspace p) \rightarrow (\sim\negmedspace q)] \leftrightarrow (q \rightarrow p) </m>; that is, the inverse is equivalent to the converse.</li>
 
                 </ol></p>
-            </fact>
+        </fact>
 
+        <proof>
+            <p>To demonstrate the proof of (1) in <xref ref="logic-fact-equivalency-of-contrapositive" />, we need only examine the corresponding truth table <xref ref="table-logic-equivalency-of-contrapositive" />.  Since the last two columns are the same, the conditional statement and its contrapostive are equivalent.</p>
+
+            <table xml:id="table-logic-equivalency-of-contrapositive">
+                <tabular halign="center" top="medium">
+                    <row bottom="medium">
+                        <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>\sim\negmedspace p</m></cell><cell><m>\sim\negmedspace q</m></cell><cell><m>p \rightarrow q</m></cell><cell><m>\sim\negmedspace q \rightarrow \sim\negmedspace p</m></cell>
+                    </row>
+                    <row>
+                        <cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell>
+                    </row>                            <row>
+                        <cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell>
+                    </row>                                        
+                    <row>
+                        <cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell>
+                    </row>                
+                    <row bottom="medium">
+                        <cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+                    </row>
+               </tabular>
+                <caption>Truth table for <m>(p \rightarrow q) \leftrightarrow (\sim\negmedspace q \rightarrow \sim\negmedspace p)</m></caption>
+            </table>
+
+            <p>We will leave the proof of (2) as an exercise.</p>
+        </proof>
+
+        <exercises>
+            <p>Determine whether or not the following sentences represent statements. If so, state the truth value.</p>
+
+            <exercise>
+                <statement>
+                    <p><m>7 \cdot 9 = 63</m>.</p>
+                </statement>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>There are more males than females registered in this class.</p>
+                </statement>
+            </exercise>  
+
+            <exercise>
+                <statement>
+                    <p><em>Gone with the Wind</em> is a good book.</p>
+                </statement>
+            </exercise>            
+          
+
+            <exercise>
+                <statement>
+                    <p>Eggs are a good source of calcium.</p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p><m>64 \div 2 = 37</m>.</p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p>The metric system of measurement is difficult to learn.</p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p>Summer is the best season of the year.</p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p>There are <m>30</m> people registered for this class.</p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p><m>\sqrt{64} = 9</m>.</p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p>Today is a beautiful day.</p>
+                </statement>
+            </exercise>            
+          
+        </exercises>
 
     </section>
 
