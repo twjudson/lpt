@@ -450,17 +450,43 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </proof>
 
         <exercises>
-            <p>Determine whether or not the following sentences represent statements. If so, state the truth value.</p>
 
             <exercise>
                 <statement>
-                    <p><m>7 \cdot 9 = 63</m>.</p>
+                    <p>Translate the following English statements using propositional notation.
+                        <ol>
+                            
+                            <li>An integer is odd if and only if its square is odd.</li>
+
+                            <li>If I do not study, then I will fail this class.</li>
+
+                            <li>Either I will go shopping or I will go to a movie.</li>
+
+                            <li>I was well qualified, but I did not get the job.</li>
+
+                            <li>If <m>n</m> is an integer, then <m>n</m> is even or <m>n</m> is odd.</li>
+
+                            <li>The square of an even integer is an even integer.</li>
+
+                        </ol></p>
                 </statement>
             </exercise>
             
             <exercise>
                 <statement>
-                    <p>There are more males than females registered in this class.</p>
+                    <p>Negate each of the following statements. (Refer to the definition of negation.)
+                        <ol>
+
+                            <li>A positive number is larger than zero.</li>
+
+                            <li>If today is Saturday, then I do not have to go to work.</li>
+
+                            <li>Dogs can bark and cats can climb trees.</li>
+
+                            <li>If <m>x^2 - 9 = 0</m>,then either <m>x = 3</m> or <m>x = -3</m>.</li>
+
+                        </ol>
+                    Note: The difficulties of negating compound statements will be vastly simplified by the tautologies studied in the next section.</p>
                 </statement>
             </exercise>  
 
