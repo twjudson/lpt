@@ -492,50 +492,84 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
             <exercise>
                 <statement>
-                    <p><em>Gone with the Wind</em> is a good book.</p>
+                    <p>For the conditional statements given below, give the converse, the inverse, and the contrapositive.
+                        <ol>
+
+                            <li>If I teach third grade, then I am an elementary school teacher.</li>
+
+                            <li>If I do not get to class on time, then I will not be allowed to take the exam.</li>
+
+                            <li>I will return the calls and dictate the letter when I arrive at the office.</li>
+
+                            <li>If <m>(x + 1)(x - 4) = 0</m>, then <m>x = -1</m> or <m>x = 4</m>.</li>
+
+                            <li>If a number has a factor of <m>4</m>,then it has a factor of <m>2</m>.</li>
+
+                        </ol></p>
                 </statement>
             </exercise>            
           
 
             <exercise>
                 <statement>
-                    <p>Eggs are a good source of calcium.</p>
+                    <p>Restate the following in a logically equivalent form.
+                        <ol>
+
+                            <li>It is not true that both today is Wednesday and the month is June.</li>
+
+                            <li>It is not true that yesterday I both ate breakfast and watched television.</li>
+
+                            <li>It is not raining, or it is not July.</li>
+
+                        </ol></p>
                 </statement>
             </exercise>            
           
             <exercise>
                 <statement>
-                    <p><m>64 \div 2 = 37</m>.</p>
+                    <p>In the following statements, remove those grouping symbols which are unnecessary for clarity of meaning.
+                        <ol>
+
+                            <li><m>p \vee [(\sim\negmedspace p) \wedge q]</m></li>
+
+                            <li><m>[\sim\negmedspace(p \rightarrow q)] \wedge q</m></li>
+
+                            <li><m>[p \wedge (\sim\negmedspace q)] \vee (p \wedge q)</m></li>
+
+                            <li><m>\{  \sim\negmedspace[ p \vee (\sim\negmedspace r) ] \vee (q \wedge p)\} \rightarrow p</m></li>
+
+                        </ol></p>
                 </statement>
             </exercise>            
           
             <exercise>
                 <statement>
-                    <p>The metric system of measurement is difficult to learn.</p>
+                    <p>Construct truth tables for the following compound statements.</p>
                 </statement>
             </exercise>            
           
             <exercise>
                 <statement>
-                    <p>Summer is the best season of the year.</p>
+                    <p>For integers <m>x</m> and <m>y</m>, find the inverse, the converse, the contrapositive, and the negation of each of the following statements.</p>
                 </statement>
             </exercise>            
           
             <exercise>
                 <statement>
-                    <p>There are <m>30</m> people registered for this class.</p>
+                    <p>Give two examples from mathematics which satisfy the given conditions.</p>
                 </statement>
             </exercise>            
           
             <exercise>
                 <statement>
-                    <p><m>\sqrt{64} = 9</m>.</p>
+                    <p>Decide if the conditional statements are true or false.</p>
                 </statement>
             </exercise>            
           
             <exercise>
                 <statement>
-                    <p>Today is a beautiful day.</p>
+                    <p>Let <m>m</m> and <m>n</m> be integers and consider the statement <m>p \rightarrow q</m> given by, <q>If <m>m +
+                    n</m> is even, then <m>m</m> and <m>n</m> are even.</q></p>
                 </statement>
             </exercise>            
           
