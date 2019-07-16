@@ -30,15 +30,24 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <titlepage>
 
         <author>
-            <personname>Thomas W. Judson</personname>
+            <personname>Kimberly M. Childs, Author</personname>
             <department>Department of Mathematics and Statistics</department>
             <institution>Stephen F. Austin State University</institution>
-            <email>judsontw@sfasu.edu</email>
+            <email>kchilds@sfasu.edu</email>
+        </author>
+
+        <author>
+            <personname>Deborah A. Pace, Author</personname>
+            <department>Department of Mathematics and Statistics</department>
+            <institution>Stephen F. Austin State University</institution>
+            <email>dpace@sfasu.edu</email>
         </author>
 
         <editor>
             <personname>Thomas W. Judson</personname>
+            <department>Department of Mathematics and Statistics</department>
             <institution>Stephen F. Austin State University</institution>
+            <email>judsontw@sfasu.edu</email>
         </editor>
 
         <date><today /></date>
@@ -57,8 +66,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </website>
 
         <copyright>
-            <year>1997<ndash />2015</year>
-            <holder>Thomas W. Judson, Robert A. Beezer</holder>
+            <year>2019</year>
+            <holder>Kimberly M. Childs, Thomas W. Judson, Deborah A. Pace</holder>
             <minilicense>GFDL License</minilicense>
             <shortlicense>Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license is included in the appendix entitled <q>GNU Free Documentation License.</q>  All trademarks<trademark /> are the registered<registered /> marks of their respective owners.</shortlicense>
         </copyright>
@@ -112,7 +121,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     </preface>
 
     <preface xml:id="contributors">
-        <title>Contributors to the 4<m>^\mathrm{th}</m> Edition</title>
+        <title>Contributors to the 2<m>^\mathrm{nd}</m> Edition</title>
 
         <p>Many individuals have made this book possible.  We will try to thank a few of them here, and hope we have not forgotten anybody really important.</p>
 
@@ -125,13 +134,33 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </contributor>
 
             <contributor>
-                <personname>Robert Beezer</personname>
-                <department>Department of Mathematics and Computer Science</department>
-                <institution>University of Puget Sound</institution>
-                <location>Tacoma, Washington, USA</location>
-                <email>beezer@pugetsound.edu</email>
+                <personname>Lesa L. Beverly</personname>
+                <department>Department of Mathematics and Statistics</department>
+                <institution>Stephen F. Austin State University</institution>
+                <email>beverlyll@sfasu.edu</email>
             </contributor>
 
+            <contributor>
+                <personname>Brian Beavers</personname>
+                <department>Department of Mathematics and Statistics</department>
+                <institution>Stephen F. Austin State University</institution>
+                <email>beaversbd@sfasu.edu</email>
+            </contributor>
+
+            <contributor>
+                <personname>Jane H. Long</personname>
+                <department>Department of Mathematics and Statistics</department>
+                <institution>Stephen F. Austin State University</institution>
+                <email>longjh@sfasu.edu</email>
+            </contributor>
+ 
+             <contributor>
+                <personname>Clint Richardson</personname>
+                <department>Department of Mathematics and Statistics</department>
+                <institution>Stephen F. Austin State University</institution>
+                <email>crichardson@sfasu.edu</email>
+            </contributor>
+                       
         </contributors>
 
         <p>That's it.  Thanks everybody.</p>
