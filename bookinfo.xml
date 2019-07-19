@@ -17,6 +17,7 @@
 
     <macros>
     \newcommand{\identity}{\mathrm{id}}
+    \newcommand{\negate}{\sim\negmedspace}
     \newcommand{\notdivide}{{\not{\mid}}}
     \newcommand{\notsubset}{\not\subset}
     \newcommand{\lcm}{\operatorname{lcm}}
@@ -27,6 +28,7 @@
     \newcommand{\cis}{\operatorname{cis}}
     \newcommand{\chr}{\operatorname{char}}
     \newcommand{\Null}{\operatorname{Null}}
+
     </macros>
 
     <!-- this is the default, but supresses a warning -->

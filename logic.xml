@@ -160,7 +160,7 @@
         <p>In <xref ref="logic-section-definitions" /> we defined a statement to be a sentence which is either true or false. Many statements we are interested in studying are actually combinations of several simpler ones. Then the problem of determining the truth value (truth or falsity) of such statements becomes one of discovering the truth value of the statements being combined as well as understanding the methods of combination. We will at this time consider the negation, conjunction, and disjunction of statements.</p>
 
         <definition xml:id="logic-definition-negation">
-            <p>Let <m>p</m> be a statement. The <em><term>negation</term></em> of <m>p</m>, denoted <m>\sim\negmedspace p</m>, is a statement forming the denial of <m>p</m>. The statement <m>\sim\negmedspace p</m>, read <q>not p,</q> has the opposite truth value of <m>p</m>.</p>
+            <p>Let <m>p</m> be a statement. The <em><term>negation</term></em> of <m>p</m>, denoted <m>\negate p</m>, is a statement forming the denial of <m>p</m>. The statement <m>\negate p</m>, read <q>not p,</q> has the opposite truth value of <m>p</m>.</p>
         </definition>
 
         <example xml:id="logic-example-negation">
@@ -172,12 +172,12 @@
             </ol></p>
         </example>
 
-        <p>Since one of our stated concerns in this section is the determination of the truth value of a given statement based upon the truth values of its component statements, we consider the concept of a truth table. Very simply, a truth table is exactly a table which indicates the relationships between the truth values of the statements forming the table. Thus, the truth table below (<xref ref="table-logic-negation" />) indicates the relationship between the statements <m>p</m> and <m>\sim\negmedspace p</m>, giving us the basic table for a negation.</p>
+        <p>Since one of our stated concerns in this section is the determination of the truth value of a given statement based upon the truth values of its component statements, we consider the concept of a truth table. Very simply, a truth table is exactly a table which indicates the relationships between the truth values of the statements forming the table. Thus, the truth table below (<xref ref="table-logic-negation" />) indicates the relationship between the statements <m>p</m> and <m>\negate p</m>, giving us the basic table for a negation.</p>
 
         <table xml:id="table-logic-negation">
            <tabular halign="center" top="medium">
                 <row bottom="medium">
-                    <cell><m>p</m></cell><cell><m>\sim\negmedspace p</m></cell>
+                    <cell><m>p</m></cell><cell><m>\negate p</m></cell>
                 </row>
                             
                 <row>
@@ -190,7 +190,7 @@
             <caption>Truth table for negation</caption>
         </table>
 
-        <p>Notice that the table shows that if <m>p</m> is true, then <m>\sim\negmedspace p</m> is false and if <m>p</m> is false, then <m>\sim\negmedspace p</m> is true. Truth tables become very useful when we deal with more complicated statements.</p>
+        <p>Notice that the table shows that if <m>p</m> is true, then <m>\negate p</m> is false and if <m>p</m> is false, then <m>\negate p</m> is true. Truth tables become very useful when we deal with more complicated statements.</p>
 
         <p>The first type of compound statement we consider is the conjunction. When combining statements in logic, the most important aspect of the definition is the truth value of the resulting statement in terms of the component statements.</p>
 
@@ -374,13 +374,13 @@
 
         <example xml:id="logic-example-truth-table">
             <p>Let us construct the truth table (<xref ref="table-logic-truth-table-example" />) for the statement
-                <me>(q \wedge p) \vee [q \wedge (\sim\negmedspace p)].</me>
+                <me>(q \wedge p) \vee [q \wedge (\negate p)].</me>
                 After listing the component statements and all possible combinations of truth values associated with them in the table, the remaining compound statements should be given in the order in which they will be considered. This is done much like ordering of operations in an arithmetic problem or an algebraic expression.</p>
 
             <table xml:id="table-logic-truth-table-example">
                 <tabular halign="center" top="medium">
                     <row bottom="medium">
-                        <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>\sim\negmedspace p</m></cell><cell><m>q \wedge p</m></cell><cell><m>q \wedge (\sim\negmedspace p)</m></cell><cell><m>(q \wedge p) \vee [q \wedge (\sim\negmedspace p)]</m></cell>
+                        <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>\negate p</m></cell><cell><m>q \wedge p</m></cell><cell><m>q \wedge (\negate p)</m></cell><cell><m>(q \wedge p) \vee [q \wedge (\negate p)]</m></cell>
                     </row>
                     <row>
                         <cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell>
@@ -394,27 +394,27 @@
                         <cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell>
                     </row>
                </tabular>
-                <caption>Truth table for <m>(q \wedge p) \vee [q \wedge (\sim\negmedspace p)]</m></caption>
+                <caption>Truth table for <m>(q \wedge p) \vee [q \wedge (\negate p)]</m></caption>
             </table>
         </example>
 
         <p>We now give a final definition that relates conditional statements and negation.</p>
 
         <definition xml:id="logic-definition-converse-inverse-contrapositive">
-            <p>Consider two statements <m>p</m> and <m>q</m>. The statement <m>q \rightarrow p</m> is the <em><term>converse</term></em> of <m>p \rightarrow q</m>. The statement <m>\sim\negmedspace q \rightarrow \sim\negmedspace p</m> is the <em><term>contrapositive</term></em> of <m>p \rightarrow q</m>. The statement <m>\sim\negmedspace p \rightarrow \sim\negmedspace q</m> is the <em><term>inverse</term></em> of <m>p \rightarrow q</m>.</p>
+            <p>Consider two statements <m>p</m> and <m>q</m>. The statement <m>q \rightarrow p</m> is the <em><term>converse</term></em> of <m>p \rightarrow q</m>. The statement <m>\negate q \rightarrow \negate p</m> is the <em><term>contrapositive</term></em> of <m>p \rightarrow q</m>. The statement <m>\negate p \rightarrow \negate q</m> is the <em><term>inverse</term></em> of <m>p \rightarrow q</m>.</p>
         </definition>
 
         <p>It is worth noting that the converse of the inverse is the contrapositive. You should also note that the terms <q>inverse</q> and <q>negation</q> are not interchangeable.</p>
 
-        <p>You should be aware that there are conventions governing the use or lack of use of parentheses in logical statements that are similar to those used to interpret algebraic expressions. Although we sometimes use grouping symbols for emphasis, such grouping symbols are often unnecessary for clarity of meaning.  For example, the expression <m>[ (\sim\negmedspace p) \wedge q] \rightarrow [(\sim\negmedspace r) \vee (\sim\negmedspace s)]</m> could have been written  <m>\sim\negmedspace p \wedge q \rightarrow \sim\negmedspace r \vee \sim\negmedspace s</m>. It is important for you to realize that the negation symbol preceding the <m>p</m> statement applies only to <m>p</m> unless indicated otherwise. However, the grouping symbols in the expressions <m>[ \sim\negmedspace (p \wedge q)] \rightarrow [(\sim\negmedspace r) \rightarrow (\sim\negmedspace s)]</m> and <m>\sim\negmedspace \{(p \wedge q) \rightarrow [(\sim\negmedspace r) \rightarrow (\sim\negmedspace s)]\}</m> produce statements with entirely different meanings.</p>
+        <p>You should be aware that there are conventions governing the use or lack of use of parentheses in logical statements that are similar to those used to interpret algebraic expressions. Although we sometimes use grouping symbols for emphasis, such grouping symbols are often unnecessary for clarity of meaning.  For example, the expression <m>[ (\negate p) \wedge q] \rightarrow [(\negate r) \vee (\negate s)]</m> could have been written  <m>\negate p \wedge q \rightarrow \negate r \vee \negate s</m>. It is important for you to realize that the negation symbol preceding the <m>p</m> statement applies only to <m>p</m> unless indicated otherwise. However, the grouping symbols in the expressions <m>[ \negate (p \wedge q)] \rightarrow [(\negate r) \rightarrow (\negate s)]</m> and <m>\negate \{(p \wedge q) \rightarrow [(\negate r) \rightarrow (\negate s)]\}</m> produce statements with entirely different meanings.</p>
 
         <fact xml:id="logic-fact-equivalency-of-contrapositive">
             <p>Consider two statements <m>p</m> and <m>q</m>.
                 <ol>
 
-                    <li><m>(p \rightarrow q) \leftrightarrow [(\sim\negmedspace q) \rightarrow (\sim\negmedspace p)]</m>; that is, the conditional is equivalent to its contrapositive.</li>
+                    <li><m>(p \rightarrow q) \leftrightarrow [(\negate q) \rightarrow (\negate p)]</m>; that is, the conditional is equivalent to its contrapositive.</li>
 
-                    <li><m>[(\sim\negmedspace p) \rightarrow (\sim\negmedspace q)] \leftrightarrow (q \rightarrow p) </m>; that is, the inverse is equivalent to the converse.</li>
+                    <li><m>[(\negate p) \rightarrow (\negate q)] \leftrightarrow (q \rightarrow p) </m>; that is, the inverse is equivalent to the converse.</li>
 
                 </ol></p>
         </fact>
@@ -425,7 +425,7 @@
             <table xml:id="table-logic-equivalency-of-contrapositive">
                 <tabular halign="center" top="medium">
                     <row bottom="medium">
-                        <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>\sim\negmedspace p</m></cell><cell><m>\sim\negmedspace q</m></cell><cell><m>p \rightarrow q</m></cell><cell><m>\sim\negmedspace q \rightarrow \sim\negmedspace p</m></cell>
+                        <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>\negate p</m></cell><cell><m>\negate q</m></cell><cell><m>p \rightarrow q</m></cell><cell><m>\negate q \rightarrow \negate p</m></cell>
                     </row>
                     <row>
                         <cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell>
@@ -439,7 +439,7 @@
                         <cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
                     </row>
                </tabular>
-                <caption>Truth table for <m>(p \rightarrow q) \leftrightarrow (\sim\negmedspace q \rightarrow \sim\negmedspace p)</m></caption>
+                <caption>Truth table for <m>(p \rightarrow q) \leftrightarrow (\negate q \rightarrow \negate p)</m></caption>
             </table>
 
             <p>We will leave the proof of (2) as an exercise.</p>
@@ -526,13 +526,13 @@
                     <p>In the following statements, remove those grouping symbols which are unnecessary for clarity of meaning.
                         <ol>
 
-                            <li><m>p \vee [(\sim\negmedspace p) \wedge q]</m></li>
+                            <li><m>p \vee [(\negate p) \wedge q]</m></li>
 
-                            <li><m>[\sim\negmedspace(p \rightarrow q)] \wedge q</m></li>
+                            <li><m>[\negate(p \rightarrow q)] \wedge q</m></li>
 
-                            <li><m>[p \wedge (\sim\negmedspace q)] \vee (p \wedge q)</m></li>
+                            <li><m>[p \wedge (\negate q)] \vee (p \wedge q)</m></li>
 
-                            <li><m>\{  \sim\negmedspace[ p \vee (\sim\negmedspace r) ] \vee (q \wedge p)\} \rightarrow p</m></li>
+                            <li><m>\{  \negate[ p \vee (\negate r) ] \vee (q \wedge p)\} \rightarrow p</m></li>
 
                         </ol></p>
                 </statement>
@@ -543,13 +543,13 @@
                     <p>Construct truth tables for the following compound statements.
                     	<ol>
 
-                    		<li><m>p \vee (\sim\negmedspace p \wedge q)</m></li>
+                    		<li><m>p \vee (\negate p \wedge q)</m></li>
 
-                    		<li><m>\sim\negmedspace(p \rightarrow q) \wedge q</m></li>
+                    		<li><m>\negate(p \rightarrow q) \wedge q</m></li>
 
-                    		<li><m>(p \, \wedge \sim\negmedspace q) \vee (p \wedge q)</m></li>
+                    		<li><m>(p \, \wedge \negate q) \vee (p \wedge q)</m></li>
 
-                    		<li><m>[ \sim\negmedspace(p \, \vee \sim\negmedspace r) \wedge (p \vee q)] \rightarrow p</m></li>
+                    		<li><m>[ \negate(p \, \vee \negate r) \wedge (p \vee q)] \rightarrow p</m></li>
 
 
                     	</ol></p>
@@ -637,12 +637,12 @@
         </definition>
 
         <example xml:id="logic-example-contradiction">
-            <p>The statement <m>p \leftrightarrow \sim\negmedspace p</m> is a contradiction since its truth table indicates this statement is always false (<xref ref="table-logic-contradiction" />).  That is, a statement and its negation can never have the same truth value.</p>
+            <p>The statement <m>p \leftrightarrow \negate p</m> is a contradiction since its truth table indicates this statement is always false (<xref ref="table-logic-contradiction" />).  That is, a statement and its negation can never have the same truth value.</p>
 
             <table xml:id="table-logic-contradiction">
                            <tabular halign="center" top="medium">
                 <row bottom="medium">
-                    <cell><m>p</m></cell><cell><m>\sim\negmedspace p</m></cell><cell><m>p \leftrightarrow \sim\negmedspace p</m></cell>
+                    <cell><m>p</m></cell><cell><m>\negate p</m></cell><cell><m>p \leftrightarrow \negate p</m></cell>
                 </row>
                             
                 <row>
@@ -652,17 +652,17 @@
                     <cell>F</cell><cell>T</cell><cell>F</cell>
                 </row>
            </tabular>
-                <caption>Truth table for <m>p \leftrightarrow \sim\negmedspace p</m></caption>
+                <caption>Truth table for <m>p \leftrightarrow \negate p</m></caption>
             </table>
         </example>
 
         <example xml:id="logic-example-tautology">
-            <p>The statement <m>p \leftrightarrow \sim\negmedspace(\sim\negmedspace p)</m> is a tautology since its truth table indicates this statement is always true (<xref ref="table-logic-tautology" />).  Thus, the double negation of a statement is equivalent to the original statement.</p>
+            <p>The statement <m>p \leftrightarrow \negate(\negate p)</m> is a tautology since its truth table indicates this statement is always true (<xref ref="table-logic-tautology" />).  Thus, the double negation of a statement is equivalent to the original statement.</p>
 
             <table xml:id="table-logic-tautology">
                            <tabular halign="center" top="medium">
                 <row bottom="medium">
-                    <cell><m>p</m></cell><cell><m>\sim\negmedspace p</m></cell><cell><m>\sim\negmedspace( \sim\negmedspace p)</m></cell><cell><m>p \leftrightarrow \sim\negmedspace(\sim\negmedspace p)</m></cell>
+                    <cell><m>p</m></cell><cell><m>\negate p</m></cell><cell><m>\negate( \negate p)</m></cell><cell><m>p \leftrightarrow \negate(\negate p)</m></cell>
                 </row>
                             
                 <row>
@@ -672,7 +672,7 @@
                     <cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell>
                 </row>
            </tabular>
-                <caption>Truth table for <m>p \leftrightarrow \sim\negmedspace(\sim\negmedspace p)</m></caption>
+                <caption>Truth table for <m>p \leftrightarrow \negate(\negate p)</m></caption>
             </table>
 
         </example>
@@ -685,40 +685,56 @@
 
         			<li><m>p \leftrightarrow p</m></li>
 
-        			<li><m>p \leftrightarrow \sim\negmedspace(\sim\negmedspace p)</m></li>
+        			<li><m>p \leftrightarrow \negate(\negate p)</m></li>
 
-        			<li><m>[\sim\negmedspace(p \vee q)] \leftrightarrow [(\sim\negmedspace p) \wedge (\sim\negmedspace q)]</m></li>
+        			<li><m>[\negate(p \vee q)] \leftrightarrow [(\negate p) \wedge (\negate q)]</m></li>
 
-        			<li><m>[\sim\negmedspace(p \wedge q)] \leftrightarrow [(\sim\negmedspace p) \vee (\sim\negmedspace q)]</m></li>
-
-
-        			<li><m>[\sim\negmedspace(p \rightarrow q)]  \leftrightarrow [p \, \wedge \sim\negmedspace q)] </m></li>
-
-        			<li><m>[\sim\negmedspace(p \leftrightarrow q)]  \leftrightarrow \{ [p \, \wedge \sim\negmedspace q)] \vee [q \, \wedge \sim\negmedspace p)] \} </m></li>
-
-        			<li><m>( p \vee q ) \leftrightarrow (\sim\negmedspace p \rightarrow q)</m></li>
+        			<li><m>[\negate(p \wedge q)] \leftrightarrow [(\negate p) \vee (\negate q)]</m></li>
 
 
-        			<li><m>(p \rightarrow q)  \leftrightarrow ( \sim\negmedspace q \rightarrow \sim\negmedspace p ) </m></li>
+        			<li><m>[\negate(p \rightarrow q)]  \leftrightarrow [p \, \wedge \negate q)] </m></li>
 
-        			<li><m>( \sim\negmedspace p \rightarrow \sim\negmedspace q )  \leftrightarrow  (q \rightarrow p) </m></li>
+        			<li><m>[\negate(p \leftrightarrow q)]  \leftrightarrow \{ [p \, \wedge \negate q)] \vee [q \, \wedge \negate p)] \} </m></li>
 
-        			<li><m>p \leftrightarrow p</m></li>
-        			<li><m>p \leftrightarrow p</m></li>
-        			<li><m>p \leftrightarrow p</m></li>
-        			<li><m>p \leftrightarrow p</m></li>
-        			<li><m>p \leftrightarrow p</m></li>
-        			<li><m>p \leftrightarrow p</m></li>
-        			<li><m>p \leftrightarrow p</m></li>
-        			<li><m>p \leftrightarrow p</m></li>
-        			<li><m>p \leftrightarrow p</m></li>
-        			<li><m>p \leftrightarrow p</m></li>
-        			<li><m>p \leftrightarrow p</m></li>
-        			<li><m>p \leftrightarrow p</m></li>
-        			<li><m>p \leftrightarrow p</m></li>
-        			<li><m>p \leftrightarrow p</m></li>
+        			<li><m>( p \vee q ) \leftrightarrow (\negate p \rightarrow q)</m></li>
+
+
+        			<li><m>(p \rightarrow q)  \leftrightarrow ( \negate q \rightarrow \negate p ) </m></li>
+
+        			<li><m>( \negate p \rightarrow \negate q )  \leftrightarrow  (q \rightarrow p) </m></li>
+
+        			<li><m>[(p \rightarrow q) \wedge (q \rightarrow p)] \leftrightarrow (p \leftrightarrow q)</m></li>
+
+        			<li><m>\{(\negate p) \rightarrow [ q \wedge (\negate q)] \} \rightarrow p</m></li>
+
+        			<li><m>(p \leftrightarrow q) \rightarrow [(r \wedge p) \rightarrow (r \wedge q)]</m></li>
+
+        			<li><m>(p \leftrightarrow q) \rightarrow [(r \vee p) \leftrightarrow (r \vee q)]</m></li>
+
+        			<li><m>(p \leftrightarrow q) \leftrightarrow (q \leftrightarrow p)</m></li>
+
+        			<li><m>(p \wedge q) \leftrightarrow (q \wedge p)</m></li>
+
+        			<li><m>(p \vee q) \leftrightarrow (q \vee p)</m></li>
+
+        			<li><m>[(p \rightarrow p) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r)</m></li>
+
+        			<li><m>[(p \leftrightarrow p) \wedge (q \leftrightarrow r)] \rightarrow (p \rightarrow r)</m></li>
+
+        			<li><m>[p \vee (q \wedge r)] \leftrightarrow [(p \vee q) \wedge (p \vee r)]</m></li>
+
+        			<li><m>[p \wedge (q \vee r)] \leftrightarrow [(p \wedge q) \vee (p \wedge r)]</m></li>
+
+
+        			<li><m>[p \vee (q \vee r)] \leftrightarrow [(p \vee q) \vee r]</m></li>
+
+        			<li><m>[p \wedge (q \wedge r)] \leftrightarrow [(p \wedge q) \wedge r]</m></li>
         		</ol></p>
         </theorem>
+
+        <hist>
+            <p>Augustus De Morgan (27 June 1806<ndash/>18 March 1871) was a British mathematician and logician. Use internet and/or library resources to research his major contributions to the fields of mathematics and logic, specifically De Morgan's Laws.</p>
+        </hist>
 
     </section>
 
