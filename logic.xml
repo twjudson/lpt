@@ -17,11 +17,11 @@
     	<title>TEXAS STATE BOARD FOR EDUCATOR CERTIFICATION (SBEC): MATHEMATICS STANDARDS COVERED</title>
     	<p><ul>
 
-    			<li>STANDARD III: GEOMETRY AND MEASUREMENT: The mathematics teacher understands and uses geometry, spatial reasoning, measurement concepts and principles, and technology appropriate to teach the statewide curriculum (Texas Essential Knowledge and Skills [TEKS]) in order to prepare students to use mathematics.</li>
+    		<li>STANDARD III: GEOMETRY AND MEASUREMENT: The mathematics teacher understands and uses geometry, spatial reasoning, measurement concepts and principles, and technology appropriate to teach the statewide curriculum (Texas Essential Knowledge and Skills [TEKS]) in order to prepare students to use mathematics.</li>
 
-    			<li>STANDARD V: MATHEMATICAL PROCESSES: The mathematics teacher understands and uses mathematical processes to reason mathematically, to solve mathematical problems, to make mathematical connections within and outside of mathematics, and to communicate mathematically.</li>
+    		<li>STANDARD V: MATHEMATICAL PROCESSES: The mathematics teacher understands and uses mathematical processes to reason mathematically, to solve mathematical problems, to make mathematical connections within and outside of mathematics, and to communicate mathematically.</li>
 
-    			<li>STANDARD VI: MATHEMATICAL PERSPECTIVES: The mathematics teacher understands the historical development of mathematical ideas, the interrelationship between society and mathematics, the structure of mathematics, and the evolving nature of mathematics and mathematical knowledge.</li>
+    		<li>STANDARD VI: MATHEMATICAL PERSPECTIVES: The mathematics teacher understands the historical development of mathematical ideas, the interrelationship between society and mathematics, the structure of mathematics, and the evolving nature of mathematics and mathematical knowledge.</li>
 
     		</ul></p>
     </assemblage>
@@ -735,6 +735,253 @@
         <hist>
             <p>Augustus De Morgan (27 June 1806<ndash/>18 March 1871) was a British mathematician and logician. Use internet and/or library resources to research his major contributions to the fields of mathematics and logic, specifically De Morgan's Laws.</p>
         </hist>
+        
+        <p>The following theorem lists some useful contradictions, and again, the proof requires construction of the appropriate truth tables and is left to the exercises.</p>
+
+        <theorem>
+        	<p>The following statements are contradictions.
+        		<ol>
+
+        			<li><m>(p \rightarrow q) \wedge (p \wedge \negate q)</m></li>
+
+        			<li><m>[(p \vee q)  \wedge \negate p] \wedge \negate q</m></li>
+
+        			<li><m>(p \wedge q) \wedge \negate p</m></li>
+
+        		</ol></p>
+        </theorem>
+
+        <p>You should be aware that the list of possible tautologies and contradictions we could have chosen is virtually endless. We have simply chosen those which will be of most benefit to us later.</p>
+
+        <p>As a final example we will provide the following example of a truth table involving three statements.</p>
+
+        <example xml:id="logic-example-three-statements">
+            <p>The following truth table (<xref ref="table-logic-three-statements" />) can be used ot verify the statement
+            	<me>[( p \rightarrow q ) \vee r] \leftrightarrow [(p \; \wedge \negate q) \rightarrow r].</me>
+            	Since the columns for <m>( p \rightarrow q ) \vee r</m> and <m>(p \; \wedge \negate q) \rightarrow r</m> match, we have a tautology.</p>
+
+            <table xml:id="table-logic-three-statements">
+                           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell><m>p</m></cell>
+                    <cell><m>q</m></cell>
+                    <cell><m>r</m></cell>
+                    <cell><m>p \rightarrow q</m></cell>
+                    <cell><m>( p \rightarrow q ) \vee r</m></cell>
+                    <cell><m>\negate q</m></cell>
+                    <cell><m>p \; \wedge \negate q</m></cell>
+                    <cell><m>(p \; \wedge \negate q) \rightarrow r</m></cell>
+                </row>             
+                <row>
+                    <cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell>
+                </row>                
+                <row>
+                    <cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell>
+                </row>                           
+                <row>
+                    <cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+                </row>                           
+                <row>
+                    <cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell>
+                </row>                           
+                <row>
+                    <cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell>
+                </row>                           
+                <row>
+                    <cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell>
+                </row>                           
+                <row>
+                    <cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell>
+                </row>                           
+                <row bottom="medium">
+                    <cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell>
+                </row>
+           </tabular>
+                <caption>Truth table for <m>[( p \rightarrow q ) \vee r] \leftrightarrow [(p \; \wedge \negate q) \rightarrow r]</m></caption>
+            </table>
+
+        </example>
+
+                <exercises>
+
+            <exercise>
+                <statement>
+                    <p>Translate the following English statements using propositional notation.
+                        <ol>
+                            
+                            <li>An integer is odd if and only if its square is odd.</li>
+
+                            <li>If I do not study, then I will fail this class.</li>
+
+                            <li>Either I will go shopping or I will go to a movie.</li>
+
+                            <li>I was well qualified, but I did not get the job.</li>
+
+                            <li>If <m>n</m> is an integer, then <m>n</m> is even or <m>n</m> is odd.</li>
+
+                            <li>The square of an even integer is an even integer.</li>
+
+                        </ol></p>
+                </statement>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>Negate each of the following statements. (Refer to the definition of negation.)
+                        <ol>
+
+                            <li>A positive number is larger than zero.</li>
+
+                            <li>If today is Saturday, then I do not have to go to work.</li>
+
+                            <li>Dogs can bark and cats can climb trees.</li>
+
+                            <li>If <m>x^2 - 9 = 0</m>,then either <m>x = 3</m> or <m>x = -3</m>.</li>
+
+                        </ol>
+                    Note: The difficulties of negating compound statements will be vastly simplified by the tautologies studied in the next section.</p>
+                </statement>
+            </exercise>  
+
+            <exercise>
+                <statement>
+                    <p>For the conditional statements given below, give the converse, the inverse, and the contrapositive.
+                        <ol>
+
+                            <li>If I teach third grade, then I am an elementary school teacher.</li>
+
+                            <li>If I do not get to class on time, then I will not be allowed to take the exam.</li>
+
+                            <li>I will return the calls and dictate the letter when I arrive at the office.</li>
+
+                            <li>If <m>(x + 1)(x - 4) = 0</m>, then <m>x = -1</m> or <m>x = 4</m>.</li>
+
+                            <li>If a number has a factor of <m>4</m>,then it has a factor of <m>2</m>.</li>
+
+                        </ol></p>
+                </statement>
+            </exercise>            
+          
+
+            <exercise>
+                <statement>
+                    <p>Restate the following in a logically equivalent form.
+                        <ol>
+
+                            <li>It is not true that both today is Wednesday and the month is June.</li>
+
+                            <li>It is not true that yesterday I both ate breakfast and watched television.</li>
+
+                            <li>It is not raining, or it is not July.</li>
+
+                        </ol></p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p>In the following statements, remove those grouping symbols which are unnecessary for clarity of meaning.
+                        <ol>
+
+                            <li><m>p \vee [(\negate p) \wedge q]</m></li>
+
+                            <li><m>[\negate(p \rightarrow q)] \wedge q</m></li>
+
+                            <li><m>[p \wedge (\negate q)] \vee (p \wedge q)</m></li>
+
+                            <li><m>\{  \negate[ p \vee (\negate r) ] \vee (q \wedge p)\} \rightarrow p</m></li>
+
+                        </ol></p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p>Construct truth tables for the following compound statements.
+                    	<ol>
+
+                    		<li><m>p \vee (\negate p \wedge q)</m></li>
+
+                    		<li><m>\negate(p \rightarrow q) \wedge q</m></li>
+
+                    		<li><m>(p \, \wedge \negate q) \vee (p \wedge q)</m></li>
+
+                    		<li><m>[ \negate(p \, \vee \negate r) \wedge (p \vee q)] \rightarrow p</m></li>
+
+
+                    	</ol></p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p>For integers <m>x</m> and <m>y</m>, find the inverse, the converse, the contrapositive, and the negation of each of the following statements.
+                    	<ol>
+
+                    		<li>If <m>x = 3</m>, then <m>x^4 = 81</m>.</li>
+
+                    		<li>If <m>x \gt 0</m>, then <m>x \neq -4</m>.</li>
+
+                    		<li>If <m>x</m> is odd and <m>y</m> is even, then <m>xy</m> is even.</li>
+
+                    		<li>If <m>x^2 = x</m>, then either <m>x = 0</m> or <m>x = 1</m>.</li>
+
+                    		<li>If <m>xy \neq 0</m>, then <m>x \neq 0</m> and <m>y \neq 0</m>.</li>
+
+                    	</ol></p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p>Give two examples from mathematics which satisfy the given conditions.
+                    	<ol>
+
+                    		<li>A statement and its converse that are both true.</li>
+
+                    		<li>A statement that is true, but its converse is false.</li>
+
+                    		<li>A biconditional statement that is true.</li>
+
+                    		<li>A biconditional statement that is false.</li>
+
+                    	</ol></p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p>Decide if the conditional statements are true or false.
+                    	<ol>
+
+                    		<li>If <m>n</m> is a natural number, then the last digit of <m>n^4</m> is <m>0</m>, <m>1</m>, <m>5</m>, or <m>6</m>.</li>
+
+                    		<li>If the last digit of a natural number is <m>0</m>, <m>1</m>, <m>5</m>, or <m>6</m>, then it is a fourth power of some natural number.</li>
+
+                    		<li><m>n</m> is a natural number only if <m>n + 1</m> is a whole number.</li>
+
+                    		<li><m>n + 1</m> is a whole number if <m>n</m> is a natural number.</li>
+
+                    	</ol></p>
+                </statement>
+            </exercise>            
+          
+            <exercise>
+                <statement>
+                    <p>Let <m>m</m> and <m>n</m> be integers and consider the statement <m>p \rightarrow q</m> given by, <q>If <m>m +
+                    n</m> is even, then <m>m</m> and <m>n</m> are even.</q>
+                		<ol>
+
+                			<li>Express the contrapositive, converse, and inverse of the given conditional.</li>
+
+                			<li>For the given conditional or any statements in part (a) that are false, give a counterexample.</li>
+
+                		</ol></p>
+                </statement>
+            </exercise>            
+          
+        </exercises>
+
 
     </section>
 
