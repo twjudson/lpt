@@ -738,7 +738,7 @@
         
         <p>The following theorem lists some useful contradictions, and again, the proof requires construction of the appropriate truth tables and is left to the exercises.</p>
 
-        <theorem>
+        <theorem xml:id="logic-theorem-contradiction">
         	<p>The following statements are contradictions.
         		<ol>
 
@@ -802,24 +802,16 @@
 
         </example>
 
-                <exercises>
+        <exercises>
 
             <exercise>
                 <statement>
-                    <p>Translate the following English statements using propositional notation.
+                    <p>Verify each of the following using truth tables.
                         <ol>
                             
-                            <li>An integer is odd if and only if its square is odd.</li>
+                            <li>Statements (1)<mdash/>(13) of <xref ref="logic-theorem-tautology" />.</li>
 
-                            <li>If I do not study, then I will fail this class.</li>
-
-                            <li>Either I will go shopping or I will go to a movie.</li>
-
-                            <li>I was well qualified, but I did not get the job.</li>
-
-                            <li>If <m>n</m> is an integer, then <m>n</m> is even or <m>n</m> is odd.</li>
-
-                            <li>The square of an even integer is an even integer.</li>
+                            <li>Statements (14)<mdash/>(22) of <xref ref="logic-theorem-tautology" />.</li>
 
                         </ol></p>
                 </statement>
@@ -827,36 +819,37 @@
             
             <exercise>
                 <statement>
-                    <p>Negate each of the following statements. (Refer to the definition of negation.)
+                    <p>Verify each of the following using truth tables.
                         <ol>
 
-                            <li>A positive number is larger than zero.</li>
+                            <li>Part (1) of <xref ref="logic-theorem-contradiction" />.</li>
 
-                            <li>If today is Saturday, then I do not have to go to work.</li>
+                            <li>Part (2) of <xref ref="logic-theorem-contradiction" />.</li>
 
-                            <li>Dogs can bark and cats can climb trees.</li>
+                            <li>Part (3) of <xref ref="logic-theorem-contradiction" />.</li>
 
-                            <li>If <m>x^2 - 9 = 0</m>,then either <m>x = 3</m> or <m>x = -3</m>.</li>
-
-                        </ol>
-                    Note: The difficulties of negating compound statements will be vastly simplified by the tautologies studied in the next section.</p>
+                        </ol></p>
                 </statement>
             </exercise>  
 
-            <exercise>
+            <exercise xml:id="exercise-logic-negation">
                 <statement>
-                    <p>For the conditional statements given below, give the converse, the inverse, and the contrapositive.
+                    <p>Using the appropriate tautologies from <xref ref="logic-theorem-tautology" />, negate the following statements.
                         <ol>
 
-                            <li>If I teach third grade, then I am an elementary school teacher.</li>
+                            <li>A foot has 12 inches and a yard has three feet.</li>
 
-                            <li>If I do not get to class on time, then I will not be allowed to take the exam.</li>
+                            <li>Either I will get a job or I will not be able to pay my bills.</li>
 
-                            <li>I will return the calls and dictate the letter when I arrive at the office.</li>
+                            <li>If you study logic one hour per day, then you will make an A in the course.</li>
 
-                            <li>If <m>(x + 1)(x - 4) = 0</m>, then <m>x = -1</m> or <m>x = 4</m>.</li>
+                            <li>If <m>x^2 - 5x + 6 = 0</m>, then <m>x - 3 = 0</m> or <m>x - 2 = 0</m>.</li>
 
-                            <li>If a number has a factor of <m>4</m>,then it has a factor of <m>2</m>.</li>
+                            <li>An integer <m>m</m> is odd if and only if <m>m^2</m> is odd.</li>
+
+                            <li>If <m>m</m> is an even integer, then <m>m + 1</m> is odd and <m>m^2</m> is even.</li>
+
+                            <li>I will call home if I win the game.</li>
 
                         </ol></p>
                 </statement>
@@ -865,14 +858,16 @@
 
             <exercise>
                 <statement>
-                    <p>Restate the following in a logically equivalent form.
+                    <p>State the converse, inverse, and contrapositive of the statements indicated below.
                         <ol>
 
-                            <li>It is not true that both today is Wednesday and the month is June.</li>
+                            <li>The statement in (c) of <xref ref="exercise-logic-negation" />.</li>
 
-                            <li>It is not true that yesterday I both ate breakfast and watched television.</li>
+                            <li>The statement in (d) of <xref ref="exercise-logic-negation" />.</li>
 
-                            <li>It is not raining, or it is not July.</li>
+                            <li>The statement in (f) of <xref ref="exercise-logic-negation" />.</li>
+
+                            <li>The statement in (g) of <xref ref="exercise-logic-negation" />.</li>
 
                         </ol></p>
                 </statement>
@@ -880,109 +875,30 @@
           
             <exercise>
                 <statement>
-                    <p>In the following statements, remove those grouping symbols which are unnecessary for clarity of meaning.
+                    <p>Justify why each of the following are true by way of a truth table and a brief paragraph explaining what the statement means.
                         <ol>
 
-                            <li><m>p \vee [(\negate p) \wedge q]</m></li>
+                            <li><m>[\negate p \wedge (p \vee q)] \rightarrow q</m></li>
 
-                            <li><m>[\negate(p \rightarrow q)] \wedge q</m></li>
+                            <li><m>[(p \rightarrow q) \wedge \negate q] \rightarrow \negate p</m></li>
 
-                            <li><m>[p \wedge (\negate q)] \vee (p \wedge q)</m></li>
-
-                            <li><m>\{  \negate[ p \vee (\negate r) ] \vee (q \wedge p)\} \rightarrow p</m></li>
+                            <li><m>[\negate p \rightarrow (q \wedge \negate q)] \rightarrow p</m></li>
 
                         </ol></p>
-                </statement>
-            </exercise>            
-          
-            <exercise>
-                <statement>
-                    <p>Construct truth tables for the following compound statements.
-                    	<ol>
-
-                    		<li><m>p \vee (\negate p \wedge q)</m></li>
-
-                    		<li><m>\negate(p \rightarrow q) \wedge q</m></li>
-
-                    		<li><m>(p \, \wedge \negate q) \vee (p \wedge q)</m></li>
-
-                    		<li><m>[ \negate(p \, \vee \negate r) \wedge (p \vee q)] \rightarrow p</m></li>
-
-
-                    	</ol></p>
-                </statement>
-            </exercise>            
-          
-            <exercise>
-                <statement>
-                    <p>For integers <m>x</m> and <m>y</m>, find the inverse, the converse, the contrapositive, and the negation of each of the following statements.
-                    	<ol>
-
-                    		<li>If <m>x = 3</m>, then <m>x^4 = 81</m>.</li>
-
-                    		<li>If <m>x \gt 0</m>, then <m>x \neq -4</m>.</li>
-
-                    		<li>If <m>x</m> is odd and <m>y</m> is even, then <m>xy</m> is even.</li>
-
-                    		<li>If <m>x^2 = x</m>, then either <m>x = 0</m> or <m>x = 1</m>.</li>
-
-                    		<li>If <m>xy \neq 0</m>, then <m>x \neq 0</m> and <m>y \neq 0</m>.</li>
-
-                    	</ol></p>
-                </statement>
-            </exercise>            
-          
-            <exercise>
-                <statement>
-                    <p>Give two examples from mathematics which satisfy the given conditions.
-                    	<ol>
-
-                    		<li>A statement and its converse that are both true.</li>
-
-                    		<li>A statement that is true, but its converse is false.</li>
-
-                    		<li>A biconditional statement that is true.</li>
-
-                    		<li>A biconditional statement that is false.</li>
-
-                    	</ol></p>
-                </statement>
-            </exercise>            
-          
-            <exercise>
-                <statement>
-                    <p>Decide if the conditional statements are true or false.
-                    	<ol>
-
-                    		<li>If <m>n</m> is a natural number, then the last digit of <m>n^4</m> is <m>0</m>, <m>1</m>, <m>5</m>, or <m>6</m>.</li>
-
-                    		<li>If the last digit of a natural number is <m>0</m>, <m>1</m>, <m>5</m>, or <m>6</m>, then it is a fourth power of some natural number.</li>
-
-                    		<li><m>n</m> is a natural number only if <m>n + 1</m> is a whole number.</li>
-
-                    		<li><m>n + 1</m> is a whole number if <m>n</m> is a natural number.</li>
-
-                    	</ol></p>
-                </statement>
-            </exercise>            
-          
-            <exercise>
-                <statement>
-                    <p>Let <m>m</m> and <m>n</m> be integers and consider the statement <m>p \rightarrow q</m> given by, <q>If <m>m +
-                    n</m> is even, then <m>m</m> and <m>n</m> are even.</q>
-                		<ol>
-
-                			<li>Express the contrapositive, converse, and inverse of the given conditional.</li>
-
-                			<li>For the given conditional or any statements in part (a) that are false, give a counterexample.</li>
-
-                		</ol></p>
                 </statement>
             </exercise>            
           
         </exercises>
 
+    </section>
+
+    <section xml:id="logic-section-quantifiers">
+        <title>Propositional Functions and Quatifiers</title>
+
+        <p>In mathematics we frequently wish to consider sentences (propositions) which involve variables. Since for different values of the variables (called propositional variables) we get different propositions with possibly different truth values, we call such sentences propositional functions or open sentences.</p>
 
     </section>
+
+
 
 </chapter>
