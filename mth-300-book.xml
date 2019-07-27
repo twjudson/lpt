@@ -20,13 +20,12 @@
    -->
         <!-- In "bookinfo.xml" set to "structural" for maximum effect -->
 
-            <xi:include href="./getting-started.xml" />                    <!-- Getting Started  -->
             <xi:include href="./logic.xml" />                    <!-- Logic  -->
+            <xi:include href="./arguments.xml" />                    <!-- Arguments  -->    
+            <xi:include href="./proofs.xml" />                    <!-- Proofs -->    
             <xi:include href="./sets.xml" />                    <!-- Sets --> 
             <xi:include href="./relations.xml" />                    <!-- Relations  -->   
-            <xi:include href="./arguments.xml" />                    <!-- Arguments  -->    
-            <xi:include href="./field-properties.xml" />                    <!-- Field Properties  --> 
-            <xi:include href="./proofs.xml" />                    <!-- Proofs -->             
+            <xi:include href="./integers.xml" />                    <!-- Integers  -->           
             <xi:include href="./backmatter.xml" />                  <!-- GFDL, Hints, Notation -->
 
     </book>

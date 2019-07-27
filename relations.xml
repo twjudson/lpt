@@ -15,19 +15,20 @@
     <introduction>
         <p>In our everyday lives we encounter many circumstances which necessitate relating objects, sets, or people. Hiring is determined by comparing abilities of applicants and purchases are made based on relative prices. Descriptions such as <q>is faster than,</q> <q>is the brother of,</q> and <q>is smaller than</q> are heard countless times each day.</p>
 
-        <p>This concept of relating elements from different collections of objects is used extensively in mathematics. In previous courses, you have considered relations primarily from a very informal perspective; we will now approach the study of relations in a more formal way and give a formal definition of a relation below. A variety of special types of relations, including functions, will be considered in greater depth in this section and in the next chapter.</p>
+        <p>This concept of relating elements from different collections of objects is used extensively in mathematics. In previous courses, you have considered relations primarily from a very informal perspective; we will now approach the study of relations in a more formal way and give a formal definition of a relation below. A variety of special types of relations, including functions, will be considered in greater depth in this chapter.</p>
     </introduction>
 
-    <section xml:id="relations-section-what-is-a-relation">
-    	<title>What is a Relation?</title>
+    <section xml:id="relations-section-relations">
+    	<title>Relations</title>
+
     	<p>For convenience, we restate the definition of the Cartesian product of sets with which you might already be familiar.</p>
 
     	<definition>
-    		<p>The <terminology>Cartesian product</terminology> of two sets <m>A</m> and <m>B</m>, denoted <m>A \times B</m>, is the set consisting of all ordered pairs in which the first element comes from set <m>A</m> and the second element comes from set <m>B</m>; that is, <m>A \times B = \{ (a,b) \mid a \in A \ \text{and} \ b \in B\}</m>.</p>
+    		<p>The <em><term>Cartesian product</term></em> of two sets <m>A</m> and <m>B</m>, denoted <m>A \times B</m>, is the set consisting of all ordered pairs in which the first element comes from set <m>A</m> and the second element comes from set <m>B</m>; that is, <m>A \times B = \{ (a,b) \mid a \in A \ \text{and} \ b \in B\}</m>.</p>
     	</definition>
 
     	<definition>
-    		<p>A <terminology>relation</terminology> <m>R</m> from a set <m>A</m> to a set <m>B</m> is a subset of <m>A \times B</m>. If <m>R</m> is a relation from <m>A</m> to <m>A</m>, we say <m>R</m> is a relation on <m>A</m>.</p>
+    		<p>A <em><term>relation</term></em> <m>R</m> from a set <m>A</m> to a set <m>B</m> is a subset of <m>A \times B</m>. If <m>R</m> is a relation from <m>A</m> to <m>A</m>, we say <m>R</m> is a relation on <m>A</m>.</p>
     	</definition>
 
     	<p>While a relation may be described in a variety of ways, it is really just a set of ordered pairs.</p>
@@ -133,8 +134,19 @@
 
         <p>In considering each of the examples given in this section, it is clear that a relation between sets <m>A</m> and <m>B</m> need not <q>use up</q> all of both sets. This idea leads us to consider those subsets of <m>A</m> and <m>B</m> whose elements are paired by the relation, namely the domain and range. Informally, we designate the domain of a relation <m>R</m> as the set of all elements of the set <m>A</m> that are actually paired with (or mapped to) at least one element in <m>B</m>. The range of a relation R may be described as the set of all elements in the set <m>B</m> to which at least one element of <m>A</m> is mapped. These concepts are defined formally in the definition below.</p>
 
+    </section>
 
+     <section xml:id="relations-section-equiv-relations">
+        <title>Equivalence Relations</title>
 
+        <p>djfdkjfj</p>
+
+    </section>
+
+    <section xml:id="relations-section-functions">
+        <title>Functions and Cardinality</title>
+
+        <p>dnfkjdjfk</p>
 
     </section>
 

@@ -13,13 +13,26 @@
 <title>Proofs</title>
 
     <introduction>
-        <p>A certain amount of mathematical maturity is necessary to find and study applications of abstract algebra.  A basic knowledge of set theory, mathematical induction, equivalence relations, and matrices is a must.  Even more important is the ability to read and understand mathematical proofs.  In this chapter we will outline the background needed for a course in abstract algebra.</p>
+        <p>As we stated both in the preface as well as earlier in this chapter, our working definition of mathematics is that it is the application of inductive and deductive logic to a system of axioms. It is not our purpose in this text to formalize the logical procedure required to provide formalistic proofs. Rather, we wish to arm the student with the basic logic and methods of attack used to form convincing arguments of the validity of the statements encountered in a reasonably careful study of the foundations of mathematics.</p>
+
+        <p>Since we will need a working definition of the word <q>proof,</q> we agree that a proof is a logical sequence of steps which validate the truth of the proposition in question. In this vein the reader should review those statements which we have <a>proven</a> and note that usually we merely showed that certain definitions were satisfied. For example, when we proposed certain statements were equivalent, we established that they had the same truth value. Surely, as we proceed further, we will be forced to provide proofs which require longer and at times more subtle sequences of logical statements. Our endeavor, as well as yours, will be to convince the reader of the truth of the propositions in question.</p>
+
+        <p>There are, however, some general approaches to proofs which are based on the various tautologies and contradictions presented in <xref ref="logic-section-tautologies" />. Most theorems are merely conditional statements of the form, <q>If <m>p</m>, then <m>q</m>.</q> Certainly, <m>p</m> and <m>q</m> might themselves be complicated compound statements, but that should not be allowed to cloud the issue at this time, so let us consider a typical theorem and a few general types of proof.</p>
     </introduction>
 
 
+    <section xml:id="proofs-section-direct-proofs">
+        <title>Direct Proofs</title>
+
+        <p>dkfjdfjkj</p>
+
+    </section>
+
     <section xml:id="proofs-section-indirect-proofs">
-    	<title>Indirect Proofs</title>
-    	<p>dfjkldfjdfk</p>
+        <title>Indirect Proofs</title>
+
+        <p>dkfjdfjkj</p>
+
     </section>
 
 </chapter>

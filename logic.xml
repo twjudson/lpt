@@ -172,9 +172,9 @@
             </ol></p>
         </example>
 
-        <p>Since one of our stated concerns in this section is the determination of the truth value of a given statement based upon the truth values of its component statements, we consider the concept of a truth table. Very simply, a truth table is exactly a table which indicates the relationships between the truth values of the statements forming the table. Thus, the truth table below (<xref ref="table-logic-negation" />) indicates the relationship between the statements <m>p</m> and <m>\negate p</m>, giving us the basic table for a negation.</p>
+        <p>Since one of our stated concerns in this section is the determination of the truth value of a given statement based upon the truth values of its component statements, we consider the concept of a truth table. Very simply, a truth table is exactly a table which indicates the relationships between the truth values of the statements forming the table. Thus, the truth table below (<xref ref="logic-table-negation" />) indicates the relationship between the statements <m>p</m> and <m>\negate p</m>, giving us the basic table for a negation.</p>
 
-        <table xml:id="table-logic-negation">
+        <table xml:id="logic-table-negation">
            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell><m>p</m></cell><cell><m>\negate p</m></cell>
@@ -202,9 +202,9 @@
             <p>The compound statement <q>Austin is the capital of Texas, and five is greater than two</q> is obtained by using <q>and</q> to connect the two statements <q>Austin is the capital of Texas</q> and <q>five is greater than two.</q></p>
         </example>
 
-        <p>The key to understanding the conjunction is the truth table below (<xref ref="table-logic-conjunction" />), which systematically exhibits the four possible combinations of the truth values for <m>p</m> and <m>q</m>. Thus, we see that the conjunction of two statements is true only in the case when both statements are true.</p>
+        <p>The key to understanding the conjunction is the truth table below (<xref ref="logic-table-conjunction" />), which systematically exhibits the four possible combinations of the truth values for <m>p</m> and <m>q</m>. Thus, we see that the conjunction of two statements is true only in the case when both statements are true.</p>
 
-        <table xml:id="table-logic-conjunction">
+        <table xml:id="logic-table-conjunction">
            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p \wedge q</m></cell>
@@ -228,9 +228,9 @@
             <p>Let <m>p</m> and <m>q</m> be statements. The <em><term>disjunction</term></em> of <m>p</m> and <m>q</m>, denoted <m>p \vee q</m>, is the compound statement obtained by connecting and with the English connective <q>or.</q> The conjunction is true when at least one of the statements is true.</p>
         </definition>
 
-        <p>A brief comment about <q>or</q> must be noted. As used in a mathematical/logical sense, <q>or</q> is interpreted in the inclusive sense. That is, <a>or</a> is interpreted as and/or, meaning one and/or the other is true. Consider carefully the truth table for the disjunction (<xref ref="table-logic-disjunction" />). So we see the disjunction is false only when both <m>p</m> and <m>q</m> are false. (The exclusive use of <q>or</q> would yield truth only if exactly one of the two statements were true.)</p>
+        <p>A brief comment about <q>or</q> must be noted. As used in a mathematical/logical sense, <q>or</q> is interpreted in the inclusive sense. That is, <a>or</a> is interpreted as and/or, meaning one and/or the other is true. Consider carefully the truth table for the disjunction (<xref ref="logic-table-disjunction" />). So we see the disjunction is false only when both <m>p</m> and <m>q</m> are false. (The exclusive use of <q>or</q> would yield truth only if exactly one of the two statements were true.)</p>
 
-        <table xml:id="table-logic-disjunction">
+        <table xml:id="logic-table-disjunction">
            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p \wedge q</m></cell>
@@ -272,9 +272,9 @@
             <p>Let <m>p</m> and <m>q</m> be statements. The <em><term>conditional statement</term></em> is the compound statement obtained by considering this statement: <q>if <m>p</m>, then <m>q</m></q> or <q><m>p</m> implies <m>q</m>,</q> and is denoted <m>p \rightarrow q</m>. The conditional is true unless <m>p</m> is true and <m>q</m> is false.</p>
         </definition>
 
-        <p>In mathematics/logic the truth table for a conditional statement is given in <xref ref="table-logic-conditional" />.</p>
+        <p>In mathematics/logic the truth table for a conditional statement is given in <xref ref="logic-table-conditional" />.</p>
 
-        <table xml:id="table-logic-conditional">
+        <table xml:id="logic-table-conditional">
            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p \rightarrow q</m></cell>
@@ -317,9 +317,9 @@
             <p>Consider two statements <m>p</m> and <m>q</m>. <em><term>The biconditional statement</term></em> is the compound statement <q><m>p</m> if and only if <m>q</m></q> or <q><m>p</m> is equivalent to <m>q</m>,</q> denoted <m>p \leftrightarrow q</m>. Frequently we write <q><m>p</m> iff <m>q</m></q> as a shorthand notation for <q><m>p</m> if and only if <m>q</m>.</q></p>
         </definition>
 
-        <p>Two statements, no matter how complicated, are equivalent when they have precisely the same truth value. You can find the truth table for the biconditional statement in <xref ref="table-logic-biconditional" />.</p>
+        <p>Two statements, no matter how complicated, are equivalent when they have precisely the same truth value. You can find the truth table for the biconditional statement in <xref ref="logic-table-biconditional" />.</p>
 
-        <table xml:id="table-logic-biconditional">
+        <table xml:id="logic-table-biconditional">
            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p \leftrightarrow q</m></cell>
@@ -373,11 +373,11 @@
         <p>Before going on to the last definition and fact of this section, we give an example of a more involved statement along with a step-by-step approach to constructing the associated table. We note that there are several methods available for constructing truth tables. We will exhibit one in the example below and employ an alternate approach in the proof of <xref ref="logic-fact-equivalency-of-contrapositive" /> at the end of this section. You should adopt the one most comfortable and appropriate for dealing with the statement at hand.</p>
 
         <example xml:id="logic-example-truth-table">
-            <p>Let us construct the truth table (<xref ref="table-logic-truth-table-example" />) for the statement
+            <p>Let us construct the truth table (<xref ref="logic-table-truth-table-example" />) for the statement
                 <me>(q \wedge p) \vee [q \wedge (\negate p)].</me>
                 After listing the component statements and all possible combinations of truth values associated with them in the table, the remaining compound statements should be given in the order in which they will be considered. This is done much like ordering of operations in an arithmetic problem or an algebraic expression.</p>
 
-            <table xml:id="table-logic-truth-table-example">
+            <table xml:id="logic-table-truth-table-example">
                 <tabular halign="center" top="medium">
                     <row bottom="medium">
                         <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>\negate p</m></cell><cell><m>q \wedge p</m></cell><cell><m>q \wedge (\negate p)</m></cell><cell><m>(q \wedge p) \vee [q \wedge (\negate p)]</m></cell>
@@ -420,9 +420,9 @@
         </fact>
 
         <proof>
-            <p>To demonstrate the proof of (1) in <xref ref="logic-fact-equivalency-of-contrapositive" />, we need only examine the corresponding truth table <xref ref="table-logic-equivalency-of-contrapositive" />.  Since the last two columns are the same, the conditional statement and its contrapostive are equivalent.</p>
+            <p>To demonstrate the proof of (1) in <xref ref="logic-fact-equivalency-of-contrapositive" />, we need only examine the corresponding truth table <xref ref="logic-table-equivalency-of-contrapositive" />.  Since the last two columns are the same, the conditional statement and its contrapostive are equivalent.</p>
 
-            <table xml:id="table-logic-equivalency-of-contrapositive">
+            <table xml:id="logic-table-equivalency-of-contrapositive">
                 <tabular halign="center" top="medium">
                     <row bottom="medium">
                         <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>\negate p</m></cell><cell><m>\negate q</m></cell><cell><m>p \rightarrow q</m></cell><cell><m>\negate q \rightarrow \negate p</m></cell>
@@ -637,9 +637,9 @@
         </definition>
 
         <example xml:id="logic-example-contradiction">
-            <p>The statement <m>p \leftrightarrow \negate p</m> is a contradiction since its truth table indicates this statement is always false (<xref ref="table-logic-contradiction" />).  That is, a statement and its negation can never have the same truth value.</p>
+            <p>The statement <m>p \leftrightarrow \negate p</m> is a contradiction since its truth table indicates this statement is always false (<xref ref="logic-table-contradiction" />).  That is, a statement and its negation can never have the same truth value.</p>
 
-            <table xml:id="table-logic-contradiction">
+            <table xml:id="logic-table-contradiction">
                            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell><m>p</m></cell><cell><m>\negate p</m></cell><cell><m>p \leftrightarrow \negate p</m></cell>
@@ -657,9 +657,9 @@
         </example>
 
         <example xml:id="logic-example-tautology">
-            <p>The statement <m>p \leftrightarrow \negate(\negate p)</m> is a tautology since its truth table indicates this statement is always true (<xref ref="table-logic-tautology" />).  Thus, the double negation of a statement is equivalent to the original statement.</p>
+            <p>The statement <m>p \leftrightarrow \negate(\negate p)</m> is a tautology since its truth table indicates this statement is always true (<xref ref="logic-table-tautology" />).  Thus, the double negation of a statement is equivalent to the original statement.</p>
 
-            <table xml:id="table-logic-tautology">
+            <table xml:id="logic-table-tautology">
                            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell><m>p</m></cell><cell><m>\negate p</m></cell><cell><m>\negate( \negate p)</m></cell><cell><m>p \leftrightarrow \negate(\negate p)</m></cell>
@@ -756,11 +756,11 @@
         <p>As a final example we will provide the following example of a truth table involving three statements.</p>
 
         <example xml:id="logic-example-three-statements">
-            <p>The following truth table (<xref ref="table-logic-three-statements" />) can be used ot verify the statement
+            <p>The following truth table (<xref ref="logic-table-three-statements" />) can be used ot verify the statement
             	<me>[( p \rightarrow q ) \vee r] \leftrightarrow [(p \; \wedge \negate q) \rightarrow r].</me>
             	Since the columns for <m>( p \rightarrow q ) \vee r</m> and <m>(p \; \wedge \negate q) \rightarrow r</m> match, we have a tautology.</p>
 
-            <table xml:id="table-logic-three-statements">
+            <table xml:id="logic-table-three-statements">
                            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell><m>p</m></cell>
@@ -893,12 +893,177 @@
     </section>
 
     <section xml:id="logic-section-quantifiers">
-        <title>Propositional Functions and Quatifiers</title>
+        <title>Propositional Functions and Quantifiers</title>
 
-        <p>In mathematics we frequently wish to consider sentences (propositions) which involve variables. Since for different values of the variables (called propositional variables) we get different propositions with possibly different truth values, we call such sentences propositional functions or open sentences.</p>
+        <p>In mathematics we frequently wish to consider sentences (propositions) which involve variables. Since for different values of the variables (called propositional variables) we get different propositions with possibly different truth values, we call such sentences <em><term>propositional functions</term></em> or <em><term>open sentences</term></em>.</p>
+
+         <example xml:id="logic-example-variable-x">
+            <p>For each real number <m>x</m> consider the sentence <m>x^2 + x = 1</m>.  Thus, <m>x^2 + x = 1</m> is a propositional function which has different truth values. The proposition is true for <m>x = 1</m> and <m>x = -2</m> and false for all other values of the propositional variable.</p>
+        </example>
+
+        <p>We can limit propositional functions by prefixing various expressions we call quantifiers, the most important of which are existential quantifiers and universal quantifiers. Phrases such as
+            <ul>
+
+                <li><q>there exists a value <m>x</m></q></li>
+
+                <li><q>there are <m>x</m>, <m>y</m>, and <m>z</m></q></li>
+
+                <li><q>for some values of <m>x</m></q></li>
+
+                <li><q>at least one value of <m>x</m></q></li>
+
+            </ul>
+        make use of <em><term>existential quantifiers</term></em>.  On the other hand, phrases such as
+            <ul>
+                <li><q>for each value of <m>x</m></q></li>
+
+                <li><q>for every value of <m>x</m></q></li>
+
+                <li><q>for all values of <m>x</m></q></li>
+
+                <li><q>no value of <m>x</m></q></li>
+                
+            </ul>
+        are called <em><term>universal quantifiers</term></em>.</p>
+
+         <example xml:id="logic-example-quatifiers">
+            <p>For each real number <m>x</m> consider the propositional function <m>p(x)</m> that states <m>x^2 + x = 1</m>. We can alter that propositional function using the two types of quantifiers.
+                <ol>
+
+                    <li>There exists <m>x</m> such that <m>p(x)</m> is true.</li>
+
+                    <li>For all <m>x</m>, <m>p(x)</m> is true.</li>
+
+                    </ol>
+            Clearly, (1) is true and (2) is false.</p>
+        </example>
+
+        <p>Notationally, we will let <m>p(x)</m> be a propositional function which states <m>p</m> is true for each <m>x</m>. Using the existential quantifier, we change <m>p(x)</m> into a proposition, namely <q>There exists <m>x</m> such that <m>p(x)</m>.</q>  In mathematics, <q>there exists</q> is replaced by the symbol <m>\exists</m>, and we replace the statement above by <m>(\exists x)(p(x))</m>, which is read <q>There exists <m>x</m> such that <m>p(x)</m> is true.</q>Similarly, we use the notation for the universal quantifier, <m>\forall</m>, and we have the proposition <m>(\forall x)(p(x))</m>, which is read <q>For all <m>x</m>, <m>p(x)</m> is true.</q></p>
+
+        <example xml:id="logic-example-quantifier-notation">
+            <p>Consider all states in the USA and the propositional function <m>p(x)</m>, which states that <m>x</m> is a state which borders on the Pacific Ocean. The proposition <m>(\forall x)(p(x))</m> is false, while the proposition <m>(\exists x)(p(x))</m>, is true.</p>
+        </example>
+
+        <remark>
+            <p>Be careful when using the symbols <m>\exists</m> and <m>\forall</m>.  While their use is quite common in logic, it is very easy to write confusing sentences.  You will rarely see these symbols used in an algebra or calculus textbook.</p>
+        </remark>
+
+        <p>General forms of qualified statements with their negations can be found in <xref ref="logic-table-quantifier-negation" />.</p>
+
+        <table xml:id="logic-table-quantifier-negation">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell>Statement</cell><cell>Negation</cell>
+                </row>    
+                <row>
+                    <cell>Some <m>a</m> are <m>b</m>.</cell><cell>No <m>a</m> is <m>b</m>.</cell>
+                </row>                
+                <row>
+                    <cell>Some <m>a</m> are not <m>b</m>.</cell><cell>All <m>a</m> are <m>b</m>.</cell>
+                </row>           
+                <row>
+                    <cell>All <m>a</m> are <m>b</m>.</cell><cell>Some <m>a</m> are not <m>b</m>.</cell>
+                </row>                           <row bottom="medium">
+                    <cell>No <m>a</m> is <m>b</m>.</cell><cell>Some <m>a</m> are <m>b</m>.</cell>
+                </row>
+           </tabular>
+            <caption>Truth table for negation</caption>
+        </table>
+
+        <exercises>
+
+            <exercise>
+                <statement>
+                    <p>Write each of the following statements in <q>if-then</q> form.
+                        <ol>
+                            
+                            <li>Every figure that is a square is a rectangle.</li>
+
+                            <li>All integers are rational numbers.</li>
+
+                            <li>Figures with exactly <m>3</m> sides may be triangles.</li>
+
+                            <li>It rains only if it is cloudy.</li>
+
+                        </ol></p>
+                </statement>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                     <p>The open sentence <q><m>x^2 + 8 = 6x</m>,</q> can be made either true or false by using different quantifiers. For example, <q>For some whole number <m>x</m>, <m>x^2 + 8 = 6x</m></q> is true, since <m>X = 4</m> or <m>x = 2</m> make the equation true; however, <q>For all whole numbers <m>x</m>. <m>x^2 + 8 = 6x</m>,</q> is false since the equation is false for the whole number <m>x = 0</m> (and for countless other values of <m>x</m>).</p>
+
+                    <p>Use an appropriate quantifier to make each of the following open sentences true, where <m>x</m> is a whole number. Then use quantifiers to make each statement false.
+                        <ol>
+                            
+                            <li><m>x + 5 = 8</m></li>
+
+                            <li><m>x + x^2 = x(x + 1)</m></li>
+
+                            <li><m>x \cdot 1 = x \cdot 3</m></li>
+
+                            <li><m>x^2 + 1 = 0</m></li>
+
+                        </ol></p>
+                </statement>
+            </exercise>  
+
+            <exercise xml:id="exercise-logic-negation-quantifier">
+                <statement>
+                    <p>Negate the following statements.
+                        <ol>
+
+                            <li>There exists at least one real number <m>x</m> such that <m>x^2 = 9</m>.</li>
+
+                            <li>There is no real number <m>x</m> that makes the sentence <m>x^2 = -1</m> true.</li>
+
+                            <li>Some students attend night school.</li>
+
+                            <li>No children are allowed in this building.</li>
+
+                            <li>There is some number that is both odd and even.</li>
+
+                            <li>All college students are math or engineering majors.</li>
+
+                            <li>For all real numbers <m>x</m>, if <m>x</m> is positive, then <m>-x</m> is negative.</li>
+
+                            <li>Some cars are red, and all students take math.</li>
+
+                            <li>There are some people who go to school in the morning and work in the afternoons.</li>
+
+                            <li>Not all numbers are rational and positive.</li>
+
+                            <li>All dogs have <m>4</m> legs.</li>
+
+                            <li>Not all rectangles are squares.</li>
+
+                        </ol></p>
+                </statement>
+            </exercise>                      
+          
+            <exercise>
+                <statement>
+                    <p>Find the negation of each of the following.
+                        <ol>
+
+                            <li><m>p \wedge (q \vee r)</m></li>
+
+                            <li><m>\negate p \wedge (q \rightarrow p)</m></li>
+
+                            <li><m>[p \wedge (q \rightarrow r)] \vee (\negate q \wedge p)</m></li>
+
+                            <li><m>x^2</m> is even only if <m>x</m> is even.</li>
+
+                            <li>There is an integer <m>x</m> such that <m>x/2</m> is an integer, and for every integer <m>y</m>, <m>x/(2y)</m> is not an integer.</li>
+
+                            <li>For every postive integer <m>x</m>, either <m>x</m> is prime or <m>x^2 + 1</m> is prime.</li>
+
+                        </ol></p>
+                </statement>
+            </exercise>            
+          
+        </exercises>
 
     </section>
-
-
 
 </chapter>

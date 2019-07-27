@@ -13,12 +13,134 @@
 <title>Arguments</title>
 
     <introduction>
-        <p>A certain amount of mathematical maturity is necessary to find and study applications of abstract algebra.  A basic knowledge of set theory, mathematical induction, equivalence relations, and matrices is a must.  Even more important is the ability to read and understand mathematical proofs.  In this chapter we will outline the background needed for a course in abstract algebra.</p>
+        <p>An argument may be described as a group of statements, one of which is claimed to follow from the others. Arguments have structure. In mathematics, the statement which is supposedly validated by the others is called the conclusion; those statements which are claimed to provide justification for the conclusion are called the hypotheses.</p>
+
+        <p>The type of reasoning used in arguments is traditionally divided into two basic types, deductive and inductive. It is often said that deductive reasoning involves moving from the general to the specific, whereas inductive reasoning involves moving from specific observations to claims of general principles. However, this description is a generalization that is not always the case. The major distinction might better be described in terms of whether or not the conclusion must always follow from the hypotheses. In a <em><term>deductive argument</term></em> it is claimed that the conclusion must be true if the hypotheses are true; that is, it is impossible for the conclusion to fail if the hypotheses hold true.</p>
+
+        <p>In contrast, an <em><term>inductive argument</term></em> involves the claim that the conclusion probably follows from the hypotheses. Deductive arguments do not become <q>more valid</q> by adding hypotheses, whereas inductive arguments may become stronger or weaker by adding hypotheses.</p>
+
     </introduction>
 
-    <section xml:id="arguments-section-arguments">
-    	<title>Arguments</title>
-    	<p>dfjkldfjdfk</p>
+    <section xml:id="arguments-section-deductive-reasoning">
+        <title>Deductive Reasoning</title>
+
+        <p>Deductive or direct reasoning is a process of reaching a conclusion from one (or more) statements, called the hypothesis (or hypotheses). This somewhat informal definition can be rephrased using the language and symbolism of the preceding sections. An <em><term>argument</term></em> is a set of statements in which one of the statements is called the conclusion and the rest make up the hypothesis. A <em><term>valid argument</term></em> is an argument in which the conclusion must be true whenever the hypotheses are true. In the case of a valid argument we say the conclusion follows from the hypothesis. For example, consider the following argument: <q>If it is snowing, then it is cold. It is snowing. Therefore, it is cold.</q> In this argument, when the two statements in the hypothesis, namely, <q>if it is snowing, then it is cold</q> and <q>It is snowing</q> are both true, then one can conclude that <q>It is cold.</q> That is, this argument is valid since the conclusion follows necessarily from the hypotheses.</p>
+
+        <p>It is important to distinguish between the notions of truth and validity. While individual statements may be either true or false, arguments cannot. Similarly, arguments may be described as valid or invalid, but statements cannot. An argument is said to be an invalid argument if its conclusion can be false when its hypothesis is true. An example of an invalid argument is the following: <q>If it is raining, then the streets are wet. The streets are wet. Therefore, it is raining.</q> For convenience, we will represent this argument symbolically as <m>[(p \rightarrow q) \wedge p] \rightarrow p</m>. This is an invalid argument since the streets could be wet from a variety of causes (e.g., fire hydrant open, sprinkler system malfunction, etc.) without having had any rain. It is possible for valid arguments to contain either true or false hypotheses, as indicated in the two valid arguments in <xref ref="arguments-example-deductive" />.</p>
+
+        <example xml:id="arguments-example-deductive">
+            <p><ul>
+                <li><p>Arguement 1:
+                    <ul>
+
+                        <li>All counting numbers are positive.</li>
+
+                        <li>All positive numbers are larger than negative <m>2</m>.</li>
+
+                        <li>Therefore, all counting numbers are larger than negative <m>2</m>.</li>
+
+                    </ul></p></li>
+
+                <li><p>Arguement 2:
+                    <ul>
+                        <li>All numbers are positive.</li>
+
+                        <li>All positive numbers are larger than <m>5</m>.</li>
+
+                        <li>Therefore, all numbers are larger than <m>5</m>.</li>
+
+                    </ul></p></li>
+
+                </ul>
+            Note that in both Arguments 1 and 2, the conclusions follow necessarily from the hypotheses. Thus, Argument 2 is considered valid even though both hypotheses are false. It should also be noted that an argument may be invalid even though the hypotheses and the conclusion are true. In Argument 3 below, even though both hypotheses may be true, it is possible for the conclusion to be either true or false; thus, the argument is invalid.</p>
+
+            <p><ul>
+                <li><p>Arguement 3:
+                    <ul>
+
+                        <li>If it is raining outside, then the lawn gets wet.</li>
+
+                        <li>It is not raining outside.</li>
+
+                        <li>Therefore, the lawn is not wet.</li>
+
+                    </ul></p></li>
+
+                </ul></p>
+
+            <p>The truth table below (<xref ref="arguments-table-deductive" />) shows that Arguement 3 is invalid, since it is possible to have the hypotheses, <m>(p \rightarrow q) \wedge \negate p</m>, true with the conclusion, <m>\negate q</m>, false.  This situation, of course, makes the statement <m>[(p \rightarrow q) \wedge \negate p] \rightarrow \negate q</m> false, and the argument is invalid.</p>
+        </example>
+
+        <table xml:id="arguments-table-deductive">
+            <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>\negate p</m></cell><cell><m>\negate q</m></cell><cell><m>p \rightarrow q</m></cell><cell><m>(p \rightarrow q) \wedge \negate p</m></cell><cell><m>[(p \rightarrow q) \wedge \negate p] \rightarrow \negate q</m></cell>
+                </row>
+                <row>
+                    <cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell>
+                </row>                            <row>
+                    <cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell>
+                </row>                                        
+                <row>
+                    <cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell>
+                </row>                
+                <row bottom="medium">
+                    <cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+                </row>
+           </tabular>
+            <caption>Truth table for <m>[(p \rightarrow q) \wedge \negate p] \rightarrow \negate q</m></caption>
+        </table>
+
+        <assemblage>
+            <title>TAKS CONNECTION</title>
+            <p>How might a student apply deductive reasoning to answer the following question taken from the 2006 Texas Assessment of Knowledge and Skills (TAKS) Grade 5 Mathematics test?</p>
+
+            <p>Sue is taller than Bianca and shorter than Colette. If Colette is shorter than Dora, who is the shortest person?
+                <ul>
+
+                    <li>F. Sue</li>
+
+                    <li>G. Bianca</li>
+
+                    <li>H. Colette</li>
+
+                    <li>J. Dora</li>
+
+                </ul></p>
+        </assemblage>
+
     </section>
+
+
+
+	<section xml:id="arguments-section-forms-of-arguemtns">
+        <title>Three Forms of Valid Arguments</title>
+
+    	<introduction>
+    		<p>Three especially important forms of valid arguments, used repeatedly in logic, are discussed next.</p>
+    	</introduction>
+
+	    <subsection>
+	        <title>Law of Detachment (Direct Reasoning): <m>[((p \rightarrow q) \wedge p)] \rightarrow q</m></title>
+
+	        <p>The Law of Detachment is the most commonly used principle of deductive reasoning. In words, this law says that whenever a conditional statement and its hypothesis are true, the conclusion is also true. That is, the conclusion can be <q>detached</q> from the conditional. An example of the use of this law follows below.</p>
+
+	    </subsection>
+
+	    <subsection>
+	        <title>Law of Syllogism (Transitive Reasoning): <m>[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r)</m></title>
+
+	        <p>The Law of Syllogism is also called transitive reasoning or the chain rule. Examples of the Law of Syllogism occur repeatedly in mathematics. The following argument is an application of this law.</p>
+
+	    </subsection>
+
+	    <subsection>
+	        <title>Law of Contraposition (Indirect Reasoning): <m>[(p \rightarrow q) \wedge \negate q] \rightarrow \negate p</m></title>
+
+	        <p>djkldjf</p>
+
+	    </subsection>
+
+	</section>
 
 </chapter>
