@@ -13,7 +13,7 @@
     <author-biographies length="short" />
 
     <!-- Prefix to enhance Sage notebook contents -->
-    <initialism>LPMST</initialism>
+    <initialism>LPT</initialism>
 
     <macros>
     \newcommand{\identity}{\mathrm{id}}

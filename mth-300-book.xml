@@ -14,7 +14,7 @@
     <xi:include href="./bookinfo.xml" /> <!-- ISBN, website, other metadata -->
     
     <book xml:id="mth-300-book">
-        <title>Logic and Proof for Middle School Teachers</title>
+        <title>Logic and Proof for Teachers</title>
 
         <xi:include href="./frontmatter.xml" />                 <!-- Title Page, Preface, etc. -->
    -->
@@ -25,7 +25,7 @@
             <xi:include href="./proofs.xml" />                    <!-- Proofs -->    
             <xi:include href="./sets.xml" />                    <!-- Sets --> 
             <xi:include href="./relations.xml" />                    <!-- Relations  -->   
-            <xi:include href="./integers.xml" />                    <!-- Integers  -->           
+            <xi:include href="./integers.xml" />                  <!-- Integers  -->           
             <xi:include href="./backmatter.xml" />                  <!-- GFDL, Hints, Notation -->
 
     </book>

@@ -13,25 +13,27 @@
     <titlepage>
 
         <author>
-            <personname>Kimberly M. Childs, Author</personname>
+            <personname>Kimberly M. Childs</personname>
             <department>Department of Mathematics and Statistics</department>
             <institution>Stephen F. Austin State University</institution>
             <email>kchilds@sfasu.edu</email>
         </author>
 
         <author>
-            <personname>Deborah A. Pace, Author</personname>
+            <personname>Thomas W. Judson</personname>
+            <department>Department of Mathematics and Statistics</department>
+            <institution>Stephen F. Austin State University</institution>
+            <email>judsontw@sfasu.edu</email>
+        </author>
+
+        <author>
+            <personname>Deborah A. Pace</personname>
             <department>Department of Mathematics and Statistics</department>
             <institution>Stephen F. Austin State University</institution>
             <email>dpace@sfasu.edu</email>
         </author>
 
-        <editor>
-            <personname>Thomas W. Judson</personname>
-            <department>Department of Mathematics and Statistics</department>
-            <institution>Stephen F. Austin State University</institution>
-            <email>judsontw@sfasu.edu</email>
-        </editor>
+
 
         <date><today /></date>
 
@@ -89,13 +91,6 @@
                 <department>Department of Mathematics and Statistics</department>
                 <institution>Stephen F. Austin State University</institution>
                 <email>beverlyll@sfasu.edu</email>
-            </contributor>
-
-            <contributor xml:id="tjudson">
-                <personname>Thomas Judson</personname>
-                <department>Department of Mathematics and Statistics</department>
-                <institution>Stephen F. Austin State University</institution>
-                <email>judsontw@sfasu.edu</email>
             </contributor>
 
             <contributor>
