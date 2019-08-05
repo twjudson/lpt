@@ -17,7 +17,7 @@
         <title>Logic and Proof for Teachers</title>
 
         <xi:include href="./frontmatter.xml" />                 <!-- Title Page, Preface, etc. -->
-   -->
+
         <!-- In "bookinfo.xml" set to "structural" for maximum effect -->
 
             <xi:include href="./logic.xml" />                    <!-- Logic  -->

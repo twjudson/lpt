@@ -2,7 +2,7 @@
 
 <!-- This file is part of the book                                              -->
 <!--                                                                            -->
-<!-- Logic and Proof for Middle School Teachers                                 -->
+<!-- Logic and Proof for Teachers                                 -->
 <!--                                                                            -->
 <!-- Copyright (C) 2019  Kimberly M. Childs, Deborah A. Pace, Thomas W. Judson  -->
 <!--                                                                            -->
@@ -200,6 +200,101 @@
       as opposed to explicitly,
       often results in better understanding of complex issues.
     </p>
+
+    <exercises>
+    <title>Exercises</title>
+    <exercise>
+      <statement>
+        <p>
+          Prove that
+          <me>
+            1^2 + 2^2 + \cdots + n^2 = \frac{n(n + 1)(2n + 1)}{6}
+          </me>
+          for <m>n \in {\mathbb N}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p permid="gMd">
+          Prove that
+          <me permid="ved">
+            1^3 + 2^3 + \cdots + n^3 = \frac{n^2(n + 1)^2}{4}
+          </me>
+          for <m>n \in {\mathbb N}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Prove that <m>n! \gt 2^n</m> for <m>n \geq 4</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Prove that
+          <me>
+            x + 4x + 7x + \cdots + (3n - 2)x = \frac{n(3n - 1)x}{2}
+          </me>
+          for <m>n \in {\mathbb N}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Prove that <m>10^{n + 1} + 10^n + 1</m> is divisible by <m>3</m> for <m>n \in {\mathbb N}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Prove that <m>4 \cdot 10^{2n} + 9 \cdot 10^{2n - 1} + 5</m> is divisible by <m>99</m> for <m>n \in {\mathbb N}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+   
+    <exercise>
+      <statement>
+        <p>
+          Use induction to prove that
+          <m>1 + 2 + 2^2 + \cdots + 2^n = 2^{n + 1} - 1</m> for <m>n \in {\mathbb N}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Prove that
+          <me>
+            \frac{1}{2}+ \frac{1}{6} + \cdots + \frac{1}{n(n + 1)} = \frac{n}{n + 1}
+          </me>
+          for <m>n \in {\mathbb N}</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          If <m>x</m> is a nonnegative real number,
+          then show that <m>(1 + x)^n - 1 \geq nx</m> for <m>n = 0, 1, 2, \ldots</m>.
+        </p>
+      </statement>
+    </exercise>
+
+</exercises>
 
 
   </section>
@@ -495,13 +590,13 @@
       <theorem xml:id="theorem-integers-infinite-primes">
         <title>Euclid</title>
         <statement>
-          <p permid="ufO">
+          <p>
             There exist an infinite number of primes.
           </p>
         </statement>
 
-        <proof permid="kTg">
-          <p permid="JoM">
+        <proof>
+          <p>
             We will prove this theorem by contradiction.
             Suppose that there are only a finite number of primes,
             say <m>p_1, p_2, \ldots, p_n</m>.
@@ -515,17 +610,17 @@
         </proof>
       </theorem>
            
-      <theorem xml:id="theorem-fund-theorem-arithmetic" permid="gEM">
+      <theorem xml:id="theorem-fund-theorem-arithmetic">
         <title>Fundamental Theorem of Arithmetic</title>
         <idx>
         <h>Fundamental Theorem</h>
         <h>of Arithmetic</h>
         </idx>
         <statement>
-          <p permid="amX">
+          <p>
             Let <m>n</m> be an integer such that <m>n \gt 1</m>.
             Then
-            <me permid="lKr">
+            <me>
               n = p_1 p_2 \cdots p_k
             </me>,
             where <m>p_1, \ldots, p_k</m> are  primes
@@ -539,7 +634,7 @@
         </statement>
 
         <proof>
-          <p permid="pvV">
+          <p>
             <em>Uniqueness.</em>  To show uniqueness we will use induction on <m>n</m>.
             The theorem is certainly true for <m>n = 2</m> since in this case <m>n</m> is prime.
             Now assume that the result holds for all integers <m>m</m> such that <m>1 \leq m \lt n</m>, and
@@ -561,7 +656,7 @@
             Hence, <m>k = l</m> and <m>q_i = p_i</m> for <m>i = 1, \ldots, k</m>.
           </p>
 
-          <p permid="VDe">
+          <p>
             <em>Existence.</em> To show existence,
             suppose that there is some integer that cannot be written as the product of primes.
             Let <m>S</m> be the set of all such numbers.
@@ -574,12 +669,12 @@
             Neither <m>a_1\in S</m> nor <m>a_2 \in S</m>,
             since <m>a</m> is the smallest element in <m>S</m>.
             So
-            <md permid="quk">
+            <md>
               <mrow>a_1 &amp; = p_1 \cdots p_r</mrow>
               <mrow>a_2 &amp; = q_1 \cdots q_s</mrow>
             </md>.
             Therefore,
-            <me permid="Knb">
+            <me>
               a = a_1 a_2 = p_1 \cdots p_r q_1 \cdots q_s
             </me>.
             So <m>a \notin S</m>, which is a contradiction.
@@ -590,11 +685,11 @@
 
 
 
-  <exercises xml:id="exercises-integers" filenamebase="integers" permid="Dsj">
+  <exercises>
     <title>Exercises</title>
-    <exercise number="1" permid="sTe">
+    <exercise>
       <statement>
-        <p permid="AEU">
+        <p>
           Prove that
           <me>
             1^2 + 2^2 + \cdots + n^2 = \frac{n(n + 1)(2n + 1)}{6}
@@ -602,23 +697,9 @@
           for <m>n \in {\mathbb N}</m>.
         </p>
       </statement>
-      <hint permid="pCZ">
-        <p permid="iWP">
-          The base case,
-          <m>S(1): [1(1 + 1)(2(1) + 1)]/6 = 1 = 1^2</m> is true.
-          Assume that <m>S(k): 1^2 + 2^2 + \cdots + k^2 = [k(k + 1)(2k + 1)]/6</m> is true.
-          Then
-          <md permid="iPL">
-            <mrow>1^2 + 2^2 + \cdots + k^2 + (k + 1)^2 &amp; = [k(k + 1)(2k + 1)]/6 + (k + 1)^2</mrow>
-            <mrow>&amp; = [(k + 1)((k + 1) + 1)(2(k + 1) + 1)]/6</mrow>
-          </md>,
-          and so <m>S(k + 1)</m> is true.
-          Thus, <m>S(n)</m> is true for all positive integers <m>n</m>.
-        </p>
-      </hint>
     </exercise>
 
-    <exercise number="2" permid="Zan">
+    <exercise>
       <statement>
         <p permid="gMd">
           Prove that
@@ -630,28 +711,19 @@
       </statement>
     </exercise>
 
-    <exercise number="3" permid="Fhw">
+    <exercise>
       <statement>
-        <p permid="MTm">
+        <p>
           Prove that <m>n! \gt 2^n</m> for <m>n \geq 4</m>.
         </p>
       </statement>
-      <hint permid="hYA">
-        <p permid="PdY">
-          The base case, <m>S(4): 4! = 24 \gt 16 =2^4</m> is true.
-          Assume <m>S(k): k! \gt 2^k</m> is true.
-          Then <m>(k + 1)! = k! (k + 1) \gt 2^k \cdot 2 = 2^{k + 1}</m>,
-          so <m>S(k + 1)</m> is true.
-          Thus, <m>S(n)</m> is true for all positive integers <m>n</m>.
-        </p>
-      </hint>
     </exercise>
 
-    <exercise number="4" permid="loF">
+    <exercise>
       <statement>
-        <p permid="tav">
+        <p>
           Prove that
-          <me permid="blm">
+          <me>
             x + 4x + 7x + \cdots + (3n - 2)x = \frac{n(3n - 1)x}{2}
           </me>
           for <m>n \in {\mathbb N}</m>.
@@ -659,37 +731,37 @@
       </statement>
     </exercise>
 
-    <exercise number="5" permid="RvO">
+    <exercise>
       <statement>
-        <p permid="ZhE">
+        <p>
           Prove that <m>10^{n + 1} + 10^n + 1</m> is divisible by <m>3</m> for <m>n \in {\mathbb N}</m>.
         </p>
       </statement>
     </exercise>
 
-    <exercise number="6" permid="xCX">
+    <exercise>
       <statement>
-        <p permid="FoN">
+        <p>
           Prove that <m>4 \cdot 10^{2n} + 9 \cdot 10^{2n - 1} + 5</m> is divisible by <m>99</m> for <m>n \in {\mathbb N}</m>.
         </p>
       </statement>
     </exercise>
 
    
-    <exercise number="9" permid="pYy">
+    <exercise>
       <statement>
-        <p permid="xKo">
+        <p>
           Use induction to prove that
           <m>1 + 2 + 2^2 + \cdots + 2^n = 2^{n + 1} - 1</m> for <m>n \in {\mathbb N}</m>.
         </p>
       </statement>
     </exercise>
 
-    <exercise number="10" permid="WfH">
+    <exercise>
       <statement>
-        <p permid="dRx">
+        <p>
           Prove that
-          <me permid="sjx">
+          <me>
             \frac{1}{2}+ \frac{1}{6} + \cdots + \frac{1}{n(n + 1)} = \frac{n}{n + 1}
           </me>
           for <m>n \in {\mathbb N}</m>.
@@ -697,30 +769,13 @@
       </statement>
     </exercise>
 
-    <exercise number="11" permid="CmQ">
+    <exercise>
       <statement>
-        <p permid="JYG">
+        <p>
           If <m>x</m> is a nonnegative real number,
           then show that <m>(1 + x)^n - 1 \geq nx</m> for <m>n = 0, 1, 2, \ldots</m>.
         </p>
       </statement>
-      <hint permid="rsm">
-        <p permid="bsq">
-          The base case,
-          <m>S(0): (1 + x)^0 - 1 = 0 \geq 0 = 0 \cdot x</m> is true.
-          Assume <m>S(k): (1 + x)^k -1 \geq kx</m> is true.
-          Then
-          <md permid="kEY">
-            <mrow>(1 + x)^{k + 1} - 1 &amp; = (1 + x)(1 + x)^k -1</mrow>
-            <mrow>&amp; = (1 + x)^k + x(1 + x)^k - 1</mrow>
-            <mrow>&amp; \geq kx + x(1 + x)^k</mrow>
-            <mrow>&amp; \geq kx + x</mrow>
-            <mrow>&amp; = (k + 1)x</mrow>
-          </md>,
-          so <m>S(k + 1)</m> is true.
-          Therefore, <m>S(n)</m> is true for all positive integers <m>n</m>.
-        </p>
-      </hint>
     </exercise>
 
     <exercise number="12" permid="itZ">
@@ -747,13 +802,6 @@
       </statement>
     </exercise>
 
-    <exercise number="13" permid="OBi">
-      <statement>
-        <p permid="WmY">
-          Prove that the two principles of mathematical induction stated in <xref ref="section-math-induction"/> are equivalent.
-        </p>
-      </statement>
-    </exercise>
 
     <exercise number="14" permid="uIr">
       <statement>
@@ -767,7 +815,7 @@
       </statement>
     </exercise>
 
-    <exercise number="15" permid="aPA">
+    <exercise>
       <statement>
         <p permid="iBq">
           For each of the following pairs of numbers <m>a</m> and <m>b</m>,
