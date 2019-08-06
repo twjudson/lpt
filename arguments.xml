@@ -10,7 +10,7 @@
 
 <chapter xml:id="Arguments" xmlns:xi="http://www.w3.org/2001/XInclude">
 
-<title>Arguments</title>
+<title>Arguments and Proofs</title>
 
     <introduction>
         <p>An argument may be described as a group of statements, one of which is claimed to follow from the others. Arguments have structure. In mathematics, the statement which is supposedly validated by the others is called the conclusion; those statements which are claimed to provide justification for the conclusion are called the hypotheses.</p>
@@ -123,7 +123,28 @@
 	    <subsection>
 	        <title>Law of Detachment (Direct Reasoning): <m>[((p \rightarrow q) \wedge p)] \rightarrow q</m></title>
 
-	        <p>The Law of Detachment is the most commonly used principle of deductive reasoning. In words, this law says that whenever a conditional statement and its hypothesis are true, the conclusion is also true. That is, the conclusion can be <q>detached</q> from the conditional. An example of the use of this law follows below.</p>
+	        <p>The Law of Detachment is the most commonly used principle of deductive reasoning. In words, this law says that whenever a conditional statement and its hypothesis are true, the conclusion is also true. That is, the conclusion can be <q>detached</q> from the conditional (see <xref ref="arguments-example-detachment" />).</p>
+
+            <example xml:id="arguments-example-detachment">
+                <p><ul>
+
+                    <li>If the units digit of a number is zero, then the number is a multiple of <m>10</m>.</li>
+
+                    <li>The units digit in the number <m>40</m> is zero.</li>
+
+                    <li>Therefore, <m>40</m> is a multiple of <m>10</m>.</li>
+
+                </ul></p>
+            </example>
+
+            <p>Special types of diagrams, called Euler (pronounced <q>oiler</q>) diagrams, can also be used to help determine the validity of arguments. The argument in <xref ref="arguments-example-detachment" /> can be visualized using an Euler diagram as indicated in <xref ref="figure-arguments-euler" />.</p>
+
+            <figure xml:id="figure-arguments-euler">
+                <image width="40%" source="images/arguments-euler.png">
+                    <description>Euler diagram for direct reasoning</description>
+                </image>
+                <caption>Euler diagram for direct reasoning</caption>
+            </figure>
 
 	    </subsection>
 
@@ -132,15 +153,290 @@
 
 	        <p>The Law of Syllogism is also called transitive reasoning or the chain rule. Examples of the Law of Syllogism occur repeatedly in mathematics. The following argument is an application of this law.</p>
 
+            <example xml:id="arguments-example-syllogism">
+                <p><ul>
+
+                    <li>If a number is a multiple of eight, then it is a multiple of four.</li>
+
+                    <li>If a number is a multiple of four, then it is a multiple of two.</li>
+
+                    <li>Therefore, if a number is a multiple of eight, then it is a multiple of two.</li>
+
+                </ul>
+                An Euler diagram for this argument is given in <xref ref="figure-arguments-euler-syllogism" />. Notice that if <m>x</m> is any number that is a multiple of eight, then <m>x</m> is also a multiple of four. Then, since <m>x</m> is a multiple of four, <m>x</m> must also be a multiple of two.</p>
+            </example>
+
+            <figure xml:id="figure-arguments-euler-syllogism">
+                <image width="40%" source="images/arguments-euler-syllogism.png">
+                    <description>Euler diagram for transitive reasoning</description>
+                </image>
+                <caption>Euler diagram for transitive reasoning</caption>
+            </figure>
+
+
 	    </subsection>
 
 	    <subsection>
 	        <title>Law of Contraposition (Indirect Reasoning): <m>[(p \rightarrow q) \wedge \negate q] \rightarrow \negate p</m></title>
 
-	        <p>djkldjf</p>
+	        <p>Since the contrapositive of a conditional is logically equivalent to the original conditional, <m>\negate q \rightarrow \negate p</m> is logically equivalent to <m>p \rightarrow q</m>. Then, by applying the Law of Detachment to the contrapositive of <m>p \rightarrow q</m>, we may deduce <m>\negate p</m>.</p>
+
+            <example xml:id="arguments-example-contraposition">
+                <p><ul>
+
+                    <li>If a numeber is a power of <m>3</m>, then its units digit is <m>1</m>, <m>3</m>, <m>7</m>, or <m>9</m>.</li>
+
+                    <li>The units digit ins <m>3{,}124</m> is not <m>1</m>, <m>3</m>, <m>7</m>, or <m>9</m>.</li>
+
+                    <li>Therefore, <m>3{,}124</m> is not a power of <m>3</m>.</li>
+
+                </ul>
+                In words, the Law of Contraposition says that whenever a conditional is true and its conclusion is false, then the hypothesis is also false. (In other words, if a conditional is true and the negation of its conclusion is also true, then the negation of its hypothesis is true.) Again, an Euler diagram may be used to help determine the validity of the argument (<xref ref="figure-arguments-euler-contraposition" />).</p>
+            </example>
+
+            <figure xml:id="figure-arguments-euler-contraposition">
+                <image width="50%" source="images/arguments-euler-contraposition.png">
+                    <description>Euler diagram for indirect reasoning</description>
+                </image>
+                <caption>Euler diagram indirect reasoning</caption>
+            </figure>
 
 	    </subsection>
 
+
+        <exercises>
+
+            <exercise>
+                <statement>
+                    <p>Determine the validity of the following arguments. Justify your thinking.
+                        <ol>
+                            
+                            <li><ul>
+                                <li>All equilateral triangles are equiangular.</li>
+
+                                <li>All equiangular triangles are isosceles.</li> 
+
+                                <li>Therefore, all equilateral triangles are isosceles.</li>
+                            </ul></li>
+                            
+                            <li><ul>
+                                <li>All equilateral triangles are equiangular.</li>
+
+                                <li>All equiangular triangles are isosceles.</li> 
+
+                                <li>Therefore all isosceles triangles are equilateral.</li>
+                            </ul></li>
+                            
+                            <li><ul>
+                                <li>If you study every day, then you will be successful.</li>
+
+                                <li>You do not study every day.</li>
+
+                                <li>Therefore, you will not be successful.</li>
+                            </ul></li>
+                            
+                            <li><ul>
+                                <li>If you study every day, then you will be successful.</li>
+
+                                <li>You are not successful.</li>
+
+                                <li>Therefore, you did not study every day.</li>
+                            </ul></li>
+                            
+                            <li><ul>
+                                <li>Some females are doctors.</li>
+
+                                <li>All doctors are college graduates.</li>
+
+                                <li>Therefore, all females are college graduates.</li>
+                            </ul></li>
+                            
+                            <li><ul>
+                                <li>If the alarm goes off, then I will call the police.</li> 
+
+                                <li>I called the police.</li>
+
+                                <li>So the alarm went off.</li>
+                            </ul></li>
+                            
+                            <li><ul>
+                                <li>If the alarm goes off, then I will call the police.</li> 
+
+                                <li>If I call the police, then I will file a report.</li>
+
+                                <li>The alarm went off, so I will file a report.</li>
+                            </ul></li>
+                            
+                            <li><ul>
+                                <li>If today is Friday, then tomorrow is Saturday.</li> 
+
+                                <li>Tomorrow is Monday, so today is not Friday.</li>
+                            </ul></li>
+                            
+                            <li><ul>
+                                <li>All teachers are smart.</li> 
+
+                                <li>Some teachers are funny.</li>
+
+                                <li>Therefore, some smart people are funny.</li>
+                            </ul></li>
+                            
+                            <li><ul>
+                                <li>If a student is a freshman, then the student takes English.</li> 
+
+                                <li>Mark is a junior.</li>
+
+                                <li>Therefore, Mark does not take English.</li>
+                            </ul></li>
+
+
+
+                        </ol></p>
+                </statement>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                     <p>Determine a valid conclusion that follows from each of the following statements and explain your reasoning.
+                        <ol>
+                            
+                            <li>If you come to class every day, then you will be successful. You come to class every day.</li>
+
+                            <li>If Jana does not fall, then she will win the race. Jana does not win the race.</li>
+
+                            <li>Every square is a rectangle. Some parallelograms are rhombuses. Every rectangle is a parallelogram.</li>
+
+                        </ol></p>
+                </statement>
+            </exercise>  
+
+            <exercise>
+                <statement>
+                    <p>Suppose that <m>r \rightarrow s</m> is false. Determine the truth values (true, false, or cannot be determined) of each of the following statements.
+                        <ol>
+
+                            <li><m>s \rightarrow r</m></li>
+
+ 
+                            <li><m>s \vee r</m></li>
+
+                            <li><m>s \wedge r</m></li>
+
+                            <li><m>\negate r</m></li>
+
+                            <li><m>\negate s \rightarrow r</m></li>
+
+                            <li><m>\negate s \wedge r</m></li>
+
+
+                        </ol></p>
+                </statement>
+            </exercise>                      
+          
+            <exercise>
+                <statement>
+                    <p>What conclusions can be deduced from these sets of hypotheses? (Let <m>f</m> stand for a statement that is false.)
+                        <ol>
+
+                            <li><tabular halign="left">
+                                    <row>
+                                        <cell>Hypotheses:</cell><cell><m>p</m> or <m>q</m></cell>
+                                    </row>
+                                                
+                                    <row bottom="medium">
+                                        <cell></cell><cell><m>\negate p</m></cell>
+                                    </row>                
+                                    <row top="medium">
+                                        <cell>Conclusion</cell><cell>?</cell>
+                                    </row>
+                               </tabular></li>
+
+                           <li><tabular halign="left">
+
+                                                
+                                    <row bottom="medium">
+                                        <cell>Hypotheses:</cell><cell><m>\negate p \rightarrow f</m></cell>
+                                    </row>                
+                                    <row top="medium">
+                                        <cell>Conclusion</cell><cell>?</cell>
+                                    </row>
+                               </tabular></li>
+
+                           <li><tabular halign="left">
+                                    <row>
+                                        <cell>Hypotheses:</cell><cell><m>(p \wedge q) \rightarrow r</m></cell>
+                                    </row>
+                                                
+                                    <row bottom="medium">
+                                        <cell></cell><cell><m>p</m></cell>
+                                    </row>                
+                                    <row top="medium">
+                                        <cell>Conclusion</cell><cell>? (Give a conditional statement.)</cell>
+                                    </row>
+                               </tabular></li>
+
+                        </ol></p>
+                </statement>
+            </exercise>
+
+            <exercise>
+                <statement>
+                    <p>There are three forms of invalid reasoning which commonly occur.
+                        <ul>   
+                            <li><em>Fallacy of the converse.</em><br /><br />
+                                <tabular halign="left">
+                                    <row>
+                                        <cell>If <m>p</m>, then <m>q</m>.</cell><cell></cell>
+                                    </row>
+                                                
+                                    <row bottom="medium">
+                                        <cell><m>q</m></cell><cell></cell>
+                                    </row>                
+                                    <row top="medium">
+                                        <cell><m>p</m></cell><cell>(invalid)</cell>
+                                    </row>
+                               </tabular></li>
+
+                            <li><em>Fallacy of the inverse.</em></li>
+
+                            <li><em>False transitivity.</em></li>
+
+
+                        </ul></p>
+                </statement>
+            </exercise>        
+          
+        </exercises>
+
 	</section>
+
+    <section xml:id="proofs-section">
+
+        <title>Proofs</title>
+
+         <introduction>
+                <p>As we stated both in the preface as well as earlier in this chapter, our working definition of mathematics is that it is the application of inductive and deductive logic to a system of axioms. It is not our purpose in this text to formalize the logical procedure required to provide formalistic proofs. Rather, we wish to arm the student with the basic logic and methods of attack used to form convincing arguments of the validity of the statements encountered in a reasonably careful study of the foundations of mathematics.</p>
+
+                <p>Since we will need a working definition of the word <q>proof,</q> we agree that a proof is a logical sequence of steps which validate the truth of the proposition in question. In this vein the reader should review those statements which we have <a>proven</a> and note that usually we merely showed that certain definitions were satisfied. For example, when we proposed certain statements were equivalent, we established that they had the same truth value. Surely, as we proceed further, we will be forced to provide proofs which require longer and at times more subtle sequences of logical statements. Our endeavor, as well as yours, will be to convince the reader of the truth of the propositions in question.</p>
+
+                <p>There are, however, some general approaches to proofs which are based on the various tautologies and contradictions presented in <xref ref="logic-section-tautologies" />. Most theorems are merely conditional statements of the form, <q>If <m>p</m>, then <m>q</m>.</q> Certainly, <m>p</m> and <m>q</m> might themselves be complicated compound statements, but that should not be allowed to cloud the issue at this time, so let us consider a typical theorem and a few general types of proof.</p>
+            </introduction>
+
+
+        <subsection xml:id="proofs-subsection-direct-proofs">
+            <title>Direct Proofs</title>
+
+            <p>dkfjdfjkj</p>
+
+        </subsection>
+
+        <subsection xml:id="proofs-subsection-indirect-proofs">
+            <title>Indirect Proofs</title>
+
+            <p>dkfjdfjkj</p>
+
+        </subsection>
+
+    </section>
 
 </chapter>

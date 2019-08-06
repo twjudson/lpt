@@ -2,7 +2,7 @@
 
 <!-- This file is part of the book                                              -->
 <!--                                                                            -->
-<!-- Logic and Proof for Middle School Teachers                                 -->
+<!-- Logic and Proof for Teachers                                 -->
 <!--                                                                            -->
 <!-- Copyright (C) 2019  Kimberly M. Childs, Deborah A. Pace, Thomas W. Judson  -->
 <!--                                                                            -->
@@ -13,17 +13,55 @@
 
 
     <appendix>
-        <title>More on Mathematical Induction</title>
+        <title>More on the Integers</title>
 
-         <lemma xml:id="lemma-integers-smallest-number">
-            <statement>
-                <p>The Principle of Mathematical Induction implies that <m>1</m> is the least positive natural number.</p>
-            </statement>
+        <subsection>
+            <title>The Connection between Mathematical Induction and the Principle of Well Ordering</title>
 
-            <proof>
-                <p>Let <m>S = \{ n \in {\mathbb N} : n \geq 1 \}</m>. Then <m>1 \in S</m>. Assume that <m>n \in S</m>. Since <m>0 \lt 1</m>, it must be the case that <m>n = n + 0 \lt n + 1</m>. Therefore, <m>1 \leq n \lt n + 1</m>. Consequently, if <m>n \in S</m>, then <m>n + 1</m> must also be in <m>S</m>, and by the Principle of Mathematical Induction, and <m>S = \mathbb N</m>.</p>
-            </proof>
-        </lemma>
+             <lemma xml:id="lemma-integers-smallest-number">
+                <statement>
+                    <p>The Principle of Mathematical Induction implies that <m>1</m> is the least positive natural number.</p>
+                </statement>
+
+                <proof>
+                    <p>Let <m>S = \{ n \in {\mathbb N} : n \geq 1 \}</m>. Then <m>1 \in S</m>. Assume that <m>n \in S</m>. Since <m>0 \lt 1</m>, it must be the case that <m>n = n + 0 \lt n + 1</m>. Therefore, <m>1 \leq n \lt n + 1</m>. Consequently, if <m>n \in S</m>, then <m>n + 1</m> must also be in <m>S</m>, and by the Principle of Mathematical Induction, and <m>S = \mathbb N</m>.</p>
+                </proof>
+            </lemma>
+
+        </subsection>
+
+        <subsection>
+            <title>The Proof of the Fundamental Theorem of Arithmetic</title>
+
+            <theorem>
+                <title>Fundamental Theorem of Arithmetic</title>
+                <statement>
+                    <p>Let <m>n</m> be an integer such that <m>n \gt 1</m>. Then
+                        <me>n = p_1 p_2 \cdots p_k,</me>
+                    where <m>p_1, \ldots, p_k</m> are  primes (not necessarily distinct). Furthermore, this factorization is unique; that is, if
+                        <me>n = q_1 q_2 \cdots q_l,</me>
+                    then <m>k = l</m> and the <m>q_i</m>'s are just the <m>p_i</m>'s rearranged.</p>
+                </statement>
+
+                <proof>
+                    <p><em>Uniqueness.</em>  To show uniqueness we will use induction on <m>n</m>. The theorem is certainly true for <m>n = 2</m> since in this case <m>n</m> is prime. Now assume that the result holds for all integers <m>m</m> such that <m>1 \leq m \lt n</m>, and
+                        <me>n = p_1 p_2 \cdots p_k = q_1 q_2 \cdots q_l,</me>
+                    where <m>p_1 \leq p_2 \leq \cdots \leq p_k</m> and <m>q_1 \leq q_2 \leq \cdots \leq q_l</m>. By <xref ref="theorem-integers-prime-divisor"/>, <m>p_1  \mid  q_i</m> for some <m>i = 1, \ldots, l</m> and <m>q_1  \mid p_j</m> for some <m>j = 1, \ldots, k</m>. Since all of the <m>p_i</m>'s and <m>q_i</m>'s are prime, <m>p_1 = q_i</m> and  <m>q_1 = p_j</m>. Hence, <m>p_1 = q_1</m> since <m>p_1 \leq p_j = q_1 \leq q_i = p_1</m>. By the induction hypothesis,
+                        <me>n' = p_2 \cdots p_k = q_2 \cdots q_l</me>
+                    has a unique factorization. Hence, <m>k = l</m> and <m>q_i = p_i</m> for <m>i = 1, \ldots, k</m>.</p>
+
+                    <p><em>Existence.</em> To show existence, suppose that there is some integer that cannot be written as the product of primes. Let <m>S</m> be the set of all such numbers. By the Principle of Well-Ordering, <m>S</m> has a smallest number, say <m>a</m>. If the only positive factors of <m>a</m> are <m>a</m> and <m>1</m>, then <m>a</m> is prime, which is a contradiction. Hence, <m>a = a_1 a_2</m> where <m>1 \lt a_1 \lt a</m> and <m>1 \lt a_2 \lt a</m>. Neither <m>a_1\in S</m> nor <m>a_2 \in S</m>, since <m>a</m> is the smallest element in <m>S</m>. So
+                        <md>
+                            <mrow>a_1 &amp; = p_1 \cdots p_r</mrow>
+                            <mrow>a_2 &amp; = q_1 \cdots q_s</mrow>
+                        </md>.
+                    Therefore,
+                        <me>a = a_1 a_2 = p_1 \cdots p_r q_1 \cdots q_s</me>.
+                    So <m>a \notin S</m>, which is a contradiction.</p>
+                </proof>
+              </theorem>
+
+        </subsection>
 
 
     </appendix>
