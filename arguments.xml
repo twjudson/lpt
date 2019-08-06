@@ -397,12 +397,46 @@
                                     </row>
                                </tabular></li>
 
-                            <li><em>Fallacy of the inverse.</em></li>
+                            <li><em>Fallacy of the inverse.</em><br /><br />
+                                <tabular halign="left">
+                                    <row>
+                                        <cell>If <m>p</m>, then <m>q</m>.</cell><cell></cell>
+                                    </row>
+                                                
+                                    <row bottom="medium">
+                                        <cell><m>\negate p</m></cell><cell></cell>
+                                    </row>                
+                                    <row top="medium">
+                                        <cell><m>\negate q</m></cell><cell>(invalid)</cell>
+                                    </row>
+                               </tabular></li>
 
-                            <li><em>False transitivity.</em></li>
+                            <li><em>False transitivity.</em><br /><br />
+                                <tabular halign="left">
+                                    <row>
+                                        <cell>If <m>p</m>, then <m>q</m>.</cell><cell></cell>
+                                    </row>
+                                                
+                                    <row bottom="medium">
+                                        <cell>If <m>p</m>, then <m>r</m>.</cell><cell></cell>
+                                    </row>                
+                                    <row top="medium">
+                                        <cell>If <m>q</m>, then <m>r</m>.</cell><cell>(invalid)</cell>
+                                    </row>
+                               </tabular></li>
 
 
                         </ul></p>
+
+                        <p>Which fallacies occur in the following arguments?
+                            <ol>
+
+                                <li>If I am a good person, nothing bad will happen to me.  Nothing happened to me.  Therefore, I am a good person.</li>
+
+
+                                <li>If you work hard, you will be wealthy and wise. Therefore, if you are wealthy, then you will be wise.</li>
+
+                            </ol></p>
                 </statement>
             </exercise>        
           
