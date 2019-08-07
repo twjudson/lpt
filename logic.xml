@@ -692,7 +692,7 @@
         			<li><m>[\negate(p \wedge q)] \leftrightarrow [(\negate p) \vee (\negate q)]</m></li>
 
 
-        			<li><m>[\negate(p \rightarrow q)]  \leftrightarrow [p \, \wedge \negate q)] </m></li>
+        			<li><m>[\negate(p \rightarrow q)]  \leftrightarrow [p \, \wedge (\negate q)] </m></li>
 
         			<li><m>[\negate(p \leftrightarrow q)]  \leftrightarrow \{ [p \, \wedge \negate q)] \vee [q \, \wedge \negate p)] \} </m></li>
 

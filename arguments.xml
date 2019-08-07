@@ -468,9 +468,54 @@
                 <p>Recall from the truth table of a conditional sentence that when <m>p</m> is false, <m>q</m> can have any truth value and the conditional will still be true. Thus, we need only consider the case when <m>p</m> is true and argue that <m>q</m> must also be true. Hence, we assume <m>p</m> is true and by applying various known tautologies and apparent implications, we argue <m>q</m> is also true.</p>
 
                 <example xml:id="arguments-example-direct-proof">
-                    <p>We will prove the satement: <q>Let <m>m</m> and <m>n</m> be integers. If <m>m</m> is even and <m>n</m> is even, then <m>m + n</m> is even.</q></p>
+                    <p>We will prove the statement: <q>Let <m>m</m> and <m>n</m> be integers. If <m>m</m> is even and <m>n</m> is even, then <m>m + n</m> is even.</q></p>
 
-                    <p><em>Proof.</em></p>
+                    <p><em>Proof.</em> Assume the hypothesis, <q><m>m</m> is even and <m>n</m> is even</q> is true. By definition of conjunction, it follows that the component statements <q><m>m</m> is even</q> and <q><m>n</m> is even</q> are true. But since even numbers are by definition multiples of <m>2</m>, there must exist integers <m>r</m> and <m>s</m> such that <m>m = 2r</m> and <m>n = 2s</m>. Then substitution yields
+                        <me>m + n = 2r + 2s = 2(r + s).</me>
+                    Since the set of integers is closed under addition, the number <m>r + s</m> is also an integer. Thus, we have written <m>m + n </m> as <m>2</m> times an integer, so we have shown <m>m + n</m> is even. That is, the conclusion <q><m>m + n</m> is even</q> is true whenever the hypothesis <q><m>m</m> is even and <m>n</m> is even</q> is true.</p>
+                </example>
+
+            </subsection>
+
+             <subsection>
+                <title>Method 2: Proof by Contradiction</title>
+
+                <p>We know that <m>[\negate(p \rightarrow q)]  \leftrightarrow [p \, \wedge (\negate q)] </m> by part (5) of <xref ref="logic-theorem-tautology" />. If we begin by assuming <m>p \, \wedge (\negate q)</m> is true and reach a contradiction, it must be the case that <m>p \, \wedge (\negate q)</m> is false.  But <m>p \, \wedge (\negate q)</m> being false and yet equivalent to <m>\negate(p \rightarrow q)</m> implies that <m>\negate(p \rightarrow q)</m> is also false or <m>p \rightarrow q</m> is true. Therefore, in proving <m><m>p \rightarrow q</m></m> by contradiction, we assume <m>p</m> and <m>\negate q</m> are both true and reach a contradiction. This logically shows that the statement <m>p \rightarrow q</m> as argued above.</p>
+
+                <example xml:id="arguments-example-contradiction-proof">
+                    <p>We will prove the statement: <q>Let <m>x</m> and <m>y</m> be positive real numbers. If <m>x \neq y</m>, then <m>x^2 \neq y^2</m>.</q></p>
+
+                    <p><em>Proof.</em> For positive real numbers <m>x</m> and <m>y</m>, assume <m>x \neq y</m> and <m>x^2 = y^2</m>. Then
+                        <me>x^2 - y^2 = (x - y)(x + y) = 0.</me>
+                    Hence, either <m>x - y = 0</m> or <m>x + y = 0</m>.  We assumed that <m>x \neq y</m>, so <m>x - y \neq 0</m>.  Consequently, <m>x + y = 0</m> or <m>x = -y</m>, which contradicts the assumption that both <m>x</m> and <m>y</m> are positive.  Therefore, <m>x^2 \neq y^2</m> if <m>x \neq y</m>.</p>
+                </example>
+
+            </subsection>
+
+             <subsection>
+                <title>Method 3: Proof by Contrapositive (Indirect Proof)</title>
+
+                <p>Since we know that <m>(p \rightarrow q)  \leftrightarrow ( \negate q \rightarrow \negate p )</m> by part (8) of <xref ref="logic-theorem-tautology" />, we can prove <m>\negate q \rightarrow \negate p</m> instead of <m>p \rightarrow q</m>. That is, we assume that <m>\negate q</m> is true and argue that <m>\negate p</m> is true. So essentially, a proof by contraposition is a direct proof applied to a statement that is equivalent to the one we wish to prove.</p>
+
+                <example xml:id="arguments-example-contrapositive-proof">
+                    <p>As in <xref ref="arguments-example-contradiction-proof" />, we will prove the statement: <q>Let <m>x</m> and <m>y</m> be positive real numbers. If <m>x \neq y</m>, then <m>x^2 \neq y^2</m>.</q> However, we will directly prove the equivalent statement, <q>If <m>x^2 = y^2</m>, the <m>x = y</m>.</q></p>
+
+                    <p><em>Proof.</em> Assume that <m>x^2 = y^2</m>.  Then
+                        <me>x^2 - y^2 = (x - y)(x + y) = 0.</me>
+                    Consequently,  <m>x - y = 0</m> or <m>x + y = 0</m>. Since both <m>x</m> and <m>y</m> are positive, <m>x + y</m> must also be positive.  Hence, <m>x + y \neq 0</m>.  Therefore, <m>x - y = 0</m> or <m>x = y</m>.</p>
+                </example>
+
+            </subsection>
+
+            <subsection>
+                <title>Counterexamples</title>
+
+                <p>We can use a counterexample to prove that a statement is false. In considering the truth value of a conditional statement <m>p \rightarrow q</m>, we would know the statement is false if we could find a single example for which <m>p</m> is true but <m>q</m> is false.</p>
+
+                <example xml:id="arguments-example-counterexample">
+                    <p>Consider the statement: <q>Let <m>m</m> and <m>n</m> be integers. If <m>m</m> is even, then <m>m + n</m> is even.</q>  By considering a single example such as <m>m = 2</m> and <m>n = 3</m>, and observing that
+                        <me>m + n = 2 + 3 = 5</me>
+                    is not even, we have established the conditional statement is false.</p>
                 </example>
 
             </subsection>
