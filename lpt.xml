@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file is part of the book                                              					-->
+<!--                                                                            							-->
+<!-- Logic and Proof for Teachers                                				-->
+<!--                                                                            							-->
+<!-- Copyright (C) 2019  Kimberly M. Childs, Deborah A. Pace, Thomas W. Judson    -->
+<!--                                                                            							-->
+<!-- See the file COPYING for copying conditions.                               			-->
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<!-- <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="fr-FR"> -->
+
+    <xi:include href="./bookinfo.xml" /> <!-- ISBN, website, other metadata -->
+    
+    <book xml:id="lpt">
+        <title>Logic and Proof for Teachers</title>
+
+        <xi:include href="./frontmatter.xml" />                 <!-- Title Page, Preface, etc. -->
+
+        <!-- In "bookinfo.xml" set to "structural" for maximum effect -->
+
+            <xi:include href="./logic.xml" />                    <!-- Logic  -->
+            <xi:include href="./arguments.xml" />                    <!-- Arguments  -->    
+            <xi:include href="./sets.xml" />                    <!-- Sets --> 
+            <xi:include href="./relations.xml" />                    <!-- Relations  -->   
+            <xi:include href="./integers.xml" />                  <!-- Integers  -->           
+            <xi:include href="./backmatter.xml" />                  <!-- GFDL, Hints, Notation -->
+
+    </book>
+
+</pretext>

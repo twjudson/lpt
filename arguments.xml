@@ -456,20 +456,64 @@
                 <p>There are, however, some general approaches to proofs which are based on the various tautologies and contradictions presented in <xref ref="logic-section-tautologies" />. Most theorems are merely conditional statements of the form, <q>If <m>p</m>, then <m>q</m>.</q> Certainly, <m>p</m> and <m>q</m> might themselves be complicated compound statements, but that should not be allowed to cloud the issue at this time, so let us consider a typical theorem and a few general types of proof.</p>
             </introduction>
 
+            <theorem>
+                <statement>
+                    <p>If <m>p</m>, then <m>q</m>.</p>
+                </statement>
+            </theorem>
 
-        <subsection xml:id="proofs-subsection-direct-proofs">
-            <title>Direct Proofs</title>
+            <subsection>
+                <title>Method 1: Direct Proof</title>
 
-            <p>dkfjdfjkj</p>
+                <p>Recall from the truth table of a conditional sentence that when <m>p</m> is false, <m>q</m> can have any truth value and the conditional will still be true. Thus, we need only consider the case when <m>p</m> is true and argue that <m>q</m> must also be true. Hence, we assume <m>p</m> is true and by applying various known tautologies and apparent implications, we argue <m>q</m> is also true.</p>
 
-        </subsection>
+                <example xml:id="arguments-example-direct-proof">
+                    <p>We will prove the satement: <q>Let <m>m</m> and <m>n</m> be integers. If <m>m</m> is even and <m>n</m> is even, then <m>m + n</m> is even.</q></p>
 
-        <subsection xml:id="proofs-subsection-indirect-proofs">
-            <title>Indirect Proofs</title>
+                    <p><em>Proof.</em></p>
+                </example>
 
-            <p>dkfjdfjkj</p>
+            </subsection>
 
-        </subsection>
+        <exercises>
+
+             <exercise xml:id="exercise-arguments-proof">
+                <statement>
+                    <p>Let <m>m</m> and <m>n</m> represent integers. Prove by the direct method.
+                        <ol>
+
+                            <li>If <m>n</m> is even, then <m>-n</m> is even.</li>
+
+                            <li>If <m>n</m> is odd, then <m>-n</m> is odd.</li>
+
+                            <li>If <m>m</m> is even and <m>n</m> is odd, then <m>m + n</m> is odd.</li>
+
+                            <li>If <m>m</m> is odd, then <m>m^2 + 1</m> is even.</li>
+
+                    </ol></p>
+                </statement>
+            </exercise>
+
+            <exercise>
+                <statement>
+                    <p>Using facts from <xref ref="exercise-arguments-proof" />, prove the given statement by the method indicated.
+                    <blockquote>
+                        <p>If <m>m + n</m> is even and <m>m</m> is odd, then <m>n</m> is odd.</p>
+                    </blockquote>
+                        <ol>
+
+                            <li>Direct method.</li>
+
+                            <li>Contrapostion.</li>
+
+                            <li>Contradiction.</li>
+
+                    </ol></p>
+                </statement>
+            </exercise>
+
+        </exercises>
+
 
     </section>
 
