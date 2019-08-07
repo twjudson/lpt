@@ -1,0 +1,12 @@
+.DS_Store
+*.aux
+mth-300-book.idx
+*.ilg
+*.ind
+*.log
+*.out
+*.toc
+*.pdf
+*.tex
+*.html
+*.idx
