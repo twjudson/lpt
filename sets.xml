@@ -12,13 +12,285 @@
 
 <title>Sets</title>
 
-    <introduction>
-        <p>dfkjdsfjkd</p>
-    </introduction>
+ <assemblage>
+    	<title>TEXAS STATE BOARD FOR EDUCATOR CERTIFICATION (SBEC): MATHEMATICS STANDARDS COVERED</title>
+    	<p><ul>
+
+    		<li>STANDARD V: MATHEMATICAL PROCESSES: The mathematics teacher understands and uses mathematical processes to reason mathematically, to solve mathematical problems, to make mathematical connections within and outside of mathematics, and to communicate mathematically.</li>
+
+    		<li>STANDARD VI: MATHEMATICAL PERSPECTIVES: The mathematics teacher understands the historical development of mathematical ideas, the interrelationship between society and mathematics, the structure of mathematics, and the evolving nature of mathematics and mathematical knowledge.</li>
+
+    		</ul></p>
+    </assemblage>
+
+
 
     <section xml:id="sets-section-sets">
     	<title>Sets</title>
-    	<p>dfjkldfjdfk</p>
+
+    	<introduction>
+	        <p>An underlying idea of mathematics is the concept of a collection of objects or a set.</p>
+	    </introduction>
+
+       <definition xml:id="sets-definition-set">
+            <p>A <term>set</term> is a collection of distinct objects, which are called the <term>elements</term> of the set. We will use capital letters to denote sets, for example <m>a</m>, <m>B</m>, <m>S</m>, <m>T</m>, etc. If <m>x</m> is an element of a set <m>S</m>, we use the notation <m>x \in S</m>. As is frequently done in mathematics, if <m>x</m> is not an element of a set <m>S</m>, we denote this by <m>x \notin S</m>.  Two sets, <m>A</m> and <m>B</m>, are <term>equal</term> (denoted <m>A = B</m>) if and only if they have precisely the same elements.</p>
+        </definition>
+
+        <definition xml:id="sets-definition-subset">
+            <p>A set which is comprised of some (or all) of the elements of <m>\mathbb U</m>, some <term>universal set</term>, is called a subset of <m>\mathbb U</m> and is denoted <m>S \subseteq \mathbb U</m>. If <m>A \subseteq \mathbb U</m> and <m>B \subseteq \mathbb U</m>, we further state that <m>A</m> is a <term>subset</term> of <m>B</m>, denoted <m>A \subseteq B</m>, if each element of <m>A</m> is also an element of <m>B</m>. Moreover, if <m>A \subseteq B</m> but <m>A \neq B</m>, we say that <m>A</m> is a <term>proper subset</term> of <m>B</m> and write <m>A \subset B</m>.</p>
+        </definition>
+
+        <example xml:id="sets-example-subset">
+            <p>Let <m>\mathbb U = \{a, b, c, \ldots, z\}</m>, <m>S = \{ a, b, s, u \}</m>, <m>T = \{a, u\}</m>, and <m>W = \{ b,d \}</m>.  The <m>S \subseteq \mathbb U</m>, <m>T \subseteq \mathbb U</m>, <m>W \subseteq \mathbb U</m>, and <m>T \subseteq S</m>.  However, <m>W \not\subseteq S</m>, <m>W \not\subseteq T</m>, <m>T \not\subseteq W</m>, and <m>S \not\subseteq W</m>.  We read <m>W \not\subseteq S</m> as <q><m>W</m> is not a subset of <m>S</m>.</q>  In addition, <m>S \subset \mathbb U</m>, <m>T \subset \mathbb U</m>, <m>W \subset \mathbb U</m>, and <m>T \subset S</m>.</p>
+        </example>
+
+        <p>When referring to the definition of subset, you should note that to prove <m>A \subseteq B</m>, one would naturally consider an arbitrary element <m>x</m> of <m>A</m> and prove that <m>x \in B</m>. In other words, we must prove the conditional statement <q>If <m>x \in A</m>, then <m>x \in B</m>.</q></p>
+
+        <fact>
+        	<p>Let <m>A</m> and <m>B</m> be sets. Then <m>A = B</m> if and only if <m>A \subseteq B</m>  and <m>B \subseteq A</m>. We sometimes refer to this method of proof as <q>proofs by double inclusion.</q></p>
+        </fact>
+
+        <p>Without entering into a philosophical argument, we define <m>\emptyset</m> to be the set with no elements, called the <term>empty set</term>, the <term>void set</term>, or the <term>null set</term>. This set is extremely useful and should be understood carefully.</p>
+
+        <fact>
+        	<p>Let <m>\mathbb U</m> be any universal set and <m>A \subseteq \mathbb U</m>.  Then <m>\emptyset \subseteq A</m> and <m>\emptyset \subseteq \mathbb U</m>.</p>
+        </fact>
+
+        <proof>
+        	<p>By definition of subset, we must show each element in <m>\emptyset</m> is also an element of <m>A</m> (or <m>\mathbb U</m>, if we are proving <m>\emptyset \subseteq \mathbb U</m>); however, since there are no elements in to check, the definition is satisfied.</p>
+
+        	<p>Let us consider the proof above logically. Recall that <m>A \subseteq B</m> is a conditional statement (if <m>x \in A</m>, then <m>x \in B</m>). So we need to examine <q>If <m>x \in \emptyset</m>, then <m>x \in A</m>.</q> But <m>\emptyset</m> has no elements, so <m>x \in \emptyset</m> is false, meaning the conditional is true.</p>
+		</proof>
+
+		<p>The next definition introduces several basic ways of combining sets which are used throughout mathematics.</p>
+
+		<definition xml:id="sets-definition-set-operations">
+			<p>Let <m>\mathbb U</m> be the universal set with <m>A</m> and <m>B</m> subsets of <m>\mathbb U</m>. Then
+				<ul>
+
+					<li><m>A \cup B = \{ x \in \mathbb U \mid x \in A \text{ or } x \in B \}</m>, which is called <m>A</m> <term>union</term> <m>B</m>.</li>
+
+					<li><m>A \cap B = \{ x \in \mathbb U \mid x \in A \text{ and } x \in B \}</m>, which is called <m>A</m> <term>intersect</term> <m>B</m>.</li>
+
+					<li><m>\overline{A} = \{ x \in \mathbb U \mid x \notin A \}</m>, which is called the <term>complement</term> of <m>A</m>.</li>
+
+					<li><m>A \setminus B = \{ x \in \mathbb U \mid x \in A \text{ or } x \notin B \}</m>, which is read <m>A</m> <term>minus</term> <m>B</m>.</li>
+
+					<li><m>A</m> and <m>B</m> are set to be <term>disjoint</term> if <m>A \cap B = \emptyset</m>.</li>
+
+				</ul></p>
+		</definition>
+
+		<p>While not sufficient for proof, Venn diagrams can be useful in visualizing these concepts (<xref first="figure-sets-venn-union" last="figure-sets-venn-complement" />).</p>
+
+
+        <figure xml:id="figure-sets-venn-union">
+			<image width="40%" xml:id="sets-venn-union">
+	            <description>two shaded overlapping circles</description>
+	            <latex-image>
+	            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+	            <![CDATA[
+	            \begin{tikzpicture}[scale=1]
+	            \draw [very thick] (0,0) rectangle (6,4);
+	            \draw [fill=blue!20] (2,2) circle(1.5);    
+	            \draw [fill=blue!20] (4,2) circle(1.5);  
+	            \draw [very thick] (2,2) circle(1.5);  
+	            \draw [very thick] (4,2) circle(1.5); 
+	            \node at (2,3) {$A$};
+	            \node at (4,3) {$B$};
+	            \node at (0.75,3.5) {$\mathbb U$};
+	            \end{tikzpicture}]]>
+	            </latex-image>
+	        </image>
+            <caption>The shaded area represents <m>A \cup B</m></caption>
+        </figure>
+
+        <figure xml:id="figure-sets-venn-intersect">
+			<image width="40%" xml:id="sets-venn-intersect">
+	            <description>two overlapping circles with the common part shaded</description>
+	            <latex-image>
+	            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+	            <![CDATA[
+	            \begin{tikzpicture}[scale=1]
+	            \draw [very thick] (0,0) rectangle (6,4); 
+				\begin{scope}
+                    \clip (2,2) circle (1.5);
+                    \clip (4,2) circle (1.5);
+                    \fill[color=blue!20] (0,0) rectangle (6,4);
+                \end{scope}  
+	            \draw [very thick] (2,2) circle(1.5);  
+	            \draw [very thick] (4,2) circle(1.5); 
+	            \node at (2,3) {$A$};
+	            \node at (4,3) {$B$};
+	            \node at (0.75,3.5) {$\mathbb U$};
+	            \end{tikzpicture}]]>
+	            </latex-image>
+	        </image>
+            <caption>The shaded area represents <m>A \cap B</m></caption>
+        </figure>
+
+        <figure xml:id="figure-sets-venn-minus">
+			<image width="40%" xml:id="sets-venn-minus">
+	            <description>two overlapping circles with the non-overlapping part of one shaded</description>
+	            <latex-image>
+	            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+	            <![CDATA[
+	            \begin{tikzpicture}[scale=1]
+	            \draw [very thick] (0,0) rectangle (6,4);
+	            \draw [fill=blue!20] (2,2) circle(1.5);    
+	            \draw [fill=white] (4,2) circle(1.5);  
+	            \draw [very thick] (2,2) circle(1.5);  
+	            \draw [very thick] (4,2) circle(1.5); 
+	            \node at (2,3) {$A$};
+	            \node at (4,3) {$B$};
+	            \node at (0.75,3.5) {$\mathbb U$};
+	            \end{tikzpicture}]]>
+	            </latex-image>
+	        </image>
+            <caption>The shaded area represents <m>A \setminus B</m></caption>
+        </figure>
+  	
+
+  	        <figure xml:id="figure-sets-venn-complement">
+			<image width="40%" xml:id="sets-venn-complement">
+	            <description>two overlapping circles with the area outside one circle shaded</description>
+	            <latex-image>
+	            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+	            <![CDATA[
+	            \begin{tikzpicture}[scale=1]
+	            \fill[color=blue!20] (0,0) rectangle (6,4);
+	            \draw [very thick] (0,0) rectangle (6,4);
+	            \draw [fill=white] (2,2) circle(1.5);      
+	            \draw [very thick] (2,2) circle(1.5);  
+	            \draw [very thick] (4,2) circle(1.5); 
+	            \node at (2,3) {$A$};
+	            \node at (4,3) {$B$};
+	            \node at (0.75,3.5) {$\mathbb U$};
+	            \end{tikzpicture}]]>
+	            </latex-image>
+	        </image>
+            <caption>The shaded area represents <m>\overline{A}</m></caption>
+        </figure>
+
+        <assemblage>
+            <title>TAKS CONNECTION</title>
+            <p>How might a student apply the concept of set intersections to answer the following question taken from the 2006 Texas Assessment of Knowledge and Skills (TAKS) Grade 5 Mathematics test?</p>
+
+            <p>The Venn diagram below is used to classify counting numbers according to a set of rules.</p> 
+
+ 			<sidebyside width="60%">
+            	<image xml:id="sets-venn-taks-2">
+		            <description>three overlapping circles</description>
+		            <latex-image>
+		            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+		            <![CDATA[
+		            \begin{tikzpicture}[scale=1]
+		            \draw [very thick] (0,0) rectangle (6,5.5);    
+		            \draw [very thick] (2,3.5) circle(1.5);  
+		            \draw [very thick] (4,3.5) circle(1.5); 
+		            \draw [very thick] (3,2) circle(1.5); 
+		            \node at (3,3) {?};
+		            \node at (5,4) {$3$};
+		            \node at (4,4.5) {$6$};
+		            \node at (5,3) {$9$};
+		            \node at (3,4) {$12$};
+		            \node at (3.6,2.7) {$15$};
+		            \node at (4.2,2.3) {$30$};
+		            \node at (2,1.5) {$5$};
+		            \node at (4,1.5) {$10$};
+		            \node at (2.3,2.7) {$20$};
+		            \node at (3.5,1) {$25$};
+		            \node at (2.5,1) {$35$};
+		            \node at (2,4) {$4$};
+		            \node at (2.3,4.5) {$8$};
+		            \node at (1.5,3.5) {$16$};
+		            \node at (1.5,4.5) {$28$};
+		            \node at (1,4) {$32$};
+		            \end{tikzpicture}]]>
+		            </latex-image>
+		        </image>
+		    </sidebyside>
+
+            <p>Which one of the following numbers belongs in the region of the diagram marked by the question mark?
+                <ul>
+
+                    <li>A. 45</li>
+
+                    <li>B. 50</li>
+
+                    <li>C. 60</li>
+
+                    <li>D. 65</li>
+
+                </ul></p>
+        </assemblage>
+
+        <definition xml:id="sets-definition-power-set">
+            <p>If <m>A</m> is a set, then the <term>power set</term> of <m>A</m> is the set <m>\mathcal P(A) = \{ B \mid B \subseteq A \}</m>.</p>
+        </definition>
+
+        <example xml:id="sets-example-power-set">
+            <p>If <m>A = \{ 1,2\}</m>, then <m>\mathcal P(A) = \{ \emptyset, \{1 \}, \{2\}, A\}</m>. If <m>B = \{ a, b, c \}</m>, then <m>\mathcal P(B) = \{ \emptyset, \{ a \}, \{ b \}, \{ c \}, \{ a, b \}, \{ a, c \}, \{ b, c \}, B \}</m>.</p>
+        </example>
+
+        <definition xml:id="sets-definition-cartesian-product">
+            <p>If <m>A</m> and <m>B</m> are sets, then <m>A \times B = \{ (a, b) \mid a \in A \text{ and } b \in B \}</m> is called  the <term>Cartesian Product</term> or the <term>cross product</term> of <m>A</m> and <m >B</m>.</p>
+        </definition>
+
+        <example xml:id="sets-example-cartesian-product">
+            <p>If <m>A = \{ 1,2\}</m> and <m>B = \{ a, b, c \}</m>, then <m>A \times B = \{ (1, a), (1, b), (1, c), (2, a), (2, b), (2, c)\}</m>.</p>
+        </example>
+
+        <fact xml:id="sets-fact-sets">
+        	<p>Let <m>A</m>, <m>B</m>, and <m>C</m> be subsets of a universal set <m>\mathbb U</m>.  Then
+        		<ol>
+ 
+           			<li><m>A \subseteq A \cup B</m>.</li>
+
+           			<li><m>A \cap B \subseteq A</m>.</li>
+
+           			<li><m>A \setminus B \subseteq A</m>.</li>
+
+           			<li><m>A \setminus B</m> and <m>B \setminus A</m> are disjoint.</li>
+
+           			<li><m>A</m> and <m>\overline{A}</m> are disjoint.</li>
+
+           			<li>If <m>A \subseteq B</m> and <m>B \subseteq C</m>, then <m>A \subseteq C</m>.</li>
+
+           			<li><m>A \cup B = B \cup A</m>.</li>
+
+           			<li><m>A \cap B = B \cap A</m>.</li>
+
+           			<li><m>A \cap (B \cap C) = (A \cap B) \cap C</m>.</li>
+
+           			<li><m>A \cup (B \cup C) = (A \cup B) \cup C</m>.</li>
+
+           			<li><m>A \cap (B \cup C) = (A \cap B) \cup (A \cap C)</m>.</li>
+
+           			<li><m>A \cup (B \cap C) = (A \cup B) \cap (A \cup C)</m>.</li>
+
+           			<li><m>A \subseteq  B</m> if and only if <m>\overline{B} \subseteq \overline{A}</m>.</li>
+
+           			<li><m>A \setminus B = A \cap \overline{B}</m>.</li>
+
+           			<li><m>\overline{A \cup B} = \overline{A} \cap \overline{B}</m>.</li>
+
+           			<li><m>\overline{A \cap B} = \overline{A} \cup \overline{B}</m>.</li>
+
+           			<li><m>\overline{\overline{A}} = A </m>.</li>
+
+           			<li><m>A  \cup \emptyset = \emptyset \cup A = A</m>.</li>
+
+           			<li><m>A  \cap \emptyset = \emptyset \cap A = \emptyset</m>.</li>
+
+           			<li><m>A \cup \mathbb U = \mathbb U \cup A = \mathbb U</m>.</li>
+
+           			<li><m>A \cap \mathbb U = \mathbb U \cap A = A</m>.</li>
+           			   			
+    		</ol></p>
+        </fact>
     </section>
+
+
 
 </chapter>
