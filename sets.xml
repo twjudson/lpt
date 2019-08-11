@@ -2,7 +2,7 @@
 
 <!-- This file is part of the book                                              -->
 <!--                                                                            -->
-<!-- Logic and Proof for Middle School Teachers                                 -->
+<!-- Logic and Proof for Teachers                                 -->
 <!--                                                                            -->
 <!-- Copyright (C) 2019  Kimberly M. Childs, Deborah A. Pace, Thomas W. Judson  -->
 <!--                                                                            -->
@@ -303,12 +303,291 @@
             <p><em>Proof:</em>  Let <m>x \in A \cup B</m>.  Then <m>x \in A</m> or <m>x \in B</m> by the definition of <m>A \cup B</m>.  Hence, <m>x \in B</m> or <m>x \in A</m>. By the definition of union <m>x \in B \cup A</m>.  We have argued by direct proof that <q><m>x \in A \cup B</m>, then <m>x \in B \cup A</m>.</q>  Thus, <m>A \cup B \subseteq B \cup A</m>.  By reversing the proof, we can show that <m>B \cup A \subseteq A \cup B</m>.  Therefore, <m>A \cup B = B \cup A</m></p>
         </example>
 
-
          <example xml:id="sets-example-fact-16">
             <p>We will prove (16) in <xref ref="sets-fact-sets" />.  That is, we will show <m>\overline{A \cap B} = \overline{A} \cup \overline{B}</m>.</p>
 
-            <p><em>Proof:</em>  To  show <m>\overline{A \cap B} = \overline{A} \cup \overline{B}</m>, we again use the method of double inclusion.  Let <m>x \in \overline{A \cap B}</m>.  Then <m>x \notin</p>
+            <p><em>Proof:</em>  To  show <m>\overline{A \cap B} = \overline{A} \cup \overline{B}</m>, we again use the method of double inclusion.  Let <m>x \in \overline{A \cap B}</m>.  Then <m>x \notin A \cap B</m>.  Recalling the definition of intersection, we notice that the statement <m>x \notin A \cap B</m> parallels the logic statement <m>\negate( p \wedge q)</m>.  DeMorgan's Laws for logic tell us that <m>[\negate( p \wedge q)] \leftrightarrow [\negate p \; \vee \negate q]</m>.  So we now have <m>x \notin A</m> or <m>x \notin B</m>; hence, <m>x \in \overline{A}</m> or <m>x \in \overline{B}</m>.  Thus, by definition of union, <m>x \in A \cup B</m>.  Consequently, <m>\overline{A \cap B} \subseteq \overline{A} \cup \overline{B}</m>.</p>
+
+            <p>To see that <m>\overline{A} \cup \overline{B} \subseteq \overline{A \cap B}</m> let <m>y \in \overline{A} \cup \overline{B}</m>.  Then <m>y \in \overline{A}</m> or <m>y \in \overline{B}</m>, which means that <m>y \notin A</m> or <m>y \notin B</m>.  Arguing as above, we have <m>y \notin A \cap B</m>.   Thus, <m>y \in \overline{A \cap B}</m>, and <m>\overline{A} \cup \overline{B} \subseteq \overline{A \cap B}</m>.</p>
         </example>
+
+        <p>As indicated, the proofs of the other parts of this fact are left as exercises.</p>
+
+        <subsection>
+            <title>Historical Note</title>
+
+            <p>Unlike most areas of mathematics, which arise as a result of the cumulative efforts of many mathematicians, sometimes over several generations, set theory is the creation of a single individual. Georg Ferdinand Ludwig Phillip Cantor (27 June 1806<ndash />18 March 1871) was a German mathematician, born in Russia. Use internet and/or library resources to research his major contributions to the area of set theory, specifically the concept of cardinality and Cantor's Theorem.</p>
+
+        </subsection>
+
+
+
+        <exercises>
+
+			<exercise xml:id="exercise-sets-setops">
+                <statement>
+        			<p>Let <m>\mathbb U = \{1, 2, \ldots 10 \}</m>, <m>A = \{ 1, 2, 3, 4, 5 \}</m>, <m>B = \{ 2, 3, 5 \}</m>, <m>D = \{ 1, 3, 5, 7, 9 \}</m>, and <m>E = \{ 2, 4, 6, 8, 10 \}</m>.  Label each of the statements below as True or False and explain.
+        				<ol>
+
+        					<li><m>D</m> and <m>E</m> are disjoint.</li>
+
+        					<li><m>A \subseteq E</m>.</li>
+
+        					<li><m>B \subset A</m>.</li>
+
+        					<li><m>A \subset \mathbb U</m>.</li>
+
+        					<li><m>(A \cap D) \subset A</m>.</li>
+
+        					<li><m>(A \cup E) \subset \mathbb U</m>.</li>
+
+        					<li><m>(D \cup E) \subset \mathbb U</m>.</li>
+
+        					<li><m>(D \cup E) = \mathbb U</m>.</li>
+
+        					<li><m>6 \in D</m>.</li>
+
+        					<li><m>\{ 8 \} \in E</m>.</li>
+
+        					<li><m>\emptyset \subseteq B</m>.</li>
+
+        					<li><m>\{ 2, 3 \} \subseteq B</m>.</li>
+
+        					<li><m>5 \subseteq B</m>.</li>
+
+      						<li><m>\emptyset \subseteq \emptyset</m>.</li>
+
+        					<li><m>\overline{D} = E</m>.</li>
+
+        					<li><m>\overline{B \cup D} \subseteq E</m>.</li>
+
+        				</ol></p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Using the sets in <xref ref="exercise-sets-setops" />, find:
+        				<ol>
+
+        					<li><m>\overline{B}</m></li>
+
+        					<li><m>D \setminus A</m></li>
+
+        					<li><m>\overline{D} \cap \overline{A}</m></li>
+
+        					<li><m>\overline{D \cup A}</m></li>
+
+        					<li><m>E \cap (B \cup D)</m></li>
+
+        					<li><m>\overline{A} \cap (B \setminus D)</m></li>
+
+        					<li><m>\overline{D \cap E}</m></li>
+
+        					<li><m>\overline{D \setminus E}</m></li>
+        				</ol></p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (1) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (2) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (4) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (5) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (6) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (8) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (9) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (10) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (11) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (12) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+
+        	<exercise>
+        		<statement>
+        			<p>Prove the second half of Part (13) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (14) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (15) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (17) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (18) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (19) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (20) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+
+        	<exercise>
+        		<statement>
+        			<p>Prove (21) in <xref ref="sets-fact-sets" /></p>
+        		</statement>
+        	</exercise>
+
+			<p>For each of the following problems, assume <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m> are subsets of some universal set <m>\mathbb U</m>.  In problems <xref first="sets-exercise-21" last="sets-exercise-33" />, prove that the statements are true.</p>
+
+        	<exercise xml:id="sets-exercise-21">
+        		<statement>
+        			<p>If <m>C \subseteq A</m> or <m>C \subseteq B</m>, then <m>C \subseteq A \cup B</m>.</p>
+        		</statement>
+        	</exercise>
+
+        	<exercise xml:id="sets-exercise-22">
+        		<statement>
+        			<p>If <m>A \subseteq C</m> and <m>B \subseteq C</m>, then <m>A \cap B \subseteq C</m>.</p>
+        		</statement>
+        	</exercise>
+
+        	<exercise xml:id="sets-exercise-23">
+        		<statement>
+        			<p><m>A \setminus A = \emptyset</m>.</p>
+        		</statement>
+        	</exercise>
+
+        	<exercise xml:id="sets-exercise-24">
+        		<statement>
+        			<p><m>A \setminus (A \setminus B) \subseteq B</m>.</p>
+        		</statement>
+        	</exercise>
+
+        	<exercise xml:id="sets-exercise-25">
+        		<statement>
+        			<p>If <m>A</m> or <m>B</m> are disjoint, then <m>B \subseteq \overline{A}</m>.</p>
+        		</statement>
+        	</exercise>
+
+        	<exercise xml:id="sets-exercise-26">
+        		<statement>
+        			<p>If <m>A \subseteq C</m> and <m>B \subseteq D</m>, then <m>A \setminus D \subseteq C \setminus B</m>.</p>
+        		</statement>
+        	</exercise>
+
+        	<exercise xml:id="sets-exercise-27">
+        		<statement>
+        			<p><m>A \setminus (B \setminus C) = A \cap (\overline{B} \cup C)</m>.</p>
+        		</statement>
+        	</exercise>
+
+        	<exercise xml:id="sets-exercise-28">
+        		<statement>
+        			<p><m>(A \setminus B) \setminus C = A \setminus (B \cup C )</m>.</p>
+        		</statement>
+        	</exercise>
+
+        	<exercise xml:id="sets-exercise-29">
+        		<statement>
+        			<p><m>A \setminus (B \cup C) = (A \setminus B) \cap (A \setminus C)</m>.</p>
+        		</statement>
+        	</exercise>
+
+        	<exercise xml:id="sets-exercise-30">
+        		<statement>
+        			<p>If <m>C \subseteq A</m> or <m>C \subseteq B</m>, then <m>C \subseteq A \cup B</m>.</p>
+        		</statement>
+        	</exercise>
+
+        	<exercise xml:id="sets-exercise-31">
+        		<statement>
+        			<p>If <m>C \subseteq A</m> or <m>C \subseteq B</m>, then <m>C \subseteq A \cup B</m>.</p>
+        		</statement>
+        	</exercise>
+
+        	<exercise xml:id="sets-exercise-32">
+        		<statement>
+        			<p>If <m>C \subseteq A</m> or <m>C \subseteq B</m>, then <m>C \subseteq A \cup B</m>.</p>
+        		</statement>
+        	</exercise>
+
+        	<exercise xml:id="sets-exercise-33">
+        		<statement>
+        			<p>If <m>C \subseteq A</m> or <m>C \subseteq B</m>, then <m>C \subseteq A \cup B</m>.</p>
+        		</statement>
+        	</exercise>
+
+
+        </exercises>
 
     </section>
 

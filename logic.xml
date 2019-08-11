@@ -732,9 +732,10 @@
         		</ol></p>
         </theorem>
 
-        <hist>
+        <subsection>
+            <title>Historical Note</title>
             <p>Augustus De Morgan (27 June 1806<ndash/>18 March 1871) was a British mathematician and logician. Use internet and/or library resources to research his major contributions to the fields of mathematics and logic, specifically De Morgan's Laws.</p>
-        </hist>
+        </subsection>
         
         <p>The following theorem lists some useful contradictions, and again, the proof requires construction of the appropriate truth tables and is left to the exercises.</p>
 
