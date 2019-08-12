@@ -37,21 +37,21 @@
     		<p>Let <m>A = \{a,b,c,d\}</m> and <m>B = \{1,2,3\}</m>. Consider the following sets.
     			<ol>
 
-    				<li><m>W =\{ (a,2), (b,3), (c,2), (d,3)\}</m></li>
+    				<li><m>R_1 =\{ (a,2), (b,3), (c,2), (d,3)\}</m></li>
 
-    				<li><m>H = \{ (a,1), (a, 2), (b,3) \}</m></li>
+    				<li><m>R_2 = \{ (a,1), (a, 2), (b,3) \}</m></li>
 
-    				<li><m>I = \{(a, 1), (b, 3), (c, 2) \}</m></li>
+    				<li><m>R_3 = \{(a, 1), (b, 3), (c, 2) \}</m></li>
 
-    				<li><m>M = \{ (a,a), (b,b), (c,c), (d,d) \}</m></li>
+    				<li><m>R_4 = \{ (a,a), (b,b), (c,c), (d,d) \}</m></li>
 
-    				<li><m>E = \{ (d, a), (c, a), (d,d) \}</m></li>
+    				<li><m>R_5 = \{ (d, a), (c, a), (d,d) \}</m></li>
 
     			</ol>
-    		Each of the sets <m>W</m>, <m>H</m>, <m>I</m> is a relation from <m>A</m> to <m>B</m> because the first elements in the ordered pairs are from <m>A</m> and the second elements are from <m>B</m>, while <m>N</m> and <m>E</m> are relations on <m>A</m> because both first and second elements are from <m>A</m>.</p>
+    		Each of the sets <m>R_1</m>, <m>R_2</m>, and <m>R_3</m> is a relation from <m>A</m> to <m>B</m> because the first elements in the ordered pairs are from <m>A</m> and the second elements are from <m>B</m>, while <m>R_4</m> and <m>R_5</m> are relations on <m>A</m> because both first and second elements are from <m>A</m>.</p>
     	</example>
 
-    	<p>Although relations are actually sets of ordered pairs, such collections of ordered pairs may be indicated in many ways. Notice that a relation is essentially a pairing of elements according to some criteria. For example, we may <q>pair</q> a person's name with his or her social security number, age, height, or the names of cities lived in. Sometimes relations are specified simply by listing these pairs in set form as in the example above. When relations are described in this form, the rules or criteria for the pairing are often not known. For instance, in <m>W</m> of <xref ref="relations-example-relations" />, we know that <m>b</m> and <m>d</m> are both related to <m>3</m>, but we do not know why. Similarly, relations may be indicated in table or graphical form as in the below.</p>
+    	<p>Although relations are actually sets of ordered pairs, such collections of ordered pairs may be indicated in many ways. Notice that a relation is essentially a pairing of elements according to some criteria. For example, we may <q>pair</q> a person's name with his or her social security number, age, height, or the names of cities lived in. Sometimes relations are specified simply by listing these pairs in set form as in the example above. When relations are described in this form, the rules or criteria for the pairing are often not known. For instance, in <m>R_1</m> of <xref ref="relations-example-relations" />, we know that <m>b</m> and <m>d</m> are both related to <m>3</m>, but we do not know why. Similarly, relations may be indicated in table or graphical form as in the below.</p>
 
     	<figure xml:id="figure-relations-picture">
     		<image width="80%" source="images/relations-picture.jpg">
@@ -132,14 +132,118 @@
         <p>Then to determine whether two elements in the set are related, we simply substitute our familiar relation for <m>R</m> in the expression <m>aRb</m>. For example, instead of asking if the ordered pair <m>(3, 2)</m> is an element of the relation <q>is greater than,</q> we ask if <m>3</m> <q>is greater than</q> <m>2</m>; that is, we usually write <m>3 > 2</m> instead of writing <m>(3,2) \in</m> <q><m>></m></q>.</p>
 
 
-        <p>In considering each of the examples given in this section, it is clear that a relation between sets <m>A</m> and <m>B</m> need not <q>use up</q> all of both sets. This idea leads us to consider those subsets of <m>A</m> and <m>B</m> whose elements are paired by the relation, namely the domain and range. Informally, we designate the domain of a relation <m>R</m> as the set of all elements of the set <m>A</m> that are actually paired with (or mapped to) at least one element in <m>B</m>. The range of a relation R may be described as the set of all elements in the set <m>B</m> to which at least one element of <m>A</m> is mapped. These concepts are defined formally in the definition below.</p>
+        <p>In considering each of the examples given in this section, it is clear that a relation between sets <m>A</m> and <m>B</m> need not <q>use up</q> all of both sets. This idea leads us to consider those subsets of <m>A</m> and <m>B</m> whose elements are paired by the relation, namely the domain and range.</p> 
+
+        <definition xml:id="relations-definition-domain-range">
+            <p>If <m>R</m> is a relation from <m>A</m> to <m>B</m>, then the <term>domain</term> of <m>R</m>, <m>\domain(R)</m> is defined by
+                <me>\domain(R) = \{a \in A \mid (a, b) \in R \text{ for some } b \in B\}.</me>
+            The <term>range</term>, denoted by <m>\range(R)</m>, is defined by
+                <me>\range(R) = \{b \in B \mid (a, b) \in R \text{ for some } a \in A\}.</me></p>
+        </definition>
+
+        <p>By <xref ref="relations-definition-domain-range" />, it is clear that <m>\domain(R)</m> is a subset of <m>A</m> and <m>\range(R)</m> is a subset of <m>B</m>.</p>
+
+        <p>Informally, we designate the domain of a relation <m>R</m> as the set of all elements of the set <m>A</m> that are actually paired with (or mapped to) at least one element in <m>B</m>. The range of a relation R may be described as the set of all elements in the set <m>B</m> to which at least one element of <m>A</m> is mapped. These concepts are defined formally in the definition below.</p>
+
+        <example xml:id="relations-example-domain-range">
+            <p>Consider the sets <m>R_1, R_2, \ldots, R_5</m> as defined in <xref ref="relations-example-relations" />.  Then
+                <ol>
+
+                    <li><m>\domain(R_1) = A</m> and <m>\range(R_1) = \{ 2, 3 \}</m>.</li>
+
+
+                    <li><m>\domain(R_2) = \{ a, b\}</m> and <m>\range(R_2) = B</m>.</li>
+
+                    <li><m>\domain(R_3) = \{a, b, c\}</m> and <m>\range(R_3) = B</m>.</li>
+
+                    <li><m>\domain(R_4) = A</m> and <m>\range(R_4) = A</m>.</li>
+
+                    <li><m>\domain(R_5) = \{c, d \}</m> and <m>\range(R_5) = \{ a, d \}</m>.</li>
+
+
+                </ol></p>
+        </example>
+
+        <example xml:id="relations-example-unit-circle">
+            <p>Consider the equation <m>x^2 + y^2 = 1</m> defined on <m>\mathbb R</m>.  Let
+                <me>R = \{ (x, y) \in \mathbb R \times \mathbb R \} \mid x^2 + y^2 = 1 \}.</me>
+            Then <m>\domain(R) = \{ x \mid -1 \leq x \leq 1 \}</m> and <m>\range(R) = \{ y \mid -1 \leq y \leq 1 \}</m> since substituting numbers  whose squares are greater than <m>1</m> for either variable yields an equation with only complex solutions.</p>
+        </example>
+
+        <p>We will investigate the concepts of domain and range in more detail in the study of functions. However, the reader may suspect that although these sets are sometimes easily found, often they will require some insight and work to determine!</p>
+
+        <p>Earlier we considered the relation <q><m>\leq</m>.</q> If we were to consider the associated pairs in reverse order, we might describe this new list of ordered pairs by the relation <q><m>\geq</m>.</q> Thus we see that relations are in some sense reversible, and we formalize this concept in the definition that follows.</p>
+
+        <definition xml:id="relations-definition-inverse-relation">
+            <p>If <m>R</m> is a relation from <m>A</m> to <m>B</m>, then the <term>inverse relation</term> of <m>R</m>, denoted by <m>R^{-1}</m>, is defined by
+                <me>R^{-1} = \{(b, a)  \mid (a, b) \in R \}.</me></p>
+        </definition>
+
+        <p>Thus, <m>R^{-1}</m> is a new relation from <m>B</m> to <m>A</m> and consists of ordered pairs from <m>R</m> with the components reversed.  Hence, the inverse relation of <m>R = \{ (2,3), (4, 7), (2, 9), (6,9) \}</m> is the relation <m>R^{-1} = \{ (3,2), (7,4), (9,2), (9, 6) \}</m>.</p>
+
+        <p>Consider the relation in <xref ref="figure-relations-relation-example" />.  The inverse relation <m>R^{-1}</m> from <m>B</m> to <m>A</m> can be found by simply reversing the arrows (<xref ref="figure-relations-inverse-relation-example" />).  In this case, <m>\domain(R) = \range(R^{-1}</m> and <m>\range(R) = \domain(R^{-1})</m>.</p>
+
+        <figure xml:id="figure-relations-relation-example">
+            <image width="80%" xml:id="relations-relation-example">
+                <description>two overlapping circles with the common part shaded</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[
+                \begin{tikzpicture}[scale=1]
+                \draw [very thick] (2,2) circle(1.5);  
+                \draw [very thick] (6,2) circle(1.5); 
+                \draw[->] (2,3) node [left] {$a$} -- (6,3) node [right] {$1$};
+                \draw[->] (2,2.5) node [left] {$b$} -- (6,2.5) node [right] {$2$}; 
+                \draw[->] (2,2.5) -- (6,2); 
+                \draw[->] (2,1.5) node [left] {$d$} -- (6,1.5) node [right] {$4$};
+                \draw[->] (2,1) node [left] {$e$} -- (6,2) node [right] {$3$};
+                \node at (0,3) {$A$};
+                \node [left] at (2,2) {$c$};
+                \node at (8,3) {$B$};                                     
+                \end{tikzpicture}]]>
+                </latex-image>
+            </image>
+            <caption>The relation <m>R</m> from <m>A</m> to <m>B</m></caption>
+        </figure>
+
+
+
+        <figure xml:id="figure-relations-inverse-relation-example">
+            <image width="80%" xml:id="relations-inverse-relation-example">
+                <description>two overlapping circles with the common part shaded</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+               <![CDATA[
+                \begin{tikzpicture}[scale=1]
+                \draw [very thick] (2,2) circle(1.5);  
+                \draw [very thick] (6,2) circle(1.5); 
+                \draw[<-] (2,3) node [left] {$a$} -- (6,3) node [right] {$1$};
+                \draw[<-] (2,2.5) node [left] {$b$} -- (6,2.5) node [right] {$2$}; 
+                \draw[<-] (2,2.5) -- (6,2); 
+                \draw[<-] (2,1.5) node [left] {$d$} -- (6,1.5) node [right] {$4$};
+                \draw[<-] (2,1) node [left] {$e$} -- (6,2) node [right] {$3$};
+                \node at (0,3) {$A$};
+                \node [left] at (2,2) {$c$};
+                \node at (8,3) {$B$};                                     
+                \end{tikzpicture}]]>
+                </latex-image>
+            </image>
+            <caption>The relation <m>R^{-1}</m> from <m>B</m> to <m>A</m></caption>
+        </figure>
+
 
     </section>
 
      <section xml:id="relations-section-equiv-relations">
         <title>Equivalence Relations</title>
 
-        <p>djfdkjfj</p>
+        <p>One particular kind of relation that plays a vital role in mathematics is an equivalence relation. Before defining an equivalence relation, we will consider definitions and examples of each of the properties involved.</p>
+
+        <definition xml:id="relations-definition-reflexive">
+            <p>A relation <m>R</m> is  <term>reflexive</term> if <m>(a, a) \in R</m> for every <m>a \in A</m>. That is for each <m>a \in A</m>, We have <m>aRa</m>.</p>
+        </definition>
+
+        <p>It is important to realize that this definition involves a quantified expression, <q>for each <m>a \in A</m>.</q> Recall from logic that when such an expression is negated, the quantifier changes. Hence, it follows that a relation is not reflexive if there exists even one element in <m>A</m> that is not related to itself.</p>
 
     </section>
 

@@ -16,6 +16,8 @@
     <initialism>LPT</initialism>
 
     <macros>
+    \newcommand{\domain}{\operatorname{Dom}}
+    \newcommand{\range}{\operatorname{Ran}}
     \newcommand{\identity}{\mathrm{id}}
     \newcommand{\negate}{\sim\negmedspace}
     \newcommand{\notdivide}{{\not{\mid}}}
