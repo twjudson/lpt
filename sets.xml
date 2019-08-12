@@ -564,25 +564,112 @@
 
         	<exercise xml:id="sets-exercise-30">
         		<statement>
-        			<p>If <m>C \subseteq A</m> or <m>C \subseteq B</m>, then <m>C \subseteq A \cup B</m>.</p>
+        			<p><m>A \subseteq B</m> if and only if  <m>A \cap B = A</m>.</p>
         		</statement>
         	</exercise>
 
         	<exercise xml:id="sets-exercise-31">
         		<statement>
-        			<p>If <m>C \subseteq A</m> or <m>C \subseteq B</m>, then <m>C \subseteq A \cup B</m>.</p>
+        			<p><m>A \subseteq B</m> if and only if  <m>A \cup B = B</m>.</p>
         		</statement>
         	</exercise>
 
         	<exercise xml:id="sets-exercise-32">
         		<statement>
-        			<p>If <m>C \subseteq A</m> or <m>C \subseteq B</m>, then <m>C \subseteq A \cup B</m>.</p>
+        			<p><m>B \subseteq A</m> if and only if <m>A \cup \overline{B} = \mathbb U</m>.</p>
         		</statement>
         	</exercise>
 
         	<exercise xml:id="sets-exercise-33">
         		<statement>
-        			<p>If <m>C \subseteq A</m> or <m>C \subseteq B</m>, then <m>C \subseteq A \cup B</m>.</p>
+        			<p>If <m>A \subseteq B</m> and <m>C \subseteq D</m>, then
+        				<ol>
+
+        					<li><m>A \cup C \subseteq B \cup D</m> and</li>
+
+        					<li><m>A \cap C \subseteq B \cap D</m>.</li>
+
+        				</ol></p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Prove or disprove:
+        				<ol>
+
+        					<li>If <m>A \cup B = A \cup C</m>, then <m>B = C</m>.</li>
+
+        					<li>If <m>A \cap B = A \cap C</m>, then <m>B = C</m>.</li>
+
+        				</ol></p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Define <m>A \bigtriangleup B = (A \setminus B) \cup (B \setminus A)</m>.  Prove or disprove:
+        				<ol>
+
+        					<li><m>A \bigtriangleup B = B \bigtriangleup A</m>.</li>
+
+        					<li><m>A \bigtriangleup (B \bigtriangleup C) = (A \bigtriangleup B) \bigtriangleup C</m>.</li>
+
+	       					<li><m>A \bigtriangleup \emptyset = A</m>.</li>
+
+	       					<li><m>A \bigtriangleup A = \emptyset</m>.</li>
+
+	       					<li><m>A \bigtriangleup B = (A \cup B) \setminus (A \cap B)</m>.</li>
+
+	       					<li><m>A \cap (B \bigtriangleup C) = (A \cap B) \bigtriangleup (A \cap C)</m>.</li>
+
+	       					<li><m>A \cup (B \bigtriangleup C) = (A \cup B) \bigtriangleup (A \cup C)</m>.</li>
+
+	       					<li><m>A \cap B = \emptyset</m> if and only if <m>A \bigtriangleup B = A \cup B</m>.</li>
+
+
+        				</ol></p>
+        		</statement>
+        	</exercise>
+      	
+      		<exercise>
+        		<statement>
+        			<p>Draw Venn diagrams to illustrate various parts of <xref ref="sets-fact-sets" />.</p>
+        		</statement>
+        	</exercise>
+
+			<exercise>
+        		<statement>
+        			<p>For sets <m>A = \{1,2, 3, 4, 5\}</m>, <m>B = \{ 3, 5, 7, 9\}</m>, and <m>C = \{a, b \}</m>, find:
+        				<ol>
+
+        					<li><m>\mathcal P(C)</m>.</li>
+
+        					<li><m>A \times C</m>.</li>
+
+	       					<li><m>C \times (A \cap B)</m>.</li>
+
+	       					<li><m>(C \times A) \cap (C \times B)</m>.</li>
+
+        				</ol></p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Prove or disprove:  If <m>A, B \in \mathcal P(S)</m>, then <m>A \cup B \in \mathcal P(S)</m>.</p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Prove or disprove:  If <m>A, B \in \mathcal P(S)</m>, then <m>A \cap B \in \mathcal P(S)</m>.</p>
+        		</statement>
+        	</exercise>
+
+        	<exercise>
+        		<statement>
+        			<p>Is it true that  <m>A \times \emptyset = \emptyset \times A = \emptyset</m>?  Justify your thinking.</p>
         		</statement>
         	</exercise>
 
