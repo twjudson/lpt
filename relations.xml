@@ -245,6 +245,47 @@
 
         <p>It is important to realize that this definition involves a quantified expression, <q>for each <m>a \in A</m>.</q> Recall from logic that when such an expression is negated, the quantifier changes. Hence, it follows that a relation is not reflexive if there exists even one element in <m>A</m> that is not related to itself.</p>
 
+        <example xml:id="relations-example-less-than-equal">
+            <p>The relation <q><m>\leq</m></q> on <m>\mathbb Z</m> has the reflexive property since every integer is less than or equal to itself.</p>
+        </example>
+
+         <example xml:id="relations-example-equal">
+            <p>The relation <q><m>=</m></q> on <m>\mathbb R</m> is reflexive since every real number is equal to itself.</p>
+        </example>
+
+         <example xml:id="relations-example-not-reflexive">
+            <p>The relation <m>R = \{ (2, 3), (2,2), (3,2), (3,3) \}</m> is not a reflexive relation on the set <m>A = \{  1, 2, 3\}</m>  since <m>1 \in A</m>, but <m>(1,1) \notin R</m>. But <m>R</m> is reflexive when considered as a relation on the set <m>B = \{2, 3 \}</m>.</p>
+        </example>
+
+        <example xml:id="relations-example-power-set">
+            <p>Let <m>S</m> be nonempty and <m>\mathcal P(S)</m> be the power set of <m>S</m>. Then the subset relation is reflexive on <m>\mathcal P(S)</m> since every set is a subset of itself.</p>
+        </example>
+
+        <definition xml:id="relations-definition-symmetric">
+            <p>A relation <m>R</m> on <m>A</m> is  <term>symmetric</term> if whenever <m>(a, b) \in R</m>, then <m>(b,a) \in R</m>. Alternatively, if <m>aRb</m>, then <m>bRa</m>.</p>
+        </definition>
+
+        <p>You should notice a major distinction in the nature of the definitions of these terms. The definition of reflexive is universal in that it must be true for all members of the set upon which it is defined. In contrast, the definition for the symmetric property is stated in the form of a conditional. (Remember from formal logic that a conditional, <m>p \rightarrow q</m>, is false only when <m>p</m> is true and <m>q</m> is false.) So to show a relation is not symmetric we must be able to find an ordered pair <m>(a,b)</m> in <m>R</m> such that <m>(b, a)</m> is not in <m>R</m>.</p>
+
+        <example xml:id="relations-example-symmetric">
+            <p>Let <m>A = \{ 1, 2, 3, 4 \}</m> and consider the given relations on <m>A</m>.  The relations <m>R = \{ (1, 2), (2, 1), (3, 4), (4,3)\}</m> and <m>S = \{ (1,1)\}</m> have the symmetric property. However, <m>T = \{ (3,3). (2,4), (4,2), (1, 2)  \}</m> is not symmetric since <m>(1, 2) \in T</m> but <m>(2, 1) \notin T</m>.</p>
+        </example>
+
+        <p>It is important to remember that to show a relation does <em>not</em> have a certain property, we need only provide a single counterexample.</p>
+
+        <example xml:id="relations-example-not-symmetric">
+            <p>The relation <q><m>\geq</m></q> is not symmetric on <m>\mathbb R</m> since <m>5 \geq 2</m> but <m>2 \not\geq 5</m>.</p>
+        </example>
+
+        <example xml:id="relations-example-rectangles">
+            <p>Let <m>A</m> be the set of rectangles in the Cartesian plane, and let elements of <m>A</m> be related if they have the same area.  Then this relation is symmetric.</p>
+        </example>
+
+        <definition xml:id="relations-definition-transitive">
+            <p>A relation <m>R</m> on <m>A</m> is <term>transitive</term> if whenever <m>(a, b) \in R</m> and <m>(b, c) \in R</m>, then <m>(a, c) \in R</m>.</p>
+        </definition>
+
+
     </section>
 
     <section xml:id="relations-section-functions">
