@@ -382,6 +382,45 @@
             <me>A = \left\{ \frac{2}{3}, -\frac{1}{2}, -1, 0, \frac{4}{6}, \frac{0}{3}, - \frac{4}{8}, \frac{10}{15} \right\}.</me>
         and let the equivalence relation on be <q><m>=</m>.</q>  To find the equivalence classes determined by the relation, we may choose any element in <m>A</m>, say <m>4/6</m>.  Then <m>4/6 \in \overline{4/6}</m>, since <m>4/6 = 4/6</m>.  The other elements of <m>\overline{4/6}</m> are <m>2/3</m> and <m>10/15</m>, since they are the only elements of <m>A</m> equal to <m>4/6</m>.  Thus, <m>\overline{4/6} = \{ 4/6, 2/3, 10/15 \}</m>.  Part (2) of <xref ref="relations-theorem-equivalence-class" /> implies we might just as easily have chosen <m>2/3></m> or <m>10/15</m>, and we would have arrived at the same equivalence class.  That is, since <m>2/3 \in \overline{4/6}</m> and <m> 10/15 \in\overline{4/6}</m>, then <m>\overline{2/3} = \overline{4/6} = \overline{10/15}</m>. So we conclude that we may designate an equivalence class completely using any of its elements.</p> 
 
+        <assemblage>
+            <title>TAKS CONNECTION</title>
+            <p>How might a student apply the concept of equivalence classes to answer the following question taken from the 2006 Texas Assessment of Knowledge and Skills (TAKS) Grade 5 Mathematics test?</p>
+
+            <p>Stan was putting fruit into baskets. He wanted each basket to be more than  <m>7/10</m> full. Which fraction is more than <m>7/10</m>?</p>
+
+            <p>Which one of the following numbers belongs in the region of the diagram marked by the question mark?
+                <ul>
+
+                    <li>A. <m>4/5</m></li>
+
+                    <li>B. <m>1/2</m></li>
+
+                    <li>C. <m>2/3</m></li>
+
+                    <li>D. <m>3/5</m></li>
+
+                </ul></p> 
+        </assemblage>
+
+        <example>
+            <p>Let <m>A</m> be the set of all ordered pairs of real numbers, and define <m>(a, b) \sim (c, d)</m> if <m>a^2 + b^2 = c^2 + d^2)</m>. Before proceeding further, you should find some ordered pairs that are related and then verify that this indeed defines an equivalence relation. Then for any <m>(x, y) \in \mathbb R \times \mathbb R</m>, we have 
+                <me>\overline{(x, y)} = \{ (s, t) \mid x^2 + y^2 = s^2 + t^2 \}.</me>
+            These equivalence classes are represented geometrically by circles centered at the origin.</p>
+        </example>
+
+        <p>Before leaving this section, we introduce a visual method for representing finite relations. For rather small finite relations, these visual representations, called <term>digraphs</term>, can be very helpful in conceptualizing a relation and its properties.</p>
+
+        <p>In general, consider a finite set <m>A</m> and a relation <m>R</m> defined on it. Digraphs are constructed by drawing a small dot representing each element of <m>A</m> and labeling that circle appropriately. These dots are called the <term>vertices</term> of the graph. At each dot, say <m>x</m>, draw a directed line segment from it to any other dot, labeled <m>y</m>, if and only if <m>xRy</m>. These directed line segments are called <term>edges</term>. Then notice that the dots represent <m>A</m> and the edges represent the ordered pairs in <m>R</m>.</p>
+
+        <example>
+            <p>Consider the set <m>A = \{a, b, c, d \}</m>and the relation
+                <me>R = \{ (a, a), (c, c), (a, b), (b, a), (b, d), (c , d), (b, c) \}.</me></p>
+
+
+            <p>Notice that there is an edge representing every ordered pair in . For those elements in that are related to themselves, there is an edge that looks like a loop. In this relation there are only two loops since only and are related to themselves. From this example it is reasonable to conclude that for an arbitrary finite relation defined on , the relation will have the reflexive property if and only if each vertex has a loop. Then we can quickly see from the digraph that is not reflexive. We may also conclude from the digraph that is not symmetric and not transitive. Why?</p>
+</example>
+
+
         <exercises>
 
             <exercise xml:id="exercise-relations-mod-5">
