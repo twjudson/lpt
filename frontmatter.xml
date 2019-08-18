@@ -64,7 +64,7 @@
 
     <preface xml:id="preface">
 
-        <p>This text is intended for a one-semester course on logic and proof for students intending to teach middle school mathematics.</p>
+        <p>This text is intended for a one-semester course on logic and proof for students intending to teach middle or high  school mathematics.  The book grew out of a set of notes written by Kimberly M. Childs and Deborah A. Pace for the <em>Foundation of Mathematics</em> course (MTH 300) at Stephen F. Asutin State University.  This course provides an introduction to logic and proof for students intending to become middle school mathematics teachers.  During Summer 2019, I converted the notes to <pretext /> and added a chapter on the integers.  The open source version of this book has received support from the National Science Foundation (Awards #DUE–1625223 and #DUE–1821329).</p>
 
  
 

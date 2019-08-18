@@ -12,6 +12,19 @@
 
 <title>Relations</title>
 
+    <assemblage>
+        <title>TEXAS STATE BOARD FOR EDUCATOR CERTIFICATION (SBEC): MATHEMATICS STANDARDS COVERED</title>
+        <p><ul>
+
+            <li>STANDARD II: PATTERNS AND ALGEBRA: The mathematics teacher understands and uses patterns, relations, functions, algebraic reasoning, analysis, and technology appropriate to teach the statewide curriculum (Texas Essential Knowledge and Skills [TEKS]) in order to prepare students to use mathematics.</li>
+
+            <li>STANDARD V: MATHEMATICAL PROCESSES: The mathematics teacher understands and uses mathematical processes to reason mathematically, to solve mathematical problems, to make mathematical connections within and outside of mathematics, and to communicate mathematically.</li>
+
+            <li>STANDARD VI: MATHEMATICAL PERSPECTIVES: The mathematics teacher understands the historical development of mathematical ideas, the interrelationship between society and mathematics, the structure of mathematics, and the evolving nature of mathematics and mathematical knowledge.</li>
+
+            </ul></p>
+    </assemblage>
+
     <introduction>
         <p>In our everyday lives we encounter many circumstances which necessitate relating objects, sets, or people. Hiring is determined by comparing abilities of applicants and purchases are made based on relative prices. Descriptions such as <q>is faster than,</q> <q>is the brother of,</q> and <q>is smaller than</q> are heard countless times each day.</p>
 
@@ -317,14 +330,46 @@
         <example xml:id="relations-example-power-set-not-equivalence">
             <p>Let <m>A = \{a, b\}</m> and <m>\mathcal P(A)</m> be the power set of <m>A</m>. Then the subset relation is reflexive  and transitive  but is not symmetric since <m>\{a\} \subseteq \{a, b\}</m> but <m>\{a, b\} \not\subseteq \{a\}</m>.</p>
         </example>
+
+
+        <example xml:id="relations-example-integers-mod5">
+            <p>Consider the set <m>\mathbb Z</m> and define <m>a \sim b</m> if <m>5</m> divides <m>a - b</m>, denoted by <m>5 \mid (a - b)</m>; i.e., there is no remainder when <m>a - b</m> is divided by <m>5</m>. Then <m>2 \sim 12</m>, since <m>5 \mid (2 - 12)</m> and <m>3 \not\sim 7</m>, since <m>5 \not\mid (3 - 7)</m>.  We have defined an eqiuivalence relation on <m>\mathbb Z</m>.  The proof is left as an exercise (<xref ref="relations-exercise-integers-mod5" />).</p>
+        </example>
+
+        <example xml:id="relations-example-integers-modn">
+            <p>Consider the set <m>\mathbb Z</m>, and let <m>n</m> be a fixed integer that is not equal to zero.  define <m>a \sim b</m> if <m>n \mid (a - b)</m>.  The relation is a generalization of <xref ref="relations-example-integers-mod5" /> and is also an equivalence relation.</p>
+        </example>
+
+        <example>
+            <p>Some other equivalence relations are <q>is the same age as</q> on the set of all people, <q>has the same area as</q> on the set of all rectangles in the Cartesian plane, and <q>lives on the same street as</q> on the set of all people living in a given city.</p>
+        </example>
+
+        <p>Consider the relation <q>is the same age as</q> on the set of all students in a given class. This relation groups the people in the class according to age. Each person in the class is in some group, even if it is a single member group. In addition, no person is in more than one group and all people in a specific group are the same age. These qualities are common to all equivalence relations, leading us to the following formal definition.</p>
+
+        <definition xml:id="relations-definition-equivalence-class">
+            <p>Let <m>\sim</m> be an equivalence relation on <m>A</m>.  If <m>x \in A</m>, then the <term>equivalence class</term> of <m>x</m>, denoted by <m>\overline{x}</m> is defined by <m>\overline{x} = \{ y \in A \mid x \sim y \}.</m></p>
+        </definition>
+
     
     </section>
+
 
     <section xml:id="relations-section-functions">
         <title>Functions and Cardinality</title>
 
         <p>dnfkjdjfk</p>
 
+        <exercises xml:id="relations-exercise-integers-mod5">
+
+            <exercise>
+                <statement>
+                    <p>Prove that the relation <m>a \sim b</m> if <m>5</m> divides <m>a - b</m> is an equivalence relation on <m>\mathbb Z</m> (<xref ref="relations-example-integers-mod5" />).</p>
+                </statement>
+            </exercise>
+
+        </exercises>
+
     </section>
+
 
 </chapter>
