@@ -738,8 +738,10 @@
 
         <p>This set is a bit harder to work with than the previous ones because the process of listing the rational numbers is difficult. We will eliminate some of the difficulty by working only with positive rational numbers. You should be able to explain how to adapt the solution to the complete set once you see the pattern.</p>
 
-        <figure xml:id="figure-relations-rationals">
-            <image width="50%" xml:id="relations-rationals">
+        <p>Consider <xref ref="figure-relations-rationals-with-duplicates" />. Notice that eventually, if the process was allowed to continue indefinitely, all rational numbers would be listed. Some numbers however are represented more than once. In order to preserve the one-to-one requirement, we need to eliminate any numbers that are equivalent to a rational number previously listed. The image below has made that adjustment.</p> 
+
+        <figure xml:id="figure-relations-rationals-with-duplicates">
+            <image width="50%" xml:id="relations-rationals-with-duplicates">
                 <description>two overlapping circles with the common part shaded</description>
                 <latex-image>
                 <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
@@ -809,7 +811,78 @@
             <caption>The digraph for the relation <m>R</m> on <m>A</m></caption>
         </figure>
 
+        <p>Now we are going to develop our map. Unlike previous examples, we are not going to state our rule but we are going to let a picture do the talking. Remember that all we have to do is to demonstrate a one-to- one onto function.
 
+       <figure xml:id="figure-relations-rationals">
+            <image width="50%" xml:id="relations-rationals">
+                <description>two overlapping circles with the common part shaded</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+               <![CDATA[
+                \begin{tikzpicture}[scale=1]
+                
+					\tikzstyle{keepstyle} =[rectangle, rounded corners, draw, fill=white]
+					\node at (0,0) {$\vdots$};
+					\node[keepstyle] (51) at (0,1) {$\frac{5}{1}$};
+					\node[keepstyle] (41) at (0,2) {$\frac{4}{1}$};
+					\node[keepstyle] (31) at (0,3) {$\frac{3}{1}$};
+					\node[keepstyle] (21) at (0,4) {$\frac{2}{1}$};
+					\node[keepstyle] (11) at (0,5) {$\frac{1}{1}$};
+					\node at (1,0) {$\vdots$};
+					\node[keepstyle] (52) at (1,1) {$\frac{5}{2}$};
+					\node at (1,2) {$\frac{4}{2}$};
+					\node[keepstyle] (32) at (1,3) {$\frac{3}{2}$};
+					\node at (1,4) {$\frac{2}{2}$};
+					\node[keepstyle] (12) at (1,5) {$\frac{1}{2}$};
+					\node at (2,0) {$\vdots$};
+					\node at (2,1) {$\frac{5}{3}$};
+					\node[keepstyle] (43) at (2,2) {$\frac{4}{3}$};
+					\node at (2,3) {$\frac{3}{3}$};
+					\node[keepstyle] (23) at (2,4) {$\frac{2}{3}$};
+					\node[keepstyle] (13) at (2,5) {$\frac{1}{3}$};
+					\node at (3,0) {$\vdots$};
+					\node at (3,1) {$\frac{5}{4}$};
+					\node at (3,2) {$\frac{4}{4}$};
+					\node[keepstyle] (34) at (3,3) {$\frac{3}{4}$};
+					\node at (3,4) {$\frac{2}{4}$};
+					\node[keepstyle] (14) at (3,5) {$\frac{1}{4}$};
+					\node at (4,0) {$\vdots$};
+					\node  at (4,1) {$\frac{5}{5}$};
+					\node at (4,2) {$\frac{4}{5}$};
+					\node at (4,3) {$\frac{3}{5}$};
+					\node[keepstyle] (25) at (4,4) {$\frac{2}{5}$};
+					\node[keepstyle] (15) at (4,5) {$\frac{1}{5}$};
+					\node at (5,0) {$\vdots$};
+					\node  at (5,1) {$\frac{5}{6}$};
+					\node at (5,2) {$\frac{4}{6}$};
+					\node at (5,3) {$\frac{3}{6}$};
+					\node at (5,4) {$\frac{2}{6}$};
+					\node[keepstyle] (16) at (5,5) {$\frac{1}{6}$};
+					\node at (6,1) {$\cdots$};
+					\node at (6,2) {$\cdots$};
+					\node at (6,3) {$\cdots$};
+					\node at (6,4) {$\cdots$};
+					\node at (6,5) {$\cdots$};
+					\draw [-latex,red, thick] (11) -- (12);
+					\draw [-latex, red, thick] (12) -- (21);
+					\draw [-latex, red, thick] (21) -- (31);
+					\draw [-latex, red, thick] (31) -- (13);
+					\draw [-latex, red, thick] (13) -- (14);
+					\draw [-latex, red, thick] (14) -- (23);
+					\draw [-latex, red, thick] (23) -- (32);
+					\draw [-latex, red, thick] (32) -- (41);
+					\draw [-latex, red, thick] (41) -- (51);
+					\draw [-latex, red, thick] (51) -- (15);
+					\draw [-latex, red, thick] (15) -- (16);
+					\draw [-latex, red, thick] (16) -- (25);
+					\draw [-latex, red, thick] (25) -- (34);
+					\draw [-latex, red, thick] (34) -- (43);
+					\draw [-latex, red, thick] (43) -- (52);
+                \end{tikzpicture}]]>
+                </latex-image>
+            </image>
+            <caption>The digraph for the relation <m>R</m> on <m>A</m></caption>
+        </figure>
         <exercises>
 
         	<exercise>
