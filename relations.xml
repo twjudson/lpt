@@ -748,7 +748,7 @@
                <![CDATA[
                 \begin{tikzpicture}[scale=1]
                 
-					\tikzstyle{keepstyle} =[rectangle, rounded corners, draw, fill=white]
+					\tikzstyle{keepstyle} =[]
 					\node at (0,0) {$\vdots$};
 					\node[keepstyle] (51) at (0,1) {$\frac{5}{1}$};
 					\node[keepstyle] (41) at (0,2) {$\frac{4}{1}$};
@@ -790,28 +790,13 @@
 					\node at (6,3) {$\cdots$};
 					\node at (6,4) {$\cdots$};
 					\node at (6,5) {$\cdots$};
-					\draw [-latex,red, thick] (11) -- (12);
-					\draw [-latex, red, thick] (12) -- (21);
-					\draw [-latex, red, thick] (21) -- (31);
-					\draw [-latex, red, thick] (31) -- (13);
-					\draw [-latex, red, thick] (13) -- (14);
-					\draw [-latex, red, thick] (14) -- (23);
-					\draw [-latex, red, thick] (23) -- (32);
-					\draw [-latex, red, thick] (32) -- (41);
-					\draw [-latex, red, thick] (41) -- (51);
-					\draw [-latex, red, thick] (51) -- (15);
-					\draw [-latex, red, thick] (15) -- (16);
-					\draw [-latex, red, thick] (16) -- (25);
-					\draw [-latex, red, thick] (25) -- (34);
-					\draw [-latex, red, thick] (34) -- (43);
-					\draw [-latex, red, thick] (43) -- (52);
                 \end{tikzpicture}]]>
                 </latex-image>
             </image>
-            <caption>The digraph for the relation <m>R</m> on <m>A</m></caption>
+            <caption>Listing the rational numbers</caption>
         </figure>
 
-        <p>Now we are going to develop our map. Unlike previous examples, we are not going to state our rule but we are going to let a picture do the talking. Remember that all we have to do is to demonstrate a one-to- one onto function.
+        <p>Now we are going to develop our map. Unlike previous examples, we are not going to state our rule but we are going to let a picture do the talking. Remember that all we have to do is to demonstrate a one-to-one onto function.</p>
 
        <figure xml:id="figure-relations-rationals">
             <image width="50%" xml:id="relations-rationals">
@@ -881,8 +866,59 @@
                 \end{tikzpicture}]]>
                 </latex-image>
             </image>
-            <caption>The digraph for the relation <m>R</m> on <m>A</m></caption>
+            <caption>Listing the rational numbers without repetition.</caption>
         </figure>
+
+        <p>So <m>1</m> will map to <m>1</m>, <m>2</m> to <m>1/2</m>, <m>3</m> to <m>2/1</m>, <m>4</m> to <m>3/1</m>, <m>5</m> to <m>1/3</m>, etc. Notice that each rational number will eventually be the output for our function and will be the output for exactly one natural number. Thus, we have created a one-to-one correspondence between the natural numbers and the positive rational numbers. We can easily extend this idea by sending the even natural numbers to the positive rational numbers and the odd natural numbers to the negative rational numbers to show that there is a one-to-one correspondence from the natural numbers to the set of all rational numbers. Therefore, the set of rational numbers is countably infinite.</p>
+
+        <theorem>
+            <p>The set of real numbers is not countably infinite. That is, the set of real numbers does not have the same cardinality as the set of natural numbers.</p>
+        </theorem>
+
+        <p>The real numbers will provide an example of a set that is <q>larger</q> than the set of natural numbers, whole numbers, integers, and rational numbers. To demonstrate, we will actually show that even the interval (0, 1) is not countable infinite. In other words, the set of numbers greater than zero and less than one cannot be put into a one-to-one correspondence with the set of natural numbers. To show that this is true, we will use a proof by contradiction.</p>
+
+        <p>We have to clear up a couple points before we begin. Frist, you whould realize that every number in the interval <m>(0, 1)</m> can be written as an infinite decimal. For example,
+            <me>0.25 = 0.250000000000000000\ldots</me>
+        Also recall from our discussions with geometric sequences and series, we discussed that <m>0.99999\ldots = 1</m>. You can prove this using the fact that <m>0.9999\ldots</m> is a geometric series with <m>r = 1/10</m> and <m>a = 9/10</m>. Since <m>r \lt 1</m>, the infinite sum of the series is <m>S=1/(1-r)</m>. With this in mind, anytime that we have this situation occur (a infinite number of repeating <m>9</m>'s), we are going to assume that we will equate this number with its equivalency in terms of repeated zeros. For example,
+            <me>0.555999999999\ldots = 0.556000000000\ldots</me>. 
+        This will ensure that our function is one-to-one.</p>
+
+        <proof>
+            <p>Consider the interval <m>(0,1)</m> and assume to the contrary that this set of numbers in countable infinite. Since the set is countable infinite, every number in the set can be listed in a one-to-one correspondence with the natural numbers. So we can say that there is a first element which maps to <m>1</m>, a second element which maps to <m>2</m>, so on and so forth. In order to list these values in an ordered way, let's call the first number <m>a_1</m> and denote it as
+                <me>a_1 = 0.d_{11} d_{12} d_{13} d_{14} d_{15} d_{16} d_{17} d_{18} d_{19} \ldots,</me>
+            where <m>d_{11}</m> is the digit in the first number in our list and in the first position beyond the decimal, <m>d_{12} is the digit in the first number in the list and in the second position beyond the decimal, etc.</m></p>
+
+            <p>Then the second number in the list would look like
+                <me>a_2 = 0.d_{21} d_{22} d_{23} d_{24} d_{25} d_{26} d_{27} d_{28} d_{29} \ldots,</me>
+            where <m>d_{21}</m> is the digit in the second number in our list and in the first position beyond the decimal, <m>d_{22}</m> is the digit in the second number in the list and in the second position beyond the decimal, etc.</p>
+
+            <p>In general then, the ith number in the list would look like
+                <me>a_i = 0.d_{i1} d_{i2} d_{i3} d_{i4} d_{i5} d_{i6} d_{i7} d_{i8} d_{i9} \ldots,</me>
+            where <m>d_{i1}</m> is the digit in the <m>i</m>th number in our list and in the first position beyond the decimal, <m>d_{i2}</m> is the digit in the <m>i</m>th number in the list and in the second position beyond the decimal, etc.</p>
+
+            <p>We now have the following list of all numbers that are in the interval <m>(0, 1)</m>,
+                <md>
+                    <mrow>a_1 &amp; = 0.d_{11} d_{12} d_{13} d_{14} d_{15} d_{16} d_{17} d_{18} d_{19} \ldots,</mrow>
+                    <mrow>a_2 &amp; = 0.d_{21} d_{22} d_{23} d_{24} d_{25} d_{26} d_{27} d_{28} d_{29} \ldots,</mrow>
+                    <mrow>a_3 &amp; = 0.d_{31} d_{32} d_{33} d_{34} d_{35} d_{36} d_{37} d_{38} d_{39} \ldots,</mrow>
+                    <mrow>a_4 &amp; = 0.d_{41} d_{42} d_{43} d_{44} d_{45} d_{46} d_{47} d_{48} d_{49} \ldots,</mrow>
+                    <mrow>a_5 &amp; = 0.d_{51} d_{52} d_{53} d_{54} d_{55} d_{56} d_{57} d_{58} d_{59} \ldots,</mrow>
+                    <mrow>&amp; \cdots</mrow>
+                    <mrow>a_i &amp; = 0.d_{i1} d_{i2} d_{i3} d_{i4} d_{i5} d_{i6} d_{i7} d_{i8} d_{i9} \ldots</mrow>
+                </md></p>
+
+            <p>The key here is the realization that based on our assumption, every single number in the interval <m>(0, 1)</m> is represented somewhere in this list. This is where we will obtain our contradiction.</p>
+
+            <p>Consider the number
+                <me>d = 0.d_{1} d_{2} d_{3} d_{4} d_{5} d_{6} d_{7} d_{8} d_{9} \ldots,</me>
+            where <m>d_j</m> is the <m>j</m>th digit beyond the decimal and is determined based on the following criteria:
+                <blockquote>If <m>d_{jj} \neq 5</m>, then <m>d_j = 5</m>; otherwise, <m>d_j = 2</m>.</blockquote>
+            Notice that this means that by definition of the number <m>d</m>, <m>d_1 \neq d_{11}</m> and so the number <m>d</m> is not the number <m>a_1</m>. Similarly <m>d \neq a_2</m> because <m>d2 \neq d_{22}</m>. Continuing this line of thought, <m>d</m> is not the same as any number in this list because <m>d_j \neq d_{jj}</m> for any natural number <m>j</m>. Thus <m></m> is a number between <m>0</m> and <m>1</m> that is not in our list. This contradicts our assumption that there exists a one-to-one correspondence between the set of numbers greater than <m>0</m> and less than <m>1</m> and the set of natural numbers.  Therefore the set of numbers in the interval <m>(0, 1)</m> is not countably infinite</p>
+        </proof>
+
+        <p>We say then that the set of numbers in the interval <m>(0, 1)</m> is <term>uncountable</term> and thus, so is the set of real numbers.</p>
+
+        
         <exercises>
 
         	<exercise>
