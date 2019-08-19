@@ -548,11 +548,106 @@
                 </statement>
             </exercise>
 
+            <exercise>
+                <statement>
+                    <p>Define <m>R</m> on <m>\mathbb N</m> by <m>xRy</m> if and only if <m>2 \mid (x + y)</m>.</p>
+                </statement>
+            </exercise>
+
+            <exercise>
+                <statement>
+                     <p>Define <m>R</m> on <m>\mathbb N</m> by <m>xRy</m> if and only if <m>3 \mid (x + y)</m>.</p>
+                </statement>
+            </exercise>
+
+            <exercise>
+                <statement>
+                    <p>Define <m>R</m> on <m>\mathbb R \times \mathbb R</m> by <m>(a,b)R(c,d)</m> if and only if <m>a - c \in \mathbb Z</m>.</p>
+                </statement>
+            </exercise>
+
+            <exercise>
+                <statement>
+                    <p>Define <m>R</m> on <m>\mathbb R \times \mathbb R</m> by <m>(a,b)R(c,d)</m> if and only if <m>a - c \in \mathbb Z</m> and <m>b - d \in \mathbb Z</m>.</p>
+                </statement>
+            </exercise>
+
             <exercise xml:id="exercise-relations-reflexive-symmetric-transitive-last">
                 <statement>
                     <p>Define <m>R</m> on <m>\mathbb Z \times \mathbb Z</m> by <m>R = \{ (a, b) \in \mathbb Z \times \mathbb Z \mid |a - b| \lt 5\}</m>.</p>
                 </statement>
             </exercise>
+
+            <exercise>
+            	<statement>
+            		<p>Let <m>R_1</m> and <m>R_2</m> be relations on <m>A</m>.
+            			<ol>
+
+            				<li>If <m>R_1</m> and <m>R_2</m> are both reflexive, if <m>R_1 \cap R_2</m>reflexive?  What about <m>R_1 \cup R_2</m>?  Justify you answers.</li>
+
+
+							<li>If <m>R_1</m> and <m>R_2</m> are both symmetric, if <m>R_1 \cap R_2</m>reflexive?  What about <m>R_1 \cup R_2</m>?  Justify you answers.</li>
+
+							<li>If <m>R_1</m> and <m>R_2</m> are both transitive, if <m>R_1 \cap R_2</m>reflexive?  What about <m>R_1 \cup R_2</m>?  Justify you answers.</li>
+
+						</ol></p>
+				</statement>
+			</exercise>
+
+			<exercise>
+				<statement>
+					<p>Let <m>R</m> for a relation on a finite nonempty set <m>A</m>.  What can be said about the digraph of <m>R</m> if the relation is 
+						<ol>
+
+							<li>reflexive?</li>
+
+							<li>not reflexive?</li>
+
+							<li>symmetric?</li>
+
+							<li>not symmetric?</li>
+
+							<li>transitive?</li>
+
+							<li>not transitive?</li>
+
+						</ol>
+					Jusitify your claim for each part.</p>
+				</statement>
+			</exercise>
+
+			<exercise>
+				<statement>
+					<p>Let <m>A = \{ 1, 2, 3, 4, 5 \}</m> and <m>R = \{ (2, 3), (2, 4), (3, 5), (2, 5), (5, 5) \}</m>.
+						<ol>
+
+							<li>Draw a digraph of this relation.</li>
+
+							<li>Determine the properties of <m>R</m>, explaining in each case how you can tell from your digraph.</li>
+
+						</ol></p>
+				</statement>
+			</exercise>
+
+			<exercise>
+				<statement>
+					<p>Draw a digraph of the relation <m>\lt</m> on the set <m>A = \{ 1, 2, 3, 4 \}</m></p>
+				</statement>
+			</exercise>
+
+
+			<exercise>
+				<statement>
+					<p>Draw a digraph of the relation <m>\leq</m> on the set <m>A = \{ 1, 2, 3, 4 \}</m></p>
+				</statement>
+			</exercise>
+
+			<exercise>
+				<statement>
+					<p>Draw a digraph of <m>\mathcal P(S)</m> under the relation <m>\subseteq</m>, where <m>S = \{ a,b \}</m></p>
+				</statement>
+			</exercise>
+
 
         </exercises>
 
@@ -562,9 +657,170 @@
     <section xml:id="relations-section-functions">
         <title>Functions and Cardinality</title>
 
-        <p>dnfkjdjfk</p>
+        <p>Another special type of relation is a function.</p>
 
- 
+         <definition xml:id="relations-definition-function">
+            <p>A <term>function</term> from a set <m>A</m> to a set <m>B</m> is a relation from <m>A</m> to <m>B</m>, where each element of <m>A</m> is paired with exactly one element of <m>B</m>.  In other words, each input value results in exactly one output value.</p>
+        </definition>
+
+        <p>Most of the mathematics that you have learned or will teach is based around the idea of functions. When students are asked to find a rule that defines a pattern, students are being asked to define a function. When you examine a sequence of values, you are examining a function. When you go to the Coke machine to get a soda, you are employing a function. (The input is your money. The output is the soda.) The dosage of medicine given to you when you are sick is a result of a function. The decision making process is an illustration of a function. Your daily life is a function whose domain is time and whose range is the activity you are doing at that time. They are everywhere!</p>
+
+        <p>You have studied functions in lots of places. Perhaps you looked at several definitions, graphical representations, the function notation, characteristics, etc. We will be looking specifically at two characteristics of functions and their applications.</p>
+
+        <definition xml:id="relations-definition-one-to-one">
+            <p>A function <m>f</m> from a set <m>A</m> to a set <m>B</m> is called <term>one-to-one</term> provided that each output results from exactly one input. That is, if <m>b \in \range(f)</m> with <m>f(a_1)= f(a_2) = b</m>, then <m>a_1 = a_2</m>.</p>
+
+            <p>A function <m>f</m> from a set <m>A</m> to a set <m>B</m> is called <term>onto</term> provided that every element of <m>B</m> is an element of <m>\range(f)</m>. That is, for every <m>b \in B</m>, there exists <m>A \in A</m> such that <m>f(a) = b</m>.</p>
+
+            <p>A function from a set <m>A</m> to a set <m>B</m> that is both one-to-one and onto is called a <term>one-to-one correspondence</term> or <term>bijection</term>.</p>
+        </definition>
+
+        <p>You are probably wondering what you can possibly learn about functions that you have not already seen (maybe more than once!). We are going to use the definitions of one-to-one and onto to study sets. Primarily, we are going to study the cardinality of sets.</p>
+
+
+        <definition xml:id="relations-definition-cardinality">
+            <p>The <term>cardinality</term> of a set <m>A</m> is the number of elments in the set, denoted <m>|A|</m>.</p>
+        </definition>
+
+        <p>At first this may not seem to difficult.  You simply need to count the elements in the set.  However, what if your sets are infinite?  Again you might be asking why this is a big deal. The answer of how many elements is in an infinite set is infinitely many, right? Would you believe that there are different sizes of infinity? This is the foundation of cardinality and the study of mathematician Georg Cantor (see <xref ref="sets-subsection-historical-note" />).</p>
+
+        <definition xml:id="relations-definition-cardinality-types">
+            <p>Two sets, <m>A</m> and <m>B</m> have the <term>same cardinality</term> if there is a one-to-one correspondence <m>f</m> from <m>A</m> to <m>B</m>.</p>
+
+            <p>A set <m>A</m> is finite with cardinality <m>n</m> provided that there is a one-to-one correspondence <m>f</m> from <m>A</m> to the set <m>\{1, 2, 3, 4, ... , n\}</m>.</p>
+
+            <p>The set of natural numbers is an infinite set with cardinality <m>\aleph_0</m> (aleph naught), the smallest of all infinities. We say that the set of natural numbers are <term>countably infinite</term>.</p>
+        </definition>
+
+        <p>We are not going to spend a great deal of time discussing the sizes of infinity by name, but we are going to discuss the most common number sets to see whether they have the same cardinality as the natural numbers. Let's start with the set of whole numbers.</p>
+
+        <theorem>
+        	<p>The set of whole numbers has the same cardinality as the natural numbers.</p>
+        </theorem>
+
+        <p>At first glance, you might be inclined to say that the set of whole numbers has one more element than the set of natural numbers and thus, it is impossible for them to be of the same <q>size.</q> Remember though that we are examining a different idea of <q>size</q>. To show that the set of whole numbers has the same cardinality as the natural numbers, we simply have to demonstrate that there is a one-to-one correspondence between the two sets.</p>
+
+        <proof>
+        	<p>Consider the function <m>f</m>, mapping the set of whole numbers to the set of natural numbers, defined by <m>f(w) = w + 1</m>. Notice that this function maps <m>0</m> to <m>1</m>, <m>1</m> to <m>2</m>, <m>2</m> to <m>3</m> and so on. Because the function is linear, it is obviously one-to-one. Moreover, it is onto because if <m>n</m> is a natural number, then
+        		<me>f(n - 1) = (n - 1) + 1 = n.</me>
+			(Note that since the natural numbers has a smallest element of <m>1</m>, the smallest value of<m>n - 1</m> is <m>0</m> which is the smallest whole number.)</p>
+
+			<p>Therefore, since <m>f</m> is a one-to-one correspondence, the set of whole numbers has the same cardinality as the set of natural numbers. Thus the set of whole numbers is also countably infinite.</p>
+		</proof>
+
+		<theorem>
+        	<p>The set of integers is countably infinite. That is, the set of integers has the same cardinality as the set of natural numbers.</p>
+        </theorem>
+
+        <p>You may have a bit more difficulty buying into this idea. After all, the set of natural numbers is a proper subset of the integers! How can this set possibly be the same <q>size</q> as the natural numbers? Remember, cardinality is a different way to determine <q>size.</q> The infinite sets that we are examining can not be counted in the ordinary way. Cardinality provides a tool that we can use to categorize the <q>size</q> of infinite sets.</p>
+
+        <p>After you get past the initial thoughts of denial, we can begin to think about how to develop the ont-to-one correspondence necessary to show that our claim is true. We know that an argument similar to the one we created for the set of whole numbers will not work because we wwould not account for any of the negative numbers. So what if we did a back and forth trick between the positive and negative integers. We know that we have even and odd natural numbers. What if we used the even to cover the positive numbers and the odds to cover the negative numbers? For example, we can send <m>1</m> to <m>0</m>, <m>2</m> to <m>1</m>, <m>3</m> to <m>-1</m>, <m>4</m> to <m>2</m>, <m>5</m> to <m>-2</m>, and so on.</p>
+
+        <proof>
+        	<p>Consider the function <m>f</m>, mapping the natural numbers to the integers, defined by the following criteria.
+        		<ul>
+
+        			<li>If <m>n = 1</m>, then <m>f(n) = 0</m>.</li>
+
+        			<li>If <m>n</m> is an even integer, then <m>f(n) = n/2</m>.</li>
+
+        			<li>If n is an odd integer and <m>n \neq 1</m>, then <m>f(n) = -(n - 1)/2</m>.</li>
+
+        		</ul>
+        	Note that this function is one-to-one. We can examine the graph to verify, if necessary. Also the function is onto. To see this, let <m>x</m> be any integer. If <m>x</m> is <m>0</m>, then we know <m>f(1) = 0</m>. If <m>x</m> is positive, then <m>f(2x) = 2x/2 = x</m>. Notice that <m>2x</m> is an even natural number. If <m>x</m> is negative, then
+        		<me>f(-2x+1)=-((-2x+1)-1)/2=-(-2x)/2=x.</me>
+        	Notice <m>-2x+1</m> is an odd natural number. Thus in all three cases, <m>x</m> is mapped to by some natural number and <m>f</m> is onto. Therefore, <m>f</m> is a one-to-one correspondence and the set of integers have the same cardinality as the set of natural numbers, and is thus a countably infinite set.</p>
+        </proof>
+
+        <theorem>
+        	<p>The set of rational numbers is countably infinite. That is, the set of rational numbers has the same cardinality as the set of natural numbers.</p>
+        </theorem>
+
+        <p>This set is a bit harder to work with than the previous ones because the process of listing the rational numbers is difficult. We will eliminate some of the difficulty by working only with positive rational numbers. You should be able to explain how to adapt the solution to the complete set once you see the pattern.</p>
+
+        <figure xml:id="figure-relations-rationals">
+            <image width="50%" xml:id="relations-rationals">
+                <description>two overlapping circles with the common part shaded</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+               <![CDATA[
+                \begin{tikzpicture}[scale=1]
+                
+					\tikzstyle{keepstyle} =[rectangle, rounded corners, draw, fill=white]
+					\node at (0,0) {$\vdots$};
+					\node[keepstyle] (51) at (0,1) {$\frac{5}{1}$};
+					\node[keepstyle] (41) at (0,2) {$\frac{4}{1}$};
+					\node[keepstyle] (31) at (0,3) {$\frac{3}{1}$};
+					\node[keepstyle] (21) at (0,4) {$\frac{2}{1}$};
+					\node[keepstyle] (11) at (0,5) {$\frac{1}{1}$};
+					\node at (1,0) {$\vdots$};
+					\node[keepstyle] (52) at (1,1) {$\frac{5}{2}$};
+					\node at (1,2) {$\frac{4}{2}$};
+					\node[keepstyle] (32) at (1,3) {$\frac{3}{2}$};
+					\node at (1,4) {$\frac{2}{2}$};
+					\node[keepstyle] (12) at (1,5) {$\frac{1}{2}$};
+					\node at (2,0) {$\vdots$};
+					\node at (2,1) {$\frac{5}{3}$};
+					\node[keepstyle] (43) at (2,2) {$\frac{4}{3}$};
+					\node at (2,3) {$\frac{3}{3}$};
+					\node[keepstyle] (23) at (2,4) {$\frac{2}{3}$};
+					\node[keepstyle] (13) at (2,5) {$\frac{1}{3}$};
+					\node at (3,0) {$\vdots$};
+					\node at (3,1) {$\frac{5}{4}$};
+					\node at (3,2) {$\frac{4}{4}$};
+					\node[keepstyle] (34) at (3,3) {$\frac{3}{4}$};
+					\node at (3,4) {$\frac{2}{4}$};
+					\node[keepstyle] (14) at (3,5) {$\frac{1}{4}$};
+					\node at (4,0) {$\vdots$};
+					\node  at (4,1) {$\frac{5}{5}$};
+					\node at (4,2) {$\frac{4}{5}$};
+					\node at (4,3) {$\frac{3}{5}$};
+					\node[keepstyle] (25) at (4,4) {$\frac{2}{5}$};
+					\node[keepstyle] (15) at (4,5) {$\frac{1}{5}$};
+					\node at (5,0) {$\vdots$};
+					\node  at (5,1) {$\frac{5}{6}$};
+					\node at (5,2) {$\frac{4}{6}$};
+					\node at (5,3) {$\frac{3}{6}$};
+					\node at (5,4) {$\frac{2}{6}$};
+					\node[keepstyle] (16) at (5,5) {$\frac{1}{6}$};
+					\node at (6,1) {$\cdots$};
+					\node at (6,2) {$\cdots$};
+					\node at (6,3) {$\cdots$};
+					\node at (6,4) {$\cdots$};
+					\node at (6,5) {$\cdots$};
+					\draw [-latex,red, thick] (11) -- (12);
+					\draw [-latex, red, thick] (12) -- (21);
+					\draw [-latex, red, thick] (21) -- (31);
+					\draw [-latex, red, thick] (31) -- (13);
+					\draw [-latex, red, thick] (13) -- (14);
+					\draw [-latex, red, thick] (14) -- (23);
+					\draw [-latex, red, thick] (23) -- (32);
+					\draw [-latex, red, thick] (32) -- (41);
+					\draw [-latex, red, thick] (41) -- (51);
+					\draw [-latex, red, thick] (51) -- (15);
+					\draw [-latex, red, thick] (15) -- (16);
+					\draw [-latex, red, thick] (16) -- (25);
+					\draw [-latex, red, thick] (25) -- (34);
+					\draw [-latex, red, thick] (34) -- (43);
+					\draw [-latex, red, thick] (43) -- (52);
+                \end{tikzpicture}]]>
+                </latex-image>
+            </image>
+            <caption>The digraph for the relation <m>R</m> on <m>A</m></caption>
+        </figure>
+
+
+        <exercises>
+
+        	<exercise>
+        		<statement>
+        			<p>Show that the set of even numbers is countably infinite.</p>
+        		</statement>
+        	</exercise>
+
+        </exercises>
+
+
 
     </section>
 

@@ -313,7 +313,7 @@
 
         <p>As indicated, the proofs of the other parts of this fact are left as exercises.</p>
 
-        <subsection>
+        <subsection xml:id="sets-subsection-historical-note">
             <title>Historical Note</title>
 
             <p>Unlike most areas of mathematics, which arise as a result of the cumulative efforts of many mathematicians, sometimes over several generations, set theory is the creation of a single individual. Georg Ferdinand Ludwig Phillip Cantor (27 June 1806<ndash />18 March 1871) was a German mathematician, born in Russia. Use internet and/or library resources to research his major contributions to the area of set theory, specifically the concept of cardinality and Cantor's Theorem.</p>
