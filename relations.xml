@@ -412,16 +412,85 @@
 
         <p>In general, consider a finite set <m>A</m> and a relation <m>R</m> defined on it. Digraphs are constructed by drawing a small dot representing each element of <m>A</m> and labeling that circle appropriately. These dots are called the <term>vertices</term> of the graph. At each dot, say <m>x</m>, draw a directed line segment from it to any other dot, labeled <m>y</m>, if and only if <m>xRy</m>. These directed line segments are called <term>edges</term>. Then notice that the dots represent <m>A</m> and the edges represent the ordered pairs in <m>R</m>.</p>
 
-        <example>
+        <example xml:id="relations-example-digraph">
             <p>Consider the set <m>A = \{a, b, c, d \}</m>and the relation
                 <me>R = \{ (a, a), (c, c), (a, b), (b, a), (b, d), (c , d), (b, c) \}.</me></p>
 
+            <figure xml:id="figure-relations-digraph">
+                <image width="50%" xml:id="relations-digraph">
+                    <description>two overlapping circles with the common part shaded</description>
+                    <latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                   <![CDATA[
+                    \begin{tikzpicture}[scale=1]
+                    
+                    \draw [fill=blue!20] (3,1) coordinate(A) circle [radius=0.1];
+                    \draw [thick] (A) circle(0.1);  
+                    \node [above right] at (A) {$a$};
 
-            <p>Notice that there is an edge representing every ordered pair in . For those elements in that are related to themselves, there is an edge that looks like a loop. In this relation there are only two loops since only and are related to themselves. From this example it is reasonable to conclude that for an arbitrary finite relation defined on , the relation will have the reflexive property if and only if each vertex has a loop. Then we can quickly see from the digraph that is not reflexive. We may also conclude from the digraph that is not symmetric and not transitive. Why?</p>
-</example>
+
+                    \draw [fill=blue!20] (1,2) coordinate(B) circle [radius=0.1];
+                    \draw [thick] (B) circle(0.1);  
+                    \node [above right] at (B) {$b$};
+     
+                    \draw [fill=blue!20] (3,3) coordinate(C) circle [radius=0.1];
+                    \draw [thick] (C) circle(0.1);  
+                    \node [above right] at (C) {$c$}; 
+
+                    \draw [fill=blue!20] (2,4) coordinate(D) circle [radius=0.1];
+                    \draw [thick] (D) circle(0.1);  
+                    \node [above right] at (D) {$d$};    
+
+                    \draw[thick, ->] (3,0.9) to [out=270,in=270] (1,1.9);     
+                    \draw[thick, ->] (1.1,2) to [out=0,in=90] (3,1.1);   
+                    \draw[thick, ->] (1.1,2) to [out=0,in=270] (3,2.9);  
+                    \draw[thick, ->] (3,3.1) to [out=90,in=0] (2.1,4);    
+                    \draw[thick, ->] (1,2.1) to [out=90,in=195] (1.9,4);  
+                    
+                    \draw[thick, ->] (3.1,3) arc [radius=0.5, start angle=-180, end angle= 180];
+                    \draw[thick, ->] (3.1,1) arc [radius=0.5, start angle=-180, end angle= 180];
+                    \end{tikzpicture}]]>
+                    </latex-image>
+                </image>
+                <caption>The digraph for the relation <m>R</m> on <m>A</m></caption>
+            </figure>
+
+            <p>Notice that there is an edge representing every ordered pair in <m>R</m> (<xref ref="figure-relations-digraph" />). For those elements in <m>A</m> that are related to themselves, there is an edge that looks like a loop. In this relation there are only two loops since only <m>a</m> and <m>c</m> are related to themselves. From this example it is reasonable to conclude that for an arbitrary finite relation <m>R</m> defined on <m>A</m>, the relation will have the reflexive property if and only if each vertex has a loop. Thus, we can quickly see from the digraph that <m>R</m> is not reflexive. We may also conclude from the digraph that <m>R</m> is not symmetric and not transitive. Why?</p>
+        </example>
 
 
         <exercises>
+
+            <exercise>
+                <statement>
+                    <p>Determine whether or not the following relations are reflexive, symmetric, or transitive. Which are equivalence relations on the given sets? Justify your thinking.
+                        <ol>
+
+                            <li><m>R = \{ (1,1), (3,3), (5,5) \}</m> on <m>A = \{ 1, 3, 5 \}</m></li>
+
+                            <li><m>R = \{ (1,1), (3,3), (5,5) \}</m> on <m>A = \{ 1, 3, 5 \}</m></li>
+
+                            <li><m>R = \{ (1,1), (3,3), (5,5) \}</m> on <m>A = \{ 1, 3, 5 \}</m></li>
+
+                            <li><m>R = \{ (1,1), (3,3), (5,5) \}</m> on <m>A = \{ 1, 3, 5 \}</m></li>
+
+                            <li><m>R = \{ (1,1), (3,3), (5,5) \}</m> on <m>A = \{ 1, 3, 5 \}</m></li>
+
+                            <li><m>R = \{ (1,1), (3,3), (5,5) \}</m> on <m>A = \{ 1, 3, 5 \}</m></li>
+
+                            <li><m>R = \{ (1,1), (3,3), (5,5) \}</m> on <m>A = \{ 1, 3, 5 \}</m></li>
+
+                            <li><m>R = \{ (1,1), (3,3), (5,5) \}</m> on <m>A = \{ 1, 3, 5 \}</m></li>
+
+                            <li><m>R = \{ (1,1), (3,3), (5,5) \}</m> on <m>A = \{ 1, 3, 5 \}</m></li>
+
+                            <li><m>R = \{ (1,1), (3,3), (5,5) \}</m> on <m>A = \{ 1, 3, 5 \}</m></li>
+
+                            <li><m>R = \{ (1,1), (3,3), (5,5) \}</m> on <m>A = \{ 1, 3, 5 \}</m></li>
+
+                        </ol></p>
+                </statement>
+            </exercise>
 
             <exercise xml:id="exercise-relations-mod-5">
                 <statement>
