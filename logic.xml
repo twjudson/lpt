@@ -247,7 +247,7 @@
         <table xml:id="logic-table-disjunction">
            <tabular halign="center" top="medium">
                 <row bottom="medium">
-                    <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p \wedge q</m></cell>
+                    <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p \vee q</m></cell>
                 </row>
                 <row>
                     <cell>T</cell><cell>T</cell><cell>T</cell>
@@ -258,7 +258,7 @@
                     <cell>F</cell><cell>T</cell><cell>T</cell>
                 </row>                
                 <row bottom="medium">
-                    <cell>F</cell><cell>F</cell><cell>T</cell>
+                    <cell>F</cell><cell>F</cell><cell>F</cell>
                 </row>
            </tabular>
             <caption>Truth table for disjunction</caption>
