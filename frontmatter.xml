@@ -45,11 +45,11 @@
 
         <edition>Annual Edition 2019</edition>
 
-<!--        <website>
-            <name><c>abstract.pugetsound.edu</c></name>
-            <address>http://abstract.pugetsound.edu</address>
+        <website>
+            <name><c>http://faculty.sfasu.edu/judsontw/lpt/index.html</c></name>
+            <address>http://faculty.sfasu.edu/judsontw/lpt/index.html</address>
         </website>
--->
+
 
         <copyright>
             <year>2019</year>
@@ -64,7 +64,7 @@
 
     <preface xml:id="preface">
 
-        <p>This text is intended for a one-semester course on logic and proof for students intending to teach middle or high  school mathematics.  The book grew out of a set of notes written by Kimberly M. Childs and Deborah A. Pace for the <em>Foundation of Mathematics</em> course (MTH 300) at Stephen F. Asutin State University.  This course provides an introduction to logic and proof for students intending to become middle school mathematics teachers.  During Summer 2019, I converted the notes to <pretext /> and added a chapter on the integers.  The open source version of this book has received support from the National Science Foundation (Awards #DUE–1625223 and #DUE–1821329).</p>
+        <p>Logic and proof are two of the most important areas of study for students intending to teach middle or secondary mathematics. <em>The Mathematical Education of Teachers II </em> published for the Conference Board of the Mathematical Sciences (2012) by the  American Mathematical Society and Mathematical Association of America emphasizes the need for teachers to understand mathematical reasoning and thinking. <em>Logic and Proof for Teachers</em> is intended for a one-semester course on logic and proof for students intending to teach middle or high school mathematics.  The book grew out of a set of notes written by Kimberly M. Childs and Deborah A. Pace for the <em>Foundation of Mathematics</em> course (MTH 300) at Stephen F. Austin State University. During Summer 2019, I converted the notes to <pretext /> and added a chapter on the integers.  The open source version of this book has received support from the National Science Foundation (Awards #DUE–1625223 and #DUE–1821329).</p>
 
  
 

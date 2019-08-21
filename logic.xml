@@ -57,7 +57,7 @@
                 </ol></p>
         </example>
 
-        <p>Certainly we each recognize some underlying knowledge is required in interpreting the sentences in <xref ref="logic-example-statements" />. For instance, in the sentence <q><m>2 + 3 = 5</m>,</q> we assume recognition of the concepts of <m>2</m>, <m>3</m>, <m>5</m>, and addition base <m>10</m>. Nevertheless, we must make some general knowledge assumptions, and certainly the six sentences of <xref ref="logic-example-statements" />. are statements. (The first three sentences are true while the last three are false.)</p>
+        <p>Certainly we recognize some underlying knowledge is required in interpreting the sentences in <xref ref="logic-example-statements" />. For instance, in the sentence <q><m>2 + 3 = 5</m>,</q> we assume recognition of the concepts of <m>2</m>, <m>3</m>, <m>5</m>, and addition base <m>10</m>. Nevertheless, we must make some general knowledge assumptions, and certainly the six sentences of <xref ref="logic-example-statements" /> are statements. (The first three sentences are true while the last three are false.)</p>
 
         <example xml:id="logic-example-not-statements">
             <p>Each of the following sentences are not statements.
@@ -65,16 +65,18 @@
 
                     <li><m>2 + 3</m></li>
 
-                    <li>Three is a nice number.</li>
+                    <li>Study mathematics.</li>
 
-                    <li>It is going to rain today.</li>
+                    <li xml:id="logic-example-nice-number">Three is a nice number.</li>
 
-                    <li>Paul Newman is a handsome man.</li>
+                    <li xml:id="logic-example-handsome">Chris Hemsworth, who plays Thor in the <em>Avengers</em> series, is a handsome man.</li>
 
                 </ol></p>
-        </example>
+        
 
-        <p>Clearly, the problem in each of these sentences is that their truth or falsity cannot be uniquely determined. You may dislike numbers and thus, in your mind, no number is nice, while someone else might think three is a very nice number. Depending on the date and location when it is read, the truth of sentence (2) could vary. Some foolish people might not agree that Paul Newman is handsome!</p>
+            <p>Clearly, the problem in each of these sentences is that their truth or falsity cannot be uniquely determined. Actually, <xref ref="logic-example-nice-number" /> and <xref ref="logic-example-handsome" /> could be statements provided that we have good definitions of <q>nice numbers</q> and <q>handsome</q>.</p>
+
+        </example>
 
         <example xml:id="logic-example-paradox">
             <p>Consider the following sentence. <q>This sentence is false.</q> This is not a statement. Why? The sentence in question is an example of what is known in mathematics as a paradox. If it is true, then it is false, while on the other hand, if it is false, then it is true. Such paradoxes are not statements.</p>
@@ -118,7 +120,19 @@
                 <statement>
                     <p><m>64 \div 2 = 37</m>.</p>
                 </statement>
-            </exercise>            
+            </exercise>      
+
+            <exercise>
+                <statement>
+                    <p><m>ax^2 + bx + c</m>.</p>
+                </statement>
+            </exercise> 
+
+            <exercise>
+                <statement>
+                    <p><m>ax^2 + bx + c = 0</m>.</p>
+                </statement>
+            </exercise>             
           
             <exercise>
                 <statement>
