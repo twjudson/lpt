@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- This file is part of the book                                              -->
-<!--                                                                            -->
-<!-- Logic and Proof for Teachers                                 -->
-<!--                                                                            -->
-<!-- Copyright (C) 2019  Kimberly M. Childs, Deborah A. Pace, Thomas W. Judson  -->
-<!--                                                                            -->
-<!-- See the file COPYING for copying conditions.                               -->
+<!-- This file is part of the book                                                               -->
+<!--                                                                                             -->
+<!-- Logic and Proof for Teachers                                                                -->
+<!--                                                                                             -->
+<!-- Copyright (C) 2019  Lesa L. Beverly, Kimberly M. Childs, Deborah A. Pace, Thomas W. Judson  -->
+<!--                                                                                             -->
+<!-- See the file COPYING for copying conditions.                                                -->
 
 <frontmatter xml:id="index" xmlns:xi="http://www.w3.org/2001/XInclude">
 
     <titlepage>
+
+        <author>
+            <personname>Lesa L. Beverly</personname>
+            <department>Department of Mathematics and Statistics</department>
+            <institution>Stephen F. Austin State University</institution>
+            <email>beverlyll@sfasu.edu</email>
+        </author>
 
         <author>
             <personname>Kimberly M. Childs</personname>
@@ -53,7 +60,7 @@
 
         <copyright>
             <year>2019</year>
-            <holder>Kimberly M. Childs, Thomas W. Judson, Deborah A. Pace</holder>
+            <holder>Lesa L. Beverly, Kimberly M. Childs, Thomas W. Judson, Deborah A. Pace</holder>
             <minilicense>GFDL License</minilicense>
             <shortlicense>Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license is included in the appendix entitled <q>GNU Free Documentation License.</q>  All trademarks<trademark /> are the registered<registered /> marks of their respective owners.</shortlicense>
         </copyright>
@@ -87,12 +94,7 @@
                 <email>beaversbd@sfasu.edu</email>
             </contributor>
 
-            <contributor>
-                <personname>Lesa L. Beverly</personname>
-                <department>Department of Mathematics and Statistics</department>
-                <institution>Stephen F. Austin State University</institution>
-                <email>beverlyll@sfasu.edu</email>
-            </contributor>
+
 
             <contributor>
                 <personname>Jane H. Long</personname>

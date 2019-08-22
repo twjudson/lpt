@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- This file is part of the book                                              -->
-<!--                                                                            -->
-<!-- Logic and Proof for Teachers                                 -->
-<!--                                                                            -->
-<!-- Copyright (C) 2019  Kimberly M. Childs, Deborah A. Pace, Thomas W. Judson  -->
-<!--                                                                            -->
-<!-- See the file COPYING for copying conditions.                               -->
+<!-- This file is part of the book                                                               -->
+<!--                                                                                             -->
+<!-- Logic and Proof for Teachers                                                                -->
+<!--                                                                                             -->
+<!-- Copyright (C) 2019  Lesa L. Beverly, Kimberly M. Childs, Deborah A. Pace, Thomas W. Judson  -->
+<!--                                                                                             -->
+<!-- See the file COPYING for copying conditions.                                                -->
 
 <chapter xml:id="Arguments" xmlns:xi="http://www.w3.org/2001/XInclude">
 
@@ -109,9 +109,46 @@
                 </ul></p>
         </assemblage>
 
+        <example>
+            <p>Charles Dodgson (1832<ndash />1898) was an English mathematician who taught logic at Oxford University. As a teacher of logic and a lover of nonsense, he designed entertaining puzzles to train people in systematic reasoning. In these puzzles he would string together a list of implications, purposefully nonsensical so that his students would not influenced by any preconceived opinions. The task presented to the student was   to use all the listed implications to arrive at an inescapable conclusion. You may know Charles Dodgson better by his pen name Lewis Carroll, author of <em>Alice's Adventures in Wonderland</em> and <em>Through the Looking-Glass</em>.</p>
+
+            <p>For example, consider the following statements.
+                <ol>
+
+                    <li>All babies are illogical.</li>
+
+                    <li>Nobody is despised who can manage a crocodile.</li>
+
+                    <li>Illogical persons are despised.</li>
+
+                </ol>
+            Let 
+                <md>
+                    <mrow>p &amp; \text{  it is a baby}</mrow>
+                    <mrow>q &amp; \text{  it is logical}</mrow>
+                    <mrow>r &amp; \text{  it can manage a crocodile}</mrow>
+                    <mrow>s &amp; \text{  it is despised}.</mrow>
+                </md>
+            The statements now translate to 
+                <ol>
+
+                    <li><m>p \rightarrow \negate q</m> (All babies are illogical.)</li>
+
+                    <li><m> r \rightarrow \negate s</m>  or <m>s \rightarrow \negate r</m> (Nobody is despised who can manage a crocodile.)</li>
+
+                    <li><m>\negate q \rightarrow s</m> (Illogical persons are despised.)</li>
+
+                </ol>
+                Linking these statements together, we see that <m>p \rightarrow \negate q \rightarrow s \rightarrow \negate r</m>.  In other words, <m>p \rightarrow \negate r</m> or <q>babies cannot manage crocodiles.</q></p>
+
+            </example>
+
+
+
+
         <exercises>
 
-            <p>Charles Dodgson (1832<ndash />1898) was an Englsih mathematician who taught logic at Oxford University. As a teacher of logic and a lover of nonsense, he designed entertaining puzzles to train people in systematic reasoning. In these puzzles he would string together a list of implications, purposefully nonsensical so that his students would not influenced by any preconceived opinions. The task presented to the student was   to use all the listed implications to arrive at an inescapable conclusion. You may know Charles Dodgson better by his pen name Lewis Carroll, author of <em>Alice's Adventures in Wonderland</em> and <em>Through the Looking-Glass</em>.  See how many of the following Lewis Carroll puzzles you can solve.</p>
+            <p>See how many of the following Lewis Carroll puzzles you can solve.</p>
 
             <exercise>
                 <statement>
@@ -676,7 +713,7 @@
 
                             <li>Direct method.</li>
 
-                            <li>Contrapostion.</li>
+                            <li>Contraposition.</li>
 
                             <li>Contradiction.</li>
 

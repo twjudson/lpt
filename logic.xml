@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- This file is part of the book                                              -->
-<!--                                                                            -->
-<!-- Logic and Proof for Middle School Teachers                                 -->
-<!--                                                                            -->
-<!-- Copyright (C) 2019  Kimberly M. Childs, Deborah A. Pace, Thomas W. Judson  -->
-<!--                                                                            -->
-<!-- See the file COPYING for copying conditions.                               -->
+<!-- This file is part of the book                                                               -->
+<!--                                                                                             -->
+<!-- Logic and Proof for Teachers                                                                -->
+<!--                                                                                             -->
+<!-- Copyright (C) 2019  Lesa L. Beverly, Kimberly M. Childs, Deborah A. Pace, Thomas W. Judson  -->
+<!--                                                                                             -->
+<!-- See the file COPYING for copying conditions.                                                -->
 
 
 <chapter xml:id="logic" xmlns:xi="http://www.w3.org/2001/XInclude">
@@ -420,7 +420,10 @@
 
         <p>It is worth noting that the converse of the inverse is the contrapositive. You should also note that the terms <q>inverse</q> and <q>negation</q> are not interchangeable.</p>
 
-        <p>You should be aware that there are conventions governing the use or lack of use of parentheses in logical statements that are similar to those used to interpret algebraic expressions. Although we sometimes use grouping symbols for emphasis, such grouping symbols are often unnecessary for clarity of meaning.  For example, the expression <m>[ (\negate p) \wedge q] \rightarrow [(\negate r) \vee (\negate s)]</m> could have been written  <m>\negate p \wedge q \rightarrow \negate r \vee \negate s</m>. It is important for you to realize that the negation symbol preceding the <m>p</m> statement applies only to <m>p</m> unless indicated otherwise. However, the grouping symbols in the expressions <m>[ \negate (p \wedge q)] \rightarrow [(\negate r) \rightarrow (\negate s)]</m> and <m>\negate \{(p \wedge q) \rightarrow [(\negate r) \rightarrow (\negate s)]\}</m> produce statements with entirely different meanings.</p>
+        <remark>
+            <title>About Notation</title>
+            <p>You should be aware that there are conventions governing the use or lack of use of parentheses in logical statements that are similar to those used to interpret algebraic expressions. Although we sometimes use grouping symbols for emphasis, such grouping symbols are often unnecessary for clarity of meaning.  For example, the expression <m>[ (\negate p) \wedge q] \rightarrow [(\negate r) \vee (\negate s)]</m> could have been written  <m>\negate p \wedge q \rightarrow \negate r \vee \negate s</m>. It is important for you to realize that the negation symbol preceding the <m>p</m> statement applies only to <m>p</m> unless indicated otherwise. However, the grouping symbols in the expressions <m>[ \negate (p \wedge q)] \rightarrow [(\negate r) \rightarrow (\negate s)]</m> and <m>\negate \{(p \wedge q) \rightarrow [(\negate r) \rightarrow (\negate s)]\}</m> produce statements with entirely different meanings.</p>
+        </remark>
 
         <fact xml:id="logic-fact-equivalency-of-contrapositive">
             <p>Consider two statements <m>p</m> and <m>q</m>.
@@ -771,7 +774,7 @@
         <p>As a final example we will provide the following example of a truth table involving three statements.</p>
 
         <example xml:id="logic-example-three-statements">
-            <p>The following truth table (<xref ref="logic-table-three-statements" />) can be used ot verify the statement
+            <p>The following truth table (<xref ref="logic-table-three-statements" />) can be used to verify the statement
             	<me>[( p \rightarrow q ) \vee r] \leftrightarrow [(p \; \wedge \negate q) \rightarrow r].</me>
             	Since the columns for <m>( p \rightarrow q ) \vee r</m> and <m>(p \; \wedge \negate q) \rightarrow r</m> match, we have a tautology.</p>
 
@@ -960,7 +963,8 @@
         </example>
 
         <remark>
-            <p>Be careful when using the symbols <m>\exists</m> and <m>\forall</m>.  While their use is quite common in logic, it is very easy to write confusing sentences.  You will rarely see these symbols used in an algebra or calculus textbook.</p>
+            <title>Caution!</title>
+            <p>Be careful when using the symbols <m>\exists</m> and <m>\forall</m>.  While their use is quite common in logic, it is very easy to write confusing sentences.  You will rarely see these symbols used in an algebra or calculus textbook.  You may wish to avoid using these symbols for the time being.</p>
         </remark>
 
         <p>General forms of qualified statements with their negations can be found in <xref ref="logic-table-quantifier-negation" />.</p>
