@@ -41,6 +41,7 @@
         This is exactly the formula for the <m>(n + 1)</m>th case.</p>
 
         <p>This method of proof is known as <term>mathematical induction</term>. Instead of attempting to verify a statement about some subset <m>S</m> of the positive integers <m>{\mathbb N}</m> on a case-by-case basis, an impossible task if <m>S</m> is an infinite set, we give a specific proof for the smallest integer being considered, followed by a generic argument showing that if the statement holds for a given case, then it must also hold for the next case in the sequence. We summarize mathematical induction in the following axiom.</p>
+        <idx><h>Mathematical induction</h></idx>
 
         <principle xml:id="principle-integers-first-pmi">
             <title>First Principle of Mathematical Induction</title>
@@ -77,6 +78,8 @@
         </example>
 
         <p>A nonempty subset <m>S</m> of <m>{\mathbb Z}</m> is <term>well-ordered</term> <idx><h>Well-ordered set</h></idx> if <m>S</m> contains a least element. Notice that the set <m>{\mathbb Z}</m> is not well-ordered since it does not contain a smallest element. However, the natural numbers are well-ordered.</p>
+        <idx><h>Well-ordered set</h></idx>
+
 
         <principle>
             <title>Principle of Well-Ordering</title>
@@ -84,6 +87,7 @@
                 <p>Every nonempty subset of the natural numbers is well-ordered.</p>
             </statement>
         </principle>
+        <idx><h>Principle of Well-Ordering</h></idx>
 
         <p>The Principle of Well-Ordering is equivalent to the Principle of Mathematical Induction.</p>
 

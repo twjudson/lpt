@@ -633,6 +633,7 @@
                 <title>Method 1: Direct Proof</title>
 
                 <p>Recall from the truth table of a conditional sentence that when <m>p</m> is false, <m>q</m> can have any truth value and the conditional will still be true. Thus, we need only consider the case when <m>p</m> is true and argue that <m>q</m> must also be true. Hence, we assume <m>p</m> is true and by applying various known tautologies and apparent implications, we argue <m>q</m> is also true.</p>
+                <idx><h>Direct proof</h></idx>
 
                 <example xml:id="arguments-example-direct-proof">
                     <p>We will prove the statement: <q>Let <m>m</m> and <m>n</m> be integers. If <m>m</m> is even and <m>n</m> is even, then <m>m + n</m> is even.</q></p>
@@ -649,6 +650,8 @@
 
                 <p>We know that <m>[\negate(p \rightarrow q)]  \leftrightarrow [p \, \wedge (\negate q)] </m> by part (5) of <xref ref="logic-theorem-tautology" />. If we begin by assuming <m>p \, \wedge (\negate q)</m> is true and reach a contradiction, it must be the case that <m>p \, \wedge (\negate q)</m> is false.  But <m>p \, \wedge (\negate q)</m> being false and yet equivalent to <m>\negate(p \rightarrow q)</m> implies that <m>\negate(p \rightarrow q)</m> is also false or <m>p \rightarrow q</m> is true. Therefore, in proving <m><m>p \rightarrow q</m></m> by contradiction, we assume <m>p</m> and <m>\negate q</m> are both true and reach a contradiction. This logically shows that the statement <m>p \rightarrow q</m> as argued above.</p>
 
+                <idx><h>Proof by contradiction</h></idx>
+
                 <example xml:id="arguments-example-contradiction-proof">
                     <p>We will prove the statement: <q>Let <m>x</m> and <m>y</m> be positive real numbers. If <m>x \neq y</m>, then <m>x^2 \neq y^2</m>.</q></p>
 
@@ -664,6 +667,9 @@
 
                 <p>Since we know that <m>(p \rightarrow q)  \leftrightarrow ( \negate q \rightarrow \negate p )</m> by part (8) of <xref ref="logic-theorem-tautology" />, we can prove <m>\negate q \rightarrow \negate p</m> instead of <m>p \rightarrow q</m>. That is, we assume that <m>\negate q</m> is true and argue that <m>\negate p</m> is true. So essentially, a proof by contraposition is a direct proof applied to a statement that is equivalent to the one we wish to prove.</p>
 
+                <idx><h>Proof by contrapositive</h></idx>
+                <idx><h>Indirect proof</h></idx>
+
                 <example xml:id="arguments-example-contrapositive-proof">
                     <p>As in <xref ref="arguments-example-contradiction-proof" />, we will prove the statement: <q>Let <m>x</m> and <m>y</m> be positive real numbers. If <m>x \neq y</m>, then <m>x^2 \neq y^2</m>.</q> However, we will directly prove the equivalent statement, <q>If <m>x^2 = y^2</m>, the <m>x = y</m>.</q></p>
 
@@ -678,6 +684,8 @@
                 <title>Counterexamples</title>
 
                 <p>We can use a counterexample to prove that a statement is false. In considering the truth value of a conditional statement <m>p \rightarrow q</m>, we would know the statement is false if we could find a single example for which <m>p</m> is true but <m>q</m> is false.</p>
+
+                <idx><h>Counterexample</h></idx>
 
                 <example xml:id="arguments-example-counterexample">
                     <p>Consider the statement: <q>Let <m>m</m> and <m>n</m> be integers. If <m>m</m> is even, then <m>m + n</m> is even.</q>  By considering a single example such as <m>m = 2</m> and <m>n = 3</m>, and observing that

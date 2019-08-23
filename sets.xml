@@ -34,11 +34,18 @@
 
        <definition xml:id="sets-definition-set">
             <p>A <term>set</term> is a collection of distinct objects, which are called the <term>elements</term> of the set. We will use capital letters to denote sets, for example <m>a</m>, <m>B</m>, <m>S</m>, <m>T</m>, etc. If <m>x</m> is an element of a set <m>S</m>, we use the notation <m>x \in S</m>. As is frequently done in mathematics, if <m>x</m> is not an element of a set <m>S</m>, we denote this by <m>x \notin S</m>.  Two sets, <m>A</m> and <m>B</m>, are <term>equal</term> (denoted <m>A = B</m>) if and only if they have precisely the same elements.</p>
+            <idx><h>set</h></idx>
+            <idx><h>elements</h></idx>
+
+
         </definition>
 
         <definition xml:id="sets-definition-subset">
             <p>A set which is comprised of some (or all) of the elements of <m>\mathbb U</m>, some <term>universal set</term>, is called a subset of <m>\mathbb U</m> and is denoted <m>S \subseteq \mathbb U</m>. If <m>A \subseteq \mathbb U</m> and <m>B \subseteq \mathbb U</m>, we further state that <m>A</m> is a <term>subset</term> of <m>B</m>, denoted <m>A \subseteq B</m>, if each element of <m>A</m> is also an element of <m>B</m>. Moreover, if <m>A \subseteq B</m> but <m>A \neq B</m>, we say that <m>A</m> is a <term>proper subset</term> of <m>B</m> and write <m>A \subset B</m>.</p>
         </definition>
+            <idx><h>Subset</h></idx>
+            <idx><h>Proper subset</h></idx>
+            <idx><h>Universal set</h></idx>
 
         <example xml:id="sets-example-subset">
             <p>Let <m>\mathbb U = \{a, b, c, \ldots, z\}</m>, <m>S = \{ a, b, s, u \}</m>, <m>T = \{a, u\}</m>, and <m>W = \{ b,d \}</m>.  The <m>S \subseteq \mathbb U</m>, <m>T \subseteq \mathbb U</m>, <m>W \subseteq \mathbb U</m>, and <m>T \subseteq S</m>.  However, <m>W \not\subseteq S</m>, <m>W \not\subseteq T</m>, <m>T \not\subseteq W</m>, and <m>S \not\subseteq W</m>.  We read <m>W \not\subseteq S</m> as <q><m>W</m> is not a subset of <m>S</m>.</q>  In addition, <m>S \subset \mathbb U</m>, <m>T \subset \mathbb U</m>, <m>W \subset \mathbb U</m>, and <m>T \subset S</m>.</p>
@@ -49,8 +56,13 @@
         <fact>
         	<p>Let <m>A</m> and <m>B</m> be sets. Then <m>A = B</m> if and only if <m>A \subseteq B</m>  and <m>B \subseteq A</m>. We sometimes refer to this method of proof as <q>proofs by double inclusion.</q></p>
         </fact>
+        <idx><h>Double inclusion</h></idx>
 
         <p>Without entering into a philosophical argument, we define <m>\emptyset</m> to be the set with no elements, called the <term>empty set</term>, the <term>void set</term>, or the <term>null set</term>. This set is extremely useful and should be understood carefully.</p>
+            <idx><h>Empty set</h></idx>
+            <idx><h>Null set</h></idx>
+            <idx><h>Void set</h></idx>
+            
 
         <fact>
         	<p>Let <m>\mathbb U</m> be any universal set and <m>A \subseteq \mathbb U</m>.  Then <m>\emptyset \subseteq A</m> and <m>\emptyset \subseteq \mathbb U</m>.</p>
@@ -80,6 +92,12 @@
 
 				</ul></p>
 		</definition>
+	    <idx><h>Union</h></idx>
+        <idx><h>Intersection</h></idx>
+        <idx><h>Complement</h></idx>
+        <idx><h>Set minus</h></idx>
+        <idx><h>Disjoint</h></idx>
+        
 
 		<p>While not sufficient for proof, Venn diagrams can be useful in visualizing these concepts (<xref first="figure-sets-venn-union" last="figure-sets-venn-complement" />).</p>
 
@@ -228,14 +246,17 @@
         <definition xml:id="sets-definition-power-set">
             <p>If <m>A</m> is a set, then the <term>power set</term> of <m>A</m> is the set <m>\mathcal P(A) = \{ B \mid B \subseteq A \}</m>.</p>
         </definition>
+        <idx><h>Power set</h></idx>
 
         <example xml:id="sets-example-power-set">
             <p>If <m>A = \{ 1,2\}</m>, then <m>\mathcal P(A) = \{ \emptyset, \{1 \}, \{2\}, A\}</m>. If <m>B = \{ a, b, c \}</m>, then <m>\mathcal P(B) = \{ \emptyset, \{ a \}, \{ b \}, \{ c \}, \{ a, b \}, \{ a, c \}, \{ b, c \}, B \}</m>.</p>
         </example>
 
         <definition xml:id="sets-definition-cartesian-product">
-            <p>If <m>A</m> and <m>B</m> are sets, then <m>A \times B = \{ (a, b) \mid a \in A \text{ and } b \in B \}</m> is called  the <term>Cartesian Product</term> or the <term>cross product</term> of <m>A</m> and <m >B</m>.</p>
+            <p>If <m>A</m> and <m>B</m> are sets, then <m>A \times B = \{ (a, b) \mid a \in A \text{ and } b \in B \}</m> is called  the <term>Cartesian product</term> or the <term>cross product</term> of <m>A</m> and <m >B</m>.</p>
         </definition>
+        <idx><h>Cartesian product</h></idx>
+        <idx><h>Cross product</h></idx>
 
         <example xml:id="sets-example-cartesian-product">
             <p>If <m>A = \{ 1,2\}</m> and <m>B = \{ a, b, c \}</m>, then <m>A \times B = \{ (1, a), (1, b), (1, c), (2, a), (2, b), (2, c)\}</m>.</p>
@@ -317,6 +338,7 @@
             <title>Historical Note</title>
 
             <p>Unlike most areas of mathematics, which arise as a result of the cumulative efforts of many mathematicians, sometimes over several generations, set theory is the creation of a single individual. Georg Ferdinand Ludwig Phillip Cantor (27 June 1806<ndash />18 March 1871) was a German mathematician, born in Russia. Use internet and/or library resources to research his major contributions to the area of set theory, specifically the concept of cardinality and Cantor's Theorem.</p>
+            <idx><h>Cantor, Georg Ferdinand Ludwig Phillip</h></idx>
 
         </subsection>
 
