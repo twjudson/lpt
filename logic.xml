@@ -36,7 +36,7 @@
     	<title>Definitions</title>
     	
         <definition xml:id="logic-definition-statement">
-            <p>A <em><term>statement</term></em> is a sentence which is either true or false. We will notationally speak of a statement <m>p</m> or a statement <m>q</m>.</p>
+            <p>A <em><term>statement</term></em> is a sentence which is either true or false. We will notationally speak of a statement <m>p</m> or a statement <m>q</m>.</p><idx><h>Statement</h></idx>
         </definition>
 
         <example xml:id="logic-example-statements">
@@ -174,7 +174,7 @@
         <p>In <xref ref="logic-section-definitions" /> we defined a statement to be a sentence which is either true or false. Many statements we are interested in studying are actually combinations of several simpler ones. Then the problem of determining the truth value (truth or falsity) of such statements becomes one of discovering the truth value of the statements being combined as well as understanding the methods of combination. We will at this time consider the negation, conjunction, and disjunction of statements.</p>
 
         <definition xml:id="logic-definition-negation">
-            <p>Let <m>p</m> be a statement. The <em><term>negation</term></em> of <m>p</m>, denoted <m>\negate p</m>, is a statement forming the denial of <m>p</m>. The statement <m>\negate p</m>, read <q>not p,</q> has the opposite truth value of <m>p</m>.</p>
+            <p>Let <m>p</m> be a statement. The <em><term>negation</term></em> of <m>p</m>, denoted <m>\negate p</m>, is a statement forming the denial of <m>p</m>. The statement <m>\negate p</m>, read <q>not p,</q> has the opposite truth value of <m>p</m>.</p><idx><h>Negation</h></idx>
         </definition>
 
         <example xml:id="logic-example-negation">
@@ -186,7 +186,7 @@
             </ol></p>
         </example>
 
-        <p>Since one of our stated concerns in this section is the determination of the truth value of a given statement based upon the truth values of its component statements, we consider the concept of a truth table. Very simply, a truth table is exactly a table which indicates the relationships between the truth values of the statements forming the table. Thus, the truth table below (<xref ref="logic-table-negation" />) indicates the relationship between the statements <m>p</m> and <m>\negate p</m>, giving us the basic table for a negation.</p>
+        <p>Since one of our stated concerns in this section is the determination of the truth value of a given statement based upon the truth values of its component statements, we consider the concept of a truth table. Very simply, a truth table is exactly a table which indicates the relationships between the truth values of the statements forming the table. Thus, the truth table below (<xref ref="logic-table-negation" />) indicates the relationship between the statements <m>p</m> and <m>\negate p</m>, giving us the basic table for a negation.</p><idx><h>Truth table</h></idx>
 
         <table xml:id="logic-table-negation">
            <tabular halign="center" top="medium">
@@ -210,7 +210,7 @@
 
         <definition xml:id="logic-definition-conjunction">
             <p>Let <m>p</m> and <m>q</m> be statements. The <em><term>conjunction</term></em> of <m>p</m> and <m>q</m>, denoted <m>p \wedge q</m>, is the compound statement obtained by connecting and with the English connective <q>and.</q> The conjunction is true only when both <m>p</m> and <m>q</m> are true.</p>
-        </definition>
+        </definition><idx><h>Conjunction</h></idx>
 
         <example xml:id="logic-example-conjunction">
             <p>The compound statement <q>Austin is the capital of Texas, and five is greater than two</q> is obtained by using <q>and</q> to connect the two statements <q>Austin is the capital of Texas</q> and <q>five is greater than two.</q></p>
@@ -240,7 +240,7 @@
 
         <definition xml:id="logic-definition-disjunction">
             <p>Let <m>p</m> and <m>q</m> be statements. The <em><term>disjunction</term></em> of <m>p</m> and <m>q</m>, denoted <m>p \vee q</m>, is the compound statement obtained by connecting and with the English connective <q>or.</q> The conjunction is true when at least one of the statements is true.</p>
-        </definition>
+        </definition><idx><h>Disjunction</h></idx>
 
         <p>A brief comment about <q>or</q> must be noted. As used in a mathematical/logical sense, <q>or</q> is interpreted in the inclusive sense. That is, <a>or</a> is interpreted as and/or, meaning one and/or the other is true. Consider carefully the truth table for the disjunction (<xref ref="logic-table-disjunction" />). So we see the disjunction is false only when both <m>p</m> and <m>q</m> are false. (The exclusive use of <q>or</q> would yield truth only if exactly one of the two statements were true.)</p>
 
@@ -284,7 +284,7 @@
 
         <definition xml:id="logic-definition-conditional">
             <p>Let <m>p</m> and <m>q</m> be statements. The <em><term>conditional statement</term></em> is the compound statement obtained by considering this statement: <q>if <m>p</m>, then <m>q</m></q> or <q><m>p</m> implies <m>q</m>,</q> and is denoted <m>p \rightarrow q</m>. The conditional is true unless <m>p</m> is true and <m>q</m> is false.</p>
-        </definition>
+        </definition><idx><h>Conditional Statement</h></idx>
 
         <p>In mathematics/logic the truth table for a conditional statement is given in <xref ref="logic-table-conditional" />.</p>
 
@@ -328,8 +328,8 @@
         <p>The last compound statement we will introduce is the biconditional statement.</p>
 
         <definition xml:id="logic-definition-biconditional">
-            <p>Consider two statements <m>p</m> and <m>q</m>. <em><term>The biconditional statement</term></em> is the compound statement <q><m>p</m> if and only if <m>q</m></q> or <q><m>p</m> is equivalent to <m>q</m>,</q> denoted <m>p \leftrightarrow q</m>. Frequently we write <q><m>p</m> iff <m>q</m></q> as a shorthand notation for <q><m>p</m> if and only if <m>q</m>.</q></p>
-        </definition>
+            <p>Consider two statements <m>p</m> and <m>q</m>. The <em><term>biconditional statement</term></em> is the compound statement <q><m>p</m> if and only if <m>q</m></q> or <q><m>p</m> is equivalent to <m>q</m>,</q> denoted <m>p \leftrightarrow q</m>. Frequently we write <q><m>p</m> iff <m>q</m></q> as a shorthand notation for <q><m>p</m> if and only if <m>q</m>.</q></p>
+        </definition><idx><h>Biconditonal Statement</h></idx>
 
         <p>Two statements, no matter how complicated, are equivalent when they have precisely the same truth value. You can find the truth table for the biconditional statement in <xref ref="logic-table-biconditional" />.</p>
 
@@ -416,7 +416,7 @@
 
         <definition xml:id="logic-definition-converse-inverse-contrapositive">
             <p>Consider two statements <m>p</m> and <m>q</m>. The statement <m>q \rightarrow p</m> is the <em><term>converse</term></em> of <m>p \rightarrow q</m>. The statement <m>\negate q \rightarrow \negate p</m> is the <em><term>contrapositive</term></em> of <m>p \rightarrow q</m>. The statement <m>\negate p \rightarrow \negate q</m> is the <em><term>inverse</term></em> of <m>p \rightarrow q</m>.</p>
-        </definition>
+        </definition><idx><h>Converse</h></idx><idx><h>Inverse</h></idx><idx><h>Contrapositive</h></idx>
 
         <p>It is worth noting that the converse of the inverse is the contrapositive. You should also note that the terms <q>inverse</q> and <q>negation</q> are not interchangeable.</p>
 
@@ -651,7 +651,7 @@
 
         <definition xml:id="logic-definition-tautology">
         	<p>A compound statement which is always true is called a <em><term>tautology</term></em>, while a compound statement which is always false is called a <em><term>contradiction</term></em>.</p>
-        </definition>
+        </definition><idx><h>Tautology</h></idx>
 
         <example xml:id="logic-example-contradiction">
             <p>The statement <m>p \leftrightarrow \negate p</m> is a contradiction since its truth table indicates this statement is always false (<xref ref="logic-table-contradiction" />).  That is, a statement and its negation can never have the same truth value.</p>
@@ -751,7 +751,7 @@
 
         <subsection>
             <title>Historical Note</title>
-            <p>Augustus De Morgan (27 June 1806<ndash/>18 March 1871) was a British mathematician and logician. Use internet and/or library resources to research his major contributions to the fields of mathematics and logic, specifically De Morgan's Laws.</p>
+            <p>Augustus De Morgan (27 June 1806<ndash/>18 March 1871) was a British mathematician and logician. Use internet and/or library resources to research his major contributions to the fields of mathematics and logic, specifically De Morgan's Laws.</p><idx><h>Augustus De Morgan</h></idx>
         </subsection>
         
         <p>The following theorem lists some useful contradictions, and again, the proof requires construction of the appropriate truth tables and is left to the exercises.</p>
@@ -913,7 +913,7 @@
     <section xml:id="logic-section-quantifiers">
         <title>Propositional Functions and Quantifiers</title>
 
-        <p>In mathematics we frequently wish to consider sentences (propositions) which involve variables. Since for different values of the variables (called propositional variables) we get different propositions with possibly different truth values, we call such sentences <em><term>propositional functions</term></em> or <em><term>open sentences</term></em>.</p>
+        <p>In mathematics we frequently wish to consider sentences (propositions) which involve variables. Since for different values of the variables (called propositional variables) we get different propositions with possibly different truth values, we call such sentences <em><term>propositional functions</term></em> or <em><term>open sentences</term></em>.</p><idx><h>Propositional functions</h></idx><idx><h>Open sentences</h></idx>
 
          <example xml:id="logic-example-variable-x">
             <p>For each real number <m>x</m> consider the sentence <m>x^2 + x = 1</m>.  Thus, <m>x^2 + x = 1</m> is a propositional function which has different truth values. The proposition is true for <m>x = 1</m> and <m>x = -2</m> and false for all other values of the propositional variable.</p>
@@ -942,7 +942,7 @@
                 <li><q>no value of <m>x</m></q></li>
                 
             </ul>
-        are called <em><term>universal quantifiers</term></em>.</p>
+        are called <em><term>universal quantifiers</term></em>.</p><idx><h>Universal quantifiers</h></idx><idx><h>Existential quantifiers</h></idx>
 
          <example xml:id="logic-example-quatifiers">
             <p>For each real number <m>x</m> consider the propositional function <m>p(x)</m> that states <m>x^2 + x = 1</m>. We can alter that propositional function using the two types of quantifiers.

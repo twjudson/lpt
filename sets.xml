@@ -327,7 +327,7 @@
 			<exercise xml:id="exercise-sets-setops">
                 <statement>
         			<p>Let <m>\mathbb U = \{1, 2, \ldots 10 \}</m>, <m>A = \{ 1, 2, 3, 4, 5 \}</m>, <m>B = \{ 2, 3, 5 \}</m>, <m>D = \{ 1, 3, 5, 7, 9 \}</m>, and <m>E = \{ 2, 4, 6, 8, 10 \}</m>.  Label each of the statements below as True or False and explain.
-        				<ol>
+        				<ol cols="2">
 
         					<li><m>D</m> and <m>E</m> are disjoint.</li>
 
@@ -368,7 +368,7 @@
         	<exercise>
         		<statement>
         			<p>Using the sets in <xref ref="exercise-sets-setops" />, find:
-        				<ol>
+        				<ol cols="2">
 
         					<li><m>\overline{B}</m></li>
 

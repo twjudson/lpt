@@ -56,7 +56,7 @@
 
         </subsection>
 
-        <subsection>
+        <subsection xml:id="subsection-backmatter-fund-theorem-arithmetic">
             <title>The Proof of the Fundamental Theorem of Arithmetic</title>
 
             <theorem>

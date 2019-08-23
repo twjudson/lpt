@@ -24,7 +24,7 @@
     <section xml:id="arguments-section-deductive-reasoning">
         <title>Deductive Reasoning</title>
 
-        <p>Deductive or direct reasoning is a process of reaching a conclusion from one (or more) statements, called the hypothesis (or hypotheses). This somewhat informal definition can be rephrased using the language and symbolism of the preceding sections. An <em><term>argument</term></em> is a set of statements in which one of the statements is called the conclusion and the rest make up the hypothesis. A <em><term>valid argument</term></em> is an argument in which the conclusion must be true whenever the hypotheses are true. In the case of a valid argument we say the conclusion follows from the hypothesis. For example, consider the following argument: <q>If it is snowing, then it is cold. It is snowing. Therefore, it is cold.</q> In this argument, when the two statements in the hypothesis, namely, <q>if it is snowing, then it is cold</q> and <q>It is snowing</q> are both true, then one can conclude that <q>It is cold.</q> That is, this argument is valid since the conclusion follows necessarily from the hypotheses.</p>
+        <p>Deductive or direct reasoning is a process of reaching a conclusion from one (or more) statements, called the hypothesis (or hypotheses). This somewhat informal definition can be rephrased using the language and symbolism of the preceding sections. An <em><term>argument</term></em> is a set of statements in which one of the statements is called the conclusion and the rest make up the hypothesis. A <em><term>valid argument</term></em> is an argument in which the conclusion must be true whenever the hypotheses are true. In the case of a valid argument we say the conclusion follows from the hypothesis. For example, consider the following argument: <q>If it is snowing, then it is cold. It is snowing. Therefore, it is cold.</q> In this argument, when the two statements in the hypothesis, namely, <q>if it is snowing, then it is cold</q> and <q>It is snowing</q> are both true, then one can conclude that <q>It is cold.</q> That is, this argument is valid since the conclusion follows necessarily from the hypotheses.</p><idx><h>Argument</h></idx><idx><h>Valid argument</h></idx>
 
         <p>It is important to distinguish between the notions of truth and validity. While individual statements may be either true or false, arguments cannot. Similarly, arguments may be described as valid or invalid, but statements cannot. An argument is said to be an invalid argument if its conclusion can be false when its hypothesis is true. An example of an invalid argument is the following: <q>If it is raining, then the streets are wet. The streets are wet. Therefore, it is raining.</q> For convenience, we will represent this argument symbolically as <m>[(p \rightarrow q) \wedge p] \rightarrow p</m>. This is an invalid argument since the streets could be wet from a variety of causes (e.g., fire hydrant open, sprinkler system malfunction, etc.) without having had any rain. It is possible for valid arguments to contain either true or false hypotheses, as indicated in the two valid arguments in <xref ref="arguments-example-deductive" />.</p>
 
@@ -110,7 +110,7 @@
         </assemblage>
 
         <example>
-            <p>Charles Dodgson (1832<ndash />1898) was an English mathematician who taught logic at Oxford University. As a teacher of logic and a lover of nonsense, he designed entertaining puzzles to train people in systematic reasoning. In these puzzles he would string together a list of implications, purposefully nonsensical so that his students would not influenced by any preconceived opinions. The task presented to the student was   to use all the listed implications to arrive at an inescapable conclusion. You may know Charles Dodgson better by his pen name Lewis Carroll, author of <em>Alice's Adventures in Wonderland</em> and <em>Through the Looking-Glass</em>.</p>
+            <p>Charles Dodgson (1832<ndash />1898) was an English mathematician who taught logic at Oxford University. As a teacher of logic and a lover of nonsense, he designed entertaining puzzles to train people in systematic reasoning. In these puzzles he would string together a list of implications, purposefully nonsensical so that his students would not influenced by any preconceived opinions. The task presented to the student was   to use all the listed implications to arrive at an inescapable conclusion. You may know Charles Dodgson better by his pen name Lewis Carroll, author of <em>Alice's Adventures in Wonderland</em> and <em>Through the Looking-Glass</em>.</p> <idx><h>Charles Dodgson</h></idx><idx><h>Lewis Carroll</h></idx>
 
             <p>For example, consider the following statements.
                 <ol>
@@ -287,7 +287,7 @@
 	    <subsection>
 	        <title>Law of Detachment (Direct Reasoning): <m>[((p \rightarrow q) \wedge p)] \rightarrow q</m></title>
 
-	        <p>The Law of Detachment is the most commonly used principle of deductive reasoning. In words, this law says that whenever a conditional statement and its hypothesis are true, the conclusion is also true. That is, the conclusion can be <q>detached</q> from the conditional (see <xref ref="arguments-example-detachment" />).</p>
+	        <p>The Law of Detachment is the most commonly used principle of deductive reasoning. In words, this law says that whenever a conditional statement and its hypothesis are true, the conclusion is also true. That is, the conclusion can be <q>detached</q> from the conditional (see <xref ref="arguments-example-detachment" />).</p> <idx><h>Law of Detachment</h></idx><idx><h>Direct reasoning</h></idx>
 
             <example xml:id="arguments-example-detachment">
                 <p><ul>
@@ -302,6 +302,7 @@
             </example>
 
             <p>Special types of diagrams, called Euler (pronounced <q>oiler</q>) diagrams, can also be used to help determine the validity of arguments. The argument in <xref ref="arguments-example-detachment" /> can be visualized using an Euler diagram as indicated in <xref ref="figure-arguments-euler" />.</p>
+            <idx><h>Euler diagrams</h></idx>
 
             <figure xml:id="figure-arguments-euler">
                 <image width="40%" source="images/arguments-euler.png">
@@ -316,6 +317,7 @@
 	        <title>Law of Syllogism (Transitive Reasoning): <m>[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r)</m></title>
 
 	        <p>The Law of Syllogism is also called transitive reasoning or the chain rule. Examples of the Law of Syllogism occur repeatedly in mathematics. The following argument is an application of this law.</p>
+            <idx><h>Law of Syllogism</h></idx><idx><h>Transtive reasoning</h></idx>
 
             <example xml:id="arguments-example-syllogism">
                 <p><ul>
@@ -344,6 +346,7 @@
 	        <title>Law of Contraposition (Indirect Reasoning): <m>[(p \rightarrow q) \wedge \negate q] \rightarrow \negate p</m></title>
 
 	        <p>Since the contrapositive of a conditional is logically equivalent to the original conditional, <m>\negate q \rightarrow \negate p</m> is logically equivalent to <m>p \rightarrow q</m>. Then, by applying the Law of Detachment to the contrapositive of <m>p \rightarrow q</m>, we may deduce <m>\negate p</m>.</p>
+            <idx><h>Law of Contraposition</h></idx><idx><h>Indirect reasoning</h></idx>
 
             <example xml:id="arguments-example-contraposition">
                 <p><ul>
@@ -477,7 +480,7 @@
             <exercise>
                 <statement>
                     <p>Suppose that <m>r \rightarrow s</m> is false. Determine the truth values (true, false, or cannot be determined) of each of the following statements.
-                        <ol>
+                        <ol cols="2">
 
                             <li><m>s \rightarrow r</m></li>
 

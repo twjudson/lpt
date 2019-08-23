@@ -303,31 +303,29 @@
 		<exercises>
 			<title>Exercises</title>
 
-<!--
+
 			<exercise>
 				<statement>
 					<p>For each of the following pairs of numbers <m>a</m> and <m>b</m>, calculate <m>\gcd(a,b)</m> and find integers <m>r</m> and <m>s</m> such that <m>\gcd(a,b) = ra + sb</m>.
 						<ol cols="2">
 
-						<li><p><m>14</m> and <m>39</m></p></li>
+							<li><p><m>14</m> and <m>39</m></p></li>
 
-						<li><p><m>234</m> and <m>165</m></p></li>
+							<li><p><m>234</m> and <m>165</m></p></li>
 
-						<li><p><m>1739</m> and <m>9923</m></p></li>
+							<li><p><m>1739</m> and <m>9923</m></p></li>
 
-						<li><p><m>471</m> and <m>562</m></p></li>
+							<li><p><m>471</m> and <m>562</m></p></li>
 
-						<li><p><m>23771</m> and <m>19945</m></p>  </li>
+							<li><p><m>23771</m> and <m>19945</m></p></li>
 
-						<li><p><m>-4357</m> and <m>3754</m>/p></li>
+							<li><p><m>-4357</m> and <m>3754</m></p></li>
 						
-						</ol>
-					</p>
+						</ol></p>
 				</statement>
 			</exercise>
 
 
--->
 
 			<exercise>
 				<statement>
@@ -474,6 +472,8 @@
 					then <m>k = l</m> and the <m>q_i</m>'s are just the <m>p_i</m>'s rearranged.</p>
 			</statement>
 		</theorem>
+
+		The proof of <xref ref="theorem-fund-theorem-arithmetic"/> can be found in <xref ref="subsection-backmatter-fund-theorem-arithmetic"/>
 
 		<exercises>
 			<title>Exercises</title>
