@@ -904,7 +904,7 @@
         <proof>
             <p>Consider the interval <m>(0,1)</m> and assume to the contrary that this set of numbers in countable infinite. Since the set is countable infinite, every number in the set can be listed in a one-to-one correspondence with the natural numbers. So we can say that there is a first element which maps to <m>1</m>, a second element which maps to <m>2</m>, so on and so forth. In order to list these values in an ordered way, let's call the first number <m>a_1</m> and denote it as
                 <me>a_1 = 0.d_{11} d_{12} d_{13} d_{14} d_{15} d_{16} d_{17} d_{18} d_{19} \ldots,</me>
-            where <m>d_{11}</m> is the digit in the first number in our list and in the first position beyond the decimal, <m>d_{12} is the digit in the first number in the list and in the second position beyond the decimal, etc.</m></p>
+            where <m>d_{11}</m> is the digit in the first number in our list and in the first position beyond the decimal, <m>d_{12}</m> is the digit in the first number in the list and in the second position beyond the decimal, etc.</p>
 
             <p>Then the second number in the list would look like
                 <me>a_2 = 0.d_{21} d_{22} d_{23} d_{24} d_{25} d_{26} d_{27} d_{28} d_{29} \ldots,</me>
