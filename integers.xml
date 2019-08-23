@@ -76,16 +76,6 @@
             is divisible by <m>9</m>.</p>
         </example>
 
-        <p>We have an equivalent statement of the Principle of Mathematical Induction that is often very useful.</p>
-
-        <principle xml:id="principle-integers-second-pmi">
-            <title>Second Principle of Mathematical Induction</title>
-            <idx><h>Induction</h><h>second principle of</h></idx>
-            <statement>
-                <p>Let <m>S(n)</m> be a statement about integers for <m>n \in {\mathbb N}</m> and suppose <m>S(n_0)</m> is true for some integer <m>n_0</m>. If <m>S(n_0), S(n_0 + 1), \ldots, S(k)</m> imply that <m>S(k + 1)</m> for <m>k \geq n_0</m>, then the statement <m>S(n)</m> is true for all integers <m>n \geq n_0</m>.</p>
-            </statement>
-        </principle>
-
         <p>A nonempty subset <m>S</m> of <m>{\mathbb Z}</m> is <term>well-ordered</term> <idx><h>Well-ordered set</h></idx> if <m>S</m> contains a least element. Notice that the set <m>{\mathbb Z}</m> is not well-ordered since it does not contain a smallest element. However, the natural numbers are well-ordered.</p>
 
         <principle>
@@ -101,11 +91,9 @@
             <statement>
                 <p>The Principle of Mathematical Induction implies the Principle of Well-Ordering. That is, every nonempty subset of <m>\mathbb N</m> contains a least element.</p>
             </statement>
-
-            <proof>
-                <p>We must show that if <m>S</m> is a nonempty subset of the natural numbers, then <m>S</m> contains a least element. If <m>S</m> contains 1, then the theorem is true by <xref ref="lemma-integers-smallest-number"/>. Assume that if <m>S</m> contains an integer <m>k</m> such that <m>1 \leq k \leq n</m>, then <m>S</m> contains a least element. We will show that if a set <m>S</m> contains an integer less than or equal to <m>n + 1</m>, then <m>S</m> has a least element. If <m>S</m> does not contain an integer less than <m>n+1</m>, then <m>n+1</m> is the smallest integer in <m>S</m>. Otherwise, since <m>S</m> is nonempty, <m>S</m> must contain an integer less than or equal to <m>n</m>. In this case, by induction, <m>S</m> contains a least element.</p>
-            </proof>
         </theorem>
+
+        You can find the proof of <xref ref="theorem-integers-pmi-implies-pwo"/> in <xref ref="subsection-backmatter-pmi"/>
 
 
         <p>Induction can also be very useful in formulating definitions. For instance, there are two ways to define <m>n!</m>, the factorial of a positive integer <m>n</m>.
@@ -199,851 +187,322 @@
 
     </section>
 
+
     <section xml:id="section-division-algorithm">
         <title>The Division Algorithm</title>
 
-            <p>An application of the Principle of Well-Ordering that we will use often is the division algorithm.</p>
-
-            <theorem xml:id="theorem-integers-division_algorithm">
-                <title>Division Algorithm</title>
-                <idx><h>Division algorithm</h></idx>
-                <statement>
-                    <p>Let <m>a</m> and <m>b</m> be integers, with <m>b \gt 0</m>. Then there exist unique integers <m>q</m> and <m>r</m> such that
-                        <me>a = bq + r</me>
-                    where <m>0 \leq r \lt b</m>.</p>
-                </statement>
-
-                <proof>
-                    <p>This is a perfect example of the existence-and-uniqueness type of proof. We must first prove that the numbers <m>q</m> and <m>r</m> actually exist. Then we must show that if <m>q'</m> and <m>r'</m> are two other such numbers, then <m>q = q'</m> and <m>r = r'</m>.</p>
-
-                    <p><em>Existence of <m>q</m> and <m>r</m>.</em> Let
-                        <me>S = \{ a - bk : k \in {\mathbb Z} \text{ and } a - bk \geq 0 \}</me>.
-                    If <m>0 \in S</m>, then <m>b</m> divides <m>a</m>, and  we can let <m>q = a/b</m> and <m>r = 0</m>. If <m>0 \notin S</m>, we can use the Well-Ordering Principle. We must first show that <m>S</m> is nonempty. If <m>a \gt 0</m>, then <m>a - b \cdot 0 \in S</m>. If <m>a \lt 0</m>, then <m>a - b(2a) = a(1 - 2b) \in S</m>. In either case <m>S \neq \emptyset</m>. By the Well-Ordering Principle, <m>S</m> must have a smallest member, say <m>r = a - bq</m>. Therefore, <m>a = bq + r</m>, <m>r \geq 0</m>. We now show that <m>r \lt b</m>. Suppose that <m>r \gt b</m>. Then
-                        <me>a - b(q + 1)= a - bq - b = r - b \gt 0</me>. 
-                    In this case we would have <m>a - b(q + 1)</m> in the set <m>S</m>. But then <m>a - b(q + 1) \lt a - bq</m>, which would contradict the fact that <m>r = a - bq</m> is the smallest member  of <m>S</m>. So <m>r \leq b</m>. Since <m>0 \notin S</m>, <m>r \neq b</m> and so <m>r \lt b</m>.</p>
-
-                    <p><em>Uniqueness of <m>q</m> and <m>r</m>.</em> Suppose there exist integers <m>r</m>, <m>r'</m>, <m>q</m>, and <m>q'</m> such that
-                        <me>a = bq + r, 0 \leq r \lt b \quad \text{and}\quad a = bq' + r', 0 \leq r' \lt b</me>.
-                    Then <m> bq + r =  bq' + r'</m>. Assume that <m>r' \geq r</m>. From the last equation we have <m>b(q - q') = r' - r</m>; therefore, <m>b</m> must divide <m>r' - r</m> and <m>0 \leq r'- r \leq r' \lt b</m>. This is possible only if <m>r' - r = 0</m>. Hence, <m>r = r'</m> and  <m>q = q'</m>.</p>
-                </proof>
-            </theorem>
-
-
-
-
-
-      <p>
-        Let <m>a</m> and <m>b</m> be integers.
-        If <m>b = ak</m> for some integer <m>k</m>, we write <m>a \mid b</m>.
-        An integer <m>d</m> is called a
-        <term>common divisor</term>
-        of <m>a</m> and <m>b</m> if <m>d \mid a</m> and <m>d \mid b</m>.
-        The <term>greatest common divisor</term><idx><h>Greatest common divisor</h><h>of two integers</h></idx> of integers <m>a</m> and <m>b</m> is a positive integer <m>d</m> such that <m>d</m> is a common divisor of <m>a</m> and <m>b</m> and if <m>d'</m> is any other common divisor of <m>a</m> and <m>b</m>,
-        then <m>d' \mid d</m>.
-
-        <notation>
-          <usage>a \mid b</usage>
-          <description><m>a</m> divides <m>b</m></description>
-        </notation>
-
-        <notation>
-          <usage>\gcd(a, b)</usage>
-          <description>greatest common divisor of <m>a</m> and <m>b</m></description>
-        </notation>
-
-        We write <m>d = \gcd(a, b)</m>;
-        for example,
-        <m>\gcd( 24, 36) = 12</m> and <m>\gcd(120, 102) = 6</m>.
-        We say that two integers <m>a</m> and <m>b</m> are
-        <term>relatively prime</term>
-        if <m>\gcd( a, b ) = 1</m>.
-      </p>
-
-      <theorem xml:id="theorem-integers-gcd">
-        <statement>
-          <p>
-            Let <m>a</m> and <m>b</m> be nonzero integers.
-            Then there exist integers <m>r</m> and <m>s</m> such that
-            <me>
-              \gcd( a, b) = ar + bs
-            </me>.
-            Furthermore,
-            the greatest common divisor of <m>a</m> and <m>b</m> is unique.
-          </p>
-        </statement>
-
-        <proof>
-          <p>
-            Let
-            <me>
-              S = \{ am + bn : m, n \in {\mathbb Z} \text{ and } am + bn \gt 0 \}
-            </me>.
-            Clearly, the set <m>S</m> is nonempty;
-            hence, by the Well-Ordering Principle <m>S</m> must have a smallest member,
-            say <m>d = ar + bs</m>.
-            We claim that <m>d = \gcd( a, b)</m>.
-            Write <m>a = dq + r'</m> where <m>0 \leq r' \lt d</m>.
-            If <m>r' \gt 0</m>,
-            then 
-            <md>
-              <mrow>r'&amp; = a - dq</mrow>
-              <mrow>&amp; = a - (ar + bs)q</mrow>
-              <mrow>&amp; = a - arq - bsq</mrow>
-              <mrow>&amp; = a( 1 - rq ) + b( -sq )</mrow>
-            </md>,
-            which is in <m>S</m>.
-            But this would contradict the fact that <m>d</m> is the smallest member of <m>S</m>.
-            Hence, <m>r' = 0</m> and <m>d</m> divides <m>a</m>.
-            A similar argument shows that <m>d</m> divides <m>b</m>.
-            Therefore, <m>d</m> is a common divisor of <m>a</m> and <m>b</m>.
-          </p>
-
-          <p>
-            Suppose that <m>d'</m> is another common divisor of <m>a</m> and <m>b</m>,
-            and we want to show that <m>d' \mid d</m>.
-            If we let <m>a = d'h</m> and <m>b = d'k</m>, then
-            <me>
-              d = ar + bs = d'hr + d'ks = d'(hr + ks)
-            </me>.
-            So <m>d'</m> must divide <m>d</m>.
-            Hence, <m>d</m> must be the unique greatest common divisor of <m>a</m> and <m>b</m>.
-          </p>
-        </proof>
-
-      </theorem>
-
-      <corollary xml:id="corollary-integers-coprime">
-        <statement>
-          <p permid="SIy">
-            Let <m>a</m> and <m>b</m> be two integers that are relatively prime.
-            Then there exist integers <m>r</m> and <m>s</m> such that <m>ar + bs = 1</m>.
-          </p>
-        </statement>
-      </corollary>
-
-        <exercises>
-    <title>Exercises</title>
-
-
-
-
-
-    <exercise>
-      <statement>
-        <p>
-          Show that the Principle of Well-Ordering for the natural numbers implies that 1 is the smallest natural number.
-          Use this result to show that the Principle of Well-Ordering implies the Principle of Mathematical Induction;
-          that is, show that if <m>S \subset {\mathbb N}</m> such that <m>1 \in S</m> and
-          <m>n + 1 \in S</m> whenever <m>n \in S</m>,
-          then <m>S = {\mathbb N}</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise>
-      <statement>
-        <p permid="iBq">
-          For each of the following pairs of numbers <m>a</m> and <m>b</m>,
-          calculate <m>\gcd(a,b)</m> and find integers <m>r</m> and <m>s</m> such that <m>\gcd(a,b) = ra + sb</m>.
-
-          <ol cols="2" permid="LUX">
-            <li permid="cTi">
-              <p permid="bNP">
-                <m>14</m> and <m>39</m>
-              </p>
-            </li>
-
-            <li permid="Jar">
-              <p permid="HUY">
-                <m>234</m> and <m>165</m>
-              </p>
-            </li>
-
-            <li permid="phA">
-              <p permid="och">
-                <m>1739</m> and <m>9923</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>471</m> and <m>562</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>23771</m> and <m>19945</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>-4357</m> and <m>3754</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise>
-      <statement>
-        <p>
-          Let <m>a</m> and <m>b</m> be nonzero integers.
-          If there exist integers <m>r</m> and <m>s</m> such that <m>ar + bs =1</m>,
-          show that <m>a</m> and <m>b</m> are relatively prime.
-        </p>
-      </statement>
-    </exercise>
-
-
-    <exercise>
-      <title>Fibonacci Numbers</title>
-      <statement>
-        <p>
-          The Fibonacci numbers are
-          <me>
-            1, 1, 2, 3, 5, 8, 13, 21, \ldots
-          </me>.
-          We can define them inductively by <m>f_1 = 1</m>, <m>f_2 = 1</m>,
-          and <m>f_{n + 2} = f_{n + 1} + f_n</m> for <m>n \in {\mathbb N}</m>.
-
-          <ol permid="scg">
-            <li permid="yBm">
-              <p permid="xvT">
-                Prove that <m>f_n \lt 2^n</m>.
-              </p>
-            </li>
-
-            <li permid="eIv">
-              <p permid="dDc">
-                Prove that <m>f_{n + 1} f_{n - 1} = f^2_n + (-1)^n</m>,
-                <m>n \geq 2</m>.
-              </p>
-            </li>
-
-            <li permid="KPE">
-              <p permid="JKl">
-                Prove that <m>f_n = [(1 + \sqrt{5}\, )^n - (1 - \sqrt{5}\, )^n]/ 2^n \sqrt{5}</m>.
-              </p>
-            </li>
-
-            <li permid="qWN">
-              <p permid="pRu">
-                Show that <m>\lim_{n \rightarrow \infty} f_n / f_{n + 1} = (\sqrt{5} - 1)/2</m>.
-              </p>
-            </li>
-
-            <li permid="XdW">
-              <p permid="VYD">
-                Prove that <m>f_n</m> and <m>f_{n + 1}</m> are relatively prime.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-
-    </exercise>
-
-    <exercise number="18" permid="Tlb">
-      <statement>
-        <p permid="aWR">
-          Let <m>a</m> and <m>b</m> be integers such that <m>\gcd(a,b) = 1</m>.
-          Let <m>r</m> and <m>s</m> be integers such that <m>ar + bs = 1</m>.
-          Prove that
-          <me permid="JhI">
-            \gcd(a,s) = \gcd(r,b) = \gcd(r,s) =  1
-          </me>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="19" permid="zsk">
-      <statement>
-        <p permid="Hea">
-          Let <m>x, y \in {\mathbb N}</m> be relatively prime.
-          If <m>xy</m> is a perfect square,
-          prove that <m>x</m> and <m>y</m> must both be perfect squares.
-        </p>
-      </statement>
-
-    </exercise>
-
-    <exercise number="20" permid="fzt">
-      <statement>
-        <p permid="nlj">
-          Using the division algorithm,
-          show that every perfect square is of the form <m>4k</m> or <m>4k + 1</m> for some nonnegative integer <m>k</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="21" permid="LGC">
-      <statement>
-        <p permid="Tss">
-          Suppose that <m>a, b, r, s</m> are pairwise relatively prime and that
-          <md permid="poR">
-            <mrow>a^2 + b^2 &amp; = r^2</mrow>
-            <mrow>a^2 - b^2 &amp; = s^2</mrow>
-          </md>.
-          Prove that <m>a</m>, <m>r</m>,
-          and <m>s</m> are odd and <m>b</m> is even.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="22" permid="rNL">
-      <statement>
-        <p permid="zzB">
-          Let <m>n \in {\mathbb N}</m>.
-          Use the division algorithm to prove that every integer is congruent mod <m>n</m> to precisely one of the integers <m>0, 1, \ldots, n-1</m>.
-          Conclude that if <m>r</m> is an integer,
-          then there is exactly one <m>s</m> in <m>{\mathbb Z}</m> such that
-          <m>0 \leq s \lt n</m> and <m>[r] = [s]</m>.
-          Hence, the integers are indeed partitioned by congruence mod <m>n</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="23" permid="XUU">
-      <statement>
-        <p permid="fGK">
-          Define the <term>least common multiple</term>
-          of two nonzero integers <m>a</m> and <m>b</m>,
-          denoted by <m>\lcm(a,b)</m>,
-          to be the nonnegative integer <m>m</m> such that both <m>a</m> and <m>b</m> divide <m>m</m>,
-          and if <m>a</m> and <m>b</m> divide any other integer <m>n</m>,
-          then <m>m</m> also divides <m>n</m>.
-
-          <notation>
-            <usage>\lcm(m,n)</usage>
-            <description>the least common multiple of <m>m</m> and <m>n</m></description>
-          </notation>
-
-          Prove there exists a unique least common multiple for any two integers <m>a</m> and <m>b</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="24" xml:id="exercise-integers-lcm-gcd" permid="Ecd">
-      <statement>
-        <p permid="LNT">
-          If <m>d= \gcd(a, b)</m> and <m>m = \lcm(a, b)</m>,
-          prove that <m>dm = |ab|</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="25" permid="kjm">
-      <statement>
-        <p permid="rVc">
-          Show that <m>\lcm(a,b) = ab</m> if and only if <m>\gcd(a,b) = 1</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="26" xml:id="exercise-integers-gcd-products" permid="Qqv">
-      <statement>
-        <p permid="Ycl">
-          Prove that <m>\gcd(a,c) = \gcd(b,c) =1</m> if and only if
-          <m>\gcd(ab,c) = 1</m> for integers <m>a</m>, <m>b</m>,
-          and <m>c</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="27" permid="wxE">
-      <statement>
-        <p permid="Eju">
-          Let <m>a, b, c \in {\mathbb Z}</m>.
-          Prove that if <m>\gcd(a,b) = 1</m> and
-          <m>a \mid bc</m>, then <m>a \mid c</m>.
-        </p>
-      </statement>
-
-    </exercise>
-
-    <exercise number="28" permid="cEN">
-      <statement>
-        <p permid="kqD">
-          Let <m>p \geq 2</m>.
-          Prove that if <m>2^p - 1</m> is prime,
-          then <m>p</m> must also be prime.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="29">
-      <statement>
-        <p permid="QxM">
-          Prove that there are an infinite number of primes of the form <m>6n + 5</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise>
-      <statement>
-        <p>
-          Prove that there are an infinite number of primes of the form <m>4n - 1</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise>
-      <statement>
-        <p>
-          Using the fact that <m>2</m> is prime,
-          show that there do not exist integers <m>p</m> and <m>q</m> such that <m>p^2 = 2 q^2</m>.
-          Demonstrate that therefore
-          <m>\sqrt{2}</m> cannot be a rational number.
-        </p>
-      </statement>
-    </exercise>
-
-  </exercises>
-
- 
-
-</section>
-
-
-    <section xml:id="integers-subsection-euclidean-algorithm" permid="SBh">
-      <title>The Euclidean Algorithm</title>
-      <p permid="mfQ">
-        Among other things, <xref ref="theorem-integers-gcd"/> allows us to compute the greatest common divisor of two integers.
-      </p>
-
-      <example xml:id="example-integers-gcd" permid="Uqu">
-        <p permid="jGJ">
-          Let us compute the greatest common divisor of <m>945</m> and <m>2415</m>.
-          First observe that
-          <md permid="hay">
-            <mrow>2415 &amp; = 945 \cdot 2 + 525</mrow>
-            <mrow>945 &amp; = 525 \cdot 1 + 420</mrow>
-            <mrow>525 &amp; = 420 \cdot 1 + 105</mrow>
-            <mrow>420 &amp; = 105 \cdot 4 + 0</mrow>
-          </md>.
-          Reversing our steps, <m>105</m> divides <m>420</m>,
-          <m>105</m> divides <m>525</m>,
-          <m>105</m> divides <m>945</m>,
-          and <m>105</m> divides <m>2415</m>.
-          Hence, <m>105</m> divides both <m>945</m> and <m>2415</m>.
-          If <m>d</m> were another common divisor of <m>945</m> and <m>2415</m>,
-          then <m>d</m> would also have to divide <m>105</m>.
-          Therefore, <m>\gcd( 945, 2415 ) = 105</m>.
-        </p>
-
-        <p permid="PNS">
-          If we work backward through the above sequence of equations,
-          we can also obtain numbers <m>r</m> and <m>s</m> such that <m>945 r + 2415 s = 105</m>.
-          Observe that
-          <md permid="NhH">
-            <mrow>105 &amp; = 525 + (-1) \cdot 420</mrow>
-            <mrow>&amp; = 525 + (-1) \cdot [945 + (-1) \cdot 525]</mrow>
-            <mrow>&amp; = 2 \cdot 525 + (-1) \cdot 945</mrow>
-            <mrow>&amp; = 2 \cdot [2415 + (-2) \cdot 945] + (-1) \cdot 945</mrow>
-            <mrow>&amp; = 2 \cdot 2415 + (-5) \cdot 945</mrow>
-          </md>.
-          So <m>r = -5</m> and <m>s= 2</m>.
-          Notice that <m>r</m> and <m>s</m> are not unique,
-          since <m>r = 41</m> and <m>s = -16</m> would also work.
-        </p>
-      </example>
-
-      <p>
-        To compute <m>\gcd(a,b) = d</m>,
-        we are using repeated divisions to obtain a decreasing sequence of positive integers <m>r_1 \gt r_2 \gt \cdots \gt r_n = d</m>; that is,
-        <md>
-          <mrow>b &amp; = a q_1 + r_1</mrow>
-          <mrow>a &amp; = r_1 q_2 + r_2</mrow>
-          <mrow>r_1 &amp; = r_2 q_3 + r_3</mrow>
-          <mrow>&amp; \vdots</mrow>
-          <mrow>r_{n - 2} &amp; = r_{n - 1} q_{n} + r_{n}</mrow>
-          <mrow>r_{n - 1} &amp; = r_n q_{n + 1}</mrow>
-        </md>.
-        To find <m>r</m> and <m>s</m> such that <m>ar + bs = d</m>,
-        we begin with this last equation and substitute results obtained from the previous equations:
-        <md>
-          <mrow>d &amp; = r_n</mrow>
-          <mrow>&amp; = r_{n - 2} - r_{n - 1} q_n</mrow>
-          <mrow>&amp; = r_{n - 2} - q_n( r_{n - 3} - q_{n - 1} r_{n - 2} )</mrow>
-          <mrow>&amp; = -q_n r_{n - 3} + ( 1+ q_n q_{n-1} ) r_{n - 2}</mrow>
-          <mrow>&amp; \vdots</mrow>
-          <mrow>&amp; = ra + sb</mrow>
-        </md>.
-        The algorithm that we have just used to find the greatest common divisor <m>d</m> of two integers <m>a</m> and <m>b</m> and to write <m>d</m> as the linear combination of <m>a</m> and <m>b</m> is known as the
-        <term>Euclidean algorithm</term>.
-            <idx><h>Euclidean algorithm</h></idx>
-            <idx><h>Algorithm</h><h>Euclidean</h></idx>
-      </p>
+        <p>An application of the Principle of Well-Ordering that we will use often is the division algorithm.</p>
+
+        <theorem xml:id="theorem-integers-division_algorithm">
+            <title>Division Algorithm</title>
+            <idx><h>Division algorithm</h></idx>
+            <statement>
+                <p>Let <m>a</m> and <m>b</m> be integers, with <m>b \gt 0</m>. Then there exist unique integers <m>q</m> and <m>r</m> such that
+                    <me>a = bq + r</me>
+                where <m>0 \leq r \lt b</m>.</p>
+            </statement>
+
+            <proof>
+                <p>This is a perfect example of the existence-and-uniqueness type of proof. We must first prove that the numbers <m>q</m> and <m>r</m> actually exist. Then we must show that if <m>q'</m> and <m>r'</m> are two other such numbers, then <m>q = q'</m> and <m>r = r'</m>.</p>
+
+                <p><em>Existence of <m>q</m> and <m>r</m>.</em> Let
+                    <me>S = \{ a - bk : k \in {\mathbb Z} \text{ and } a - bk \geq 0 \}</me>.
+                If <m>0 \in S</m>, then <m>b</m> divides <m>a</m>, and  we can let <m>q = a/b</m> and <m>r = 0</m>. If <m>0 \notin S</m>, we can use the Well-Ordering Principle. We must first show that <m>S</m> is nonempty. If <m>a \gt 0</m>, then <m>a - b \cdot 0 \in S</m>. If <m>a \lt 0</m>, then <m>a - b(2a) = a(1 - 2b) \in S</m>. In either case <m>S \neq \emptyset</m>. By the Well-Ordering Principle, <m>S</m> must have a smallest member, say <m>r = a - bq</m>. Therefore, <m>a = bq + r</m>, <m>r \geq 0</m>. We now show that <m>r \lt b</m>. Suppose that <m>r \gt b</m>. Then
+                    <me>a - b(q + 1)= a - bq - b = r - b \gt 0</me>. 
+                In this case we would have <m>a - b(q + 1)</m> in the set <m>S</m>. But then <m>a - b(q + 1) \lt a - bq</m>, which would contradict the fact that <m>r = a - bq</m> is the smallest member  of <m>S</m>. So <m>r \leq b</m>. Since <m>0 \notin S</m>, <m>r \neq b</m> and so <m>r \lt b</m>.</p>
+
+                <p><em>Uniqueness of <m>q</m> and <m>r</m>.</em> Suppose there exist integers <m>r</m>, <m>r'</m>, <m>q</m>, and <m>q'</m> such that
+                    <me>a = bq + r, 0 \leq r \lt b \quad \text{and}\quad a = bq' + r', 0 \leq r' \lt b</me>.
+                Then <m> bq + r =  bq' + r'</m>. Assume that <m>r' \geq r</m>. From the last equation we have <m>b(q - q') = r' - r</m>; therefore, <m>b</m> must divide <m>r' - r</m> and <m>0 \leq r'- r \leq r' \lt b</m>. This is possible only if <m>r' - r = 0</m>. Hence, <m>r = r'</m> and  <m>q = q'</m>.</p>
+            </proof>
+        </theorem>
+
+
+      	<p>Let <m>a</m> and <m>b</m> be integers. If <m>b = ak</m> for some integer <m>k</m>, we write <m>a \mid b</m>. An integer <m>d</m> is called a
+        <term>common divisor</term> of <m>a</m> and <m>b</m> if <m>d \mid a</m> and <m>d \mid b</m>. The <term>greatest common divisor</term><idx><h>Greatest common divisor</h><h>of two integers</h></idx> of integers <m>a</m> and <m>b</m> is a positive integer <m>d</m> such that <m>d</m> is a common divisor of <m>a</m> and <m>b</m> and if <m>d'</m> is any other common divisor of <m>a</m> and <m>b</m>, then <m>d' \mid d</m>.
+
+
+        We write <m>d = \gcd(a, b)</m>; for example, <m>\gcd( 24, 36) = 12</m> and <m>\gcd(120, 102) = 6</m>.
+        We say that two integers <m>a</m> and <m>b</m> are <term>relatively prime</term> if <m>\gcd( a, b ) = 1</m>.</p>
+
+      	<theorem xml:id="theorem-integers-gcd">
+        	<statement>
+          		<p>Let <m>a</m> and <m>b</m> be nonzero integers. Then there exist integers <m>r</m> and <m>s</m> such that
+            		<me>\gcd( a, b) = ar + bs</me>.
+            	Furthermore, the greatest common divisor of <m>a</m> and <m>b</m> is unique.</p>
+        	</statement>
+        	<proof>
+          		<p>Let
+            		<me>S = \{ am + bn : m, n \in {\mathbb Z} \text{ and } am + bn \gt 0 \}</me>.
+            	Clearly, the set <m>S</m> is nonempty; hence, by the Well-Ordering Principle <m>S</m> must have a smallest member, say <m>d = ar + bs</m>. We claim that <m>d = \gcd( a, b)</m>. Write <m>a = dq + r'</m> where <m>0 \leq r' \lt d</m>. If <m>r' \gt 0</m>, then 
+            		<md>
+						<mrow>r'&amp; = a - dq</mrow>
+						<mrow>&amp; = a - (ar + bs)q</mrow>
+						<mrow>&amp; = a - arq - bsq</mrow>
+						<mrow>&amp; = a( 1 - rq ) + b( -sq )</mrow>
+					</md>,
+            	which is in <m>S</m>. But this would contradict the fact that <m>d</m> is the smallest member of <m>S</m>. Hence, <m>r' = 0</m> and <m>d</m> divides <m>a</m>. A similar argument shows that <m>d</m> divides <m>b</m>. Therefore, <m>d</m> is a common divisor of <m>a</m> and <m>b</m>.</p>
+
+          		<p>Suppose that <m>d'</m> is another common divisor of <m>a</m> and <m>b</m>, and we want to show that <m>d' \mid d</m>. If we let <m>a = d'h</m> and <m>b = d'k</m>, then
+            		<me>d = ar + bs = d'hr + d'ks = d'(hr + ks)</me>.
+            	So <m>d'</m> must divide <m>d</m>. Hence, <m>d</m> must be the unique greatest common divisor of <m>a</m> and <m>b</m>.</p>
+        	</proof>
+		</theorem>
+
+		<corollary xml:id="corollary-integers-coprime">
+        	<statement>
+          		<p>Let <m>a</m> and <m>b</m> be two integers that are relatively prime. Then there exist integers <m>r</m> and <m>s</m> such that <m>ar + bs = 1</m>.</p>
+	        </statement>
+	    </corollary>
+
+		<p>Among other things, <xref ref="theorem-integers-gcd"/> allows us to compute the greatest common divisor of two integers.</p>
+
+	    <example xml:id="example-integers-gcd">
+	        <p>Let us compute the greatest common divisor of <m>945</m> and <m>2415</m>. First observe that
+				<md>
+					<mrow>2415 &amp; = 945 \cdot 2 + 525</mrow>
+					<mrow>945 &amp; = 525 \cdot 1 + 420</mrow>
+					<mrow>525 &amp; = 420 \cdot 1 + 105</mrow>
+					<mrow>420 &amp; = 105 \cdot 4 + 0</mrow>
+				</md>.
+			Reversing our steps, <m>105</m> divides <m>420</m>, <m>105</m> divides <m>525</m>, <m>105</m> divides <m>945</m>, and <m>105</m> divides <m>2415</m>. Hence, <m>105</m> divides both <m>945</m> and <m>2415</m>. If <m>d</m> were another common divisor of <m>945</m> and <m>2415</m>, then <m>d</m> would also have to divide <m>105</m>. Therefore, <m>\gcd( 945, 2415 ) = 105</m>.</p>
+
+    		<p>If we work backward through the above sequence of equations, we can also obtain numbers <m>r</m> and <m>s</m> such that <m>945 r + 2415 s = 105</m>. Observe that
+				<md>
+					<mrow>105 &amp; = 525 + (-1) \cdot 420</mrow>
+					<mrow>&amp; = 525 + (-1) \cdot [945 + (-1) \cdot 525]</mrow>
+					<mrow>&amp; = 2 \cdot 525 + (-1) \cdot 945</mrow>
+					<mrow>&amp; = 2 \cdot [2415 + (-2) \cdot 945] + (-1) \cdot 945</mrow>
+					<mrow>&amp; = 2 \cdot 2415 + (-5) \cdot 945</mrow>
+				</md>.
+			So <m>r = -5</m> and <m>s= 2</m>. Notice that <m>r</m> and <m>s</m> are not unique, since <m>r = 41</m> and <m>s = -16</m> would also work.</p>
+  		</example>
+
+  		<p>To compute <m>\gcd(a,b) = d</m>, we are using repeated divisions to obtain a decreasing sequence of positive integers <m>r_1 \gt r_2 \gt \cdots \gt r_n = d</m>; that is,
+			<md>
+				<mrow>b &amp; = a q_1 + r_1</mrow>
+				<mrow>a &amp; = r_1 q_2 + r_2</mrow>
+				<mrow>r_1 &amp; = r_2 q_3 + r_3</mrow>
+				<mrow>&amp; \vdots</mrow>
+				<mrow>r_{n - 2} &amp; = r_{n - 1} q_{n} + r_{n}</mrow>
+				<mrow>r_{n - 1} &amp; = r_n q_{n + 1}</mrow>
+			</md>.
+		To find <m>r</m> and <m>s</m> such that <m>ar + bs = d</m>, we begin with this last equation and substitute results obtained from the previous equations:
+			<md>
+				<mrow>d &amp; = r_n</mrow>
+				<mrow>&amp; = r_{n - 2} - r_{n - 1} q_n</mrow>
+				<mrow>&amp; = r_{n - 2} - q_n( r_{n - 3} - q_{n - 1} r_{n - 2} )</mrow>
+				<mrow>&amp; = -q_n r_{n - 3} + ( 1+ q_n q_{n-1} ) r_{n - 2}</mrow>
+				<mrow>&amp; \vdots</mrow>
+				<mrow>&amp; = ra + sb</mrow>
+			</md>.
+		The algorithm that we have just used to find the greatest common divisor <m>d</m> of two integers <m>a</m> and <m>b</m> and to write <m>d</m> as the linear combination of <m>a</m> and <m>b</m> is known as the <term>Euclidean algorithm</term>.
+		<idx><h>Euclidean algorithm</h></idx>
+		<idx><h>Algorithm</h><h>Euclidean</h></idx></p>
+
+		<exercises>
+			<title>Exercises</title>
+
+<!--
+			<exercise>
+				<statement>
+					<p>For each of the following pairs of numbers <m>a</m> and <m>b</m>, calculate <m>\gcd(a,b)</m> and find integers <m>r</m> and <m>s</m> such that <m>\gcd(a,b) = ra + sb</m>.
+						<ol cols="2">
+
+						<li><p><m>14</m> and <m>39</m></p></li>
+
+						<li><p><m>234</m> and <m>165</m></p></li>
+
+						<li><p><m>1739</m> and <m>9923</m></p></li>
+
+						<li><p><m>471</m> and <m>562</m></p></li>
+
+						<li><p><m>23771</m> and <m>19945</m></p>  </li>
+
+						<li><p><m>-4357</m> and <m>3754</m>/p></li>
+						
+						</ol>
+					</p>
+				</statement>
+			</exercise>
+
+
+-->
+
+			<exercise>
+				<statement>
+					<p>Let <m>a</m> and <m>b</m> be nonzero integers. If there exist integers <m>r</m> and <m>s</m> such that <m>ar + bs =1</m>, show that <m>a</m> and <m>b</m> are relatively prime.</p>
+				</statement>
+			</exercise>
+
+
+
+
+			<exercise>
+				<statement>
+				<p>Let <m>a</m> and <m>b</m> be integers such that <m>\gcd(a,b) = 1</m>. Let <m>r</m> and <m>s</m> be integers such that <m>ar + bs = 1</m>. Prove that
+					<me>\gcd(a,s) = \gcd(r,b) = \gcd(r,s) = 1</me>.</p>
+				</statement>
+			</exercise>
+
+			<exercise>
+			<statement>
+					<p>Let <m>x, y \in {\mathbb N}</m> be relatively prime. If <m>xy</m> is a perfect square, prove that <m>x</m> and <m>y</m> must both be perfect squares.</p>
+				</statement>
+			</exercise>
+
+			<exercise>
+				<statement>
+					<p>Using the division algorithm, show that every perfect square is of the form <m>4k</m> or <m>4k + 1</m> for some nonnegative integer <m>k</m>.</p>
+				</statement>
+			</exercise>
+
+			<exercise>
+				<statement>
+					<p>Suppose that <m>a, b, r, s</m> are pairwise relatively prime and that
+						<md>
+							<mrow>a^2 + b^2 &amp; = r^2</mrow>
+							<mrow>a^2 - b^2 &amp; = s^2</mrow>
+						</md>.
+					Prove that <m>a</m>, <m>r</m>, and <m>s</m> are odd and <m>b</m> is even.</p>
+				</statement>
+			</exercise>
+
+			<exercise>
+				<statement>
+					<p>Let <m>n \in {\mathbb N}</m>. Use the division algorithm to prove that every integer is congruent mod <m>n</m> to precisely one of the integers <m>0, 1, \ldots, n-1</m>. Conclude that if <m>r</m> is an integer, then there is exactly one <m>s</m> in <m>{\mathbb Z}</m> such that
+					<m>0 \leq s \lt n</m> and <m>[r] = [s]</m>. Hence, the integers are indeed partitioned by congruence mod <m>n</m>.</p>
+				</statement>
+			</exercise>
+
+			<exercise>
+				<statement>
+					<p>Define the <term>least common multiple</term> of two nonzero integers <m>a</m> and <m>b</m>, denoted by <m>\lcm(a,b)</m>, to be the nonnegative integer <m>m</m> such that both <m>a</m> and <m>b</m> divide <m>m</m>, and if <m>a</m> and <m>b</m> divide any other integer <m>n</m>,
+					then <m>m</m> also divides <m>n</m>. Prove there exists a unique least common multiple for any two integers <m>a</m> and <m>b</m>.</p>
+				</statement>
+			</exercise>
+
+			<exercise>
+				<statement>
+					<p>If <m>d= \gcd(a, b)</m> and <m>m = \lcm(a, b)</m>, prove that <m>dm = |ab|</m>.</p>
+				</statement>
+			</exercise>
+
+			<exercise>
+				<statement>
+					<p>Show that <m>\lcm(a,b) = ab</m> if and only if <m>\gcd(a,b) = 1</m>.</p>
+				</statement>
+			</exercise>
+
+			<exercise xml:id="exercise-integers-gcd-products">
+				<statement>
+					<p>Prove that <m>\gcd(a,c) = \gcd(b,c) =1</m> if and only if <m>\gcd(ab,c) = 1</m> for integers <m>a</m>, <m>b</m>, and <m>c</m>.</p>
+				</statement>
+			</exercise>
+
+			<exercise>
+				<statement>
+					<p>Let <m>a, b, c \in {\mathbb Z}</m>. Prove that if <m>\gcd(a,b) = 1</m> and <m>a \mid bc</m>, then <m>a \mid c</m>.</p>
+				</statement>
+			</exercise>
+
+			<exercise>
+				<title>Fibonacci Numbers</title>
+				<statement>
+					<p>The Fibonacci numbers are
+						<me>1, 1, 2, 3, 5, 8, 13, 21, \ldots</me>.
+					We can define them inductively by <m>f_1 = 1</m>, <m>f_2 = 1</m>, and <m>f_{n + 2} = f_{n + 1} + f_n</m> for <m>n \in {\mathbb N}</m>.
+							<ol>
+								<li><p>Prove that <m>f_n \lt 2^n</m>.</p></li>
+
+								<li><p>Prove that <m>f_{n + 1} f_{n - 1} = f^2_n + (-1)^n</m>, <m>n \geq 2</m>.</p></li>
+
+								<li><p>Prove that <m>f_n = [(1 + \sqrt{5}\, )^n - (1 - \sqrt{5}\, )^n]/ 2^n \sqrt{5}</m>.</p></li>
+
+								<li><p>Show that <m>\lim_{n \rightarrow \infty} f_n / f_{n + 1} = (\sqrt{5} - 1)/2</m>.</p></li>
+
+								<li><p>Prove that <m>f_n</m> and <m>f_{n + 1}</m> are relatively prime.</p></li>
+
+							</ol></p>
+				</statement>
+			</exercise>
+
+		</exercises>
+
+
+
     </section>
 
     <section xml:id="integers-subsection-prime-numbers">
-      <title>Prime Numbers</title>
-      <p>
-        Let <m>p</m> be an integer such that <m>p \gt 1</m>.
-        We say that <m>p</m> is a <term>prime number</term>,
-            <idx><h>Prime integer</h></idx>
-        or simply <m>p</m> is <term>prime</term>,
-        if the only positive numbers that divide <m>p</m> are <m>1</m> and <m>p</m> itself.
-        An integer <m>n \gt 1</m> that is not prime is said to be <term>composite</term>.
-            <idx><h>Composite integer</h></idx>
-      </p>
+		<title>Prime Numbers</title>
+      
+		<p>Let <m>p</m> be an integer such that <m>p \gt 1</m>. We say that <m>p</m> is a <term>prime number</term>, <idx><h>Prime integer</h></idx> or simply <m>p</m> is <term>prime</term>, if the only positive numbers that divide <m>p</m> are <m>1</m> and <m>p</m> itself. An integer <m>n \gt 1</m> that is not prime is said to be <term>composite</term>. <idx><h>Composite integer</h></idx></p>
 
-      <lemma xml:id="theorem-integers-prime-divisor" permid="MLV">
-        <title>Euclid</title>
-        <statement>
-          <p permid="mBp">
-            Let <m>a</m> and <m>b</m> be integers and <m>p</m> be a prime number.
-            If <m>p \mid ab</m>, then either <m>p \mid a</m> or <m>p \mid b</m>.
-          </p>
-        </statement>
+		<lemma xml:id="theorem-integers-prime-divisor">
+			<title>Euclid</title>
+			<statement>
+				<p>Let <m>a</m> and <m>b</m> be integers and <m>p</m> be a prime number. If <m>p \mid ab</m>, then either <m>p \mid a</m> or <m>p \mid b</m>.</p>
+			</statement>
+			<proof>
+				<p>Suppose that <m>p</m> does not divide <m>a</m>. We must show that <m>p \mid b</m>. Since <m>\gcd( a, p ) = 1</m>, there exist integers <m>r</m> and <m>s</m> such that <m>ar + ps = 1</m>. So
+					<me>b = b(ar + ps) = (ab)r + p(bs)</me>.
+				Since <m>p</m> divides both <m>ab</m> and itself, <m>p</m> must divide <m>b = (ab)r + p(bs)</m>.</p>
+			</proof>
+		</lemma>
 
-        <proof permid="doH">
-          <p permid="dhD">
-            Suppose that <m>p</m> does not divide <m>a</m>.
-            We must show that <m>p \mid b</m>.
-            Since <m>\gcd( a, p ) = 1</m>,
-            there exist integers <m>r</m> and <m>s</m> such that <m>ar + ps = 1</m>.
-            So
-            <me permid="FDi">
-              b = b(ar + ps) = (ab)r + p(bs)
-            </me>.
-            Since <m>p</m> divides both <m>ab</m> and itself,
-            <m>p</m> must divide <m>b = (ab)r + p(bs)</m>.
-          </p>
-        </proof>
-      </lemma>
-
-      <theorem xml:id="theorem-integers-infinite-primes">
-        <title>Euclid</title>
-        <statement>
-          <p>
-            There exist an infinite number of primes.
-          </p>
-        </statement>
-
-        <proof>
-          <p>
-            We will prove this theorem by contradiction.
-            Suppose that there are only a finite number of primes,
-            say <m>p_1, p_2, \ldots, p_n</m>.
-            Let <m>P = p_1 p_2 \cdots p_n + 1</m>.
-            Then <m>P</m> must be divisible by some <m>p_i</m> for <m>1 \leq i \leq n</m>.
-            In this case, <m>p_i</m> must divide
-            <m>P - p_1 p_2 \cdots p_n = 1</m>, which is a contradiction.
-            Hence, either <m>P</m> is prime or there exists an additional prime number
-            <m>p \neq p_i</m> that divides <m>P</m>.
-          </p>
-        </proof>
-      </theorem>
+		<theorem xml:id="theorem-integers-infinite-primes">
+			<title>Euclid</title>
+			<statement>
+				<p>There exist an infinite number of primes.</p>
+			</statement>
+			<proof>
+				<p>We will prove this theorem by contradiction. Suppose that there are only a finite number of primes, say <m>p_1, p_2, \ldots, p_n</m>. Let <m>P = p_1 p_2 \cdots p_n + 1</m>. Then <m>P</m> must be divisible by some <m>p_i</m> for <m>1 \leq i \leq n</m>. In this case, <m>p_i</m> must divide <m>P - p_1 p_2 \cdots p_n = 1</m>, which is a contradiction. Hence, either <m>P</m> is prime or there exists an additional prime number <m>p \neq p_i</m> that divides <m>P</m>. </p>
+			</proof>
+		</theorem>
            
-      <theorem xml:id="theorem-fund-theorem-arithmetic">
-        <title>Fundamental Theorem of Arithmetic</title>
-        <idx>
-        <h>Fundamental Theorem</h>
-        <h>of Arithmetic</h>
-        </idx>
-        <statement>
-          <p>
-            Let <m>n</m> be an integer such that <m>n \gt 1</m>.
-            Then
-            <me>
-              n = p_1 p_2 \cdots p_k
-            </me>,
-            where <m>p_1, \ldots, p_k</m> are  primes
-            (not necessarily distinct).
-            Furthermore, this factorization is unique; that is, if
-            <me>
-              n = q_1 q_2 \cdots q_l
-            </me>,
-            then <m>k = l</m> and the <m>q_i</m>'s are just the <m>p_i</m>'s rearranged.
-          </p>
-        </statement>
-      </theorem>
+		<theorem xml:id="theorem-fund-theorem-arithmetic">
+			<title>Fundamental Theorem of Arithmetic</title>
+				<idx>
+				<h>Fundamental Theorem</h>
+				<h>of Arithmetic</h>
+				</idx>
+				<statement>
+					<p>Let <m>n</m> be an integer such that <m>n \gt 1</m>. Then
+						<me>n = p_1 p_2 \cdots p_k</me>,
+					where <m>p_1, \ldots, p_k</m> are  primes (not necessarily distinct). Furthermore, this factorization is unique; that is, if
+						<me>n = q_1 q_2 \cdots q_l</me>,
+					then <m>k = l</m> and the <m>q_i</m>'s are just the <m>p_i</m>'s rearranged.</p>
+			</statement>
+		</theorem>
 
-            <exercises>
-    <title>Exercises</title>
+		<exercises>
+			<title>Exercises</title>
 
+			<exercise>
+				<statement>
+					<p>Let <m>p \geq 2</m>. Prove that if <m>2^p - 1</m> is prime, then <m>p</m> must also be prime.</p>
+				</statement>
+			</exercise>
 
+			<exercise>
+				<statement>
+					<p>Prove that there are an infinite number of primes of the form <m>6n + 5</m>.</p>
+				</statement>
+			</exercise>
 
+			<exercise>
+				<statement>
+					<p>Prove that there are an infinite number of primes of the form <m>4n - 1</m>.</p>
+				</statement>
+			</exercise>
 
+			<exercise>
+				<statement>
+					<p>Using the fact that <m>2</m> is prime, show that there do not exist integers <m>p</m> and <m>q</m> such that <m>p^2 = 2 q^2</m>. Demonstrate that therefore <m>\sqrt{2}</m> cannot be a rational number.</p>
+			</statement>
+			</exercise>
 
-    <exercise>
-      <statement>
-        <p>
-          Show that the Principle of Well-Ordering for the natural numbers implies that 1 is the smallest natural number.
-          Use this result to show that the Principle of Well-Ordering implies the Principle of Mathematical Induction;
-          that is, show that if <m>S \subset {\mathbb N}</m> such that <m>1 \in S</m> and
-          <m>n + 1 \in S</m> whenever <m>n \in S</m>,
-          then <m>S = {\mathbb N}</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise>
-      <statement>
-        <p permid="iBq">
-          For each of the following pairs of numbers <m>a</m> and <m>b</m>,
-          calculate <m>\gcd(a,b)</m> and find integers <m>r</m> and <m>s</m> such that <m>\gcd(a,b) = ra + sb</m>.
-
-          <ol cols="2" permid="LUX">
-            <li permid="cTi">
-              <p permid="bNP">
-                <m>14</m> and <m>39</m>
-              </p>
-            </li>
-
-            <li permid="Jar">
-              <p permid="HUY">
-                <m>234</m> and <m>165</m>
-              </p>
-            </li>
-
-            <li permid="phA">
-              <p permid="och">
-                <m>1739</m> and <m>9923</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>471</m> and <m>562</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>23771</m> and <m>19945</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>-4357</m> and <m>3754</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise>
-      <statement>
-        <p>
-          Let <m>a</m> and <m>b</m> be nonzero integers.
-          If there exist integers <m>r</m> and <m>s</m> such that <m>ar + bs =1</m>,
-          show that <m>a</m> and <m>b</m> are relatively prime.
-        </p>
-      </statement>
-    </exercise>
-
-
-    <exercise>
-      <title>Fibonacci Numbers</title>
-      <statement>
-        <p>
-          The Fibonacci numbers are
-          <me>
-            1, 1, 2, 3, 5, 8, 13, 21, \ldots
-          </me>.
-          We can define them inductively by <m>f_1 = 1</m>, <m>f_2 = 1</m>,
-          and <m>f_{n + 2} = f_{n + 1} + f_n</m> for <m>n \in {\mathbb N}</m>.
-
-          <ol permid="scg">
-            <li permid="yBm">
-              <p permid="xvT">
-                Prove that <m>f_n \lt 2^n</m>.
-              </p>
-            </li>
-
-            <li permid="eIv">
-              <p permid="dDc">
-                Prove that <m>f_{n + 1} f_{n - 1} = f^2_n + (-1)^n</m>,
-                <m>n \geq 2</m>.
-              </p>
-            </li>
-
-            <li permid="KPE">
-              <p permid="JKl">
-                Prove that <m>f_n = [(1 + \sqrt{5}\, )^n - (1 - \sqrt{5}\, )^n]/ 2^n \sqrt{5}</m>.
-              </p>
-            </li>
-
-            <li permid="qWN">
-              <p permid="pRu">
-                Show that <m>\lim_{n \rightarrow \infty} f_n / f_{n + 1} = (\sqrt{5} - 1)/2</m>.
-              </p>
-            </li>
-
-            <li permid="XdW">
-              <p permid="VYD">
-                Prove that <m>f_n</m> and <m>f_{n + 1}</m> are relatively prime.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-
-    </exercise>
-
-    <exercise number="18" permid="Tlb">
-      <statement>
-        <p permid="aWR">
-          Let <m>a</m> and <m>b</m> be integers such that <m>\gcd(a,b) = 1</m>.
-          Let <m>r</m> and <m>s</m> be integers such that <m>ar + bs = 1</m>.
-          Prove that
-          <me permid="JhI">
-            \gcd(a,s) = \gcd(r,b) = \gcd(r,s) =  1
-          </me>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="19" permid="zsk">
-      <statement>
-        <p permid="Hea">
-          Let <m>x, y \in {\mathbb N}</m> be relatively prime.
-          If <m>xy</m> is a perfect square,
-          prove that <m>x</m> and <m>y</m> must both be perfect squares.
-        </p>
-      </statement>
-
-    </exercise>
-
-    <exercise number="20" permid="fzt">
-      <statement>
-        <p permid="nlj">
-          Using the division algorithm,
-          show that every perfect square is of the form <m>4k</m> or <m>4k + 1</m> for some nonnegative integer <m>k</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="21" permid="LGC">
-      <statement>
-        <p permid="Tss">
-          Suppose that <m>a, b, r, s</m> are pairwise relatively prime and that
-          <md permid="poR">
-            <mrow>a^2 + b^2 &amp; = r^2</mrow>
-            <mrow>a^2 - b^2 &amp; = s^2</mrow>
-          </md>.
-          Prove that <m>a</m>, <m>r</m>,
-          and <m>s</m> are odd and <m>b</m> is even.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="22" permid="rNL">
-      <statement>
-        <p permid="zzB">
-          Let <m>n \in {\mathbb N}</m>.
-          Use the division algorithm to prove that every integer is congruent mod <m>n</m> to precisely one of the integers <m>0, 1, \ldots, n-1</m>.
-          Conclude that if <m>r</m> is an integer,
-          then there is exactly one <m>s</m> in <m>{\mathbb Z}</m> such that
-          <m>0 \leq s \lt n</m> and <m>[r] = [s]</m>.
-          Hence, the integers are indeed partitioned by congruence mod <m>n</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="23" permid="XUU">
-      <statement>
-        <p permid="fGK">
-          Define the <term>least common multiple</term>
-          of two nonzero integers <m>a</m> and <m>b</m>,
-          denoted by <m>\lcm(a,b)</m>,
-          to be the nonnegative integer <m>m</m> such that both <m>a</m> and <m>b</m> divide <m>m</m>,
-          and if <m>a</m> and <m>b</m> divide any other integer <m>n</m>,
-          then <m>m</m> also divides <m>n</m>.
-
-          <notation>
-            <usage>\lcm(m,n)</usage>
-            <description>the least common multiple of <m>m</m> and <m>n</m></description>
-          </notation>
-
-          Prove there exists a unique least common multiple for any two integers <m>a</m> and <m>b</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="24" xml:id="exercise-integers-lcm-gcd" permid="Ecd">
-      <statement>
-        <p permid="LNT">
-          If <m>d= \gcd(a, b)</m> and <m>m = \lcm(a, b)</m>,
-          prove that <m>dm = |ab|</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="25" permid="kjm">
-      <statement>
-        <p permid="rVc">
-          Show that <m>\lcm(a,b) = ab</m> if and only if <m>\gcd(a,b) = 1</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="26" xml:id="exercise-integers-gcd-products" permid="Qqv">
-      <statement>
-        <p permid="Ycl">
-          Prove that <m>\gcd(a,c) = \gcd(b,c) =1</m> if and only if
-          <m>\gcd(ab,c) = 1</m> for integers <m>a</m>, <m>b</m>,
-          and <m>c</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="27" permid="wxE">
-      <statement>
-        <p permid="Eju">
-          Let <m>a, b, c \in {\mathbb Z}</m>.
-          Prove that if <m>\gcd(a,b) = 1</m> and
-          <m>a \mid bc</m>, then <m>a \mid c</m>.
-        </p>
-      </statement>
-
-    </exercise>
-
-    <exercise number="28" permid="cEN">
-      <statement>
-        <p permid="kqD">
-          Let <m>p \geq 2</m>.
-          Prove that if <m>2^p - 1</m> is prime,
-          then <m>p</m> must also be prime.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise number="29">
-      <statement>
-        <p permid="QxM">
-          Prove that there are an infinite number of primes of the form <m>6n + 5</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise>
-      <statement>
-        <p>
-          Prove that there are an infinite number of primes of the form <m>4n - 1</m>.
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise>
-      <statement>
-        <p>
-          Using the fact that <m>2</m> is prime,
-          show that there do not exist integers <m>p</m> and <m>q</m> such that <m>p^2 = 2 q^2</m>.
-          Demonstrate that therefore
-          <m>\sqrt{2}</m> cannot be a rational number.
-        </p>
-      </statement>
-    </exercise>
-
-  </exercises>
+		</exercises>
 
     </section>
 
