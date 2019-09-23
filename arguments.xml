@@ -148,6 +148,33 @@
 
         <exercises>
 
+            <exercise>
+                <statement>
+                    <p>Rewrite the following conditional statements as <q>if-then</q> statements.
+                        <ol>
+
+                            <li>All citizens of Egypt speak Arabic.</li>
+
+                            <li>Dallas is the capital of Texas only if <m>2 + 3 \neq 7</m>.</li>
+
+                            <li>Nacogdoches is the oldest city in Texas unless mermaids exist.</li>
+
+                            <li>No resident of Boston likes hot peppers.</li>
+
+                            <li>For <m>3 + 7 = 10</m> it is necessary that cows fly.</li>
+
+                            <li>For <m>3 + 7 = 10</m> it is sufficient that cows fly.</li>
+
+                            <li>I carry and umbrella when it rains.</li>
+
+                            <li>I carry an umbrella only if it rains.</li>
+
+                        </ol></p>
+                </statement>
+            </exercise>
+
+
+
             <p>See how many of the following Lewis Carroll puzzles you can solve.</p>
 
             <exercise>
@@ -277,17 +304,17 @@
 
 
 
-	<section xml:id="arguments-section-forms-of-arguments">
+    <section xml:id="arguments-section-forms-of-arguments">
         <title>Three Forms of Valid Arguments</title>
 
-    	<introduction>
-    		<p>Three especially important forms of valid arguments, used repeatedly in logic, are discussed next.</p>
-    	</introduction>
+        <introduction>
+            <p>Three especially important forms of valid arguments, used repeatedly in logic, are discussed next.</p>
+        </introduction>
 
-	    <subsection>
-	        <title>Law of Detachment (Direct Reasoning): <m>[((p \rightarrow q) \wedge p)] \rightarrow q</m></title>
+        <subsection>
+            <title>Law of Detachment (Direct Reasoning): <m>[((p \rightarrow q) \wedge p)] \rightarrow q</m></title>
 
-	        <p>The Law of Detachment is the most commonly used principle of deductive reasoning. In words, this law says that whenever a conditional statement and its hypothesis are true, the conclusion is also true. That is, the conclusion can be <q>detached</q> from the conditional (see <xref ref="arguments-example-detachment" />).</p> <idx><h>Law of Detachment</h></idx><idx><h>Direct reasoning</h></idx>
+            <p>The Law of Detachment is the most commonly used principle of deductive reasoning. In words, this law says that whenever a conditional statement and its hypothesis are true, the conclusion is also true. That is, the conclusion can be <q>detached</q> from the conditional (see <xref ref="arguments-example-detachment" />).</p> <idx><h>Law of Detachment</h></idx><idx><h>Direct reasoning</h></idx>
 
             <example xml:id="arguments-example-detachment">
                 <p><ul>
@@ -311,12 +338,12 @@
                 <caption>Euler diagram for direct reasoning</caption>
             </figure>
 
-	    </subsection>
+        </subsection>
 
-	    <subsection>
-	        <title>Law of Syllogism (Transitive Reasoning): <m>[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r)</m></title>
+        <subsection>
+            <title>Law of Syllogism (Transitive Reasoning): <m>[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r)</m></title>
 
-	        <p>The Law of Syllogism is also called transitive reasoning or the chain rule. Examples of the Law of Syllogism occur repeatedly in mathematics. The following argument is an application of this law.</p>
+            <p>The Law of Syllogism is also called transitive reasoning or the chain rule. Examples of the Law of Syllogism occur repeatedly in mathematics. The following argument is an application of this law.</p>
             <idx><h>Law of Syllogism</h></idx><idx><h>Transtive reasoning</h></idx>
 
             <example xml:id="arguments-example-syllogism">
@@ -340,12 +367,12 @@
             </figure>
 
 
-	    </subsection>
+        </subsection>
 
-	    <subsection>
-	        <title>Law of Contraposition (Indirect Reasoning): <m>[(p \rightarrow q) \wedge \negate q] \rightarrow \negate p</m></title>
+        <subsection>
+            <title>Law of Contraposition (Indirect Reasoning): <m>[(p \rightarrow q) \wedge \negate q] \rightarrow \negate p</m></title>
 
-	        <p>Since the contrapositive of a conditional is logically equivalent to the original conditional, <m>\negate q \rightarrow \negate p</m> is logically equivalent to <m>p \rightarrow q</m>. Then, by applying the Law of Detachment to the contrapositive of <m>p \rightarrow q</m>, we may deduce <m>\negate p</m>.</p>
+            <p>Since the contrapositive of a conditional is logically equivalent to the original conditional, <m>\negate q \rightarrow \negate p</m> is logically equivalent to <m>p \rightarrow q</m>. Then, by applying the Law of Detachment to the contrapositive of <m>p \rightarrow q</m>, we may deduce <m>\negate p</m>.</p>
             <idx><h>Law of Contraposition</h></idx><idx><h>Indirect reasoning</h></idx>
 
             <example xml:id="arguments-example-contraposition">
@@ -368,7 +395,7 @@
                 <caption>Euler diagram indirect reasoning</caption>
             </figure>
 
-	    </subsection>
+        </subsection>
 
 
         <exercises>
@@ -609,7 +636,7 @@
           
         </exercises>
 
-	</section>
+    </section>
 
     <section xml:id="proofs-section">
 
