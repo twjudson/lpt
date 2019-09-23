@@ -516,7 +516,7 @@
 
                             <li>If <m>(x + 1)(x - 4) = 0</m>, then <m>x = -1</m> or <m>x = 4</m>.</li>
 
-                            <li>If a number has a factor of <m>4</m>,then it has a factor of <m>2</m>.</li>
+                            <li>If a number has a factor of <m>4</m>, then it has a factor of <m>2</m>.</li>
 
                         </ol></p>
                 </statement>
@@ -1010,7 +1010,7 @@
             
             <exercise>
                 <statement>
-                     <p>The open sentence <q><m>x^2 + 8 = 6x</m>,</q> can be made either true or false by using different quantifiers. For example, <q>For some whole number <m>x</m>, <m>x^2 + 8 = 6x</m></q> is true, since <m>X = 4</m> or <m>x = 2</m> make the equation true; however, <q>For all whole numbers <m>x</m>. <m>x^2 + 8 = 6x</m>,</q> is false since the equation is false for the whole number <m>x = 0</m> (and for countless other values of <m>x</m>).</p>
+                     <p>The open sentence <q><m>x^2 + 8 = 6x</m>,</q> can be made either true or false by using different quantifiers. For example, <q>For some whole number <m>x</m>, <m>x^2 + 8 = 6x</m></q> is true, since <m>x = 4</m> or <m>x = 2</m> make the equation true; however, <q>For all whole numbers <m>x</m>. <m>x^2 + 8 = 6x</m>,</q> is false since the equation is false for the whole number <m>x = 0</m> (and for countless other values of <m>x</m>).</p>
 
                     <p>Use an appropriate quantifier to make each of the following open sentences true, where <m>x</m> is a whole number. Then use quantifiers to make each statement false.
                         <ol>
