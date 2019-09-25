@@ -397,7 +397,7 @@
             <example xml:id="arguments-example-contraposition">
                 <p><ul>
 
-                    <li>If a numeber is a power of <m>3</m>, then its units digit is <m>1</m>, <m>3</m>, <m>7</m>, or <m>9</m>.</li>
+                    <li>If a number is a power of <m>3</m>, then its units digit is <m>1</m>, <m>3</m>, <m>7</m>, or <m>9</m>.</li>
 
                     <li>The units digit ins <m>3{,}124</m> is not <m>1</m>, <m>3</m>, <m>7</m>, or <m>9</m>.</li>
 
