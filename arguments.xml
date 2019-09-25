@@ -143,6 +143,25 @@
 
             </example>
 
+            <p>Translating a conditional statement into <q>if-then</q> form can be quite confusing.  The statement <q>All babies are illogical</q> is not in a very useful form; however, we can write an equivalent <q>if-then</q> statement: <q>If it is a baby, then it is not logical.</q>  Consider the following examples.
+            	<ul>
+
+            		<li><q>It rains only if I carry an umbrella</q> can be rewritten as <q>If it rains, then I carry an umbrella.</q></li>
+
+            		<li><q>All citizens of Egypt speak Arabic.</q> can be rewritten as <q>If someone is a citizen of Egypt, then they speak Arabic.</q></li>
+
+            		<li><q>Unless it is sunny, I carry an umbrella.</q> can be rewritten as <q>If it is not sunny, I carry an umbrella.</q></li>
+
+					<li><q>No one in MTH 300 speaks Chinese.</q> can be rewritten as <q>If you are in MTH 300, then you do not speak Chinese.</q></li>
+
+					<li><q>For cows to fly it is sufficient that 3 + 4 = 8.</q> can be rewritten as <q>If 3 + 4 = 8, then cows fly.</q></li>
+
+					<li><q>For cows to fly it is necessary that 3 + 4 = 8.</q> can be rewritten as <q>If cows fly, then 3 + 4 = 8.</q></li>
+
+					<li><q>When it rains, I carry an umbrella.</q> can be rewritten as <q>If it rains, I carry an umbrella.</q></li>
+
+            	</ul></p>
+
 
 
 
