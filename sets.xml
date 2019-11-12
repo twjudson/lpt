@@ -41,7 +41,7 @@
         </definition>
 
         <definition xml:id="sets-definition-subset">
-            <p>A set which is comprised of some (or all) of the elements of <m>\mathbb U</m>, some <term>universal set</term>, is called a subset of <m>\mathbb U</m> and is denoted <m>S \subseteq \mathbb U</m>. If <m>A \subseteq \mathbb U</m> and <m>B \subseteq \mathbb U</m>, we further state that <m>A</m> is a <term>subset</term> of <m>B</m>, denoted <m>A \subseteq B</m>, if each element of <m>A</m> is also an element of <m>B</m>. Moreover, if <m>A \subseteq B</m> but <m>A \neq B</m>, we say that <m>A</m> is a <term>proper subset</term> of <m>B</m> and write <m>A \subset B</m>.</p>
+            <p>A set which is comprised of some (or all) of the elements of <m>\mathbb U</m>, some <term>universal set</term>, is called a subset of <m>\mathbb U</m> and is denoted <m>S \subseteq \mathbb U</m>. If <m>A \subseteq \mathbb U</m> and <m>B \subseteq \mathbb U</m>, we further state that <m>A</m> is a <term>subset</term> of <m>B</m>, denoted <m>A \subseteq B</m> or <m>A \subseteq B</m>, if each element of <m>A</m> is also an element of <m>B</m>. Moreover, if <m>A \subseteq B</m> but <m>A \neq B</m>, we say that <m>A</m> is a <term>proper subset</term> of <m>B</m> and write <m>A \subsetneq B</m>.</p>
         </definition>
             <idx><h>Subset</h></idx>
             <idx><h>Proper subset</h></idx>
@@ -86,7 +86,7 @@
 
 					<li><m>\overline{A} = \{ x \in \mathbb U \mid x \notin A \}</m>, which is called the <term>complement</term> of <m>A</m>.</li>
 
-					<li><m>A \setminus B = \{ x \in \mathbb U \mid x \in A \text{ or } x \notin B \}</m>, which is read <m>A</m> <term>minus</term> <m>B</m>.</li>
+					<li><m>A \setminus B = \{ x \in \mathbb U \mid x \in A \text{ and } x \notin B \}</m>, which is read <m>A</m> <term>minus</term> <m>B</m>.</li>
 
 					<li><m>A</m> and <m>B</m> are set to be <term>disjoint</term> if <m>A \cap B = \emptyset</m>.</li>
 
