@@ -686,7 +686,7 @@
                     <cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell>
                 </row>
            </tabular>
-                <caption>Truth table for <m>p \leftrightarrow \negate(\negate p)</m></caption>
+                <title>Truth table for <m>p \leftrightarrow \negate(\negate p)</m></title>
             </table>
 
         </example>
@@ -812,7 +812,7 @@
                     <cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell>
                 </row>
            </tabular>
-                <caption>Truth table for <m>[( p \rightarrow q ) \vee r] \leftrightarrow [(p \; \wedge \negate q) \rightarrow r]</m></caption>
+                <title>Truth table for <m>[( p \rightarrow q ) \vee r] \leftrightarrow [(p \; \wedge \negate q) \rightarrow r]</m></title>
             </table>
 
         </example>
@@ -982,7 +982,7 @@
                     <cell>No <m>a</m> is <m>b</m>.</cell><cell>Some <m>a</m> are <m>b</m>.</cell>
                 </row>
            </tabular>
-            <caption>Truth table for negation</caption>
+            <title>Truth table for negation</title>
         </table>
 
         <exercises>

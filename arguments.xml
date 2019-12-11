@@ -510,7 +510,7 @@
                 <statement>
                     <p>There are three forms of invalid reasoning which commonly occur.
                         <ul>   
-                            <li><em>Fallacy of the converse.</em><br /><br />
+                            <li><line><em>Fallacy of the converse.</em></line>
                                 <tabular halign="left">
                                     <row>
                                         <cell>If <m>p</m>, then <m>q</m>.</cell><cell></cell>
@@ -524,7 +524,7 @@
                                     </row>
                                </tabular></li>
 
-                            <li><em>Fallacy of the inverse.</em><br /><br />
+                            <li><line><em>Fallacy of the inverse.</em></line>
                                 <tabular halign="left">
                                     <row>
                                         <cell>If <m>p</m>, then <m>q</m>.</cell><cell></cell>
@@ -538,7 +538,7 @@
                                     </row>
                                </tabular></li>
 
-                            <li><em>False transitivity.</em><br /><br />
+                            <li><line><em>False transitivity.</em></line>
                                 <tabular halign="left">
                                     <row>
                                         <cell>If <m>p</m>, then <m>q</m>.</cell><cell></cell>
