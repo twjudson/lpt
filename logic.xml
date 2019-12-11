@@ -201,7 +201,7 @@
                     <cell>F</cell><cell>T</cell>
                 </row>
            </tabular>
-            <title>Truth table for negation</title>
+            <caption>Truth table for negation</caption>
         </table>
 
         <p>Notice that the table shows that if <m>p</m> is true, then <m>\negate p</m> is false and if <m>p</m> is false, then <m>\negate p</m> is true. Truth tables become very useful when we deal with more complicated statements.</p>
@@ -235,7 +235,7 @@
                     <cell>F</cell><cell>F</cell><cell>F</cell>
                 </row>
            </tabular>
-            <title>Truth table for conjunction</title>
+            <caption>Truth table for conjunction</caption>
         </table>
 
         <definition xml:id="logic-definition-disjunction">
@@ -261,7 +261,7 @@
                     <cell>F</cell><cell>F</cell><cell>F</cell>
                 </row>
            </tabular>
-            <title>Truth table for disjunction</title>
+            <caption>Truth table for disjunction</caption>
         </table>
 
 
@@ -305,7 +305,7 @@
                     <cell>F</cell><cell>F</cell><cell>T</cell>
                 </row>
            </tabular>
-            <title>Truth table for a conditional statement</title>
+            <caption>Truth table for a conditional statement</caption>
         </table>
 
         <example xml:id="logic-example-conditional">
@@ -350,7 +350,7 @@
                     <cell>F</cell><cell>F</cell><cell>T</cell>
                 </row>
            </tabular>
-            <title>Truth table for a biconditional statement</title>
+            <caption>Truth table for a biconditional statement</caption>
         </table>
 
         <example xml:id="logic-example-biconditional">
@@ -408,7 +408,7 @@
                         <cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell>
                     </row>
                </tabular>
-                <title>Truth table for <m>(q \wedge p) \vee [q \wedge (\negate p)]</m></title>
+                <caption>Truth table for <m>(q \wedge p) \vee [q \wedge (\negate p)]</m></caption>
             </table>
         </example>
 
@@ -456,7 +456,7 @@
                         <cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
                     </row>
                </tabular>
-                <title>Truth table for <m>(p \rightarrow q) \leftrightarrow (\negate q \rightarrow \negate p)</m></title>
+                <caption>Truth table for <m>(p \rightarrow q) \leftrightarrow (\negate q \rightarrow \negate p)</m></caption>
             </table>
 
             <p>We will leave the proof of (2) as an exercise.</p>
@@ -669,7 +669,7 @@
                     <cell>F</cell><cell>T</cell><cell>F</cell>
                 </row>
            </tabular>
-                <title>Truth table for <m>p \leftrightarrow \negate p</m></title>
+                <caption>Truth table for <m>p \leftrightarrow \negate p</m></caption>
             </table>
         </example>
 
@@ -689,7 +689,7 @@
                     <cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell>
                 </row>
            </tabular>
-                <title>Truth table for <m>p \leftrightarrow \negate(\negate p)</m></title>
+                <caption>Truth table for <m>p \leftrightarrow \negate(\negate p)</m></caption>
             </table>
 
         </example>
@@ -749,10 +749,10 @@
         		</ol></p>
         </theorem>
 
-        <subsection>
+        <paragraphs>
             <title>Historical Note</title>
             <p>Augustus De Morgan (27 June 1806<ndash/>18 March 1871) was a British mathematician and logician. Use internet and/or library resources to research his major contributions to the fields of mathematics and logic, specifically De Morgan's Laws.</p><idx><h>Augustus De Morgan</h></idx>
-        </subsection>
+        </paragraphs>
         
         <p>The following theorem lists some useful contradictions, and again, the proof requires construction of the appropriate truth tables and is left to the exercises.</p>
 
@@ -815,7 +815,7 @@
                     <cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell>
                 </row>
            </tabular>
-                <title>Truth table for <m>[( p \rightarrow q ) \vee r] \leftrightarrow [(p \; \wedge \negate q) \rightarrow r]</m></title>
+                <caption>Truth table for <m>[( p \rightarrow q ) \vee r] \leftrightarrow [(p \; \wedge \negate q) \rightarrow r]</m></caption>
             </table>
 
         </example>
@@ -986,7 +986,7 @@
                     <cell>No <m>a</m> is <m>b</m>.</cell><cell>Some <m>a</m> are <m>b</m>.</cell>
                 </row>
            </tabular>
-            <title>Truth table for negation</title>
+            <caption>Truth table for negation</caption>
         </table>
 
         <exercises>

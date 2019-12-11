@@ -88,7 +88,7 @@
                     <cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
                 </row>
            </tabular>
-            <title>Truth table for <m>[(p \rightarrow q) \wedge \negate p] \rightarrow \negate q</m></title>
+            <caption>Truth table for <m>[(p \rightarrow q) \wedge \negate p] \rightarrow \negate q</m></caption>
         </table>
 
         <assemblage>
@@ -354,7 +354,7 @@
                 <image width="40%" source="images/arguments-euler.png">
                     <description>Euler diagram for direct reasoning</description>
                 </image>
-                <title>Euler diagram for direct reasoning</title>
+                <caption>Euler diagram for direct reasoning</caption>
             </figure>
 
         </subsection>
@@ -382,7 +382,7 @@
                 <image width="40%" source="images/arguments-euler-syllogism.png">
                     <description>Euler diagram for transitive reasoning</description>
                 </image>
-                <title>Euler diagram for transitive reasoning</title>
+                <caption>Euler diagram for transitive reasoning</caption>
             </figure>
 
 
@@ -411,7 +411,7 @@
                 <image width="50%" source="images/arguments-euler-contraposition.png">
                     <description>Euler diagram for indirect reasoning</description>
                 </image>
-                <title>Euler diagram indirect reasoning</title>
+                <caption>Euler diagram indirect reasoning</caption>
             </figure>
 
         </subsection>
