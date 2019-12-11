@@ -533,7 +533,7 @@
                     <p>Define <m>\sim</m> on <m>\mathbb R</m> by <m>A \sim b</m> if and only if <m>|a| = |b|</m>.  Prove <m>\sim</m> is an equivalence relation on <m>\mathbb R</m>.  For an arbitrary <m>t \in \mathbb R</m>, find <m>\overline{t}</m>.</p>
                 </statement>
             </exercise>
-
+<!--
             <exercisegroup xml:id="exercises-realtions-reflexive-symmetric-transitive">
                 <title>Reflexive, Symmetric, and Transitive</title>
                 <introduction>
@@ -583,6 +583,54 @@
                 </exercise>
 
             </exercisegroup>
+-->
+
+
+        <exercisegroup xml:id="exercises-realtions-reflexive-symmetric-transitive">
+            <title>Reflexive, Symmetric, and Transitive</title>
+            <introduction><p>In <xref ref="exercises-realtions-reflexive-symmetric-transitive"/>, a relation <m>R</m> is defined on a given set.  In each case, prove or disprove: (a) <m>R</m> is reflexive. (b) <m>R</m> is symmetric, (c) <m>R</m> is transitive.  In each problem where <m>R</m> is an equivalence relation, find <m>\overline{a}</m>, where <m>a</m> is any element in the set on which the relation is defined.</p></introduction>
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb N</m> by <m>aRb</m> if and only if <m>a = 10^kb</m> for some <m>k \in \mathbb Z</m>.</p>
+                    </statement>
+                </exercise>
+
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb R</m> by <m>xRy</m> if and only if <m>x - y \in \mathbb Z</m>.</p>
+                    </statement>
+                </exercise>
+
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb N</m> by <m>xRy</m> if and only if <m>2 \mid (x + y)</m>.</p>
+                    </statement>
+                </exercise>
+
+                <exercise>
+                    <statement>
+                         <p>Define <m>R</m> on <m>\mathbb N</m> by <m>xRy</m> if and only if <m>3 \mid (x + y)</m>.</p>
+                    </statement>
+                </exercise>
+
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb R \times \mathbb R</m> by <m>(a,b)R(c,d)</m> if and only if <m>a - c \in \mathbb Z</m>.</p>
+                    </statement>
+                </exercise>
+
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb R \times \mathbb R</m> by <m>(a,b)R(c,d)</m> if and only if <m>a - c \in \mathbb Z</m> and <m>b - d \in \mathbb Z</m>.</p>
+                    </statement>
+                </exercise>
+
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb Z \times \mathbb Z</m> by <m>R = \{ (a, b) \in \mathbb Z \times \mathbb Z \mid |a - b| \lt 5\}</m>.</p>
+                    </statement>
+                </exercise>
+        </exercisegroup>
 
             <exercise>
             	<statement>
