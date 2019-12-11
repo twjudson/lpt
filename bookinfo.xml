@@ -44,9 +44,7 @@
     \usetikzlibrary{snakes}
     </latex-image-preamble>
 
-    <!-- more invasive option is "structural" -->
-    <numbering>
-        <division part="decorative" />
-    </numbering>
+
+
 
 </docinfo>

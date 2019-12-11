@@ -72,7 +72,7 @@
     		<image width="80%" source="images/relations-picture.jpg">
                 <description>pictorial representation R from A to B</description>
             </image>
-            <caption>Pictorial representation <m>R</m> from <m>A</m> to <m>B</m></caption>
+            <title>Pictorial representation <m>R</m> from <m>A</m> to <m>B</m></title>
         </figure>
 
     	<example xml:id="relations-example-relation-picture">
@@ -110,7 +110,7 @@
                     <cell>10</cell><cell>2</cell>
                 </row>
            </tabular>
-            <caption>A table representation <m>R</m> from <m>A</m> to <m>B</m></caption>
+            <title>A table representation <m>R</m> from <m>A</m> to <m>B</m></title>
         </table>
 
     	</example>
@@ -126,7 +126,7 @@
                 <image width="50%" source="images/relations-graph.png">
                     <description>pictorial representation R from A to B</description>
                 </image>
-                <caption>Graphical representation of <m>x + y = 4</m></caption>
+                <title>Graphical representation of <m>x + y = 4</m></title>
             </figure>
 
     	</example>
@@ -221,7 +221,7 @@
                 \end{tikzpicture}]]>
                 </latex-image>
             </image>
-            <caption>The relation <m>R</m> from <m>A</m> to <m>B</m></caption>
+            <title>The relation <m>R</m> from <m>A</m> to <m>B</m></title>
         </figure>
 
 
@@ -246,7 +246,7 @@
                 \end{tikzpicture}]]>
                 </latex-image>
             </image>
-            <caption>The relation <m>R^{-1}</m> from <m>B</m> to <m>A</m></caption>
+            <title>The relation <m>R^{-1}</m> from <m>B</m> to <m>A</m></title>
         </figure>
 
 
@@ -347,7 +347,7 @@
         </example>
 
         <example xml:id="relations-example-integers-modn">
-            <p>Consider the set <m>\mathbb Z</m>, and let <m>n</m> be a fixed integer that is not equal to zero.  define <m>a \sim b</m> if <m>n \mid (a - b)</m>.  The relation is a generalization of <xref ref="relations-example-integers-mod5" /> and is also an equivalence relation.</p>
+            <p>Consider the set <m>\mathbb Z</m>, and let <m>n</m> be a fixed integer that is not equal to zero.  define <m>a \sim b</m> if <m>n \mid (a - b)</m>.  The relation is a generalization of <xref ref="relations-example-integers-modn" /> and is also an equivalence relation.</p>
         </example>
 
         <example>
@@ -463,7 +463,7 @@
                     \end{tikzpicture}]]>
                     </latex-image>
                 </image>
-                <caption>The digraph for the relation <m>R</m> on <m>A</m></caption>
+                <title>The digraph for the relation <m>R</m> on <m>A</m></title>
             </figure>
 
             <p>Notice that there is an edge representing every ordered pair in <m>R</m> (<xref ref="figure-relations-digraph" />). For those elements in <m>A</m> that are related to themselves, there is an edge that looks like a loop. In this relation there are only two loops since only <m>a</m> and <m>c</m> are related to themselves. From this example it is reasonable to conclude that for an arbitrary finite relation <m>R</m> defined on <m>A</m>, the relation will have the reflexive property if and only if each vertex has a loop. Thus, we can quickly see from the digraph that <m>R</m> is not reflexive. We may also conclude from the digraph that <m>R</m> is not symmetric and not transitive. Why?</p>
@@ -515,13 +515,13 @@
                     <p>Prove the relation described in <xref ref="relations-example-integers-modn" /> is an equivalence relation.</p>
                 </statement>
             </exercise>
-
-            <exercise xml:id="exercise-relations-mod-n">
+<!--
+            <exercise xml:id="exercise-relations-same-age">
                 <statement>
                     <p>Prove the relation described in <xref ref="relations-example-equivalence-class" /> is an equivalence relation.</p>
                 </statement>
             </exercise>
-
+-->
             <exercise>
                 <statement>
                     <p> Let <m>A = \{ 1, 2, 3, 4 \}</m>. For each of the parts below, find an example of a relation on the set that meets the conditions described.
@@ -544,50 +544,104 @@
                     <p>Define <m>\sim</m> on <m>\mathbb R</m> by <m>A \sim b</m> if and only if <m>|a| = |b|</m>.  Prove <m>\sim</m> is an equivalence relation on <m>\mathbb R</m>.  For an arbitrary <m>t \in \mathbb R</m>, find <m>\overline{t}</m>.</p>
                 </statement>
             </exercise>
+<!--
+            <exercisegroup xml:id="exercises-realtions-reflexive-symmetric-transitive">
+                <title>Reflexive, Symmetric, and Transitive</title>
+                <introduction>
+                    <p>In <xref "exercises-realtions-reflexive-symmetric-transitive" />, a relation <m>R</m> is defined on a given set.  In each case, prove or disprove: (a) <m>R</m> is reflexive. (b) <m>R</m> is symmetric, (c) <m>R</m> is transitive.  In each problem where <m>R</m> is an equivalence relation, find <m>\overline{a}</m>, where <m>a</m> is any element in the set on which the relation is defined.</p>
+                </introduction>
 
-            <p>In <xref first="exercise-relations-reflexive-symmetric-transitive-first" last="exercise-relations-reflexive-symmetric-transitive-last" />, a relation <m>R</m> is defined on a given set.  In each case, prove or disprove: (a) <m>R</m> is reflexive. (b) <m>R</m> is symmetric, (c) <m>R</m> is transitive.  In each problem where <m>R</m> is an equivalence relation, find <m>\overline{a}</m>, where <m>a</m> is any element in the set on which the relation is defined.</p>
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb N</m> by <m>aRb</m> if and only if <m>a = 10^kb</m> for some <m>k \in \mathbb Z</m>.</p>
+                    </statement>
+                </exercise>
 
-            <exercise xml:id="exercise-relations-reflexive-symmetric-transitive-first">
-                <statement>
-                    <p>Define <m>R</m> on <m>\mathbb N</m> by <m>aRb</m> if and only if <m>a = 10^kb</m> for some <m>k \in \mathbb Z</m>.</p>
-                </statement>
-            </exercise>
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb R</m> by <m>xRy</m> if and only if <m>x - y \in \mathbb Z</m>.</p>
+                    </statement>
+                </exercise>
 
-            <exercise>
-                <statement>
-                    <p>Define <m>R</m> on <m>\mathbb R</m> by <m>xRy</m> if and only if <m>x - y \in \mathbb Z</m>.</p>
-                </statement>
-            </exercise>
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb N</m> by <m>xRy</m> if and only if <m>2 \mid (x + y)</m>.</p>
+                    </statement>
+                </exercise>
 
-            <exercise>
-                <statement>
-                    <p>Define <m>R</m> on <m>\mathbb N</m> by <m>xRy</m> if and only if <m>2 \mid (x + y)</m>.</p>
-                </statement>
-            </exercise>
+                <exercise>
+                    <statement>
+                         <p>Define <m>R</m> on <m>\mathbb N</m> by <m>xRy</m> if and only if <m>3 \mid (x + y)</m>.</p>
+                    </statement>
+                </exercise>
 
-            <exercise>
-                <statement>
-                     <p>Define <m>R</m> on <m>\mathbb N</m> by <m>xRy</m> if and only if <m>3 \mid (x + y)</m>.</p>
-                </statement>
-            </exercise>
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb R \times \mathbb R</m> by <m>(a,b)R(c,d)</m> if and only if <m>a - c \in \mathbb Z</m>.</p>
+                    </statement>
+                </exercise>
 
-            <exercise>
-                <statement>
-                    <p>Define <m>R</m> on <m>\mathbb R \times \mathbb R</m> by <m>(a,b)R(c,d)</m> if and only if <m>a - c \in \mathbb Z</m>.</p>
-                </statement>
-            </exercise>
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb R \times \mathbb R</m> by <m>(a,b)R(c,d)</m> if and only if <m>a - c \in \mathbb Z</m> and <m>b - d \in \mathbb Z</m>.</p>
+                    </statement>
+                </exercise>
 
-            <exercise>
-                <statement>
-                    <p>Define <m>R</m> on <m>\mathbb R \times \mathbb R</m> by <m>(a,b)R(c,d)</m> if and only if <m>a - c \in \mathbb Z</m> and <m>b - d \in \mathbb Z</m>.</p>
-                </statement>
-            </exercise>
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb Z \times \mathbb Z</m> by <m>R = \{ (a, b) \in \mathbb Z \times \mathbb Z \mid |a - b| \lt 5\}</m>.</p>
+                    </statement>
+                </exercise>
 
-            <exercise xml:id="exercise-relations-reflexive-symmetric-transitive-last">
-                <statement>
-                    <p>Define <m>R</m> on <m>\mathbb Z \times \mathbb Z</m> by <m>R = \{ (a, b) \in \mathbb Z \times \mathbb Z \mid |a - b| \lt 5\}</m>.</p>
-                </statement>
-            </exercise>
+            </exercisegroup>
+-->
+
+
+        <exercisegroup xml:id="exercises-realtions-reflexive-symmetric-transitive">
+            <title>Reflexive, Symmetric, and Transitive</title>
+            <introduction><p>In <xref ref="exercises-realtions-reflexive-symmetric-transitive"/>, a relation <m>R</m> is defined on a given set.  In each case, prove or disprove: (a) <m>R</m> is reflexive. (b) <m>R</m> is symmetric, (c) <m>R</m> is transitive.  In each problem where <m>R</m> is an equivalence relation, find <m>\overline{a}</m>, where <m>a</m> is any element in the set on which the relation is defined.</p></introduction>
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb N</m> by <m>aRb</m> if and only if <m>a = 10^kb</m> for some <m>k \in \mathbb Z</m>.</p>
+                    </statement>
+                </exercise>
+
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb R</m> by <m>xRy</m> if and only if <m>x - y \in \mathbb Z</m>.</p>
+                    </statement>
+                </exercise>
+
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb N</m> by <m>xRy</m> if and only if <m>2 \mid (x + y)</m>.</p>
+                    </statement>
+                </exercise>
+
+                <exercise>
+                    <statement>
+                         <p>Define <m>R</m> on <m>\mathbb N</m> by <m>xRy</m> if and only if <m>3 \mid (x + y)</m>.</p>
+                    </statement>
+                </exercise>
+
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb R \times \mathbb R</m> by <m>(a,b)R(c,d)</m> if and only if <m>a - c \in \mathbb Z</m>.</p>
+                    </statement>
+                </exercise>
+
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb R \times \mathbb R</m> by <m>(a,b)R(c,d)</m> if and only if <m>a - c \in \mathbb Z</m> and <m>b - d \in \mathbb Z</m>.</p>
+                    </statement>
+                </exercise>
+
+                <exercise>
+                    <statement>
+                        <p>Define <m>R</m> on <m>\mathbb Z \times \mathbb Z</m> by <m>R = \{ (a, b) \in \mathbb Z \times \mathbb Z \mid |a - b| \lt 5\}</m>.</p>
+                    </statement>
+                </exercise>
+        </exercisegroup>
 
             <exercise>
             	<statement>
@@ -811,7 +865,7 @@
                 \end{tikzpicture}]]>
                 </latex-image>
             </image>
-            <caption>Listing the rational numbers</caption>
+            <title>Listing the rational numbers</title>
         </figure>
 
         <p>Now we are going to develop our map. Unlike previous examples, we are not going to state our rule but we are going to let a picture do the talking. Remember that all we have to do is to demonstrate a one-to-one onto function.</p>
@@ -884,7 +938,7 @@
                 \end{tikzpicture}]]>
                 </latex-image>
             </image>
-            <caption>Listing the rational numbers without repetition.</caption>
+            <title>Listing the rational numbers without repetition.</title>
         </figure>
 
         <p>So <m>1</m> will map to <m>1</m>, <m>2</m> to <m>1/2</m>, <m>3</m> to <m>2/1</m>, <m>4</m> to <m>3/1</m>, <m>5</m> to <m>1/3</m>, etc. Notice that each rational number will eventually be the output for our function and will be the output for exactly one natural number. Thus, we have created a one-to-one correspondence between the natural numbers and the positive rational numbers. We can easily extend this idea by sending the even natural numbers to the positive rational numbers and the odd natural numbers to the negative rational numbers to show that there is a one-to-one correspondence from the natural numbers to the set of all rational numbers. Therefore, the set of rational numbers is countably infinite.</p>

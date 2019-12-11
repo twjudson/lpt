@@ -120,7 +120,7 @@
 	            \end{tikzpicture}]]>
 	            </latex-image>
 	        </image>
-            <caption>The shaded area represents <m>A \cup B</m></caption>
+            <title>The shaded area represents <m>A \cup B</m></title>
         </figure>
 
         <figure xml:id="figure-sets-venn-intersect">
@@ -144,7 +144,7 @@
 	            \end{tikzpicture}]]>
 	            </latex-image>
 	        </image>
-            <caption>The shaded area represents <m>A \cap B</m></caption>
+            <title>The shaded area represents <m>A \cap B</m></title>
         </figure>
 
         <figure xml:id="figure-sets-venn-minus">
@@ -165,7 +165,7 @@
 	            \end{tikzpicture}]]>
 	            </latex-image>
 	        </image>
-            <caption>The shaded area represents <m>A \setminus B</m></caption>
+            <title>The shaded area represents <m>A \setminus B</m></title>
         </figure>
   	
 
@@ -187,7 +187,7 @@
 	            \end{tikzpicture}]]>
 	            </latex-image>
 	        </image>
-            <caption>The shaded area represents <m>\overline{A}</m></caption>
+            <title>The shaded area represents <m>\overline{A}</m></title>
         </figure>
 
         <assemblage>
