@@ -753,7 +753,7 @@
         </definition>
         <idx><h>Cardinality</h></idx>
 
-        <p>At first this may not seem to difficult.  You simply need to count the elements in the set.  However, what if your sets are infinite?  Again you might be asking why this is a big deal. The answer of how many elements is in an infinite set is infinitely many, right? Would you believe that there are different sizes of infinity? This is the foundation of cardinality and the study of mathematician Georg Cantor (see <xref ref="sets-subsection-historical-note" />).</p>
+        <p>At first this may not seem to difficult.  You simply need to count the elements in the set.  However, what if your sets are infinite?  Again you might be asking why this is a big deal. The answer of how many elements is in an infinite set is infinitely many, right? Would you believe that there are different sizes of infinity? This is the foundation of cardinality and the study of mathematician Georg Cantor (see <xref ref="sets-paragraphs-historical-note" />).</p>
 
         <definition xml:id="relations-definition-cardinality-types">
             <p>Two sets, <m>A</m> and <m>B</m> have the <term>same cardinality</term> if there is a one-to-one correspondence <m>f</m> from <m>A</m> to <m>B</m>.</p>
