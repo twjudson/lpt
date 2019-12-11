@@ -968,7 +968,7 @@
       </statement>
     </exercise>
 
-    <exercise number="24" xml:id="exercise-integers-lcm-gcd" permid="Ecd">
+    <exercise number="24" xml:id="exercise-integers-lcm-gcd">
       <statement>
         <p permid="LNT">
           If <m>d= \gcd(a, b)</m> and <m>m = \lcm(a, b)</m>,
