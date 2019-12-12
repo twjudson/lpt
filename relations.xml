@@ -69,10 +69,10 @@
     	<p>Although relations are actually sets of ordered pairs, such collections of ordered pairs may be indicated in many ways. Notice that a relation is essentially a pairing of elements according to some criteria. For example, we may <q>pair</q> a person's name with his or her social security number, age, height, or the names of cities lived in. Sometimes relations are specified simply by listing these pairs in set form as in the example above. When relations are described in this form, the rules or criteria for the pairing are often not known. For instance, in <m>R_1</m> of <xref ref="relations-example-relations" />, we know that <m>b</m> and <m>d</m> are both related to <m>3</m>, but we do not know why. Similarly, relations may be indicated in table or graphical form as in the below.</p>
 
     	<figure xml:id="figure-relations-picture">
-    		<image width="80%" source="images/relations-picture.jpg">
+            <caption>Pictorial representation <m>R</m> from <m>A</m> to <m>B</m></caption>
+                		<image width="80%" source="images/relations-picture.jpg">
                 <description>pictorial representation R from A to B</description>
             </image>
-            <caption>Pictorial representation <m>R</m> from <m>A</m> to <m>B</m></caption>
         </figure>
 
     	<example xml:id="relations-example-relation-picture">
@@ -95,7 +95,8 @@
             <p>A third representation of <m>R</m> is given in table form below.</p>
 
             <table xml:id="table-relations-table">
-               <tabular halign="center" top="medium">
+                <title>A table representation <m>R</m> from <m>A</m> to <m>B</m></title>
+                <tabular halign="center" top="medium">
                     <row bottom="medium">
                         <cell><m>a</m></cell><cell><m>b</m></cell>
                     </row>
@@ -110,7 +111,6 @@
                         <cell>10</cell><cell>2</cell>
                     </row>
                </tabular>
-                <caption>A table representation <m>R</m> from <m>A</m> to <m>B</m></caption>
             </table>
 
     	</example>
@@ -123,10 +123,10 @@
     		That is, the relation described by the equation is actually the infinite set of ordered pairs of real numbers whose sum is equal to <m>4</m>. In the following figure, we have indicated all the ordered pairs which satisfy the linear equation; this is sometimes called the graphical representation of the equation.</p>
 
             <figure xml:id="figure-relations-graph">
+                <caption>Graphical representation of <m>x + y = 4</m></caption>
                 <image width="50%" source="images/relations-graph.png">
                     <description>pictorial representation R from A to B</description>
                 </image>
-                <caption>Graphical representation of <m>x + y = 4</m></caption>
             </figure>
 
     	</example>
@@ -202,6 +202,7 @@
         <p>Consider the relation in <xref ref="figure-relations-relation-example" />.  The inverse relation <m>R^{-1}</m> from <m>B</m> to <m>A</m> can be found by simply reversing the arrows (<xref ref="figure-relations-inverse-relation-example" />).  In this case, <m>\domain(R) = \range(R^{-1}</m> and <m>\range(R) = \domain(R^{-1})</m>.</p>
 
         <figure xml:id="figure-relations-relation-example">
+            <caption>The relation <m>R</m> from <m>A</m> to <m>B</m></caption>
             <image width="80%" xml:id="relations-relation-example">
                 <description>two overlapping circles with the common part shaded</description>
                 <latex-image>
@@ -221,12 +222,12 @@
                 \end{tikzpicture}]]>
                 </latex-image>
             </image>
-            <caption>The relation <m>R</m> from <m>A</m> to <m>B</m></caption>
         </figure>
 
 
 
         <figure xml:id="figure-relations-inverse-relation-example">
+            <caption>The relation <m>R^{-1}</m> from <m>B</m> to <m>A</m></caption>
             <image width="80%" xml:id="relations-inverse-relation-example">
                 <description>two overlapping circles with the common part shaded</description>
                 <latex-image>
@@ -246,7 +247,6 @@
                 \end{tikzpicture}]]>
                 </latex-image>
             </image>
-            <caption>The relation <m>R^{-1}</m> from <m>B</m> to <m>A</m></caption>
         </figure>
 
 
@@ -428,6 +428,7 @@
                 <me>R = \{ (a, a), (c, c), (a, b), (b, a), (b, d), (c , d), (b, c) \}.</me></p>
 
             <figure xml:id="figure-relations-digraph">
+                <caption>The digraph for the relation <m>R</m> on <m>A</m></caption>
                 <image width="50%" xml:id="relations-digraph">
                     <description>two overlapping circles with the common part shaded</description>
                     <latex-image>
@@ -463,7 +464,6 @@
                     \end{tikzpicture}]]>
                     </latex-image>
                 </image>
-                <caption>The digraph for the relation <m>R</m> on <m>A</m></caption>
             </figure>
 
             <p>Notice that there is an edge representing every ordered pair in <m>R</m> (<xref ref="figure-relations-digraph" />). For those elements in <m>A</m> that are related to themselves, there is an edge that looks like a loop. In this relation there are only two loops since only <m>a</m> and <m>c</m> are related to themselves. From this example it is reasonable to conclude that for an arbitrary finite relation <m>R</m> defined on <m>A</m>, the relation will have the reflexive property if and only if each vertex has a loop. Thus, we can quickly see from the digraph that <m>R</m> is not reflexive. We may also conclude from the digraph that <m>R</m> is not symmetric and not transitive. Why?</p>
@@ -762,6 +762,7 @@
         <p>Consider <xref ref="figure-relations-rationals-with-duplicates" />. Notice that eventually, if the process was allowed to continue indefinitely, all rational numbers would be listed. Some numbers however are represented more than once. In order to preserve the one-to-one requirement, we need to eliminate any numbers that are equivalent to a rational number previously listed. The image below has made that adjustment.</p> 
 
         <figure xml:id="figure-relations-rationals-with-duplicates">
+            <caption>Listing the rational numbers</caption>
             <image width="50%" xml:id="relations-rationals-with-duplicates">
                 <description>two overlapping circles with the common part shaded</description>
                 <latex-image>
@@ -814,12 +815,12 @@
                 \end{tikzpicture}]]>
                 </latex-image>
             </image>
-            <caption>Listing the rational numbers</caption>
         </figure>
 
         <p>Now we are going to develop our map. Unlike previous examples, we are not going to state our rule but we are going to let a picture do the talking. Remember that all we have to do is to demonstrate a one-to-one onto function.</p>
 
        <figure xml:id="figure-relations-rationals">
+            <caption>Listing the rational numbers without repetition.</caption>
             <image width="50%" xml:id="relations-rationals">
                 <description>two overlapping circles with the common part shaded</description>
                 <latex-image>
@@ -887,7 +888,6 @@
                 \end{tikzpicture}]]>
                 </latex-image>
             </image>
-            <caption>Listing the rational numbers without repetition.</caption>
         </figure>
 
         <p>So <m>1</m> will map to <m>1</m>, <m>2</m> to <m>1/2</m>, <m>3</m> to <m>2/1</m>, <m>4</m> to <m>3/1</m>, <m>5</m> to <m>1/3</m>, etc. Notice that each rational number will eventually be the output for our function and will be the output for exactly one natural number. Thus, we have created a one-to-one correspondence between the natural numbers and the positive rational numbers. We can easily extend this idea by sending the even natural numbers to the positive rational numbers and the odd natural numbers to the negative rational numbers to show that there is a one-to-one correspondence from the natural numbers to the set of all rational numbers. Therefore, the set of rational numbers is countably infinite.</p>

@@ -8,6 +8,26 @@
 <!--                                                                                             -->
 <!-- See the file COPYING for copying conditions.                                                -->
 
+<!-- To process this file do                                                                      -->
+<!--                                                                                              -->
+<!-- (1) LaTeX/PDF:                                                                               -->
+<!--     xsltproc -o lpt.tex --xinclude /Users/twjudson1/Documents/mathbook/xsl/mathbook-latex.xsl lpt.xml                      -->
+<!--     pdflatex lpt.tex                                                                     -->
+<!--     xelatex lpt.tex                                                                      -->
+<!--                                                                                              -->
+<!-- (2) HTML:                                                                                    -->
+<!--     xsltproc --xinclude /Users/twjudson1/Documents/mathbook/xsl/mathbook-html.xsl lpt.xml                                      -->
+<!--     <browswer>  lpt.html                                                                 -->
+<!--                                                                                              -->
+<!-- (3) CoCalc worksheet (parameter causes a single file for output)                             -->
+<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
+<!--     xsltproc -X-stringparam chunk.level 0 /Users/twjudson1/Documents/mathbook/xsl/mathbook-smc.xsl lpt.xml          -->
+<!--     <CoCalc> lpt.sagews                                                                  -->
+<!--                                                                                              -->
+<!-- (4) Sage doctesting                                                                          -->
+<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
+<!--     xsltproc -X-stringparam chunk.level 0 /Users/twjudson1/Documents/mathbook/xsl/mathbook-sage-doctest.xsl lpt.xml -->
+<!--     <read further instructions in> lpt.py                                                -->
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <!-- <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="fr-FR"> -->
 

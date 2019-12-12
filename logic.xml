@@ -189,6 +189,7 @@
         <p>Since one of our stated concerns in this section is the determination of the truth value of a given statement based upon the truth values of its component statements, we consider the concept of a truth table. Very simply, a truth table is exactly a table which indicates the relationships between the truth values of the statements forming the table. Thus, the truth table below (<xref ref="logic-table-negation" />) indicates the relationship between the statements <m>p</m> and <m>\negate p</m>, giving us the basic table for a negation.</p><idx><h>Truth table</h></idx>
 
         <table xml:id="logic-table-negation">
+            <title>Truth table for negation</title>
            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell><m>p</m></cell><cell><m>\negate p</m></cell>
@@ -201,7 +202,6 @@
                     <cell>F</cell><cell>T</cell>
                 </row>
            </tabular>
-            <caption>Truth table for negation</caption>
         </table>
 
         <p>Notice that the table shows that if <m>p</m> is true, then <m>\negate p</m> is false and if <m>p</m> is false, then <m>\negate p</m> is true. Truth tables become very useful when we deal with more complicated statements.</p>
@@ -219,7 +219,8 @@
         <p>The key to understanding the conjunction is the truth table below (<xref ref="logic-table-conjunction" />), which systematically exhibits the four possible combinations of the truth values for <m>p</m> and <m>q</m>. Thus, we see that the conjunction of two statements is true only in the case when both statements are true.</p>
 
         <table xml:id="logic-table-conjunction">
-           <tabular halign="center" top="medium">
+            <title>Truth table for conjunction</title>
+            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p \wedge q</m></cell>
                 </row>
@@ -234,8 +235,7 @@
                 <row bottom="medium">
                     <cell>F</cell><cell>F</cell><cell>F</cell>
                 </row>
-           </tabular>
-            <caption>Truth table for conjunction</caption>
+            </tabular>           
         </table>
 
         <definition xml:id="logic-definition-disjunction">
@@ -245,7 +245,8 @@
         <p>A brief comment about <q>or</q> must be noted. As used in a mathematical/logical sense, <q>or</q> is interpreted in the inclusive sense. That is, <a>or</a> is interpreted as and/or, meaning one and/or the other is true. Consider carefully the truth table for the disjunction (<xref ref="logic-table-disjunction" />). So we see the disjunction is false only when both <m>p</m> and <m>q</m> are false. (The exclusive use of <q>or</q> would yield truth only if exactly one of the two statements were true.)</p>
 
         <table xml:id="logic-table-disjunction">
-           <tabular halign="center" top="medium">
+            <title>Truth table for disjunction</title>
+            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p \vee q</m></cell>
                 </row>
@@ -260,8 +261,7 @@
                 <row bottom="medium">
                     <cell>F</cell><cell>F</cell><cell>F</cell>
                 </row>
-           </tabular>
-            <caption>Truth table for disjunction</caption>
+            </tabular> 
         </table>
 
 
@@ -289,7 +289,8 @@
         <p>In mathematics/logic the truth table for a conditional statement is given in <xref ref="logic-table-conditional" />.</p>
 
         <table xml:id="logic-table-conditional">
-           <tabular halign="center" top="medium">
+            <title>Truth table for a conditional statement</title>
+            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p \rightarrow q</m></cell>
                 </row>
@@ -304,8 +305,7 @@
                 <row bottom="medium">
                     <cell>F</cell><cell>F</cell><cell>T</cell>
                 </row>
-           </tabular>
-            <caption>Truth table for a conditional statement</caption>
+            </tabular>        
         </table>
 
         <example xml:id="logic-example-conditional">
@@ -334,7 +334,8 @@
         <p>Two statements, no matter how complicated, are equivalent when they have precisely the same truth value. You can find the truth table for the biconditional statement in <xref ref="logic-table-biconditional" />.</p>
 
         <table xml:id="logic-table-biconditional">
-           <tabular halign="center" top="medium">
+            <title>Truth table for a biconditional statement</title>
+            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p \leftrightarrow q</m></cell>
                 </row>
@@ -349,8 +350,7 @@
                 <row bottom="medium">
                     <cell>F</cell><cell>F</cell><cell>T</cell>
                 </row>
-           </tabular>
-            <caption>Truth table for a biconditional statement</caption>
+            </tabular>    
         </table>
 
         <example xml:id="logic-example-biconditional">
@@ -392,6 +392,7 @@
                 After listing the component statements and all possible combinations of truth values associated with them in the table, the remaining compound statements should be given in the order in which they will be considered. This is done much like ordering of operations in an arithmetic problem or an algebraic expression.</p>
 
             <table xml:id="logic-table-truth-table-example">
+                <title>Truth table for <m>(q \wedge p) \vee [q \wedge (\negate p)]</m></title>
                 <tabular halign="center" top="medium">
                     <row bottom="medium">
                         <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>\negate p</m></cell><cell><m>q \wedge p</m></cell><cell><m>q \wedge (\negate p)</m></cell><cell><m>(q \wedge p) \vee [q \wedge (\negate p)]</m></cell>
@@ -408,7 +409,6 @@
                         <cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell>
                     </row>
                </tabular>
-                <caption>Truth table for <m>(q \wedge p) \vee [q \wedge (\negate p)]</m></caption>
             </table>
         </example>
 
@@ -456,7 +456,7 @@
                         <cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
                     </row>
                </tabular>
-                <caption>Truth table for <m>(p \rightarrow q) \leftrightarrow (\negate q \rightarrow \negate p)</m></caption>
+                <title>Truth table for <m>(p \rightarrow q) \leftrightarrow (\negate q \rightarrow \negate p)</m></title>
             </table>
 
             <p>We will leave the proof of (2) as an exercise.</p>
@@ -669,7 +669,7 @@
                     <cell>F</cell><cell>T</cell><cell>F</cell>
                 </row>
            </tabular>
-                <caption>Truth table for <m>p \leftrightarrow \negate p</m></caption>
+                <title>Truth table for <m>p \leftrightarrow \negate p</m></title>
             </table>
         </example>
 
@@ -689,7 +689,7 @@
                     <cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell>
                 </row>
            </tabular>
-                <caption>Truth table for <m>p \leftrightarrow \negate(\negate p)</m></caption>
+                <title>Truth table for <m>p \leftrightarrow \negate(\negate p)</m></title>
             </table>
 
         </example>
@@ -815,7 +815,7 @@
                     <cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell>
                 </row>
            </tabular>
-                <caption>Truth table for <m>[( p \rightarrow q ) \vee r] \leftrightarrow [(p \; \wedge \negate q) \rightarrow r]</m></caption>
+                <title>Truth table for <m>[( p \rightarrow q ) \vee r] \leftrightarrow [(p \; \wedge \negate q) \rightarrow r]</m></title>
             </table>
 
         </example>
@@ -970,7 +970,8 @@
         <p>General forms of qualified statements with their negations can be found in <xref ref="logic-table-quantifier-negation" />.</p>
 
         <table xml:id="logic-table-quantifier-negation">
-           <tabular halign="center" top="medium">
+            <title>Truth table for negation</title>
+            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell>Statement</cell><cell>Negation</cell>
                 </row>    
@@ -986,7 +987,6 @@
                     <cell>No <m>a</m> is <m>b</m>.</cell><cell>Some <m>a</m> are <m>b</m>.</cell>
                 </row>
            </tabular>
-            <caption>Truth table for negation</caption>
         </table>
 
         <exercises>

@@ -72,6 +72,7 @@
         </example>
 
         <table xml:id="arguments-table-deductive">
+            <title>Truth table for <m>[(p \rightarrow q) \wedge \negate p] \rightarrow \negate q</m></title>
             <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell><m>p</m></cell><cell><m>q</m></cell><cell><m>\negate p</m></cell><cell><m>\negate q</m></cell><cell><m>p \rightarrow q</m></cell><cell><m>(p \rightarrow q) \wedge \negate p</m></cell><cell><m>[(p \rightarrow q) \wedge \negate p] \rightarrow \negate q</m></cell>
@@ -87,8 +88,7 @@
                 <row bottom="medium">
                     <cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
                 </row>
-           </tabular>
-            <caption>Truth table for <m>[(p \rightarrow q) \wedge \negate p] \rightarrow \negate q</m></caption>
+           </tabular>      
         </table>
 
         <assemblage>
@@ -161,9 +161,6 @@
 					<li><q>When it rains, I carry an umbrella.</q> can be rewritten as <q>If it rains, I carry an umbrella.</q></li>
 
             	</ul></p>
-
-
-
 
         <exercises>
 
@@ -351,10 +348,10 @@
             <idx><h>Euler diagrams</h></idx>
 
             <figure xml:id="figure-arguments-euler">
+                <caption>Euler diagram for direct reasoning</caption>
                 <image width="40%" source="images/arguments-euler.png">
                     <description>Euler diagram for direct reasoning</description>
                 </image>
-                <caption>Euler diagram for direct reasoning</caption>
             </figure>
 
         </subsection>
@@ -379,10 +376,10 @@
             </example>
 
             <figure xml:id="figure-arguments-euler-syllogism">
+                <caption>Euler diagram for transitive reasoning</caption>
                 <image width="40%" source="images/arguments-euler-syllogism.png">
                     <description>Euler diagram for transitive reasoning</description>
                 </image>
-                <caption>Euler diagram for transitive reasoning</caption>
             </figure>
 
 
@@ -408,14 +405,13 @@
             </example>
 
             <figure xml:id="figure-arguments-euler-contraposition">
+                <caption>Euler diagram indirect reasoning</caption>
                 <image width="50%" source="images/arguments-euler-contraposition.png">
                     <description>Euler diagram for indirect reasoning</description>
                 </image>
-                <caption>Euler diagram indirect reasoning</caption>
             </figure>
 
         </subsection>
-
 
         <exercises>
 
